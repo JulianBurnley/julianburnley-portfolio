@@ -24,9 +24,12 @@ Instructor: Brian Thurber
 }
 
 body {
+  min-height: 100vh;
   background-color: var(--background-color-body);
   color: var(--text-color-body);
   font-family: 'Open Sans', sans-serif;
+  line-height: 1.7;
+  overflow-x: hidden;
 }
 
 h1, h2, h3 {
@@ -35,42 +38,69 @@ h1, h2, h3 {
 }
 
 header {
-  width: 100vw;
-  height: 80px;
+  min-height: 96px;
+  display: flex;
+  align-items: center;
+  gap: clamp(1.5rem, 5vw, 4rem);
+  padding: 1.25rem max(1rem, calc((100% - 1120px) / 2));
   background-color: var(--background-color-header);
 }
 
 header h1 {
-  float: left;
+  margin: 0;
   color: var(--text-color-heading);
-  margin-top: 15px;
-  margin-left: 20px;
+  font-size: clamp(1.8rem, 4vw, 2.7rem);
+  line-height: 1.05;
 }
 
 header nav {
-  float: left;
-  margin-top: 10px;
-  margin-left: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .5rem;
 }
 
 header nav a {
-  display: block;
+  display: inline-flex;
   color: var(--text-color-heading);
   text-decoration: none;
-  padding: 5px 10px;
+  padding: .55rem .85rem;
+  border-radius: .35rem;
 }
 
-header nav a:hover {
+header nav a:hover,
+header nav a:focus-visible,
+header nav a#active {
   background-color: var(--text-color-heading);
   color: var(--background-color-header);
 }
 
 main {
-  padding: 20px;
+  width: min(1120px, calc(100% - 2rem));
+  min-height: 52vh;
+  margin-inline: auto;
+  padding-block: clamp(2.5rem, 6vw, 5rem);
 }
 
 main h2, main h3 {
   clear: both;
+}
+
+main h2 {
+  margin: 0 0 .6rem;
+  color: var(--background-color-header);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+}
+
+main h2:not(:first-child),
+main h3 {
+  margin-top: 2rem;
+}
+
+main > p {
+  max-width: 82ch;
+  margin: 0 0 1rem;
+  font-size: 1.02rem;
 }
 
 .card {
@@ -79,9 +109,10 @@ main h2, main h3 {
   box-shadow: 5px 5px 5px var(--shadow-color-light);
   text-align: center;
   background-color: white;
-  float: left;
-  margin: 15px;
-  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+  margin: .75rem;
+  width: min(300px, calc(100% - 1.5rem));
   padding: 20px 10px 10px 10px;
 }
 
@@ -105,9 +136,64 @@ footer {
   text-align: center;
   clear: both;
   width: 100%;
+  padding: 1rem max(1rem, calc((100% - 1120px) / 2));
 }
 
 footer p {
   display: inline-block;
-  padding: 15px;
+  padding: .65rem 1rem;
+}
+
+footer a {
+  color: inherit;
+}
+
+html[data-coursework-theme="dark"] body {
+  --background-color-body: #101827;
+  --text-color-body: #edf4ff;
+  --text-color-heading: #f4f8ff;
+  --background-color-header: #14294a;
+  --accent-color: #74d89a;
+  --border-color-dark: #6685ad;
+  --shadow-color-light: rgba(0, 0, 0, .35);
+  background: var(--background-color-body);
+  color: var(--text-color-body);
+}
+
+html[data-coursework-theme="dark"] main h2,
+html[data-coursework-theme="dark"] main h3 {
+  color: #b8d7ff;
+}
+
+html[data-coursework-theme="dark"] .card {
+  border-color: #405b7d;
+  background: #18243a;
+  color: #edf4ff;
+}
+
+html[data-coursework-theme="dark"] .card code {
+  color: #8ce7af;
+}
+
+@media (max-width: 650px) {
+  header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  header nav {
+    width: 100%;
+  }
+
+  header nav a {
+    flex: 1 1 auto;
+    justify-content: center;
+    border: 1px solid rgba(255,255,255,.28);
+  }
+
+  footer p {
+    display: block;
+    padding: .25rem 0;
+  }
 }

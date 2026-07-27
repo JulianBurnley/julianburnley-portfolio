@@ -1393,12 +1393,51 @@ footer a {
 }
 
 .embedded-page .back-to-top {
-  right: 0.5rem;
-  bottom: 0.5rem;
-  padding: 0.35rem 0.55rem;
+  right: 0.4rem;
+  bottom: 0.4rem;
+  max-width: 4.6rem;
+  padding: 0.32rem 0.45rem;
   border-width: 1px;
-  font-size: 0.72rem;
+  font-size: 0.62rem;
+  line-height: 1.1;
+  text-align: center;
   box-shadow: 0 0.35rem 0.8rem rgb(16 26 44 / 18%);
+}
+
+.embedded-page {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.embedded-page header,
+.embedded-page main,
+.embedded-page footer,
+.embedded-page section,
+.embedded-page article,
+.embedded-page aside,
+.embedded-page nav {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.embedded-page h1,
+.embedded-page h2,
+.embedded-page h3,
+.embedded-page p,
+.embedded-page a,
+.embedded-page span {
+  overflow-wrap: anywhere;
+}
+
+.iframe iframe {
+  display: block;
+  width: 100%;
+  max-width: 48rem;
+  min-height: 34rem;
+  margin-inline: auto;
+  border: 1px solid var(--portfolio-border);
+  border-radius: 0.8rem;
+  background: var(--portfolio-surface);
 }
 
 body.dark-mode {

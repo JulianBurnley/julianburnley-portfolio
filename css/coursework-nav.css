@@ -149,3 +149,30 @@ html[data-coursework-theme="dark"] a:not(.portfolio-course-nav a) {
     width: min(13rem, calc(100vw - 1rem)) !important;
   }
 }
+
+/* Keep shared coursework controls compact when a lesson page is shown in an iframe. */
+.embedded-page .portfolio-course-nav {
+  bottom: 0.4rem !important;
+  left: 0.4rem !important;
+  width: min(9.5rem, calc(100vw - 5.5rem)) !important;
+}
+
+.embedded-page .portfolio-course-nav summary {
+  overflow: hidden;
+  padding: 0.5rem 0.65rem;
+  font-size: 0.7rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.embedded-page .portfolio-course-nav-links {
+  gap: 0.35rem !important;
+  padding: 0 0.4rem 0.4rem;
+}
+
+.embedded-page .portfolio-course-nav a,
+.embedded-page .portfolio-course-nav .course-theme-toggle {
+  min-height: 1.9rem;
+  padding: 0.35rem 0.45rem;
+  font-size: 0.68rem;
+}

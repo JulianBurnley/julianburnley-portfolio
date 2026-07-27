@@ -1,76 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
-    <title>Jr's Toy Store</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Julian Burnley">
+  <meta name="description" content="JR's Toy Store, a family-friendly toy shop featuring vehicles, puzzles, plush toys, and outdoor play.">
+  <title>JR's Toy Store | Play Starts Here</title>
   <link rel="stylesheet" href="/css/coursework-nav.css">
+  <link rel="stylesheet" href="styles/styles.css">
   <script src="/js/coursework-theme.js" defer></script>
+  <script src="scripts/store.js" defer></script>
 </head>
 <body>
   <nav class="portfolio-course-nav" aria-label="Portfolio and coursework navigation"><details><summary>Coursework menu</summary><div class="portfolio-course-nav-links"><a href="/coursework/">Coursework library</a><a href="/coursework/lesson-5-project/" aria-current="page">Lesson 5 project</a><a class="portfolio-return-link" href="/">Return to portfolio</a><button class="course-theme-toggle" type="button" aria-pressed="false">Dark mode</button></div></details></nav>
-    <header>
-        <img class="logo" src="Images/logo_mid.jpg" title="Jr's Toy Store" alt="logo of jrs toy store">
-        <!-- I created part of the logo
-        Dice roll the to play - free photo on Pixabay. (n.d.). Retrieved March 11, 2023, from https://pixabay.com/photos/dice-roll-the-dice-to-play-contest-2031512/ -->
-        <nav>
-        
-            <a href="diecasttoys.html">Diecast Toys</a>
-            <a href="puzzles.html">Puzzles</a>
-            <a href="teddybears.html">Teddy Bears</a>
-            <a href="outdoortoys.html">Outdoor Toys</a>
-            <a href="animatedtoys.html">Animated Toys</a>
+  <a class="store-skip-link" href="#main-content">Skip to products</a>
 
-        </nav>
-    </header>
+  <div class="announcement">Free shipping on orders over $50 · 30-day play guarantee</div>
+  <header class="store-header">
+    <div class="store-header-inner">
+      <a class="store-brand" href="index.html">
+        <img src="Images/logo_mid.jpg" alt="JR's Toy Store logo">
+        <span><strong>JR’s Toy Store</strong><small>Play starts here</small></span>
+      </a>
+      <form class="store-search" action="shop.html">
+        <label class="visually-hidden" for="store-search">Search toys</label>
+        <input id="store-search" name="q" type="search" placeholder="Search toys, ages, or categories">
+        <button type="submit">Search</button>
+      </form>
+      <button class="cart-button" type="button" aria-label="Shopping cart">
+        Cart <span class="cart-count" aria-live="polite">0</span>
+      </button>
+    </div>
+    <nav class="store-nav" aria-label="Store navigation">
+      <a href="shop.html">Shop all</a>
+      <a href="shop.html#vehicles">Vehicles</a>
+      <a href="shop.html#puzzles">Puzzles</a>
+      <a href="shop.html#plush">Plush</a>
+      <a href="shop.html#outdoor">Outdoor</a>
+      <a href="#story">Our story</a>
+    </nav>
+  </header>
 
-    <article class="Article1">
-        <aside>
-            <h2>DMC DeLorean </h2>
-            <img class="adpic" src="Images/20230309_203917.jpg" title="DMC DeLorean" alt="Black diecast DMC DeLorean">
-            <h3>$5.99</h3>
-            
+  <main id="main-content">
+    <section class="store-hero">
+      <div class="hero-content">
+        <p class="store-eyebrow">Family-owned in Phoenix</p>
+        <h1>Big adventures for every imagination.</h1>
+        <p>Thoughtfully selected toys for curious kids, collectors, builders, and families who never outgrow play.</p>
+        <div class="store-actions">
+          <a class="store-button primary" href="shop.html">Shop new arrivals</a>
+          <a class="store-button secondary" href="#categories">Browse categories</a>
+        </div>
+      </div>
+      <div class="hero-product">
+        <span class="deal-badge">Featured</span>
+        <img src="Images/20230309_203917.jpg" alt="Black DMC DeLorean diecast model">
+        <div><strong>DMC DeLorean Diecast</strong><span>$12.99</span></div>
+      </div>
+    </section>
 
-            
-        </aside>
-        <h1>30 Day Gurantee On All Toys!</h1>
-        <p>At Jr’s Toy Store we were passionate about toys, so we created a website to share our collection. We got so many requests that we decided to start a business. We have been in business since 2022, and our customers have been satisfied with our products and services. Jr’s Toy Store has already been recognized by the Better Business Bureau, something we are very proud of.</p>
+    <section class="store-section" id="categories">
+      <div class="store-section-heading">
+        <div><p class="store-eyebrow">Find their favorite</p><h2>Shop by category</h2></div>
+        <a href="shop.html">View all toys →</a>
+      </div>
+      <div class="category-grid">
+        <a class="category-card vehicles" href="shop.html#vehicles"><span>Vehicles</span><small>Cars, trucks &amp; diecast</small></a>
+        <a class="category-card puzzles" href="shop.html#puzzles"><span>Puzzles</span><small>Build, solve &amp; discover</small></a>
+        <a class="category-card plush" href="shop.html#plush"><span>Plush friends</span><small>Soft companions</small></a>
+        <a class="category-card outdoor" href="shop.html#outdoor"><span>Outdoor play</span><small>Move, explore &amp; imagine</small></a>
+      </div>
+    </section>
 
-        <p>We are a family-owned small business located in Phoenix Arizona. Toys make us all happy like nothing else. Around here we say, “Work hard and play harder”. Christmas is a time of giving, that is why we participate in our local toy drives. We also donate plushies and other toys to the Phoenix Children’s hospital. There is nothing better than the smile it brings on the faces of all the children.</p>
+    <section class="store-section featured-section">
+      <div class="store-section-heading">
+        <div><p class="store-eyebrow">Popular right now</p><h2>Customer favorites</h2></div>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <a href="shop.html#vehicles"><img src="Images/images/1963-1.jpg" alt="1963 Corvette Stingray diecast model"></a>
+          <p class="product-category">Vehicles · Ages 8+</p><h3>1963 Corvette Stingray</h3>
+          <div class="product-meta"><strong>$18.99</strong><span>★★★★★</span></div>
+          <button class="add-to-cart" type="button">Add to cart</button>
+        </article>
+        <article class="product-card">
+          <a href="shop.html#vehicles"><img src="Images/images/Top-1.jpg" alt="Yellow backhoe loader toy"></a>
+          <p class="product-category">Construction · Ages 5+</p><h3>Backhoe Loader</h3>
+          <div class="product-meta"><strong>$24.99</strong><span>★★★★★</span></div>
+          <button class="add-to-cart" type="button">Add to cart</button>
+        </article>
+        <article class="product-card">
+          <a href="shop.html#vehicles"><img src="Images/images/lowryders-1.jpg" alt="Collection of colorful lowrider toy cars"></a>
+          <p class="product-category">Collectibles · Ages 8+</p><h3>Lowrider Five-Pack</h3>
+          <div class="product-meta"><strong>$21.99</strong><span>★★★★☆</span></div>
+          <button class="add-to-cart" type="button">Add to cart</button>
+        </article>
+      </div>
+    </section>
 
-        <p>Our products are guaranteed to last, and we have a 30-day return and replacement on all toys store wide. You can ship them back or walk into the store, if you are local. Batteries and other accessories for toys and other products are also available for reasonable prices. We are open Monday to Saturday from 9 AM to 10PM and are closed Sunday. We look forward to seeing you soon. </p>
-    <figure>
-    <img class="cars" src="Images/20230309_205713.jpg" title="Rubicks Cube" alt="Rubicks Cube">
-    <img class="cars" src="Images/20230309_210050.jpg" title="Blue Chevy Truck" alt="Blue diecast chevy truck">
-    </figure>
-        
-        
-    </article>
+    <section class="trust-grid" aria-label="Store benefits">
+      <article><span aria-hidden="true">↺</span><h2>30-day guarantee</h2><p>Return or exchange any toy that isn’t the right fit.</p></article>
+      <article><span aria-hidden="true">✓</span><h2>Play-tested picks</h2><p>Selected for quality, creativity, and lasting fun.</p></article>
+      <article><span aria-hidden="true">♡</span><h2>Community minded</h2><p>Proudly supporting local toy drives and children’s programs.</p></article>
+    </section>
 
-    <article class="Banner">
-        <h2 class="bannerh2">It's Diecast Week!</h2>
-        <p class="splash">20% Off All Diecast Toys.<br>Free Shipping!<br> </p>
-        <img class="bannercar" src="Images/20230309_080825.jpg" title="Diecast Firetruck" alt="Red diecast firetruck">
-        <img class="bannercar1" src="Images/20230309_080535.jpg" title="Diecast Shuttle" alt="Blue diecast shuttle bus">
+    <section class="story-section" id="story">
+      <div>
+        <p class="store-eyebrow">Our story</p>
+        <h2>A neighborhood store built around the joy of play.</h2>
+      </div>
+      <div>
+        <p>JR’s Toy Store is a family-owned Phoenix shop inspired by a lifelong love of toys and collecting. We stock memorable gifts, hands-on activities, and playful finds for every age.</p>
+        <p>We believe the best toys invite creativity, bring people together, and create stories families remember.</p>
+      </div>
+    </section>
+  </main>
 
-
-    </article>
-
-    <footer>
-        <address>
-            Jr's Toy Store<br>
-            12345 2nd Street<br>
-            Phoenix, Arizona 85332<br>
-            Tel: 602-333-1234<br>
-            <small>&copy; 2023, All Rights Reserved.</small>
-           </address><br>
-        
-       
-        
-
-    </footer>
-    
+  <footer class="store-footer">
+    <div><img src="Images/logo_mid.jpg" alt=""><p>JR’s Toy Store<br>Phoenix, Arizona</p></div>
+    <nav aria-label="Footer navigation"><a href="shop.html">Shop</a><a href="#story">About</a><a href="mailto:julian@julianburnley.com">Contact</a></nav>
+    <p>Lesson 5 portfolio storefront · Redesigned by Julian Burnley</p>
+  </footer>
 </body>
 </html>

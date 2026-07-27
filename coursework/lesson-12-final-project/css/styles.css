@@ -1110,8 +1110,20 @@ main > .container,
 .hero-panel {
   padding: clamp(1.5rem, 5vw, 4rem);
   background:
-    linear-gradient(115deg, rgb(255 255 255 / 96%), rgb(240 213 148 / 45%)),
+    linear-gradient(115deg, #ffffff, #f3e6c5),
     var(--portfolio-surface);
+}
+
+.hero-panel .eyebrow {
+  color: #694a0b;
+}
+
+.hero-panel h2 {
+  color: var(--portfolio-navy);
+}
+
+.hero-panel > p:not(.eyebrow) {
+  color: #354052;
 }
 
 .hero-actions,
@@ -1141,6 +1153,7 @@ main > .container,
 
 .secondary-action,
 .profile-links span {
+  background: #ffffff;
   color: var(--portfolio-navy);
 }
 
@@ -1474,6 +1487,21 @@ body.dark-mode #main > nav a[aria-current="page"] {
 
 body.dark-mode .hero-panel {
   background: linear-gradient(115deg, #121d30, #332b20);
+}
+
+body.dark-mode .hero-panel .eyebrow,
+body.dark-mode .hero-panel h2 {
+  color: var(--portfolio-gold-light);
+}
+
+body.dark-mode .hero-panel > p:not(.eyebrow) {
+  color: #e4e9f2;
+}
+
+body.dark-mode .secondary-action {
+  border-color: var(--portfolio-gold-light);
+  background: transparent;
+  color: var(--portfolio-gold-light);
 }
 
 body.dark-mode .focus-panel,

@@ -1,8 +1,9 @@
-const storageKey = "julian-reference-library-theme";
+const storageKey = "julian-coursework-theme";
 
 function initializeTheme() {
   const header = document.querySelector("header");
   if (!header) return;
+  const root = document.documentElement;
 
   let button = document.getElementById("theme-toggle");
   if (!button) {
@@ -14,22 +15,32 @@ function initializeTheme() {
     header.appendChild(button);
   }
 
-  if (localStorage.getItem(storageKey) === "dark") {
-    document.body.classList.add("dark-mode");
-  }
-
-  function updateButton() {
-    const isDark = document.body.classList.contains("dark-mode");
+  function applyTheme(isDark) {
+    root.dataset.courseworkTheme = isDark ? "dark" : "light";
+    document.body.classList.toggle("dark-mode", isDark);
     button.textContent = isDark ? "Light mode" : "Dark mode";
     button.setAttribute("aria-pressed", String(isDark));
+    document.querySelectorAll(".course-theme-toggle").forEach(function (courseButton) {
+      courseButton.textContent = isDark ? "Light mode" : "Dark mode";
+      courseButton.setAttribute("aria-pressed", String(isDark));
+    });
   }
 
-  updateButton();
+  applyTheme(root.dataset.courseworkTheme === "dark");
 
   button.addEventListener("click", function () {
-    const isDark = document.body.classList.toggle("dark-mode");
+    const isDark = root.dataset.courseworkTheme !== "dark";
+    applyTheme(isDark);
     localStorage.setItem(storageKey, isDark ? "dark" : "light");
-    updateButton();
+  });
+
+  document.querySelectorAll(".course-theme-toggle").forEach(function (courseButton) {
+    courseButton.addEventListener("click", function () {
+      const isDark = root.dataset.courseworkTheme === "dark";
+      document.body.classList.toggle("dark-mode", isDark);
+      button.textContent = isDark ? "Light mode" : "Dark mode";
+      button.setAttribute("aria-pressed", String(isDark));
+    });
   });
 }
 

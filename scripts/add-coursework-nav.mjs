@@ -42,14 +42,19 @@ for (const file of htmlFiles(root)) {
     '<a class="portfolio-return-link" href="/">Return to portfolio</a>',
   ].filter(Boolean);
 
-  const navigation = `<nav class="portfolio-course-nav" aria-label="Portfolio and coursework navigation">${links.join("")}</nav>`;
+  const navigation = `<nav class="portfolio-course-nav" aria-label="Portfolio and coursework navigation"><details><summary>Coursework menu</summary><div class="portfolio-course-nav-links">${links.join("")}</div></details></nav>`;
   let content = readFileSync(file, "utf8");
 
   if (!content.includes(stylesheet)) {
     content = content.replace(/<\/head>/i, `  ${stylesheet}\n</head>`);
   }
 
-  if (!content.includes(marker)) {
+  if (content.includes(marker)) {
+    content = content.replace(
+      /<nav class="portfolio-course-nav"[^>]*>.*?<\/nav>/is,
+      navigation,
+    );
+  } else {
     content = content.replace(/(<body\b[^>]*>)/i, `$1\n  ${navigation}`);
   }
 

@@ -92,7 +92,13 @@ nav a:hover {
 
 /* THEME TOGGLE SWITCH */
 .theme-toggle {
-    margin-top: 1rem;
+    width: fit-content;
+    margin: 1rem auto;
+    padding: 0.65rem 1rem;
+    border: 1px solid var(--accent);
+    border-radius: 999px;
+    background: #f8fafc;
+    box-shadow: 0 8px 22px rgba(15, 23, 42, 0.16);
     display: flex;
     justify-content: center;
     align-items: center;

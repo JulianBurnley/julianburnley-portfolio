@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Lesson 9 Project | Reflections</title>
+
+  <meta name="author" content="Julian Burnley">
+
+  <meta
+    name="description"
+    content="Lesson 9 project reflections about WAI-ARIA, accessible web components, keyboard navigation, and accessibility testing."
+  >
+
+  <meta
+    name="keywords"
+    content="WAI-ARIA, ARIA roles, ARIA states, ARIA properties, web accessibility, keyboard accessibility, accessibility testing"
+  >
+
+  <link rel="stylesheet" href="css/lsn9-styles.css">
+</head>
+
+<body>
+
+  <!-- Skip Navigation -->
+  <a href="#main-content" id="skip-nav">
+    Skip to Main Content
+  </a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <h1>Lesson 9 Project</h1>
+
+    <button
+      type="button"
+      id="toggleTheme"
+      class="theme-button"
+      aria-pressed="false"
+    >
+      Dark Mode
+    </button>
+  </header>
+
+  <!-- Primary Navigation -->
+  <nav class="main-navigation" aria-label="Primary navigation">
+    <ul>
+      <li>
+        <a href="index.html" aria-current="page">
+          Home
+        </a>
+      </li>
+
+      <li>
+        <a href="aria-cheatsheet.html">
+          Cheatsheet
+        </a>
+      </li>
+
+      <li>
+        <a href="../12988_lesson-9-practice-activities-JUL2216252/index.html">
+          Practice Activities
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main-content" class="reflection-page" tabindex="-1">
+
+    <!-- Reflections Section -->
+    <section class="reflection-section">
+      <h2>My Reflections</h2>
+
+      <p>
+        In this lesson, I learned more about using WAI-ARIA to improve the
+        accessibility of websites and interactive components. Three concepts
+        that were new to me were ARIA roles, ARIA states and properties, and
+        managed components such as accessible tab menus.
+      </p>
+
+      <p>
+        ARIA roles identify the purpose of an element for assistive
+        technologies. For example, roles such as
+        <code>tablist</code>, <code>tab</code>, and
+        <code>tabpanel</code> help screen-reader users understand how a tab
+        component is organized. I could use these roles when creating custom
+        navigation menus, tab interfaces, or other interactive components.
+      </p>
+
+      <p>
+        I also learned that ARIA states and properties provide additional
+        information about an element. Attributes such as
+        <code>aria-selected</code>, <code>aria-controls</code>, and
+        <code>aria-labelledby</code> can communicate which tab is selected
+        and which content panel belongs to it.
+      </p>
+
+      <p>
+        These attributes could help make future projects easier to navigate
+        for people who use screen readers, keyboards, or other assistive
+        technologies.
+      </p>
+
+      <p>
+        Another new concept was using JavaScript to update accessibility
+        attributes when a user interacts with a component. When a tab is
+        selected, JavaScript can hide the previous content, display the new
+        content, and update the value of
+        <code>aria-selected</code>.
+      </p>
+
+      <p>
+        I could use this approach when building interactive menus,
+        accordions, modal windows, and other dynamic website features.
+      </p>
+    </section>
+
+    <!-- Next Steps Section -->
+    <section class="next-steps-section">
+      <h2>My Next Steps</h2>
+
+      <p>
+        I would like to learn more about keyboard accessibility and
+        accessibility testing. Adding ARIA attributes is helpful, but an
+        interactive component must also work correctly when someone uses the
+        keyboard instead of a mouse.
+      </p>
+
+      <p>
+        I want to better understand focus management, the correct use of the
+        Tab key, and how arrow keys should work within components such as tab
+        menus.
+      </p>
+
+      <p>
+        Accessibility testing tools, browser extensions, and online testing
+        applications can make it easier to identify problems. However, there
+        are many different tools, and automated testing cannot identify every
+        accessibility issue.
+      </p>
+
+      <p>
+        I need more practice using these tools and combining automated testing
+        with keyboard and screen-reader testing.
+      </p>
+
+      <p>
+        To learn more, I plan to review WAI-ARIA design patterns, practice
+        creating additional accessible components, test pages using only the
+        keyboard, and use accessibility tools available in browser developer
+        tools and accessibility extensions.
+      </p>
+
+      <p>
+        Repeating these steps on future projects will help me become more
+        comfortable designing websites that are usable by a wider range of
+        people.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p><strong>Developed by</strong> Julian Burnley</p>
+    <p><strong>Email:</strong> <a href="mailto:julian@julianburnley.com">julian@julianburnley.com</a></p>
+    <p><strong>Date:</strong> <time datetime="2026-07-26">July 26, 2026</time></p>
+  </footer>
+
+  <!-- Dark Mode -->
+  <script>
+    const themeButton = document.getElementById("toggleTheme");
+    const savedTheme = localStorage.getItem("lesson9Theme");
+
+    /**
+     * Updates the text and ARIA state of the theme button.
+     */
+    function updateThemeButton() {
+      const darkModeActive =
+        document.body.classList.contains("dark-mode");
+
+      themeButton.textContent = darkModeActive
+        ? "Light Mode"
+        : "Dark Mode";
+
+      themeButton.setAttribute(
+        "aria-pressed",
+        darkModeActive.toString()
+      );
+    }
+
+    /*
+      Apply the saved theme when the page loads.
+    */
+    if (savedTheme === "dark") {
+      document.body.classList.add("dark-mode");
+    }
+
+    updateThemeButton();
+
+    /*
+      Switch between light mode and dark mode.
+    */
+    themeButton.addEventListener("click", function () {
+      document.body.classList.toggle("dark-mode");
+
+      const darkModeActive =
+        document.body.classList.contains("dark-mode");
+
+      localStorage.setItem(
+        "lesson9Theme",
+        darkModeActive ? "dark" : "light"
+      );
+
+      updateThemeButton();
+    });
+  </script>
+
+</body>
+</html>

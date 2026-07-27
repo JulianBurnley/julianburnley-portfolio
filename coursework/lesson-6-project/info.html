@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Julian Burnley">
+    <meta name="description" content="More Information Form – Lesson 6 Project">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Lesson 6 Project – More Information</title>
+
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body id="info">
+
+<!-- UNIVERSAL HEADER -->
+<header class="site-header">
+    <div class="header-top">
+        <h1>Lesson 6 Project</h1>
+        <button id="darkToggle">Dark Mode</button>
+    </div>
+
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="css-user-interface.html">CSS User Interface</a></li>
+            <li><a href="css-box-model.html">CSS Box Model</a></li>
+            <li><a href="html-cheatsheet.html">HTML Tags & Attributes</a></li>
+            <li><a href="media-query.html">Media Feature Query</a></li>
+            <li><a href="info.html">Info</a></li>
+            <li><a href="../12988_lesson-6-practice-activities-JUL2216252/index.html">Lesson 6 Practice Activities</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <h2>More Information</h2>
+
+    <form id="infoForm" class="group-grid">
+
+        <!-- CONTACT FORM -->
+        <section class="group">
+            <h3>Contact Information</h3>
+
+            <div class="rule-card">
+                    <label for="firstandlastname"><strong>First and Last Name:</strong></label>
+                    <input class="contactinfo" type="text" id="firstandlastname" name="full-name" required>
+
+                    <label for="emailaddress"><strong>Email Address:</strong></label>
+                    <input class="contactinfo" type="email" id="emailaddress" name="email" required>
+
+                    <label for="contactphone"><strong>Contact Phone:</strong></label>
+                    <input class="contactinfo" type="tel" id="contactphone" name="phone">
+
+            </div>
+        </section>
+
+        <!-- MISSING INFO -->
+        <section class="group">
+            <h3>Missing Information</h3>
+
+            <div class="rule-card">
+                <label for="details"><strong>Please Enter Any Missing Information:</strong></label>
+                <textarea rows="6" cols="60" id="details" name="details"></textarea>
+
+                <div class="form-buttons">
+                    <button type="submit">Submit Request</button>
+                    <button type="reset" onclick="hideThankYou()">Reset Request</button>
+                </div>
+
+                <p id="resetmessage" style="visibility: hidden;">Thank you for submitting the form!</p>
+            </div>
+        </section>
+
+    </form>
+
+</main>
+
+<footer class="cssfooter">
+    <p><strong>Developed by</strong> Julian Burnley</p>
+    <p><strong>Email:</strong> <a href="mailto:julian@julianburnley.com">julian@julianburnley.com</a></p>
+    <p><strong>Date:</strong> <time datetime="2026-07-26">July 26, 2026</time></p>
+  </footer>
+
+<button id="returnTop">↑ Top</button>
+
+<script>
+    // Dark Mode
+    document.getElementById("darkToggle").onclick = function () {
+        document.body.classList.toggle("dark-mode");
+    };
+
+    // Return to Top Button
+    const topBtn = document.getElementById("returnTop");
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 200) {
+            topBtn.classList.add("show");
+        } else {
+            topBtn.classList.remove("show");
+        }
+    });
+
+    topBtn.onclick = () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+
+    // Form Messages
+    document.getElementById("infoForm").addEventListener("submit", (event) => {
+        event.preventDefault();
+        unhideThankYou();
+    });
+
+    function unhideThankYou() {
+        document.getElementById("resetmessage").style.visibility = "visible";
+    }
+
+    function hideThankYou() {
+        document.getElementById("resetmessage").style.visibility = "hidden";
+    }
+</script>
+
+</body>
+</html>

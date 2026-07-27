@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Julian Burnley">
+    <meta name="description" content="Lesson 10 Project ">
+    <meta name="keywords" content="Final Project">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <main>
+   <header>
+    <h1>Final Exam Project Part 2</h1>
+   </header>
+   <div id="main">
+   <article>
+    <h2>SELECTORS CHEATSHEET</h2>
+
+    <div class="container">
+      <div class="html">
+      
+
+<h3>Selector Types</h3>
+      <div class="card">
+        <h3>selector type: element</h3>
+        <h4>examples:</h4>
+       <p> h2 {font-size 16px;}</p>
+       <p>p {
+        text-align: center;
+        color: red;
+      }</p>
+  </div>
+  
+  
+    
+  
+  <div class="card">
+    <h3>selector type: class</h3>
+    <h4>examples:</h4>
+    <p>.center {text-align: left;},</p>
+    <p> .front {color: black;} </p>
+  </div>
+  
+  
+    
+   <div class="card">
+    <h3>selector type: ID</h3>
+    <h4>examples:</h4>
+          <p>#name {color:green;}</p>
+         <p>#h1 {color: blue;}</p>
+  </div>
+     
+  
+     
+   <div class="card">
+    <h3>selector type: universal</h3>
+    <h4>examples:</h4>
+      <p>* {text-align: left;} </p>
+      <p>* {
+        text-align: center;
+        color: blue;
+      }</p>
+  </div>
+        
+  
+       
+   <div class="card">
+    <h3>selector type: Multiple</h3>
+    <h4>examples:</h4>
+     <p>h1 h2 h3 {text-align: center;}, </p>
+     <p>p span {color: purple;} </p>
+  </div>
+        
+  
+          
+   <div class="card">
+    <h3>selector type: Pseudo-class</h3>
+    <h4>examples:</h4>
+    <p>button:hover {color: red;}</p>
+    <p> tr:only-child {align: center;} </p>             
+  </div>
+            
+  
+            
+  <div class="card">
+    <h3>selector type: Pseudo-element</h3>
+    <h4>examples:</h4>
+  <p>:first-child::first-line {font-weight: 400;}
+  <p>p::first-line {text-transform: upper-case;}</p>
+  </div>
+  
+              
+  <div class="card">
+    <h3>selector type: Attribute</h3>
+    <h4>examples:</h4>
+    <p>h1[rel="external"] { color: red; }</p>
+    <p> input[type="text"] { padding: 3px; }</p>
+  </div>
+  
+   
+  <div class="card">
+    <h3>selector type: Combinator</h3>
+    <h4>examples:</h4>
+  <p>h1[rel="external"] { color: red; }</p>
+  <p> ul > li {border-top: 5px solid red;}</p>
+  </div>
+    
+
+</div>
+<p><a href="https://www.w3.org/TR/2018/REC-selectors-3-20181106/">W3C Selectors Tutorial</a></p>
+<div class="html">
+  
+
+   <h3>Pseudo-Element Selectors</h3>
+
+  <div class="card">
+    <h3>Pseudo-Element Selectors</h3>
+    <h4>examples:</h4>
+  <p>::first-letter</p>
+  <p>Adds a special style to the first letter of a text.</p>
+  
+  </div>
+  
+  
+     
+  <div class="card">
+    <h3>Pseudo-Element Selectors</h3>
+    <h4>examples:</h4>
+  <p>::before</p>
+  <p> Insert some content before. </p>
+  
+  </div>
+  
+        
+     
+  <div class="card">
+    <h3>Pseudo-Element Selectors</h3>
+    <h4>examples:</h4>
+  <p>:::after</p>
+  <p>Insert content after an element.</p>
+  
+    </div>
+  
+        
+  <div class="card">
+    <h3>Pseudo-Element Selectors</h3>
+    <h4>examples:</h4>
+  <p>::marker</p>
+  <p>Insert content after an element.</p>
+  
+  </div> 
+  
+    
+  <div class="card">
+    <h3>Pseudo-Element Selectors</h3>
+    <h4>examples:</h4>
+  <p>::selection</p>
+  <p>Matches portion of element selected. </p>
+  
+  </div>
+  
+            
+  <div class="card">
+    <h3>Pseudo-Element Selectors</h3>
+    <h4>examples:</h4>
+  <p>::first-line</p>
+  <p>Selects the first line of each element. </p>
+  
+              
+  </div> 
+  
+           
+  <div class="card">
+    <h3>Pseudo-Element Selectors</h3>
+    <h4>examples:</h4>
+  <p>::grammar-error</p>
+  <p>Matches grammar error as flagged by browser.</p>
+  
+                  
+  </div> 
+  
+             
+  <div class="card">
+    <h3>Pseudo-Element Selectors</h3>
+    <h4>examples:</h4>
+  <p>::spelling-error</p>
+  <p>Matches spelling error as flagged by browser.</p>
+  
+                   
+  </div> 
+  
+
+</div>
+<p><a href="https://www.w3.org/TR/2018/REC-selectors-3-20181106/">W3C Selectors Tutorial</a></p>
+<div class="html">
+  
+  <h3>Pseudo-Class Selectors</h3>
+  <div class="card">
+    <h3>Pseudo-Class Selectors</h3>
+    <h4>examples:</h4>
+  <p>:dir</p>
+  <p>Selects an element based on its directionality.</p>
+  
+  </div> 
+  
+      
+  <div class="card">
+    <h3>Pseudo-Class Selectors</h3>
+    <h4>examples:</h4>
+  <p>::lang/p>
+  <p>>Select an element based on its content language.</p>
+  
+  </div> 
+   
+  <div class="card">
+    <h3>Pseudo-Class Selectors</h3>
+    <h4>examples:</h4>
+  <p>:any-link</p>
+  <p>Matches either :link or :visited</p>
+  
+  </div> 
+  
+       
+  <div class="card">
+    <h3>Pseudo-Class Selectors</h3>
+    <h4>examples:</h4>
+  <p>:link</p>
+  <p>Matches links that have not yet been visited</p>
+  
+  </div> 
+      
+          
+  <div class="card">
+    <h3>Pseudo-Class Selectors</h3>
+    <h4>examples:</h4>
+  <p>:local-link</p>
+  <p>Matches the target URL.</p>
+  
+  </div> 
+  
+              
+  <div class="card">
+    <h3>Pseudo-Class Selectors</h3>
+    <h4>examples:</h4>
+  <p>:target</p>
+  <p>of Matches the document URL.</p>
+  
+  </div> 
+  
+               
+  <div class="card">
+    <h3>Pseudo-Class Selectors</h3>
+    <h4>examples:</h4>
+  <p>:target-within</p>
+  <p>Matches elements which are the target of the document URL.</p>
+  
+  </div> 
+  
+                    
+               
+  <div class="card">
+    <h3>Pseudo-Class Selectors</h3>
+    <h4>examples:</h4>
+  <p>:scope</p>
+  <p>Represents elements that are a reference point for selectors .</p>
+  
+  </div> 
+  
+                
+  <div class="card">
+    <h3>Pseudo-Class Selectors</h3>
+    <h4>examples:</h4>
+  <p>:hover</p>
+  <p>Matches when a user designates an item with a pointing device.</p>
+  </div> 
+    
+                      
+  <div class="card">
+    <h3>Pseudo-Class Selectors</h3>
+    <h4>examples:</h4>
+  <p>::active</p>
+  <p>Matches when an item is being activated by the user.</p>
+  
+                          
+  </div> 
+  
+                     
+  <div class="card">
+    <h3>Pseudo-Class Selectors</h3>
+    <h4>examples:</h4>
+  <p>:focus</p>
+  <p>Matches when an element has focus.</p>
+  
+  </div> 
+  
+                        
+  <div class="card">
+    <h3>Pseudo-Class Selectors</h3>
+    <h4>examples:</h4>
+  <p>:focus-visible</p>
+  <p>Matches when the element should be visibly focused.</p>
+  
+                            
+  </div> 
+  
+                          
+  <div class="card">
+    <h3>Pseudo-Class Selectors</h3>
+    <h4>examples:</h4>
+  <p>:focus-within</p>
+  <p>Matches an element to which :focus applies.</p>
+  
+                                
+  </div> 
+  
+                            
+  <div class="card">
+    <h3>Pseudo-Class Selectors</h3>
+    <h4>examples:</h4>
+  <p>:current</p>
+  <p>Represents the element or ancestor of the element that is being displayed.</p>
+  
+  </div> 
+  
+                              
+  <div class="card">
+    <h3>Pseudo-Class Selectors</h3>
+    <h4>examples:</h4>
+  <p>::past</p>
+  <p>Represents an element that occurs before the :current element.</p>
+  
+                                    
+  </div> 
+  
+                           
+  <div class="card">
+    <h3>Pseudo-Class Selectors</h3>
+    <h4>examples:</h4>
+  <p>:future</p>
+  <p>Represents an element that occurs after the :current element</p>
+  
+                                  
+  </div> 
+                                
+                                
+    <div class="card">
+      <h3>Pseudo-Class Selectors</h3>
+      <h4>examples:</h4>
+  <p>:playing</p>
+  <p>Represents a media element when that element is playing.</p>
+  
+                                      
+  </div> 
+  
+  
+                                    
+  <div class="card">
+    <h3>Pseudo-Class Selectors</h3>
+    <h4>examples:</h4>
+  <p>:paused</p>
+  <p>Represents a media when that element is paused.</p>
+  
+                                        
+  </div> 
+  
+                                      
+                                   
+  <div class="card">
+    <h3>Pseudo-Class Selectors</h3>
+  <p>Pseudo-Class Selectors</p>
+  <p>:autofill</p>
+  <p>when an input has been auto-filled .</p>
+  
+                                        
+  </div> 
+  
+                                                   
+                                    
+  <div class="card">
+    <h3>Pseudo-Class Selectors</h3>
+    <h4>examples:</h4>
+  <p>:enabled</p>
+  <p>Represents an element that is in an enabled state.</p>
+                                      
+                                      
+  </div> 
+ 
+</div>
+<p><a href="https://www.w3.org/TR/2018/REC-selectors-3-20181106/">W3C Selectors Tutorial</a></p>
+  <div class="html">
+  <h3>Combinator Selectors</h3>
+  <div class="card">
+    <h3>Combinator Selectors</h3>
+    <h4>examples:</h4>
+  <p>Whitespace</p>
+  <p>Indicates that the second selector must be a descendant of the first selector</p>
+  
+  
+  </div> 
+    
+    
+  <div class="card">
+    <h3>Combinator Selectors</h3>
+    <h4>examples:</h4>
+  <p>Asterisk [*]</p>
+  <p>Represents a Grandchild or later. </p>
+  
+  </div> 
+  
+   
+  <div class="card">
+    <h3>Combinator Selectors</h3>
+    <h4>examples:</h4>
+  <p>Greater-than [>]</p>
+  <p>When the second selector must be a child of the first selector.</p>
+  
+  </div> 
+    
+   
+  <div class="card">
+    <h3>Combinator Selectors</h3>
+    <h4>examples:</h4>
+  <p>Plus [+]</p>
+  <p>Represents Next-sibling</p>
+  
+  </div> 
+  
+    
+  <div class="card">
+    <h3>Combinator Selectors</h3>
+    <h4>examples:</h4>
+  <p>Tilde [~]</p>
+  <p>Represents the Subsequent-sibling; </p>
+  </div> 
+  
+    
+  
+</div>
+
+
+<p><a href="https://www.w3.org/TR/2018/REC-selectors-3-20181106/">W3C Selectors Tutorial</a></p>
+<div class="html">
+    <h3>Attribute Selectors</h3>
+    
+  <div class="card">
+    <h3>Attribute Selectors</h3>
+    <h4>examples:</h4>
+  <p>h2[title]</p>
+  <p>Attribute Only Match.</p>
+  
+  </div> 
+  
+  
+  <div class="card">
+    <h3>Attribute Selectors</h3>
+    <h4>examples:</h4>
+  <p>[att=val]</p>
+  <p>Targets an element where the attribute value is exact.</p>
+  </div> 
+  
+  
+  <div class="card">
+    <h3>Attribute Selectors</h3>
+    <h4>examples:</h4>
+  <p>[att|=val]</p>
+  <p>Matches attribute value is exactly "val" or starts with "val". </p>
+  </div> 
+  
+  
+  <div class="card">
+    <h3>Attribute Selectors</h3>
+    <h4>examples:</h4>
+  <p>[att^=val]</p>
+  <p>Start With Match.  Requires caret symbol. </p>
+  </div> 
+  
+  
+  <div class="card">
+    <h3>Attribute Selectors</h3>
+    <h4>examples:</h4>
+  <p>[att$=val]</p>
+  <p>Ends With Match. </p>
+  </div> 
+  
+  <div class="card">
+    <h3>Attribute Selectors</h3>
+    <h4>examples:</h4>
+    <p>[att~=val]</p>
+    <p>List Match.</p>
+  </div>
+  
+  <div class="card">
+    <h3>Attribute Selectors</h3>
+    <h4>examples:</h4>
+  <p>[att*=val]</p>
+  <p>Contains Match. </p>
+    </div>
+  </div>
+  <p><a href="https://www.w3.org/TR/2018/REC-selectors-3-20181106/">W3C Selectors Tutorial</a></p>
+</div>
+  </article>
+
+
+
+
+
+   <nav role="navigation">
+     <ul>
+       <li><a href="index.html">Home</a></li>
+       <li><a href="html.html">Cheatsheets</a>
+         <ul class="dropdown">
+           <li><a href="html.html">HTML</a></li>
+           <li><a href="selectors.html">Selectors</a></li>
+           <li><a href="layout.html">Layout</a></li>
+           <li><a href="ui.html">UI</a></li>
+           <li><a href="at-rules.html">At Rules</a></li>
+           <li><a href="effects.html">Effects</a></li>
+           <li><a href="aria.html">ARIA</a></li>
+         </ul>
+       </li>
+       <li><a href="menus.html">Web Patterns & Components</a>
+         <ul class="dropdown">
+           <li><a href="menus.html">Menus</a></li>
+           <li><a href="widgets.html">Widgets</a></li>
+           <li><a href="media.html">Media</a></li>
+           <li><a href="cards.html">Cards</a></li>
+         </ul>
+       </li>
+       <li><a href="about.html">About</a></li>
+     </ul>
+   </nav>
+   <aside></aside>
+   </div>
+   </main>
+   <footer>
+    <p><strong>Developed by</strong> Julian Burnley</p>
+    <p><strong>Email:</strong> <a href="mailto:julian@julianburnley.com">julian@julianburnley.com</a></p>
+    <p><strong>Date:</strong> <time datetime="2026-07-26">July 26, 2026</time></p>
+  </footer>
+       
+         <script src="js/main.js"></script>
+     </body>
+   </html>

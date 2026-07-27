@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Patterns | Web Design Reference Library</title>
+  <meta name="author" content="Julian Burnley">
+  <meta name="description" content="Accessible examples of horizontal, vertical, breadcrumb, mobile, tab, and submenu navigation patterns.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/menus/styles-menu.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header>
+    <p class="eyebrow">Patterns and components</p>
+    <h1>Menu Patterns</h1>
+    <nav aria-label="Primary navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="html.html">Cheatsheets</a></li>
+        <li><a href="menus.html" aria-current="page">Menus</a></li>
+        <li><a href="widgets.html">Widgets</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="cards.html">Cards</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <section>
+      <h2>Reusable Navigation Examples</h2>
+      <p>Each pattern demonstrates a different way to organize destinations. Real projects should select the simplest pattern that fits the content and remains usable with a keyboard and screen reader.</p>
+    </section>
+
+    <section class="menu-examples">
+      <article>
+        <h2>Horizontal Menu</h2>
+        <nav aria-label="Horizontal menu example">
+          <ul class="demo-horizontal-menu">
+            <li><a href="#horizontal-home">Home</a></li>
+            <li><a href="#horizontal-work">Work</a></li>
+            <li><a href="#horizontal-contact">Contact</a></li>
+          </ul>
+        </nav>
+      </article>
+
+      <article>
+        <h2>Vertical Menu</h2>
+        <nav class="vertical-menu" aria-label="Vertical menu example">
+          <a href="#vertical-overview">Overview</a>
+          <a href="#vertical-services">Services</a>
+          <a href="#vertical-projects">Projects</a>
+          <a href="#vertical-contact">Contact</a>
+        </nav>
+      </article>
+
+      <article>
+        <h2>Breadcrumb</h2>
+        <nav aria-label="Breadcrumb">
+          <ol class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menus.html">Components</a></li>
+            <li aria-current="page">Menus</li>
+          </ol>
+        </nav>
+      </article>
+
+      <article>
+        <h2>Tab-Style Menu</h2>
+        <div class="tab-list" role="tablist" aria-label="Portfolio sections">
+          <button type="button" role="tab" aria-selected="true">Overview</button>
+          <button type="button" role="tab" aria-selected="false">Projects</button>
+          <button type="button" role="tab" aria-selected="false">Contact</button>
+        </div>
+      </article>
+
+      <article>
+        <h2>Disclosure Submenu</h2>
+        <nav aria-label="Submenu example">
+          <ul class="demo-submenu">
+            <li><a href="#submenu-home">Home</a></li>
+            <li>
+              <details>
+                <summary>Services</summary>
+                <ul>
+                  <li><a href="#web-design">Web Design</a></li>
+                  <li><a href="#development">Development</a></li>
+                  <li><a href="#support">Technical Support</a></li>
+                </ul>
+              </details>
+            </li>
+          </ul>
+        </nav>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>Developed by</strong><span>Julian Burnley</span></p>
+    <p><strong>Email:</strong><a href="mailto:julian@julianburnley.com">julian@julianburnley.com</a></p>
+    <p><strong>Date:</strong><time datetime="2026-07-26">July 26, 2026</time></p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

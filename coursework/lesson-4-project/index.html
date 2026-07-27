@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Julian Burnley">
+    <meta name="description" content="Lesson 4 Project Home">
+    <title>Lesson 4 Project</title>
+
+    <!-- External stylesheet -->
+    <link href="../12988_lesson-4-project-JUL2216252/css/style.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&family=IBM+Plex+Sans+Arabic:wght@100&family=Open+Sans:wght@300&family=PT+Sans&family=Red+Hat+Mono:wght@300&family=Roboto+Mono:wght@100&display=swap');
+    </style>
+</head>
+
+<body>
+
+<!-- Dark Mode Toggle -->
+<div class="theme-toggle">
+    <label class="switch">
+        <input type="checkbox" id="theme-checkbox">
+        <span class="slider"></span>
+    </label>
+    <span class="toggle-text">Dark Mode</span>
+</div>
+
+<!-- Page Wrapper -->
+<div class="page">
+
+<header>
+    <h1>Lesson 4 Project</h1>
+
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./grid-cheatsheet.html">Grid Cheatsheet</a></li>
+            <li><a href="../12988_lesson-4-practice-activities-JUL2216252/index.html">Practice Activities</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <h2>Welcome</h2>
+    <p>
+        This project demonstrates responsive CSS Grid layouts, modern UI styling,
+        and a fully functional dark mode toggle using CSS variables. Use the navigation
+        above to explore the Grid Cheatsheet and practice activities.
+    </p>
+
+    <h2>About This Project</h2>
+    <p>
+        The goal of this lesson is to understand CSS Grid terminology, properties,
+        and layout techniques. The cheatsheet provides a structured reference for
+        grid concepts, while the practice activities allow hands-on experimentation.
+    </p>
+
+</main>
+
+<footer>
+    <p><strong>Developed by</strong> Julian Burnley</p>
+    <p><strong>Email:</strong> <a href="mailto:julian@julianburnley.com">julian@julianburnley.com</a></p>
+    <p><strong>Date:</strong> <time datetime="2026-07-26">July 26, 2026</time></p>
+  </footer>
+
+</div> <!-- END .page -->
+
+<!-- Dark Mode Script -->
+<script>
+  const checkbox = document.getElementById('theme-checkbox');
+  const page = document.querySelector('.page');
+
+  checkbox.addEventListener('change', () => {
+    page.classList.toggle('dark', checkbox.checked);
+  });
+</script>
+
+</body>
+</html>

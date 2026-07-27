@@ -1,0 +1,349 @@
+/*
+ Name : Julian Burnley
+Course: CIS233DA
+Section: 12988 
+Instructor : Brian Thurber
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400;700&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto+Slab:wght@200;400;700&display=swap');
+
+:root {
+  --main-color-100: hsla(32, 13%, 75%, 0.866);
+  --main-color-200: hsl(60, 5%, 55%);
+  --main-color-400: hsl(8, 86%, 46%);
+  --main-color-600: hsl(145, 85%, 5%);
+  --main-color-800: hsl(348, 12%, 8%);
+  --accent-color-200: hsl(73, 84%, 64%);
+  --accent-color-600: hsl(117, 33%, 89%);
+  --accent-color-800: hsl(300, 15%, 22%);
+  --shadow-color-800: rgba(11, 2, 4, 0.7);
+  --font-body: 'Open Sans', sans-serif;
+  --font-headings: 'Roboto Slab', serif;
+  --font-code: 'Noto Sans Mono', monospace;
+}
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 2em;
+  min-height: calc(100vh - 4em);
+  background-image: linear-gradient(var(--main-color-100), var(--main-color-200));
+  color: var(--main-color-800);
+  font-family: var(--font-body);
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* 🌙 Dark Mode */
+body.dark-mode {
+  --main-color-100: hsl(350, 10%, 10%);
+  --main-color-200: hsl(350, 10%, 15%);
+  --main-color-400: hsl(350, 10%, 25%);
+  --main-color-600: hsl(350, 10%, 40%);
+  --main-color-800: hsl(350, 10%, 90%);
+  --accent-color-200: hsl(170, 25%, 25%);
+  --accent-color-600: hsl(170, 35%, 55%);
+  --accent-color-800: hsl(170, 50%, 80%);
+  --shadow-color-800: rgba(255, 255, 255, 0.2);
+
+  background-color: var(--main-color-100);
+  color: var(--main-color-800);
+}
+
+header {
+  background-image: linear-gradient(var(--main-color-100), var(--main-color-200));
+  font-family: var(--font-headings);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: left;
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  margin: 1rem 0 0.5rem;
+}
+
+h2, h3, h4, h5, h6 {
+  margin: 1rem 0 0.5rem;
+  font-family: var(--font-headings);
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Student info */
+#student-info p {
+  display: inline-flex;
+  padding: 0.5rem 2rem 1rem 0;
+  font-weight: 700;
+  font-size: larger;
+}
+
+p {
+  padding: 1rem 0;
+}
+
+/* Navigation */
+#site-navigation nav {
+  background-color: var(--accent-color-600);
+  margin-bottom: 1.5rem;
+}
+
+#site-navigation ul {
+  list-style: none;
+}
+
+#site-navigation li {
+  padding: 1em;
+  border-top: thin solid;
+  border-bottom: thin solid;
+}
+
+#site-navigation a {
+  text-decoration: none;
+  color: var(--main-color-800);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#site-navigation a:hover,
+#site-navigation a:focus {
+  background-image: linear-gradient(rgb(241, 238, 68), rgb(241, 21, 95));
+  outline: none;
+  padding: 10px;
+}
+
+/* Dark mode toggle button */
+button.gradient,
+#toggleTheme {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(to right, var(--accent-color-200), var(--accent-color-600));
+  font-weight: 700;
+}
+
+body.dark-mode button.gradient,
+body.dark-mode #toggleTheme {
+  background: linear-gradient(to right, var(--accent-color-600), var(--accent-color-200));
+}
+
+/* Tables (cheatsheet) */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  box-shadow: 0px 10px 13px -7px var(--shadow-color-800);
+}
+
+th, td {
+  padding: 6px;
+  border: 1px solid black;
+}
+
+th {
+  background-color: var(--main-color-600);
+  color: var(--accent-color-600);
+  text-transform: uppercase;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: var(--accent-color-200);
+  color: var(--main-color-800);
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--accent-color-800);
+  color: var(--accent-color-600);
+}
+
+body.dark-mode tbody tr:nth-child(odd) {
+  background-color: hsl(170, 20%, 20%);
+  color: hsl(170, 60%, 85%);
+}
+
+body.dark-mode tbody tr:nth-child(even) {
+  background-color: hsl(170, 20%, 30%);
+  color: hsl(170, 60%, 90%);
+}
+
+/* Collapsible sections */
+.collapsible {
+  margin: 2rem 0;
+}
+
+.collapse-toggle {
+  width: 100%;
+  text-align: left;
+  padding: 1rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  background-color: var(--accent-color-600);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.collapse-content {
+  display: none;
+  padding: 1rem 0;
+}
+
+.collapsible.open .collapse-content {
+  display: block;
+}
+
+/* Code font for specific IDs if needed */
+#a, #b, #c, #d, #e, #f {
+  font-family: var(--font-code);
+}
+
+/* Media cards (audio-video) */
+.media-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.media-card {
+  background-color: white;
+  border: thin solid var(--accent-color-800);
+  border-radius: 0.5rem;
+  box-shadow: 0px 10px 13px -7px var(--shadow-color-800);
+  padding: 1rem;
+  width: 300px;
+  text-align: center;
+  transition: background-color 0.4s ease, color 0.4s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.media-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 20px -10px var(--shadow-color-800);
+}
+
+.media-card:nth-child(odd),
+.gradient-demo:nth-child(odd) {
+  background-color: var(--accent-color-200);
+  color: var(--main-color-800);
+}
+
+.media-card:nth-child(even),
+.gradient-demo:nth-child(even) {
+  background-color: var(--accent-color-800);
+  color: var(--accent-color-600);
+}
+
+body.dark-mode .media-card:nth-child(odd),
+body.dark-mode .gradient-demo:nth-child(odd) {
+  background-color: hsl(170, 20%, 20%);
+  color: hsl(170, 60%, 85%);
+}
+
+body.dark-mode .media-card:nth-child(even),
+body.dark-mode .gradient-demo:nth-child(even) {
+  background-color: hsl(170, 20%, 30%);
+  color: hsl(170, 60%, 90%);
+}
+
+/* Gradients page */
+.gradient-section {
+  margin: 2rem 0;
+}
+
+.generator-container {
+  background-color: var(--accent-color-600);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.gradient-demo {
+  width: 100%;
+  height: 150px;
+  border-radius: 0.5rem;
+  box-shadow: 0px 10px 13px -7px var(--shadow-color-800);
+  margin-top: 1rem;
+}
+
+.animated-gradient {
+  background-size: 600% 600%;
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(to right, #ff8a8a, #d10000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 1.5rem auto;
+}
+
+/* Audio/video elements */
+audio, video {
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  gap: 1rem;
+}
+.left { grid-column: 1; }
+.right { grid-column: 2; }
+
+footer {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: var(--main-color-400);
+  color: var(--main-color-100);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+footer p {
+  padding: 0;
+}
+
+footer a {
+  color: inherit;
+}
+
+@media (max-width: 600px) {
+  body {
+    margin: 1rem;
+    min-height: calc(100vh - 2rem);
+  }
+
+  .collapse-content {
+    overflow-x: auto;
+  }
+
+  th,
+  td {
+    min-width: 10rem;
+  }
+
+  footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

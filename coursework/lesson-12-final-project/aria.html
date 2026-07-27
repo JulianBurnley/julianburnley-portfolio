@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+ <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Julian Burnley">
+    <meta name="description" content="Lesson 10 Project ">
+    <meta name="keywords" content="Final Project">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+<body>
+<main>
+ <header>
+<h1>Final Exam Project Part 2</h1>
+</header>
+ <div id="main">
+ <article>
+<h2>ARIA CHEATSHEET</h2>
+<div class="container">
+<div class="html">
+
+  <h2>ARIA and Accessibility</h2>
+  <p>Accessible Rich Internet Applications is a standard created by W3C to ensure that accessibility can be incorporated into various applications and web sites by filling the gaps within the other standards. JavaScript and CSS  are applied to html elements to make the site more responsive to technologies that assist disabled or incapacitated people, including screen readers and keyboard based navigation.
+
+  </p>
+  <div class="tab-menu" role="tablist">
+  <ul class="tab-list" tabindex="-1" role="none" aria-owns="tab1 tab2 tab3">
+  
+  <li><button class="tab" id="tab1" role="tab" aria-controls="content1" aria-selected="true" onclick="changeTab(event, {content1})">Roles</button></li>
+  <li><button class="tab" id="tab2" role="tab" aria-controls="content2" aria-selected="false" onclick="changeTab(event, {content2})">Properties</button></li>
+  <li><button class="tab" id="tab3" role="tab" aria-controls="content3" aria-selected="false" onclick="changeTab(event, {content3})">States</button></li>
+</ul>
+<div>
+<div class="tab-content" tabindex="0" id="content1" role="tabpanel1" aria-labelledby="tab1">
+
+<h3>Roles</h3>
+<p>
+  Roles define the purpose of an element. Roles use main areas of the site or application as landmarks. Some examples are banner roles, navigation and search roles.
+</p>
+
+<dl>
+  <dt>Abstract roles</dt>
+  <dd>Abstract roles are only intended for use by browsers to help organize and streamline a document. <br>&lt;input&gt;: /*The input abstract role is a generic type of widget that allows user. input.*/<br> &lt;section&gt;: /* The section abstract role is superclass role for renderable structural containment components.*/<br>Note: Don't use abstract roles in your sites and applications. They are for use by browsers. They are included for reference only. </dd>
+
+  <dt>Document Structure roles</dt>
+  <dd>Document roles are used to provide a structural description for a section of content.<br>[toolbar]: /*The toolbar role defines the containing element as a collection of commonly used function buttons or controls represented in a compact visual form.*/<br>math: /*The math role indicates that the content represents a mathematical expression.*/</dd>
+
+  <dt>Landmark Roles</dt>
+  <dd>Landmark roles provide a way to identify the organization and structure of a web page.<br>&lt;banner&gt;: /*A banner landmark role overwrites the implicit ARIA role of the container element upon which it is applied.*/<br>&lt;form&gt; /*A form landmark identifies a region of content that contains a collection of items and objects that, as a whole, combine to create a form when no other named landmark is appropriate*/</dd>
+
+  <dt>Live Region Roles</dt>
+  <dd>Live Region roles are used to define elements with content that will be dynamically changed. <br>alert: /*The alert role is for important, and usually time-sensitive, information. The alert is a type of status processed as an atomic live region.*/<br>log: /*The log role is used to identify an element that creates a live region where new information is added in a meaningful order and old information may disappear.*/</dd>
+
+  <dt>Widget Roles</dt>
+  <dd>The various widget role are used to define common interactive patterns.<br>scrollbar: /*A scrollbar is a graphical object that controls the scrolling of content within a viewing area.*/<br>searchbox: /*The searchbox role indicates an element is a type of textbox intended for specifying search criteria.*/</dd>
+
+  <dt>Window Roles</dt>
+  <dd>Window roles define sub-windows to the main document window, within the same window. 
+    <br>alertdialog: /*The alertdialog role is to be used on modal alert dialogs that interrupt a user's workflow to communicate an important message and require a response.*/<br>dialog: /*The dialog role is used to mark up an HTML based application dialog or window that separates content or UI from the rest of the web application or page.*/
+    <br><a id="liro" href="https://www.w3.org/TR/wai-aria-1.1/#roles_categorization">ARIA standards Roles</a></dd>
+</dl>
+</div>
+</div>
+
+<div>
+<div class="tab-content" tabindex="0" id="content2" role="tabpanel2" aria-labelledby="tab2">
+<h3>Properties</h3>
+<p>
+  Properties, along with states provide more details about a relationship between elements. When grouped together as ARIA attributes. Unlike states, properties do not change often, but can be changed if that is required.
+</p>
+
+<dl>
+  <dt>Widget Attributes</dt>
+  <dd>aria-errormessage: /*The aria-errormessage attribute references another element that contains custom error message text.*/<br>aria-haspopup: /*The aria-haspopup properties indicates the availability and type of interactive popup element, such as menu or dialog, that can be triggered by an element. */<br>aria-label: /*The aria-label property defines a string value that labels the current element. */</dd>
+
+  <dt>Live Region Attributes</dt>
+  <dd>assertive: /*Indicates that updates to the region have the highest priority and should be presented the user immediately..*/<br>off (default): /*Indicates that updates to the region should not be presented to the user unless the used is currently focused on that region.*/<br>polite: /*Indicates that updates to the region should be presented at the next graceful opportunity, such as at the end of speaking the current sentence or when the user pauses typing.*/</dd>
+
+  <dt>Drag-and-Drop Attributes</dt>
+  <dd>aria-dropeffect; copy: /*A duplicate of the source object will be dropped into the target.*/<br>execute: /*A function supported by the drop target is executed, using the drag source as an input.*/<br>link: /*A reference or shortcut to the dragged object will be created in the target object.*/</dd>
+
+  <dt>Relationship Attributes</dt>
+  <dd>aria-rowcount: /*The aria-rowcount property Defines the total number of rows in a table, grid, or treegrid. */<br>aria-rowindex: /*The aria-rowindex property defines an element's row index or position with respect to the total number of rows within a table, grid, or treegrid. */<br>aria-setsize: /*The aria-setsize property defines the number of items in the current set of listitems or treeitems. Not required if all elements in the set are present in the DOM. */
+    <br><a id="liw" href="https://www.w3.org/TR/wai-aria-1.1/#state_prop_def">ARIA standards Properties</a></dd>
+</dl>
+
+</div>
+</div>
+
+<div>
+<div class="tab-content" tabindex="0" id="content3" role="tabpanel3" aria-labelledby="tab3">
+<h3>States</h3>
+<p>
+  The state of an object is dynamic because it changes with user interaction and automated processes, including toggle switches and checkboxes. A state of an object can be managed, or controlled by the user and unmanaged, which are defined by the developer.
+</p>
+<dl>
+  <dt>Widget attributes</dt>
+  <dd>aria-checked: /*The aria-checked indicates the current "checked" state of checkboxes, radio buttons, and other widgets.*/</dd>
+
+  <dt>Live region attributes</dt>
+  <dd>aria-busy: /*The aria-busy indicates an element is being modified and that assistive technologies MAY want to wait until the modifications are complete before exposing them to the user.*/</dd>
+
+  <dt>Drag-and-drop attributes</dt>
+  <dd>aria-grabbed: /*The aria-grabbed state indicates an element's "grabbed" state in a drag-and-drop operation.*/
+    <br><a id="lid" href="https://www.w3.org/TR/wai-aria-1.1/#state_prop_def">ARIA standards States</a></dd>
+</dl>
+</div>
+        
+
+</div>
+ </article>
+    <nav role="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="html.html">Cheatsheets</a>
+          <ul class="dropdown">
+            <li><a href="html.html">HTML</a></li>
+            <li><a href="selectors.html">Selectors</a></li>
+            <li><a href="layout.html">Layout</a></li>
+            <li><a href="ui.html">UI</a></li>
+            <li><a href="at-rules.html">At Rules</a></li>
+            <li><a href="effects.html">Effects</a></li>
+            <li><a href="aria.html">ARIA</a></li>
+          </ul>
+        </li>
+        <li><a href="menus.html">Web Patterns & Components</a>
+          <ul class="dropdown">
+            <li><a href="menus.html">Menus</a></li>
+            <li><a href="widgets.html">Widgets</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="cards.html">Cards</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+    <aside></aside>
+    </div>
+    </main>
+    <footer>
+    <p><strong>Developed by</strong> Julian Burnley</p>
+    <p><strong>Email:</strong> <a href="mailto:julian@julianburnley.com">julian@julianburnley.com</a></p>
+    <p><strong>Date:</strong> <time datetime="2026-07-26">July 26, 2026</time></p>
+  </footer>
+        
+          <script src="js/main.js"></script>
+      </body>
+    </html>

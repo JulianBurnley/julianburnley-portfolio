@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ARIA and Accessibility Cheatsheet | Lesson 9 Project</title>
+
+  <meta name="author" content="Julian Burnley">
+  <meta
+    name="description"
+    content="A Lesson 9 cheatsheet covering ARIA roles, properties, states, and accessible tab interfaces."
+  >
+  <meta
+    name="keywords"
+    content="WAI-ARIA, ARIA roles, ARIA properties, ARIA states, accessibility, tab interface"
+  >
+
+  <link rel="stylesheet" href="css/lsn9-styles.css">
+</head>
+
+<body>
+
+  <!-- Skip Navigation -->
+  <a href="#main-content" id="skip-nav">Skip to Main Content</a>
+
+  <!-- Header -->
+  <header>
+    <h1>Lesson 9 Project</h1>
+
+    <button
+      type="button"
+      id="toggleTheme"
+      class="theme-button"
+      aria-pressed="false"
+    >
+      Dark Mode
+    </button>
+  </header>
+
+  <!-- Top Navigation -->
+  <nav class="main-navigation" aria-label="Primary navigation">
+    <ul>
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+
+      <li>
+        <a href="aria-cheatsheet.html" aria-current="page">
+          Cheatsheet
+        </a>
+      </li>
+
+      <li>
+        <a
+          href="../12988_lesson-9-practice-activities-JUL2216252/index.html"
+        >
+          Practice Activities
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main-content" tabindex="-1">
+
+    <section class="introduction">
+      <h2>ARIA and Accessibility</h2>
+
+      <p>
+        Accessible Rich Internet Applications, commonly known as ARIA, is a
+        standard created by the World Wide Web Consortium. ARIA provides
+        additional information that helps assistive technologies understand
+        the purpose, relationships, and current condition of elements on a
+        webpage.
+      </p>
+
+      <p>
+        ARIA is especially useful when HTML, CSS, and JavaScript are used to
+        build custom interactive components. It can improve the experience of
+        people who use screen readers, keyboard navigation, and other
+        assistive technologies.
+      </p>
+
+      <p class="important-note">
+        ARIA should support semantic HTML rather than replace it. Native HTML
+        elements should be used whenever they already provide the needed
+        meaning and behavior.
+      </p>
+    </section>
+
+    <!-- Tab Component -->
+    <section class="tab-component" aria-labelledby="tabs-heading">
+
+      <h2 id="tabs-heading" class="visually-hidden">
+        ARIA concept categories
+      </h2>
+
+      <!-- Tab Buttons -->
+      <div
+        class="tab-list"
+        role="tablist"
+        aria-label="ARIA concept categories"
+      >
+        <button
+          type="button"
+          class="tab"
+          id="tab1"
+          role="tab"
+          aria-selected="true"
+          aria-controls="content1"
+          tabindex="0"
+          onclick="changeTab(event, 'content1')"
+        >
+          Roles
+        </button>
+
+        <button
+          type="button"
+          class="tab"
+          id="tab2"
+          role="tab"
+          aria-selected="false"
+          aria-controls="content2"
+          tabindex="-1"
+          onclick="changeTab(event, 'content2')"
+        >
+          Properties
+        </button>
+
+        <button
+          type="button"
+          class="tab"
+          id="tab3"
+          role="tab"
+          aria-selected="false"
+          aria-controls="content3"
+          tabindex="-1"
+          onclick="changeTab(event, 'content3')"
+        >
+          States
+        </button>
+      </div>
+
+      <!-- Roles Panel -->
+      <div
+        class="tab-content roles-panel"
+        id="content1"
+        role="tabpanel"
+        aria-labelledby="tab1"
+        tabindex="0"
+        style="display: block;"
+      >
+        <h3>Roles</h3>
+
+        <p>
+          ARIA roles define the purpose of an element or region. They help
+          assistive technologies determine whether an element functions as a
+          landmark, widget, alert, dialog, or another type of component.
+        </p>
+
+        <dl>
+          <div class="definition-group">
+            <dt>Abstract Roles</dt>
+            <dd>
+              Abstract roles organize related ARIA roles and define
+              characteristics shared by those roles.
+
+              <ul>
+                <li>
+                  <code>input</code> is a superclass for widgets that accept
+                  user input.
+                </li>
+                <li>
+                  <code>section</code> is a superclass for structural
+                  containment roles.
+                </li>
+              </ul>
+
+              <p class="standards-note">
+                <strong>Important:</strong> ARIA standards state that authors
+                must not use abstract roles directly in web content.
+              </p>
+            </dd>
+          </div>
+
+          <div class="definition-group">
+            <dt>Document Structure Roles</dt>
+            <dd>
+              Document structure roles describe the organization and purpose
+              of content on a page.
+
+              <ul>
+                <li>
+                  <code>article</code> identifies a self-contained section of
+                  content.
+                </li>
+                <li>
+                  <code>heading</code> identifies a heading for a section.
+                </li>
+              </ul>
+            </dd>
+          </div>
+
+          <div class="definition-group">
+            <dt>Landmark Roles</dt>
+            <dd>
+              Landmark roles identify major areas of a webpage.
+
+              <ul>
+                <li>
+                  <code>banner</code> identifies site-oriented introductory
+                  content.
+                </li>
+                <li>
+                  <code>navigation</code> identifies a collection of
+                  navigational links.
+                </li>
+              </ul>
+            </dd>
+          </div>
+
+          <div class="definition-group">
+            <dt>Live Region Roles</dt>
+            <dd>
+              Live-region roles identify areas whose content may change
+              dynamically.
+
+              <ul>
+                <li>
+                  <code>alert</code> identifies important, time-sensitive
+                  information.
+                </li>
+                <li>
+                  <code>status</code> identifies advisory information that
+                  does not require immediate attention.
+                </li>
+              </ul>
+            </dd>
+          </div>
+
+          <div class="definition-group">
+            <dt>Widget Roles</dt>
+            <dd>
+              Widget roles identify interactive controls and components.
+
+              <ul>
+                <li>
+                  <code>tab</code> identifies a selectable item within a tab
+                  list.
+                </li>
+                <li>
+                  <code>searchbox</code> identifies an input used to enter
+                  search criteria.
+                </li>
+              </ul>
+            </dd>
+          </div>
+
+          <div class="definition-group">
+            <dt>Window Roles</dt>
+            <dd>
+              Window roles identify dialogs displayed within the main browser
+              window.
+
+              <ul>
+                <li>
+                  <code>dialog</code> identifies a dialog or application
+                  window.
+                </li>
+                <li>
+                  <code>alertdialog</code> identifies an urgent dialog that
+                  requires a response.
+                </li>
+              </ul>
+            </dd>
+          </div>
+        </dl>
+
+        <a
+          class="standards-link"
+          href="https://www.w3.org/TR/wai-aria-1.2/#roles_categorization"
+        >
+          ARIA Standards: Role Categories
+        </a>
+      </div>
+
+      <!-- Properties Panel -->
+      <div
+        class="tab-content properties-panel"
+        id="content2"
+        role="tabpanel"
+        aria-labelledby="tab2"
+        tabindex="0"
+        style="display: none;"
+      >
+        <h3>Properties</h3>
+
+        <p>
+          ARIA properties provide additional information about an element.
+          They can describe its label, relationships, live-region behavior,
+          or connection to another element. Properties usually change less
+          often than states.
+        </p>
+
+        <dl>
+          <div class="definition-group">
+            <dt>Widget Attributes</dt>
+            <dd>
+              Widget properties describe interactive controls.
+
+              <ul>
+                <li>
+                  <code>aria-errormessage</code> identifies the element that
+                  contains an error message.
+                </li>
+                <li>
+                  <code>aria-haspopup</code> indicates that an element can
+                  open a popup.
+                </li>
+                <li>
+                  <code>aria-label</code> provides an accessible text label.
+                </li>
+              </ul>
+            </dd>
+          </div>
+
+          <div class="definition-group">
+            <dt>Live Region Attributes</dt>
+            <dd>
+              Live-region properties control how dynamic updates are
+              announced.
+
+              <ul>
+                <li>
+                  <code>aria-live="off"</code> means updates are not normally
+                  announced.
+                </li>
+                <li>
+                  <code>aria-live="polite"</code> means updates are announced
+                  when they will not interrupt the user.
+                </li>
+                <li>
+                  <code>aria-live="assertive"</code> means updates are
+                  announced immediately.
+                </li>
+              </ul>
+            </dd>
+          </div>
+
+          <div class="definition-group">
+            <dt>Drag-and-Drop Attributes</dt>
+            <dd>
+              Earlier ARIA standards included attributes used to describe
+              drag-and-drop behavior.
+
+              <ul>
+                <li>
+                  <code>aria-dropeffect="copy"</code> indicated that a copy
+                  would be created.
+                </li>
+                <li>
+                  <code>aria-dropeffect="move"</code> indicated that an item
+                  would be moved.
+                </li>
+                <li>
+                  <code>aria-dropeffect="link"</code> indicated that a
+                  reference would be created.
+                </li>
+              </ul>
+
+              <p class="standards-note">
+                These drag-and-drop attributes are deprecated and should not
+                be used in new projects.
+              </p>
+            </dd>
+          </div>
+
+          <div class="definition-group">
+            <dt>Relationship Attributes</dt>
+            <dd>
+              Relationship properties connect elements to one another.
+
+              <ul>
+                <li>
+                  <code>aria-controls</code> identifies an element controlled
+                  by the current element.
+                </li>
+                <li>
+                  <code>aria-labelledby</code> identifies the element that
+                  labels the current element.
+                </li>
+                <li>
+                  <code>aria-describedby</code> identifies the element that
+                  describes the current element.
+                </li>
+              </ul>
+            </dd>
+          </div>
+        </dl>
+
+        <a
+          class="standards-link"
+          href="https://www.w3.org/TR/wai-aria-1.2/#state_prop_def"
+        >
+          ARIA Standards: Properties
+        </a>
+      </div>
+
+      <!-- States Panel -->
+      <div
+        class="tab-content states-panel"
+        id="content3"
+        role="tabpanel"
+        aria-labelledby="tab3"
+        tabindex="0"
+        style="display: none;"
+      >
+        <h3>States</h3>
+
+        <p>
+          ARIA states describe the current condition of an element. States
+          are dynamic and may change when a user interacts with a component or
+          when an application updates its content.
+        </p>
+
+        <dl>
+          <div class="definition-group">
+            <dt>Widget States</dt>
+            <dd>
+              Widget states describe the current condition of a control.
+
+              <ul>
+                <li>
+                  <code>aria-checked="true"</code> indicates that a checkbox,
+                  radio button, or similar widget is selected.
+                </li>
+              </ul>
+            </dd>
+          </div>
+
+          <div class="definition-group">
+            <dt>Live Region States</dt>
+            <dd>
+              Live-region states indicate whether updated content is complete.
+
+              <ul>
+                <li>
+                  <code>aria-busy="true"</code> indicates that an element is
+                  still being updated.
+                </li>
+              </ul>
+            </dd>
+          </div>
+
+          <div class="definition-group">
+            <dt>Selection States</dt>
+            <dd>
+              Selection states identify the currently selected item.
+
+              <ul>
+                <li>
+                  <code>aria-selected="true"</code> indicates that a tab,
+                  option, or similar item is selected.
+                </li>
+              </ul>
+            </dd>
+          </div>
+
+          <div class="definition-group">
+            <dt>Expansion States</dt>
+            <dd>
+              Expansion states communicate whether controlled content is
+              currently open or closed.
+
+              <ul>
+                <li>
+                  <code>aria-expanded="false"</code> indicates that controlled
+                  content is collapsed.
+                </li>
+              </ul>
+            </dd>
+          </div>
+        </dl>
+
+        <a
+          class="standards-link"
+          href="https://www.w3.org/TR/wai-aria-1.2/#state_prop_def"
+        >
+          ARIA Standards: States
+        </a>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p><strong>Developed by</strong> Julian Burnley</p>
+    <p><strong>Email:</strong> <a href="mailto:julian@julianburnley.com">julian@julianburnley.com</a></p>
+    <p><strong>Date:</strong> <time datetime="2026-07-26">July 26, 2026</time></p>
+  </footer>
+
+  <!-- Tab JavaScript -->
+  <script src="scripts/tab-menu.js"></script>
+
+  <!-- Dark-Mode JavaScript -->
+  <script>
+    const themeButton = document.getElementById("toggleTheme");
+    const savedTheme = localStorage.getItem("lesson9Theme");
+
+    function updateThemeButton() {
+      const darkModeActive =
+        document.body.classList.contains("dark-mode");
+
+      themeButton.textContent = darkModeActive
+        ? "Light Mode"
+        : "Dark Mode";
+
+      themeButton.setAttribute(
+        "aria-pressed",
+        darkModeActive.toString()
+      );
+    }
+
+    if (savedTheme === "dark") {
+      document.body.classList.add("dark-mode");
+    }
+
+    updateThemeButton();
+
+    themeButton.addEventListener("click", function () {
+      document.body.classList.toggle("dark-mode");
+
+      const darkModeActive =
+        document.body.classList.contains("dark-mode");
+
+      localStorage.setItem(
+        "lesson9Theme",
+        darkModeActive ? "dark" : "light"
+      );
+
+      updateThemeButton();
+    });
+  </script>
+
+</body>
+</html>

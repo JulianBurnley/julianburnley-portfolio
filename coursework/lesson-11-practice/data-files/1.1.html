@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1.1: First jQuery Page</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    $(function(){
+      $("#box").click(function(){
+        let red = Math.floor((Math.random() * 255) + 0);
+        let green = Math.floor((Math.random() * 255) + 0);
+        let blue = Math.floor((Math.random() * 255) + 0);
+        let color = "rgb(" + red + "," + green + "," + blue + ")";
+        $("#box").css("background-color", color);
+      });
+    });
+  </script>
+  <style>
+    #box {
+      background-color: white;
+      border: 1px solid black;
+      cursor: pointer;
+      display: block;
+      height: 300px;
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
+  <button id="box" type="button" aria-label="Change to a random background color"></button>
+</body>
+</html>

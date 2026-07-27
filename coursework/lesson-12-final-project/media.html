@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+ <html lang="en">
+   <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <meta name="author" content="Julian Burnley">
+     <meta name="description" content="Lesson 10 Project ">
+     <meta name="keywords" content="Final Project">
+     <title>Final Project</title>
+     <link rel="stylesheet" href="css/styles.css">
+   </head>
+<body>
+<main>
+ <header>
+<h1>Final Exam Project Part 2</h1>
+</header>
+ <div id="main">
+ <article>
+  <h2>MEDIA</h2>
+  <div class="container">
+  <div class="html">
+  <div class="imagecap">
+    <h2>Image With Caption</h2>
+
+    <h2>Graphical Element Examples</h2>
+    <section class="example">
+        <h3>Image with Caption</h3>
+        <figure class="image-caption">
+           
+            <picture>
+                <figcaption>The Cosmic Question Mark - NGC7822</figcaption>
+                
+                <source srcset="ngc7822-673.jpg" media="(min-width = 900px)" type="image/jpg">
+                <source srcset="ngc7822-320.jpg" media="(min-width = 400px)" type="image/jpg">
+                
+                <img src="images/NGC7822-124.jpg" alt="NASA astronomy picture of the day">
+                <p class="image-source"><a href="https://apod.nasa.gov/apod/ap211013.html">Source: NASA APOD</a></p>
+            </picture>
+            
+        </figure>
+        
+    </section>
+    <section class="example">
+        <h3>Code block in Figure</h3>
+        <figure class="code-block">
+            <caption id="caption">HTML Code</caption>
+            <pre>
+                <code>
+     &lt;figure class=&quot;image-caption&quot;&gt;
+     &lt;picture&gt;
+     &lt;figcaption&gt;The Cosmic Question Mark - NGC7822&lt;/figcaption&gt;
+     &lt;p class=&quot;image-source&quot;&gt;&lt;a href=&quot;https://apod.nasa.gov/apod/ap211013.html&quot;&gt;team&lt;/a&gt;Source: NASA APOD&lt;/p&gt;
+     &lt;source srcset=&quot;ngc7822-673.jpg&quot; media=&quot;(min-width = 900px)&quot; type=&quot;image/jpg&quot;&gt;
+     &lt;source srcset=&quot;ngc7822-320.jpg&quot; media=&quot;(min-width = 400px)&quot; type=&quot;image/jpg&quot;&gt;
+                        
+     &lt;img src=&quot;ngc7822-124.jpg&quot; alt=&quot;NASA astronomy picture of the day&quot;&gt;
+     &lt;/picture&gt;
+     &lt;/figure&gt;
+                </code>
+            </pre>
+
+        </figure>
+    </section>
+  </div>
+    
+    <div class="video">
+      <section id="all">
+        <h2>Video Player</h2>
+       
+
+       
+        <p>
+      
+          <button disabled id="buttonEnglish" onclick="loadTranscript('en');">
+            Display English transcript
+          </button>
+      
+          <button disabled id="buttonDeutsch" onclick="loadTranscript('de');">
+            Display Deutsch transcript
+          </button>
+      
+        </p>
+        <video id="myVideo" preload="metadata" controls crossOrigin="anonymous">
+          <source src="https://mainline.i3s.unice.fr/mooc/elephants-dream-medium.mp4" type="video/mp4">
+          <source src="https://mainline.i3s.unice.fr/mooc/elephants-dream-medium.webm" type="video/webm">
+          <track label="English subtitles" kind="subtitles" srclang="en" src="https://mainline.i3s.unice.fr/mooc/elephants-dream-subtitles-en.vtt">
+          <track label="Deutsch subtitles" kind="subtitles" srclang="de" src="https://mainline.i3s.unice.fr/mooc/elephants-dream-subtitles-de.vtt" default>
+          <track label="English chapters" kind="chapters" srclang="en" src="https://mainline.i3s.unice.fr/mooc/elephants-dream-chapters-en.vtt">
+        </video>
+        <div id="transcript"></div>
+      </section>
+    </div>
+    <div class="audio">
+      <h2>Audio Player</h2>
+
+       
+<audio controls>
+  <source src="media/viper.ogg" type="audio/ogg">
+  <source src="media/viper.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+    
+      
+
+
+    </div>
+    <div class="iframe">
+      <h2>Iframe</h2>
+      <h2>HTML Iframes</h2>
+
+
+      <iframe src="about.html" title="Julian Burnley portfolio profile example">
+      </iframe>
+    </div>
+    </div>
+  
+ </article>
+    <nav role="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="html.html">Cheatsheets</a>
+          <ul class="dropdown">
+            <li><a href="html.html">HTML</a></li>
+            <li><a href="selectors.html">Selectors</a></li>
+            <li><a href="layout.html">Layout</a></li>
+            <li><a href="ui.html">UI</a></li>
+            <li><a href="at-rules.html">At Rules</a></li>
+            <li><a href="effects.html">Effects</a></li>
+            <li><a href="aria.html">ARIA</a></li>
+          </ul>
+        </li>
+        <li><a href="menus.html">Web Patterns & Components</a>
+          <ul class="dropdown">
+            <li><a href="menus.html">Menus</a></li>
+            <li><a href="widgets.html">Widgets</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="cards.html">Cards</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+    <aside></aside>
+    </div>
+    </main>
+    <footer>
+    <p><strong>Developed by</strong> Julian Burnley</p>
+    <p><strong>Email:</strong> <a href="mailto:julian@julianburnley.com">julian@julianburnley.com</a></p>
+    <p><strong>Date:</strong> <time datetime="2026-07-26">July 26, 2026</time></p>
+  </footer>
+        
+          <script src="js/main.js"></script>
+      </body>
+    </html>

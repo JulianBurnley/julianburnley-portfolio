@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Metadata -->
+  <title>Lesson 8 Project - Reflection</title>
+  <meta name="description" content="Reflection and next steps for Lesson 8 project.">
+  <meta name="author" content="Julian Burnley">
+  <meta name="keywords" content="Lesson 8, Reflection, Cheatsheet, Practice Activities">
+
+  <!-- Styles -->
+ <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+
+<body>
+
+  <!-- Navigation Section -->
+  <section id="site-navigation">
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">
+            <i class="material-icons">home</i> Home
+          </a>
+        </li>
+
+        <li>
+          <a href="graphical-cheatsheet.html">
+            <i class="material-icons">assignment</i> Cheatsheet
+          </a>
+        </li>
+
+        <li>
+          <a href="../12988_lesson-8-practice-activities-JUL2216252/index.html">
+            <i class="material-icons">code</i> Practice Activities
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </section>
+
+  <!-- Header -->
+  <header>
+    <h1>Lesson 8 Project</h1>
+
+    <button id="toggleTheme" class="gradient">Dark Mode</button>
+
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Reflections Section -->
+    <section>
+      <h2>My Reflections</h2>
+      <p>
+        Learning about how to present information other than text or images provides a different way 
+        to decorate a website. Using gradients, filters, and blending allows for creative visual 
+        effects without relying on uploaded images. Canvas also provides an alternative to create 
+        original content instead of copying. Advanced graphical elements offer new ways to display 
+        high-quality images and descriptions that work across platforms, including lower bandwidth
+        and processing environments.
+      </p>
+    </section>
+
+    <!-- Next Steps Section -->
+    <section>
+      <h2>My Next Steps</h2>
+      <p>
+        Filters, blending, clipping, and gradients were the most interesting to me because they 
+        provide a means of creating original content. I want to explore these concepts more deeply. 
+        Reviewing the lesson again and using the provided resources will help me learn more, and I 
+        plan to experiment with these techniques in future projects.
+      </p>
+    </section>
+
+  </main>
+<script>
+  const toggle = document.getElementById("toggleTheme");
+
+  if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark-mode");
+    toggle.textContent = "Light Mode";
+  }
+
+  toggle.onclick = () => {
+    document.body.classList.toggle("dark-mode");
+    const mode = document.body.classList.contains("dark-mode") ? "dark" : "light";
+    toggle.textContent = mode === "dark" ? "Light Mode" : "Dark Mode";
+    localStorage.setItem("theme", mode);
+  };
+</script>
+
+  <footer>
+    <p><strong>Developed by</strong> Julian Burnley</p>
+    <p><strong>Email:</strong> <a href="mailto:julian@julianburnley.com">julian@julianburnley.com</a></p>
+    <p><strong>Date:</strong> <time datetime="2026-07-26">July 26, 2026</time></p>
+  </footer>
+</body>
+</html>

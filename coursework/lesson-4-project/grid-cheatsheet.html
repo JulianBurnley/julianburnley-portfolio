@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Julian Burnley">
+    <meta name="description" content="CSS Grid Cheatsheet">
+    <title>Grid Cheatsheet</title>
+
+    <!-- External stylesheet -->
+    <link href="../12988_lesson-4-project-JUL2216252/css/style.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&family=IBM+Plex+Sans+Arabic:wght@100&family=Open+Sans:wght@300&family=PT+Sans&family=Red+Hat+Mono:wght@300&family=Roboto+Mono:wght@100&display=swap');
+    </style>
+</head>
+
+<body>
+
+<!-- Toggle OUTSIDE the .page wrapper -->
+<div class="theme-toggle">
+    <label class="switch">
+        <input type="checkbox" id="theme-checkbox">
+        <span class="slider"></span>
+    </label>
+    <span class="toggle-text">Dark Mode</span>
+</div>
+
+<!-- Everything else INSIDE .page -->
+<div class="page">
+
+<header>
+    <h1>Lesson 4 Project</h1>
+
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./grid-cheatsheet.html">Grid Cheatsheet</a></li>
+            <li><a href="../12988_lesson-4-practice-activities-JUL2216252/index.html">Practice Activities</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <h2 class="hterm">Terminology</h2>
+
+    <dl class="Terminology">
+        <dt>Grid Container</dt>
+        <dd>The grid container holds all the contents placed on the grid.</dd>
+
+        <dt>Grid Item</dt>
+        <dd>The contents of the grid container are called the grid items.</dd>
+
+        <dt>Track</dt>
+        <dd>A track runs from one end of the container to the other.</dd>
+
+        <dt>Cell</dt>
+        <dd>Cells are squares or rectangles formed by rows and columns.</dd>
+
+        <dt>Area</dt>
+        <dd>A rectangle or square made of two or more grid cells.</dd>
+
+        <dt>Explicit Grid</dt>
+        <dd>The template columns, rows, and areas form the explicit grid.</dd>
+
+        <dt>Implicit Grid</dt>
+        <dd>Tracks automatically generated when the grid container adds grid lines.</dd>
+
+        <dt>Grid Template</dt>
+        <dd>Defines the grid columns, rows, and named areas.</dd>
+
+        <dt>Gutters</dt>
+        <dd>The spaces between grid tracks.</dd>
+
+        <dt>Grid Naming</dt>
+        <dd>Assigning names to grid lines to define areas.</dd>
+    </dl>
+
+    <h2 class="hprop">Properties</h2>
+
+    <dl class="Proplist">
+        <dt>column-gap</dt>
+        <dd>Sets the gap between columns.</dd>
+
+        <dt>grid-template-rows</dt>
+        <dd>Defines row sizes.</dd>
+
+        <dt>grid-template-columns</dt>
+        <dd>Defines column sizes.</dd>
+
+        <dt>grid-template-areas</dt>
+        <dd>Defines named grid areas.</dd>
+
+        <dt>grid-auto-rows</dt>
+        <dd>Size of automatically created rows.</dd>
+
+        <dt>grid-auto-columns</dt>
+        <dd>Size of automatically created columns.</dd>
+
+        <dt>grid-auto-flow</dt>
+        <dd>Controls item placement.</dd>
+
+        <dt>grid-area</dt>
+        <dd>Shorthand for row/column start and end.</dd>
+
+        <dt>grid-column</dt>
+        <dd>Shorthand for column start and end.</dd>
+
+        <dt>grid-column-end</dt>
+        <dd>Where the item ends.</dd>
+
+        <dt>grid-column-gap</dt>
+        <dd>Gap between columns.</dd>
+
+        <dt>grid-column-start</dt>
+        <dd>Where the item begins.</dd>
+
+        <dt>grid-gap</dt>
+        <dd>Shorthand for row-gap and column-gap.</dd>
+
+        <dt>grid-row</dt>
+        <dd>Shorthand for row start and end.</dd>
+
+        <dt>grid-row-end</dt>
+        <dd>Where the item ends.</dd>
+
+        <dt>grid-row-gap</dt>
+        <dd>Gap between rows.</dd>
+
+        <dt>grid-row-start</dt>
+        <dd>Where the item begins.</dd>
+
+        <dt>grid-template</dt>
+        <dd>Shorthand for rows, columns, and areas.</dd>
+
+        <dt>masonry-auto-flow</dt>
+        <dd>Experimental masonry layout behavior.</dd>
+
+        <dt>align-tracks</dt>
+        <dd>Aligns tracks along the block axis.</dd>
+
+        <dt>justify-tracks</dt>
+        <dd>Aligns tracks along the inline axis.</dd>
+    </dl>
+
+</main>
+
+<footer>
+    <p><strong>Developed by</strong> Julian Burnley</p>
+    <p><strong>Email:</strong> <a href="mailto:julian@julianburnley.com">julian@julianburnley.com</a></p>
+    <p><strong>Date:</strong> <time datetime="2026-07-26">July 26, 2026</time></p>
+  </footer>
+
+</div> <!-- END .page -->
+
+<script>
+  const checkbox = document.getElementById('theme-checkbox');
+  const page = document.querySelector('.page');
+
+  checkbox.addEventListener('change', () => {
+    page.classList.toggle('dark', checkbox.checked);
+  });
+</script>
+
+</body>
+
+</html>

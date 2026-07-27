@@ -1,0 +1,911 @@
+/*
+Name: Julian Burnley
+Course: CIS233DA
+Section: 12988
+Instructor: Brian Thurber
+*/
+
+@import url(
+  "https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,700;1,600&family=Montserrat:wght@400;600;700&family=Share+Tech+Mono&display=swap"
+);
+
+/* ===========================
+   COLOR AND FONT SYSTEM
+   =========================== */
+
+:root {
+  --main-color-100: hsl(9, 37%, 96%);
+  --main-color-200: hsl(203, 80%, 84%);
+  --main-color-400: hsl(10, 38%, 75%);
+  --main-color-600: hsl(9, 91%, 78%);
+  --main-color-800: hsl(15, 15%, 16%);
+
+  --accent-color-50: hsl(18, 80%, 97%);
+  --accent-color-100: hsl(18, 75%, 95%);
+  --accent-color-200: hsl(85, 54%, 84%);
+  --accent-color-400: hsl(18, 90%, 92%);
+  --accent-color-600: hsl(15, 75%, 24%);
+  --accent-color-800: hsl(188, 25%, 9%);
+
+  --font-headings: "Crimson Pro", Georgia, serif;
+  --font-main: "Montserrat", Verdana, sans-serif;
+  --font-code: "Share Tech Mono", Consolas, monospace;
+}
+
+/* ===========================
+   RESET AND GLOBAL STYLES
+   =========================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+
+  background-color: var(--main-color-100);
+  color: var(--main-color-800);
+
+  font-family: var(--font-main);
+  line-height: 1.65;
+}
+
+button {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+p {
+  max-width: 75ch;
+}
+
+/* ===========================
+   HEADER
+   =========================== */
+
+header {
+  padding: 1.75rem 1rem;
+
+  background-image: linear-gradient(
+    135deg,
+    var(--main-color-600),
+    var(--main-color-400)
+  );
+
+  border-bottom: 0.3rem solid var(--accent-color-600);
+}
+
+header h1 {
+  color: var(--accent-color-800);
+  font-family: var(--font-headings);
+  font-size: clamp(2.1rem, 5vw, 3.2rem);
+  text-align: center;
+  text-shadow: 1px 1px 0 rgb(255 255 255 / 60%);
+}
+
+/* ===========================
+   DECORATED TOP NAVIGATION
+   =========================== */
+
+.main-navigation {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  padding: 0 1rem;
+
+  background-image: linear-gradient(
+    to right,
+    var(--accent-color-800),
+    var(--accent-color-600),
+    var(--accent-color-800)
+  );
+
+  border-bottom: 0.25rem solid var(--main-color-600);
+  box-shadow: 0 4px 10px rgb(0 0 0 / 25%);
+}
+
+.main-navigation ul {
+  max-width: 75rem;
+  margin-inline: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+
+  list-style: none;
+}
+
+.main-navigation li {
+  display: flex;
+}
+
+.main-navigation a {
+  position: relative;
+
+  min-width: 10rem;
+  padding: 1rem 1.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: var(--main-color-100);
+  font-weight: 700;
+  letter-spacing: 0.03rem;
+  text-align: center;
+  text-decoration: none;
+
+  border-left: thin solid rgb(255 255 255 / 15%);
+  border-right: thin solid rgb(0 0 0 / 20%);
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.2s ease;
+}
+
+.main-navigation a::after {
+  position: absolute;
+  right: 50%;
+  bottom: 0.35rem;
+  left: 50%;
+
+  height: 0.2rem;
+
+  background-color: var(--main-color-600);
+  content: "";
+
+  transition:
+    right 0.25s ease,
+    left 0.25s ease;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus-visible {
+  background-color: rgb(255 255 255 / 12%);
+  color: white;
+}
+
+.main-navigation a:hover::after,
+.main-navigation a:focus-visible::after,
+.main-navigation a[aria-current="page"]::after {
+  right: 1.25rem;
+  left: 1.25rem;
+}
+
+.main-navigation a[aria-current="page"] {
+  background-image: linear-gradient(
+    to top,
+    rgb(255 255 255 / 18%),
+    transparent
+  );
+
+  color: white;
+}
+
+.main-navigation a:focus-visible {
+  outline: 3px solid var(--main-color-600);
+  outline-offset: -4px;
+}
+
+/* ===========================
+   MAIN CONTENT
+   =========================== */
+
+main {
+  width: min(100%, 78rem);
+  margin-inline: auto;
+  padding: 2rem;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-headings);
+  line-height: 1.2;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: var(--accent-color-800);
+  font-size: clamp(1.9rem, 4vw, 2.7rem);
+  text-align: center;
+}
+
+h3 {
+  margin-bottom: 0.75rem;
+  color: var(--accent-color-800);
+  font-size: 2rem;
+}
+
+.introduction {
+  width: min(100%, 68rem);
+  margin-inline: auto;
+}
+
+.introduction p {
+  margin-inline: auto;
+}
+
+.introduction p + p {
+  margin-top: 1rem;
+}
+
+.important-note {
+  margin-top: 1.25rem;
+  padding: 1rem 1.25rem;
+
+  border: thin solid var(--accent-color-600);
+  border-left-width: 0.45rem;
+  border-radius: 0.4rem;
+
+  background-color: hsl(18, 75%, 88%);
+  color: hsl(15, 30%, 13%);
+
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 12%);
+}
+
+/* ===========================
+   REFLECTION PAGE
+   =========================== */
+
+.reflection-page {
+  width: min(100%, 75rem);
+  margin-inline: auto;
+  padding: 2rem;
+}
+
+.reflection-section,
+.next-steps-section {
+  margin-bottom: 2rem;
+  padding: clamp(1.25rem, 3vw, 2rem);
+
+  border: thin solid hsl(15, 20%, 45%);
+  border-radius: 0.75rem;
+
+  background-color: hsl(18, 60%, 97%);
+  color: hsl(15, 30%, 13%);
+
+  box-shadow: 0 4px 12px rgb(0 0 0 / 12%);
+}
+
+.next-steps-section {
+  background-color: hsl(203, 60%, 94%);
+}
+
+.reflection-section p,
+.next-steps-section p {
+  max-width: 75ch;
+  margin-inline: auto;
+}
+
+.reflection-section p + p,
+.next-steps-section p + p {
+  margin-top: 1rem;
+}
+
+.reflection-section code,
+.next-steps-section code {
+  padding: 0.1rem 0.35rem;
+
+  border: thin solid rgb(0 0 0 / 18%);
+  border-radius: 0.25rem;
+
+  background-color: white;
+  color: hsl(218, 45%, 15%);
+
+  font-family: var(--font-code);
+  font-weight: 700;
+}
+
+/* ===========================
+   REFLECTION PAGE DARK MODE
+   =========================== */
+
+body.dark-mode .reflection-section,
+body.dark-mode .next-steps-section {
+  background-color: hsl(218, 22%, 23%);
+  color: hsl(218, 30%, 94%);
+  border-color: hsl(218, 18%, 55%);
+}
+
+body.dark-mode .reflection-section code,
+body.dark-mode .next-steps-section code {
+  background-color: hsl(218, 30%, 12%);
+  color: hsl(38, 70%, 82%);
+  border-color: hsl(218, 20%, 45%);
+}
+
+@media (max-width: 700px) {
+  .reflection-page {
+    padding: 1.25rem;
+  }
+
+  .reflection-section,
+  .next-steps-section {
+    padding: 1.25rem;
+  }
+}
+
+/* ===========================
+   TAB COMPONENT
+   =========================== */
+
+.tab-component {
+  width: min(100%, 68rem);
+  margin: 2rem auto 0;
+}
+
+.tab-list {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  align-items: flex-end;
+}
+
+.tab {
+  min-width: 8rem;
+  padding: 1rem 1.35rem;
+
+  border: thin solid var(--accent-color-800);
+  border-top-width: 0.35rem;
+  border-radius: 0.6rem 0.6rem 0 0;
+
+  background-color: var(--accent-color-100);
+  color: var(--accent-color-800);
+
+  font-weight: 700;
+  letter-spacing: 0.03rem;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.25s ease,
+    background-image 0.25s ease,
+    color 0.25s ease,
+    transform 0.2s ease;
+}
+
+.tab + .tab {
+  margin-left: -1px;
+}
+
+.tab[aria-selected="true"] {
+  position: relative;
+  z-index: 3;
+
+  background-color: var(--panel-background);
+  color: var(--panel-text);
+
+  border-color: var(--accent-color-800);
+  border-bottom-color: var(--panel-background);
+
+  transform: translateY(1px);
+}
+
+#tab1[aria-selected="true"] {
+  --panel-background: hsl(87, 48%, 88%);
+  --panel-text: hsl(100, 35%, 11%);
+}
+
+#tab2[aria-selected="true"] {
+  --panel-background: hsl(18, 75%, 91%);
+  --panel-text: hsl(15, 40%, 12%);
+}
+
+#tab3[aria-selected="true"] {
+  --panel-background: hsl(203, 67%, 88%);
+  --panel-text: hsl(205, 45%, 12%);
+}
+
+.tab[aria-selected="false"] {
+  background-color: hsl(18, 50%, 97%);
+  color: var(--accent-color-800);
+
+  border-color: var(--main-color-400);
+  border-bottom-color: var(--accent-color-800);
+}
+
+.tab:hover {
+  background-image: linear-gradient(
+    to top,
+    var(--accent-color-800),
+    var(--accent-color-600)
+  );
+
+  color: white;
+}
+
+.tab:focus-visible {
+  position: relative;
+  z-index: 4;
+
+  outline: 3px solid var(--main-color-600);
+  outline-offset: 3px;
+}
+
+/* ===========================
+   HIGH-CONTRAST TAB PANELS
+   =========================== */
+
+.tab-content {
+  position: relative;
+  top: -1px;
+  z-index: 1;
+
+  padding: clamp(1.25rem, 3vw, 2rem);
+
+  border: thin solid var(--accent-color-800);
+  border-radius: 0 0.6rem 0.6rem 0.6rem;
+
+  color: var(--accent-color-800);
+  box-shadow: 0 5px 15px rgb(0 0 0 / 18%);
+}
+
+.tab-content[hidden] {
+  display: none;
+}
+
+.roles-panel {
+  background-color: hsl(87, 48%, 88%);
+  color: hsl(100, 35%, 11%);
+}
+
+.properties-panel {
+  background-color: hsl(18, 75%, 91%);
+  color: hsl(15, 40%, 12%);
+}
+
+.states-panel {
+  background-color: hsl(203, 67%, 88%);
+  color: hsl(205, 45%, 12%);
+}
+
+.tab-content h3,
+.tab-content p,
+.tab-content dt,
+.tab-content dd,
+.tab-content li {
+  color: inherit;
+}
+
+.tab-content > p {
+  margin-bottom: 1.25rem;
+  font-size: 1.02rem;
+}
+
+.tab-content:focus {
+  outline: none;
+}
+
+.tab-content:focus-visible {
+  outline: 3px solid var(--accent-color-600);
+  outline-offset: 4px;
+}
+
+/* ===========================
+   DEFINITIONS
+   =========================== */
+
+.definition-group {
+  padding: 1.25rem 0;
+  border-top: thin solid rgb(0 0 0 / 28%);
+}
+
+.definition-group:first-child {
+  border-top: none;
+}
+
+dt {
+  margin-bottom: 0.5rem;
+
+  color: var(--accent-color-800);
+  font-family: var(--font-headings);
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+dd {
+  padding-left: 1rem;
+}
+
+dd ul {
+  margin: 0.85rem 0 0 1.5rem;
+}
+
+dd li {
+  padding-left: 0.2rem;
+}
+
+dd li + li {
+  margin-top: 0.55rem;
+}
+
+code {
+  padding: 0.15rem 0.35rem;
+
+  border: thin solid rgb(0 0 0 / 18%);
+  border-radius: 0.25rem;
+
+  background-color: rgb(255 255 255 / 75%);
+  color: hsl(218, 45%, 12%);
+
+  font-family: var(--font-code);
+  font-weight: 700;
+}
+
+.standards-note {
+  margin-top: 0.9rem;
+  padding: 0.85rem 1rem;
+
+  border-left: 0.35rem solid var(--accent-color-600);
+  border-radius: 0.25rem;
+
+  background-color: rgb(255 255 255 / 70%);
+  color: hsl(15, 35%, 13%);
+
+  font-weight: 600;
+}
+
+/* ===========================
+   STANDARDS LINKS
+   =========================== */
+
+.standards-link {
+  display: inline-block;
+  margin-top: 1.25rem;
+  padding: 0.8rem 1.1rem;
+
+  border: thin solid var(--accent-color-800);
+  border-radius: 0.4rem;
+
+  background-image: linear-gradient(
+    to right,
+    var(--accent-color-600),
+    var(--accent-color-800)
+  );
+
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+
+  box-shadow: 0 3px 6px rgb(0 0 0 / 20%);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.standards-link:hover,
+.standards-link:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgb(0 0 0 / 28%);
+}
+
+.standards-link:focus-visible {
+  outline: 3px solid var(--main-color-600);
+  outline-offset: 3px;
+}
+
+/* ===========================
+   FOOTER
+   =========================== */
+
+footer {
+  padding: 1.35rem;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+
+  background-image: linear-gradient(
+    135deg,
+    var(--main-color-400),
+    var(--main-color-600)
+  );
+
+  border-top: 0.25rem solid var(--accent-color-600);
+
+  color: var(--accent-color-800);
+  font-size: 0.9rem;
+}
+
+footer span {
+  font-weight: 700;
+}
+
+/* ===========================
+   SKIP NAVIGATION
+   =========================== */
+
+#skip-nav {
+  position: fixed;
+  top: 0;
+  left: 1rem;
+  z-index: 1000;
+
+  padding: 0.75rem 1rem;
+
+  border-radius: 0 0 0.5rem 0.5rem;
+
+  background-color: var(--accent-color-800);
+  color: white;
+
+  font-weight: 700;
+  text-decoration: none;
+
+  transform: translateY(-120%);
+  transition: transform 0.2s ease;
+}
+
+#skip-nav:focus {
+  transform: translateY(0);
+
+  outline: 3px solid var(--main-color-600);
+  outline-offset: 2px;
+}
+
+/* ===========================
+   ACCESSIBILITY UTILITY
+   =========================== */
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+
+  padding: 0;
+  margin: -1px;
+
+  overflow: hidden;
+
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ===========================
+   RESPONSIVE DESIGN
+   =========================== */
+
+@media (max-width: 700px) {
+  .main-navigation {
+    position: static;
+    padding: 0;
+  }
+
+  .main-navigation ul {
+    flex-direction: column;
+  }
+
+  .main-navigation li {
+    width: 100%;
+  }
+
+  .main-navigation a {
+    width: 100%;
+    min-width: 0;
+    padding: 0.85rem 1rem;
+  }
+
+  main {
+    padding: 1.25rem;
+  }
+
+  .tab-list {
+    width: 100%;
+  }
+
+  .tab {
+    min-width: 0;
+    flex: 1;
+
+    padding: 0.8rem 0.35rem;
+    font-size: 0.8rem;
+  }
+
+  .tab-content {
+    padding: 1rem;
+  }
+
+  dd {
+    padding-left: 0;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+}
+/* ===========================
+   DARK-MODE BUTTON
+   =========================== */
+
+header {
+  position: relative;
+}
+
+.theme-button {
+  position: absolute;
+  top: 50%;
+  right: 1.5rem;
+  transform: translateY(-50%);
+
+  padding: 0.65rem 1rem;
+
+  border: thin solid var(--accent-color-800);
+  border-radius: 0.5rem;
+
+  background-image: linear-gradient(
+    to right,
+    var(--accent-color-600),
+    var(--accent-color-800)
+  );
+
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+
+  box-shadow: 0 3px 7px rgb(0 0 0 / 22%);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.theme-button:hover {
+  transform: translateY(-50%) translateY(-2px);
+  box-shadow: 0 5px 10px rgb(0 0 0 / 30%);
+}
+
+.theme-button:focus-visible {
+  outline: 3px solid white;
+  outline-offset: 3px;
+}
+
+/* ===========================
+   DARK MODE
+   =========================== */
+
+body.dark-mode {
+  --main-color-100: hsl(218, 25%, 10%);
+  --main-color-200: hsl(203, 30%, 24%);
+  --main-color-400: hsl(218, 25%, 28%);
+  --main-color-600: hsl(9, 45%, 55%);
+  --main-color-800: hsl(218, 35%, 94%);
+
+  --accent-color-50: hsl(218, 22%, 20%);
+  --accent-color-100: hsl(218, 22%, 22%);
+  --accent-color-200: hsl(90, 18%, 24%);
+  --accent-color-400: hsl(15, 25%, 24%);
+  --accent-color-600: hsl(9, 55%, 55%);
+  --accent-color-800: hsl(218, 40%, 8%);
+
+  background-color: var(--main-color-100);
+  color: var(--main-color-800);
+}
+
+body.dark-mode header {
+  background-image: linear-gradient(
+    135deg,
+    hsl(218, 30%, 18%),
+    hsl(218, 35%, 28%)
+  );
+
+  border-bottom-color: var(--accent-color-600);
+}
+
+body.dark-mode header h1 {
+  color: hsl(218, 35%, 95%);
+  text-shadow: none;
+}
+
+body.dark-mode .main-navigation {
+  background-image: linear-gradient(
+    to right,
+    hsl(218, 50%, 6%),
+    hsl(218, 40%, 17%),
+    hsl(218, 50%, 6%)
+  );
+}
+
+body.dark-mode h2,
+body.dark-mode h3 {
+  color: hsl(218, 35%, 95%);
+}
+
+body.dark-mode .important-note {
+  background-color: hsl(15, 25%, 20%);
+  color: hsl(15, 40%, 92%);
+  border-color: hsl(9, 60%, 62%);
+}
+
+body.dark-mode .tab[aria-selected="false"] {
+  background-color: hsl(218, 22%, 20%);
+  color: hsl(218, 35%, 92%);
+  border-color: hsl(218, 20%, 52%);
+  border-bottom-color: hsl(218, 35%, 90%);
+}
+
+body.dark-mode #tab1[aria-selected="true"],
+body.dark-mode #tab2[aria-selected="true"],
+body.dark-mode #tab3[aria-selected="true"] {
+  --panel-background: hsl(218, 22%, 25%);
+  --panel-text: hsl(218, 35%, 94%);
+
+  background-color: var(--panel-background);
+  color: var(--panel-text);
+  border-bottom-color: var(--panel-background);
+}
+
+body.dark-mode .roles-panel,
+body.dark-mode .properties-panel,
+body.dark-mode .states-panel {
+  background-color: hsl(218, 22%, 25%);
+  color: hsl(218, 35%, 94%);
+  border-color: hsl(218, 20%, 65%);
+}
+
+body.dark-mode .definition-group {
+  border-top-color: rgb(255 255 255 / 25%);
+}
+
+body.dark-mode code {
+  background-color: hsl(218, 30%, 12%);
+  color: hsl(38, 70%, 82%);
+  border-color: hsl(218, 20%, 45%);
+}
+
+body.dark-mode .standards-note {
+  background-color: hsl(218, 30%, 15%);
+  color: hsl(218, 35%, 94%);
+  border-left-color: hsl(9, 65%, 62%);
+}
+
+body.dark-mode footer {
+  background-image: linear-gradient(
+    135deg,
+    hsl(218, 30%, 18%),
+    hsl(218, 35%, 28%)
+  );
+
+  color: hsl(218, 35%, 94%);
+}
+
+@media (max-width: 700px) {
+  header {
+    padding-bottom: 4.75rem;
+  }
+
+  .theme-button {
+    top: auto;
+    right: 50%;
+    bottom: 0.75rem;
+    transform: translateX(50%);
+  }
+
+  .theme-button:hover {
+    transform: translateX(50%) translateY(-2px);
+  }
+}

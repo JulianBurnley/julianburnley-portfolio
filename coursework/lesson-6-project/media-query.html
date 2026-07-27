@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Julian Burnley">
+    <meta name="description" content="Lesson 6 Project – CSS @Rules, Media Queries, Feature Queries, Import, Font-Face">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Lesson 6 Project – CSS @Rules</title>
+
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body id="media">
+
+    <header class="site-header">
+    <div class="header-top">
+        <h1>Lesson 6 Project</h1>
+        <button id="darkToggle">Dark Mode</button>
+    </div>
+
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="css-user-interface.html">CSS User Interface</a></li>
+            <li><a href="css-box-model.html">CSS Box Model</a></li>
+            <li><a href="html-cheatsheet.html">HTML Tags and Attributes</a></li>
+            <li><a href="media-query.html">Media Query</a></li>
+            <li><a href="info.html">Info</a></li>
+            <li><a href="../12988_lesson-6-practice-activities-JUL2216252/index.html">Lesson 6 Practice Activities</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+    <main>
+        <h2>@ Rules</h2>
+
+        <div class="group-grid">
+
+            <!-- MEDIA QUERY -->
+            <section class="group">
+                <h3>Media Query</h3>
+                <div class="rule-card">
+                    <p><strong>@media</strong></p>
+                    <hr class="solid">
+                    <p>The <code>@media</code> rule defines style rules for different media types.</p>
+                    <p><strong>all:</strong> Used for all media devices.</p>
+                    <p><strong>print:</strong> Used for printers.</p>
+                    <p><strong>screen:</strong> Used for screens, tablets, smartphones.</p>
+                    <p><strong>speech:</strong> Used for screen readers.</p>
+                </div>
+            </section>
+
+            <!-- FEATURE QUERY -->
+            <section class="group">
+                <h3>Feature Query</h3>
+                <div class="rule-card">
+                    <p><strong>@supports</strong></p>
+                    <hr class="solid">
+                    <p>Feature queries test whether a browser supports a CSS feature.</p>
+                    <p><strong>@supports (property: value)</strong> — Checks if a property is supported.</p>
+                    <p><strong>@supports not (property: value)</strong> — Checks if a property is not supported.</p>
+                    <p><strong>@supports (property1: value) and (property2: value)</strong> — Multiple conditions.</p>
+                    <p><strong>@supports (property1: value) or (property2: value)</strong> — Either condition.</p>
+                </div>
+            </section>
+
+            <!-- IMPORT -->
+            <section class="group">
+                <h3>Import</h3>
+                <div class="rule-card">
+                    <p><strong>@import</strong></p>
+                    <hr class="solid">
+                    <p>The <code>@import</code> rule loads one stylesheet into another.</p>
+                    <p><strong>url | string:</strong> Location of the resource.</p>
+                    <p><strong>list-of-mediaqueries:</strong> Optional media conditions.</p>
+                    <p><code>@import url("style.css") screen;</code></p>
+                </div>
+            </section>
+
+            <!-- FONT FACE -->
+            <section class="group">
+                <h3>Font-Face</h3>
+                <div class="rule-card">
+                    <p><strong>@font-face</strong></p>
+                    <hr class="solid">
+                    <p>The <code>@font-face</code> rule loads custom fonts.</p>
+                    <p><strong>font-family:</strong> Required — name of the font.</p>
+                    <p><strong>font-stretch:</strong> Optional — stretch behavior.</p>
+                    <p><strong>font-style:</strong> Optional — style (normal, italic).</p>
+                    <p><strong>font-weight:</strong> Optional — weight (normal, bold).</p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="cssfooter">
+    <p><strong>Developed by</strong> Julian Burnley</p>
+    <p><strong>Email:</strong> <a href="mailto:julian@julianburnley.com">julian@julianburnley.com</a></p>
+    <p><strong>Date:</strong> <time datetime="2026-07-26">July 26, 2026</time></p>
+  </footer>
+
+
+<!-- Return‑to‑Top Button -->
+<button id="returnTop">↑ Top</button>
+
+<script>
+    document.getElementById("darkToggle").onclick = function () {
+        document.body.classList.toggle("dark-mode");
+    };
+</script>
+
+
+<script>
+    // Show button when scrolling down
+    const topBtn = document.getElementById("returnTop");
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 200) {
+            topBtn.classList.add("show");
+        } else {
+            topBtn.classList.remove("show");
+        }
+    });
+
+    // Smooth scroll to top
+    topBtn.onclick = () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+</script>
+
+</body>
+</html>

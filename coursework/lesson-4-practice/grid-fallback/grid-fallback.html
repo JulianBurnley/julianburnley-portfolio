@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Column Fallback Layout</title>
+
+  <meta name="author" content="Julian Burnley">
+  <meta name="description" content="CSS Grid fallback layout using floats">
+  <meta name="keywords" content="grid, fallback, floats">
+
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+  <header>
+    <h1>Column Fallback Layout</h1>
+  </header>
+
+  <section class="column left">
+    <h2>Site Nav</h2>
+   <nav>
+  <ul>
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../grid-images/mondrian-painting.html">Painting</a></li>
+    <li><a href="grid-fallback.html" class="active">Fallback</a></li>
+    <li><a href="../grid-accessibility/form-layout.html">Form Layout</a></li>
+  </ul>
+</nav>
+  </section>
+
+  <main>
+    <h2>Float-Based Column Layout</h2>
+    <p>This page demonstrates how floats can be used to create a fallback layout when CSS Grid is not supported.</p>
+  </main>
+
+  <aside class="column right">
+    <h2>Activity Info</h2>
+    <p>This activity explores how to build a float-based layout and then replace it with Grid using a feature query.</p>
+  </aside>
+
+  <footer>
+    <div class="student-card">
+      <p>Course Info</p>
+      <ul>
+        <li>Course: CIS233DA</li>
+        <li>Section: 12988</li>
+        <li>Instructor: Brian Thurber</li>
+      </ul>
+    </div>
+
+    <div class="student-card">
+      <p>Student Info</p>
+      <ul>
+        <li>Name: Julian Burnley</li>
+        <li>MEID: JUL2216252</li>
+        <li>GitHub Username: Your username</li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

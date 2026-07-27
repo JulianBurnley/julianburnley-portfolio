@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Audio and Video</title>
+  <meta name="description" content="Lesson 8 HTML audio and video practice activity">
+  <meta name="author" content="Julian Burnley">
+  <meta name="keywords" content="HTML, audio, video, media, captions">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Lesson 8 Practice Activities</h1>
+   <nav aria-label="Main navigation">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="graphical-elements.html">Graphical Elements</a></li>
+    <li><a href="graphical-effects.html">Graphical Effects</a></li>
+    <li><a href="gradients.html">Gradients</a></li>
+    <li><a href="canvas.html">Canvas</a></li>
+    <li><a href="audio-video.html">Audio Video</a></li>
+    <li><a href="download-media.html">Downloads</a></li>
+    <li><a href="../12988_lesson-8-project-JUL2216252/index.html">Lesson 8 Project</a></li>
+  </ul>
+</nav>
+
+  </header>
+  <main>
+    <h2>Adding Audio to a Page</h2>
+    <p>This page demonstrates how to embed and control audio and video using HTML5 elements, including playback, poster images, and downloadable media.</p>
+
+    <!-- Add the Audio content below this comment -->
+     <!-- Audio Example -->
+<section class="media-gallery">
+  <div class="media-card">
+    <h3>Ambient Audio</h3>
+    <audio controls>
+      <source src="./audio-video/viper.mp3" type="audio/mpeg">
+    </audio>
+    <p class="media-desc">Relaxing ambient track for testing HTML5 audio playback.</p>
+  </div>
+
+  <div class="media-card">
+    <h3>Sample Video</h3>
+    <video width="480" controls>
+      <source src="audio-video/sintel-short.webm" type="video/webm">
+      <source src="audio-video/sintel-short.mp4" type="video/mp4">
+      <track src="audio-video/sintel-en.vtt" kind="subtitles" srclang="en" label="English" default>
+      <track src="audio-video/sintel-es.vtt" kind="subtitles" srclang="es" label="Spanish">
+      <track src="audio-video/sintel-de.vtt" kind="subtitles" srclang="de" label="German">
+    </video>
+    <p class="media-desc">Demonstration of HTML5 video controls and poster image.</p>
+  </div>
+</section>
+
+<section class="playlist">
+  <h3>Media Gallery</h3>
+  <div class="media-scroll">
+    <audio controls src="./audio-video/viper.mp3"></audio>
+    <audio controls src="./audio-video/viper.ogg"></audio>
+    <video controls width="240" src="./audio-video/rabbit320.mp4"></video>
+    <video controls width="240" src="./audio-video/sintel-short.mp4"></video>
+  </div>
+</section>
+
+<a href="./audio-video/viper.mp3" download class="download-link">Download Audio</a>
+<a href="./audio-video/rabbit320.mp4" download class="download-link">Download Video</a>
+
+  <p><label for="volume">Audio volume:</label> <input type="range" id="volume" min="0" max="1" step="0.1" value="1"></p>
+  </main>
+  <footer>
+    <p><strong>Developed by</strong> Julian Burnley</p>
+    <p><strong>Email:</strong> <a href="mailto:julian@julianburnley.com">julian@julianburnley.com</a></p>
+    <p><strong>Date:</strong> <time datetime="2026-07-26">July 26, 2026</time></p>
+
+    <button id="toggleTheme" class="gradient">Toggle Dark Mode</button>
+
+  </footer>
+
+<script>
+  const audio = document.querySelector("audio");
+  document.getElementById("volume").oninput = e => audio.volume = e.target.value;
+</script>
+
+<script>
+  const toggle = document.getElementById("toggleTheme");
+  toggle.onclick = () => {
+    document.body.classList.toggle("dark-mode");
+    toggle.textContent = document.body.classList.contains("dark-mode")
+      ? "Light Mode"
+      : "Dark Mode";
+  };
+</script>
+
+
+
+</body>
+</html>

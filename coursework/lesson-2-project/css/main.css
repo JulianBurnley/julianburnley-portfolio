@@ -1,0 +1,113 @@
+/*
+Name: Julian Burnley
+Course: CIS233DA
+Section: 12988 
+Instructor: Brian Thurber
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Open+Sans:wght@300&family=Roboto+Slab:wght@100;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color-body: #a4b6cc;
+  --text-color-body: #000000;
+  --text-color-heading: #F0F8FF;
+  --background-color-header: #000080;
+  --accent-color: rgb(1, 44, 1);
+  --border-color-dark: hsl(0,100%,25%);
+  --shadow-color-light: hsla(0,100%,25%,0.2);
+}
+
+body {
+  background-color: var(--background-color-body);
+  color: var(--text-color-body);
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto Slab', serif;
+  color: var(--text-color-heading);
+}
+
+header {
+  width: 100vw;
+  height: 80px;
+  background-color: var(--background-color-header);
+}
+
+header h1 {
+  float: left;
+  color: var(--text-color-heading);
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+header nav {
+  float: left;
+  margin-top: 10px;
+  margin-left: 40px;
+}
+
+header nav a {
+  display: block;
+  color: var(--text-color-heading);
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+header nav a:hover {
+  background-color: var(--text-color-heading);
+  color: var(--background-color-header);
+}
+
+main {
+  padding: 20px;
+}
+
+main h2, main h3 {
+  clear: both;
+}
+
+.card {
+  border: thin solid var(--border-color-dark);
+  border-radius: 10px 0 10px 0;
+  box-shadow: 5px 5px 5px var(--shadow-color-light);
+  text-align: center;
+  background-color: white;
+  float: left;
+  margin: 15px;
+  width: 300px;
+  padding: 20px 10px 10px 10px;
+}
+
+.card p {
+  text-transform: uppercase;
+  font-weight: 700;
+  border-bottom: thin solid var(--border-color-dark);
+  padding-bottom: 5px;
+}
+
+.card code {
+  font-family: 'Courier Prime', monospace;
+  color: var(--accent-color);
+  display: block;
+  padding: 5px;
+}
+
+footer {
+  background-color: var(--background-color-header);
+  color: var(--text-color-heading);
+  text-align: center;
+  clear: both;
+  width: 100%;
+}
+
+footer p {
+  display: inline-block;
+  padding: 15px;
+}

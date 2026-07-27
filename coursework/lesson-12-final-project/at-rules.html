@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Julian Burnley">
+  <meta name="description" content="Lesson 10 Project ">
+  <meta name="keywords" content="Final Project">
+  <title>Final Project</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<main>
+ <header>
+<h1>Final Exam Project Part 2</h1>
+</header>
+ <div id="main">
+ <article>
+<h2>@RULES CHEATSHEET</h2>
+<div class="container">
+<div class="html">
+        
+<div class="mcard">
+<h3>Media Query</h3>
+<h4>@media: </h4>
+<p>all: /*Used for all media type devices.*/</p>
+<p>print: /*Used for printers.*/</p> 
+<p>screen: /*Used for computer screens, tablets, smart-phones etc.*/</p> 
+<p>speech: /*Used for a screenreader that "reads" the page out loud.*/</p> 
+</div>
+
+</div>
+<p><a href="https://www.w3.org/TR/mediaqueries-5/">W3C Media Queries Level 5</a></p>
+<div class="html">
+  <div class="mcard">
+ <h3>Feature Query</h3>
+<h4>@supports:</h4>
+<p>Feature queries can be used to test if a browser is able to understand a CSS feature or not.</p>
+<p>@supports (property: value):  /*Checks if a property is supported.*/</p>
+<p>@supports not (property: value) :  /*Checks if a property is not supported*/</p> 
+<p>@supports (property1: value) and (property2: value):  /*More than one property.*/</p> 
+<p>@supports (property1: value) or (property2: value):  /*Supports one property or the other.*/</p> 
+</div>
+</div>
+<p><a href="https://www.w3.org/TR/mediaqueries-5/">W3C Media Queries Level 5</a></p>
+<div class="html">
+<div class="mcard">
+<h3>Import</h3>
+<h4>@import:</h4>
+<p>The @import rule allows you to import a style sheet into another style sheet.</p>
+<p>url|string:  /*A url or a string representing the location of the resource to import.*/</p> 
+<p>list-of-mediaqueries: /*A comma-separated list of media queries conditioning the application of the CSS rules defined in the linked URL*/</p>
+<p>@import url|string list-of-mediaqueries;</p>
+</div>
+</div>
+<div class="html">
+<div class="mcard">
+<h3>Font-face</h3>
+<h4>@font-face:</h4>
+<p>The @font-face rule allows custom fonts to be loaded on a webpage.</p>
+<p>font-family:  /*Required. Defines the name of the font.*/</p> 
+<p>font-stretch: /*Optional. Defines how the font should be stretched. Default value is "normal".*/</p>
+<p>font-style: /*Optional. Defines how the font should be styled. Default value is "normal".*/</p>
+<p>font-weight: /*Optional. Defines the boldness of the font. Default value is "normal".*/</p>
+  </div>
+</div>
+
+<p><a href="https://www.w3.org/TR/mediaqueries-5/">W3C Media Queries Level 5</a></p>
+</div>
+
+ </article>
+    <nav role="navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="html.html">Cheatsheets</a>
+          <ul class="dropdown">
+            <li><a href="html.html">HTML</a></li>
+            <li><a href="selectors.html">Selectors</a></li>
+            <li><a href="layout.html">Layout</a></li>
+            <li><a href="ui.html">UI</a></li>
+            <li><a href="at-rules.html">At Rules</a></li>
+            <li><a href="effects.html">Effects</a></li>
+            <li><a href="aria.html">ARIA</a></li>
+          </ul>
+        </li>
+        <li><a href="menus.html">Web Patterns & Components</a>
+          <ul class="dropdown">
+            <li><a href="menus.html">Menus</a></li>
+            <li><a href="widgets.html">Widgets</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="cards.html">Cards</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+    <aside></aside>
+    </div>
+    </main>
+    <footer>
+    <p><strong>Developed by</strong> Julian Burnley</p>
+    <p><strong>Email:</strong> <a href="mailto:julian@julianburnley.com">julian@julianburnley.com</a></p>
+    <p><strong>Date:</strong> <time datetime="2026-07-26">July 26, 2026</time></p>
+  </footer>
+        
+          <script src="js/main.js"></script>
+      </body>
+    </html>

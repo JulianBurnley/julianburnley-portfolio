@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Julian Burnley">
+    <meta name="description" content="Reflections">
+    <meta name="keywords" content="Transforms, Transitions, Animation, Accessibility">
+
+    <link rel="stylesheet" href="css/lsn7-styles.css">
+
+    <title>Reflections Page</title>
+</head>
+
+<body>
+<section id="top" class="left-side glass">
+  <h1>Lesson 7 Project</h1>
+
+  <nav>
+    <ul id="navbar">
+      <!-- HOME -->
+      <li class="active">
+        <a href="index.html" class="active">Home</a>
+        <ul class="child-links">
+          <li><a href="#bookmark1">My Reflections</a></li>
+          <li><a href="#bookmark2">My Next Steps</a></li>
+        </ul>
+      </li>
+
+      <!-- CHEATSHEET -->
+      <li>
+        <a href="transformation-cheatsheet.html">Cheatsheet</a>
+        <ul class="child-links">
+          <li><a href="transformation-cheatsheet.html#terminology">Terminology</a></li>
+          <li><a href="transformation-cheatsheet.html#transforms">Transform Properties</a></li>
+          <li><a href="transformation-cheatsheet.html#transitions">Transition Properties</a></li>
+          <li><a href="transformation-cheatsheet.html#animations">Animation Properties</a></li>
+        </ul>
+      </li>
+
+      <!-- PRACTICE ACTIVITIES -->
+      <li>
+        <a href="../12988_lesson-7-practice-activities-JUL2216252/index.html">
+          Lesson 7 Practice Activities
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+      <!-- DARK MODE BUTTON -->
+    <button id="darkToggle">Toggle Dark Mode</button>
+
+</section>
+
+    <main>
+<section>
+   <h2 id="bookmark1">My Reflections</h2>
+    <p>All the concepts in the lesson were new to me. Transformations are a great way to modify not just the structure and content of a website in interesting ways, including 3D, allowing for more ways to design the site. Transitions make the changes smooth, and animation provide more instantaneous changes that do not depend on progression. These concepts are a useful enhancement that will improve the user experience of most projects.</p>
+    <a href="#top" class="back-link">Back to Menu</a>
+
+
+</section>
+
+<section>
+    <h2 id="bookmark2">My Next Steps</h2>
+    <p>I need to pay attention to all the concepts in this lesson, because of the importance they have for user experience on modern websites. I will have to revisit the lessons to have a better understanding. </p>
+    <a href="#top" class="back-link">Back to Menu</a>
+
+</section>
+    </main>
+
+    <button id="floating-nav">Menu</button>
+
+<script>
+function returnToMenu() {
+  window.scrollTo({
+    left: 0,
+    top: 0,
+    behavior: "smooth"
+  });
+}
+
+document.getElementById("floating-nav").onclick = returnToMenu;
+
+document.querySelectorAll(".back-link").forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    returnToMenu();
+    history.replaceState(null, "", "#top");
+  });
+});
+</script>
+
+<script>
+document.getElementById("darkToggle").onclick = () => {
+  document.body.classList.toggle("dark-mode");
+};
+</script>
+
+
+
+  <footer>
+    <p><strong>Developed by</strong> Julian Burnley</p>
+    <p><strong>Email:</strong> <a href="mailto:julian@julianburnley.com">julian@julianburnley.com</a></p>
+    <p><strong>Date:</strong> <time datetime="2026-07-26">July 26, 2026</time></p>
+  </footer>
+</body>
+</html>

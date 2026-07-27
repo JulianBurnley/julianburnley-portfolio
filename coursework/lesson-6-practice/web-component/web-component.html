@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Component Example</title>
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../html-templates/table-template.html">HTML Templates</a></li>
+        <li><a href="../web-component/web-component.html">Web Component</a></li>
+        <li><a href="../../12988_lesson-6-project-JUL2216252/index.html">Lesson 6 Project</a></li>
+      </ul>
+    </nav>
+
+    <h1>Web Component Example</h1>
+
+    <div>
+      <p><span>Name:</span> Julian Burnley</p>
+      <p><span>GitHub Username:</span> JUL2216252</p>
+    </div>
+  </header>
+
+  <main>
+    <h2>Web Component Example</h2>
+
+    <div class="article-grid">
+
+      <article-card img="../images/Placeholder-blue.png">
+        <span slot="title">Blue Story</span>
+        <span slot="author">Jay Patrick</span>
+        <span slot="snippet">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </span>
+      </article-card>
+
+      <article-card img="../images/Placeholder-green.png">
+        <span slot="title">Green Story</span>
+        <span slot="author">Mary Fisher</span>
+        <span slot="snippet">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </span>
+      </article-card>
+
+      <article-card img="../images/Placeholder-magenta.png">
+        <span slot="title">Magenta Story</span>
+        <span slot="author">Jenny Paul</span>
+        <span slot="snippet">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </span>
+      </article-card>
+
+      <article-card img="../images/Placeholder-blue.png">
+        <span slot="title">Navy Story</span>
+        <span slot="author">Mack Tree</span>
+        <span slot="snippet">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </span>
+      </article-card>
+
+      <article-card img="../images/Placeholder-green.png">
+        <span slot="title">Lime Story</span>
+        <span slot="author">Jane Buck</span>
+        <span slot="snippet">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </span>
+      </article-card>
+
+      <article-card img="../images/Placeholder-magenta.png">
+        <span slot="title">Red Story</span>
+        <span slot="author">Tony Toni</span>
+        <span slot="snippet">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </span>
+      </article-card>
+
+    </div>
+
+  </main>
+
+  <template id="article-card-template">
+    <link rel="stylesheet" href="../css/main.css">
+
+    <div class="article-card">
+
+      <h3 class="article-title">
+        <slot name="title"></slot>
+      </h3>
+
+      <p class="article-author">
+        Author: <slot name="author"></slot>
+      </p>
+
+      <p class="article-snippet">
+        <slot name="snippet"></slot>
+      </p>
+
+      <button class="read-more">Read More</button>
+
+    </div>
+  </template>
+
+  <script src="scripts/create-component.js"></script>
+
+</body>
+</html>

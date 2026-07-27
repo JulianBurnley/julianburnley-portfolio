@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Lesson 11 Practice Activities | Writing Directions</title>
+
+  <meta
+    name="description"
+    content="A Lesson 11 practice activity demonstrating language isolation, text direction, and international writing modes."
+  >
+  <meta
+    name="keywords"
+    content="bdi, language, writing direction, writing mode, rtl, ltr, internationalization, i18n"
+  >
+  <meta name="author" content="Julian Burnley">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body id="top">
+  <header class="site-header">
+    <div class="header-content">
+      <p class="eyebrow">CIS233DA</p>
+      <h1>Lesson 11 Practice Activities</h1>
+      <p>Activities for CIS233DA at Rio Salado College</p>
+    </div>
+
+    <button id="theme-toggle" class="theme-toggle" type="button">
+  <span aria-hidden="true">☀️</span>
+  <span>Light mode</span>
+</button>
+
+    <nav class="main-navigation" aria-label="Primary navigation">
+      <ul>
+        <li>
+          <a href="index.html" aria-current="page">Home</a>
+        </li>
+        <li>
+          <a href="cli.html">CLI</a>
+        </li>
+        <li>
+          <a href="../12988_lesson-11-project-JUL2216252/index.html">Lesson 11 Project</a>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main>
+    <section class="writing-section">
+      <div class="section-heading">
+        <p class="eyebrow">Internationalization</p>
+        <h2>Writing Directions and Modes</h2>
+      </div>
+
+      <p class="introduction">
+        The following English phrase has been translated into several
+        languages. Some Asian languages can be written vertically or
+        horizontally. When Western words are included, horizontal writing is
+        often used so readers do not need to rotate the page.
+      </p>
+
+      <div class="example-grid" translate="no">
+        <article class="language-card">
+          <h3>English</h3>
+          <p lang="en">
+            Web development is a rewarding field.
+          </p>
+        </article>
+
+        <article class="language-card">
+          <h3>Spanish</h3>
+          <bdi lang="es">
+            El desarrollo web es un campo gratificante.
+          </bdi>
+        </article>
+
+        <article class="language-card">
+          <h3>German</h3>
+          <bdi lang="de">
+            Webentwicklung ist ein lohnendes Feld.
+          </bdi>
+        </article>
+
+        <article class="language-card vertical-example">
+          <h3>Chinese, Simplified</h3>
+          <bdi lang="zh-CN">
+            网络开发是一个有益的领域。
+          </bdi>
+        </article>
+
+        <article class="language-card">
+          <h3>Japanese</h3>
+          <p class="language-note">
+            This example is displayed horizontally because it includes the
+            Western word “Web.”
+          </p>
+          <bdi lang="ja">
+            Web 開発はやりがいのある分野です。
+          </bdi>
+        </article>
+
+        <article class="language-card rtl-example">
+          <h3>Hebrew</h3>
+          <bdi lang="he" dir="rtl">
+            פיתוח אתרים הוא תחום מתגמל.
+          </bdi>
+        </article>
+      </div>
+    </section>
+  </main>
+
+ <footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-brand">
+      <p class="footer-title">Lesson 11 Practice Activities</p>
+
+      <p class="footer-description">
+        CIS233DA coursework demonstrating internationalization and Git
+        command-line concepts.
+      </p>
+    </div>
+
+    <div class="footer-details">
+      <p><strong>Developed by</strong> Julian Burnley</p>
+      <p><strong>Email:</strong> <a href="mailto:julian@julianburnley.com">julian@julianburnley.com</a></p>
+      <p><strong>Date:</strong> <time datetime="2026-07-26">July 26, 2026</time></p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 Julian Burnley</p>
+
+    <a href="#top">Back to top ↑</a>
+  </div>
+</footer>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const button = document.getElementById("theme-toggle");
+
+    if (!button) {
+      console.error("Theme toggle button was not found.");
+      return;
+    }
+
+    const icon = button.querySelector("span:first-child");
+    const label = button.querySelector("span:last-child");
+
+    function updateButton() {
+      const isDark = document.body.classList.contains("dark-mode");
+
+      icon.textContent = isDark ? "☀️" : "🌙";
+      label.textContent = isDark ? "Light mode" : "Dark mode";
+      button.setAttribute("aria-pressed", String(isDark));
+    }
+
+    /* Start in light mode unless the user previously selected dark mode. */
+    const savedTheme = localStorage.getItem("lesson11-theme");
+
+    document.body.classList.toggle(
+      "dark-mode",
+      savedTheme === "dark"
+    );
+
+    updateButton();
+
+    button.addEventListener("click", function () {
+      const isNowDark = document.body.classList.toggle("dark-mode");
+
+      localStorage.setItem(
+        "lesson11-theme",
+        isNowDark ? "dark" : "light"
+      );
+
+      updateButton();
+    });
+  });
+</script>
+</body>
+</html>

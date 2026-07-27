@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Update the metadata with your information -->
+  <title>Add Title</title> 
+  <meta name="author" content="Student Name">
+  <meta name="description" content="Add description">
+  <meta name="keywords" content="Add keywords">
+<link href="../css/main.css" rel="stylesheet">
+<link href="form.css" rel="stylesheet">
+
+</head>
+
+  <body>
+<div id="skip">
+  <a href="#maincontent">Skip Navigation</a>
+</div>
+
+
+  <header>
+    <h1>Lesson 4 Practice Activities</h1>
+  </header>
+  <section class="column left">
+    <h2>Site Nav</h2>
+<nav>
+  <ul>
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../grid-images/mondrian-painting.html">Painting</a></li>
+    <li><a href="../grid-fallback/column-fallback.html">Fallback</a></li>
+    <li><a href="form-layout.html" class="active">Form Layout</a></li>
+  </ul>
+</nav>
+
+  </section>
+  <main id="maincontent">
+    <h2>Form</h2>
+    <form action="https://secure.riosalado.edu/cis-course-resources/postscript.aspx" method="POST">
+      <fieldset>
+        <legend>Shipping Details</legend>
+        <label for="name">Name</label>
+        <input type="text" name="fullname" id="name" required>
+        <label for="address1" class="group-right">Street Address</label>
+        <input type="text" name="address1" id="address1" required class="group-right">
+        <label for="address2" class="group-right">Address 2</label>
+        <input type="text" name="address2" id="address2" class="group-right">
+        <label for="city" class="group-right">City</label>
+        <input type="text" name="city" id="city" required class="group-right">
+        <label for="state" class="state">State</label>
+        <input list="state-list" id="state" name="state" required class="state">
+        <label for="zip" class="group-right">Zip Code</label>
+        <input type="text" name="zip" id="zip" required pattern="^(?(^00000(|-0000))|(\d{5}(|-\d{4})))$" class="group-right">
+        <label for="phone" class="phone">Phone Number</label>
+        <input type="tel" name="phone" id="phone" required class="phone">
+        <label for="email" class="email">Email Address</label>
+        <input type="email" name="email" id="email" required class="email">
+      </fieldset>
+      <fieldset>
+        <legend>Payment Details</legend>
+        <label for="cardname">Name on Card</label>
+        <input type="text" name="cardname" id="cardname" required>
+        <label for="cardnumber">Card Number</label>
+        <input type="text" name="cardnumber" id="cardnumber" required pattern="^[0-9- ]{13,19}$">
+        <label for="cardexpire" class="group-right">Expiration Date</label>
+        <input type="date" name="cardexpire" id="cardexpire" required class="group-right">
+        <label for="cardccv" class="group-right ccv">CCV</label>
+        <input type="text" name="cardccv" id="cardccv" required class="group-right ccv">
+      </fieldset>
+      <button type="reset">Clear form</button>
+      <button type="submit">Purchase</button>
+      <datalist id="state-list">
+        <option value="AL">AL</option>
+        <option value="AK">AK</option>
+        <option value="AZ">AZ</option>
+        <option value="AR">AR</option>
+        <option value="CA">CA</option>
+        <option value="CO">CO</option>
+        <option value="CT">CT</option>
+        <option value="DE">DE</option>
+        <option value="DC">DC</option>
+        <option value="FL">FL</option>
+        <option value="GA">GA</option>
+        <option value="HI">HI</option>
+        <option value="ID">ID</option>
+        <option value="IL">IL</option>
+        <option value="IN">IN</option>
+        <option value="IA">IA</option>
+        <option value="KS">KS</option>
+        <option value="KY">KY</option>
+        <option value="LA">LA</option>
+        <option value="ME">ME</option>
+        <option value="MD">MD</option>
+        <option value="MA">MA</option>
+        <option value="MI">MI</option>
+        <option value="MN">MN</option>
+        <option value="MS">MS</option>
+        <option value="MO">MO</option>
+        <option value="MT">MT</option>
+        <option value="NE">NE</option>
+        <option value="NV">NV</option>
+        <option value="NH">NH</option>
+        <option value="NJ">NJ</option>
+        <option value="NM">NM</option>
+        <option value="NY">NY</option>
+        <option value="NC">NC</option>
+        <option value="ND">ND</option>
+        <option value="OH">OH</option>
+        <option value="OK">OK</option>
+        <option value="OR">OR</option>
+        <option value="PA">PA</option>
+        <option value="RI">RI</option>
+        <option value="SC">SC</option>
+        <option value="SD">SD</option>
+        <option value="TN">TN</option>
+        <option value="TX">TX</option>
+        <option value="UT">UT</option>
+        <option value="VT">VT</option>
+        <option value="VA">VA</option>
+        <option value="WA">WA</option>
+        <option value="WV">WV</option>
+        <option value="WI">WI</option>
+        <option value="WY">WY</option>
+      </datalist>
+    </form>
+  </main>
+  <aside class="column right">
+    <h2>Activity Info</h2>
+    <p>This activity is looking at using Grid to help layout form fields to improve accessibility.</p>
+  </aside>
+  <footer>
+    <div class="student-card">
+      <p>Course Info</p>
+      <ul>
+        <li>Course: CIS233DA</li>
+        <li>Section: #####</li>
+        <li>Instructor: Instructor's name</li>
+      </ul>
+    </div>
+    <div class="student-card">
+      <p>Student Info</p>
+      <ul>
+        <li>Name: Your first and last name</li>
+        <li>MEID: Your MEID</li>
+        <li>GitHub Username: Your username</li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

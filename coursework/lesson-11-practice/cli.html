@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Git Command-Line Information | Lesson 11</title>
+
+  <meta
+    name="description"
+    content="A Lesson 11 practice activity documenting common Git command-line commands and repository information."
+  >
+
+  <meta
+    name="keywords"
+    content="Git, command line, CLI, GitHub, repository, branch, commit, push, pull"
+  >
+
+  <meta name="author" content="Julian Burnley">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body id="top" class="dark-mode">
+  <header class="site-header">
+    <div class="header-content">
+      <p class="eyebrow">CIS233DA</p>
+
+      <h1>Lesson 11 Practice Activities</h1>
+
+      <p>Activities for CIS233DA at Rio Salado College</p>
+    </div>
+
+    <button id="theme-toggle" class="theme-toggle" type="button">
+  <span aria-hidden="true">☀️</span>
+  <span>Light mode</span>
+</button>
+
+    <nav class="main-navigation" aria-label="Primary navigation">
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+
+        <li>
+          <a href="cli.html" aria-current="page">CLI</a>
+        </li>
+        <li>
+          <a href="../12988_lesson-11-project-JUL2216252/index.html">Lesson 11 Project</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="cli-section">
+      <div class="section-heading">
+        <p class="eyebrow">Command-Line Interface</p>
+        <h2>Git Information</h2>
+      </div>
+
+      <ul class="git-information">
+        <li>
+          <strong>Git version:</strong>
+          <code>git version 2.35.1.windows.2</code>
+        </li>
+
+        <li>
+          <strong>Git remote server:</strong>
+          <code>GitHub</code>
+        </li>
+
+        <li>
+          <strong>Active branch:</strong>
+          <code>main</code>
+        </li>
+
+        <li>
+          <strong>Git status:</strong>
+          <code>cli.html was initially untracked</code>
+        </li>
+      </ul>
+    </section>
+
+    <section class="commands-section">
+      <div class="section-heading">
+        <p class="eyebrow">Reference Guide</p>
+        <h2>Git Commands</h2>
+      </div>
+
+      <div class="table-container">
+        <table>
+          <caption>
+            Common Git commands used to manage a local and remote repository
+          </caption>
+
+          <thead>
+            <tr>
+              <th scope="col">Action</th>
+              <th scope="col">Command</th>
+              <th scope="col">Example</th>
+              <th scope="col">Notes</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Determine the installed Git version</td>
+
+              <td>
+                <code>git --version</code>
+              </td>
+
+              <td>
+                <code>git version 2.35.1.windows.2</code>
+              </td>
+
+              <td>
+                Displays the installed Git version in the terminal.
+              </td>
+            </tr>
+
+            <tr>
+              <td>List branch names</td>
+
+              <td>
+                <code>git branch</code>
+              </td>
+
+              <td>
+                <code>* main</code>
+              </td>
+
+              <td>
+                The active branch is identified with an asterisk.
+              </td>
+            </tr>
+
+            <tr>
+              <td>Determine remote repository URLs</td>
+
+              <td>
+                <code>git remote -v</code>
+              </td>
+
+              <td>
+                <code>
+                  origin
+                  https://github.com/jlnburn/12988_lesson-11-practice-activities-JUL2216252.git
+                  (fetch)
+                </code>
+
+                <br>
+
+                <code>
+                  origin
+                  https://github.com/jlnburn/12988_lesson-11-practice-activities-JUL2216252.git
+                  (push)
+                </code>
+              </td>
+
+              <td>
+                Displays the fetch and push URLs connected to the local
+                repository. Credentials should never appear in the URL.
+              </td>
+            </tr>
+
+            <tr>
+              <td>Check the status of files</td>
+
+              <td>
+                <code>git status</code>
+              </td>
+
+              <td>
+                <pre><code>On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  cli.html
+
+nothing added to commit</code></pre>
+              </td>
+
+              <td>
+                Shows modified, staged, and untracked files in the local
+                repository.
+              </td>
+            </tr>
+
+            <tr>
+              <td>Stage a file before committing</td>
+
+              <td>
+                <code>git add &lt;file&gt;</code>
+              </td>
+
+              <td>
+                <code>git add css/styles.css</code>
+              </td>
+
+              <td>
+                Adds the selected file to Git's staging area.
+              </td>
+            </tr>
+
+            <tr>
+              <td>Stage all current changes</td>
+
+              <td>
+                <code>git add .</code>
+              </td>
+
+              <td>
+                <code>git add .</code>
+              </td>
+
+              <td>
+                Stages all new and modified files in the current repository.
+              </td>
+            </tr>
+
+            <tr>
+              <td>Create a commit</td>
+
+              <td>
+                <code>git commit -m "&lt;message&gt;"</code>
+              </td>
+
+              <td>
+                <code>git commit -m "Create CLI reference page"</code>
+              </td>
+
+              <td>
+                Saves the staged changes as a commit with a descriptive
+                message.
+              </td>
+            </tr>
+
+            <tr>
+              <td>Push changes to the remote repository</td>
+
+              <td>
+                <code>git push</code>
+              </td>
+
+              <td>
+                <code>git push origin main</code>
+              </td>
+
+              <td>
+                Uploads local commits to the remote repository.
+              </td>
+            </tr>
+
+            <tr>
+              <td>Pull changes from the remote repository</td>
+
+              <td>
+                <code>git pull</code>
+              </td>
+
+              <td>
+                <code>git pull origin main</code>
+              </td>
+
+              <td>
+                Downloads and integrates changes from the remote repository.
+              </td>
+            </tr>
+
+            <tr>
+              <td>Clone a repository</td>
+
+              <td>
+                <code>git clone &lt;URL&gt;</code>
+              </td>
+
+              <td>
+                <code>
+                  git clone
+                  https://github.com/jlnburn/12988_lesson-11-practice-activities-JUL2216252.git
+                </code>
+              </td>
+
+              <td>
+                Downloads a remote repository and creates a local project
+                folder.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p><strong>Developed by</strong> Julian Burnley</p>
+    <p><strong>Email:</strong> <a href="mailto:julian@julianburnley.com">julian@julianburnley.com</a></p>
+    <p><strong>Date:</strong> <time datetime="2026-07-26">July 26, 2026</time></p>
+
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const button = document.getElementById("theme-toggle");
+
+    if (!button) {
+      console.error("Theme toggle button was not found.");
+      return;
+    }
+
+    const icon = button.querySelector("span:first-child");
+    const label = button.querySelector("span:last-child");
+
+    function updateButton() {
+      const isDark = document.body.classList.contains("dark-mode");
+
+      icon.textContent = isDark ? "☀️" : "🌙";
+      label.textContent = isDark ? "Light mode" : "Dark mode";
+      button.setAttribute("aria-pressed", String(isDark));
+    }
+
+    /* Start in light mode unless the user previously selected dark mode. */
+    const savedTheme = localStorage.getItem("lesson11-theme");
+
+    document.body.classList.toggle(
+      "dark-mode",
+      savedTheme === "dark"
+    );
+
+    updateButton();
+
+    button.addEventListener("click", function () {
+      const isNowDark = document.body.classList.toggle("dark-mode");
+
+      localStorage.setItem(
+        "lesson11-theme",
+        isNowDark ? "dark" : "light"
+      );
+
+      updateButton();
+    });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,250 @@
+```css
+/*
+  Author: Julian Burnley
+  Course: CIS233DA
+  Section: 12988
+*/
+
+/* =========================
+   Browser Reset
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   Custom Font
+========================= */
+
+@font-face {
+  font-family: "Roboto Slab Variable";
+  src: url("../adv-fonts/fonts/RobotoSlab-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+/* =========================
+   CSS Variables
+========================= */
+
+:root {
+  --text-color-light: #a5c051;
+  --text-color-dark: #0c1b30;
+
+  --background-color: #64eded;
+  --background-color-dark: #0c2d31;
+  --accent-color: #a0aa80;
+
+  --text-color-warning: rgba(0, 0, 0, 1);
+  --background-color-warning: hsla(60, 100%, 50%, 1);
+  --border-color-warning: rgba(255, 0, 0, 1);
+
+  --text-color-error: rgba(0, 0, 0, 1);
+  --background-color-error: hsla(0, 100%, 50%, 1);
+  --border-color-error: rgba(255, 0, 0, 1);
+
+  --text-color-info: rgba(255, 255, 255, 1);
+  --background-color-info: hsla(240, 100%, 50%, 1);
+  --border-color-info: rgba(0, 0, 0, 1);
+
+  --twitter-blue: rgb(29, 155, 240);
+}
+
+/* =========================
+   General Page Styles
+========================= */
+
+body {
+  color: var(--text-color-dark);
+}
+
+h2 {
+  font-family: "Roboto Slab Variable", sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+  color: navy;
+}
+
+h3 {
+  font-family: "Roboto Slab Variable", sans-serif;
+  font-weight: 100;
+  color: green;
+}
+
+/* =========================
+   Header and Navigation
+========================= */
+
+header {
+  padding-top: 0.625em;
+  text-align: center;
+  background-color: var(--background-color);
+}
+
+nav {
+  font-size: 1em;
+  background-color: var(--background-color-dark);
+}
+
+nav ol {
+  list-style-type: none;
+}
+
+nav ol li {
+  display: inline-block;
+  padding: 0.5em;
+}
+
+nav a {
+  display: block;
+  padding: 1em;
+  color: var(--text-color-light);
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+  color: var(--text-color-dark);
+  background-color: var(--background-color);
+}
+
+/* =========================
+   Table Styles
+========================= */
+
+.stable {
+  margin-right: auto;
+  margin-left: auto;
+  border-collapse: collapse;
+}
+
+th {
+  padding: 8px;
+  color: black;
+  background-color: gray;
+  border-bottom: thick solid black;
+}
+
+td {
+  padding: 8px;
+  color: black;
+  border-bottom: thin solid black;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: gray;
+}
+
+tbody tr:last-child td {
+  border-bottom: thick solid black;
+}
+
+td:last-child {
+  text-align: right;
+}
+
+tbody > tr > :nth-child(3) {
+  color: purple;
+  font-family: "Lucida Console", monospace;
+}
+
+/* =========================
+   Units Demonstration
+========================= */
+
+.em-units,
+.rem-units {
+  font-size: 1.3em;
+}
+
+/* =========================
+   Alert Boxes
+========================= */
+
+.alert-warning,
+.error,
+.information {
+  width: 40vw;
+  margin: 140px auto 0.5em;
+  padding: 0.5em;
+  border: 2px solid;
+}
+
+.alert-warning {
+  color: var(--text-color-warning);
+  background-color: var(--background-color-warning);
+  border-color: var(--border-color-warning);
+}
+
+.error {
+  color: var(--text-color-error);
+  background-color: var(--background-color-error);
+  border-color: var(--border-color-error);
+}
+
+.information {
+  color: var(--text-color-info);
+  background-color: var(--background-color-info);
+  border-color: var(--border-color-info);
+}
+
+/* =========================
+   Social Card
+========================= */
+
+.social-card {
+  width: 300px;
+  height: 400px;
+  margin: 1em auto;
+  padding: 0.5em;
+  overflow-y: scroll;
+  background-color: rgba(128, 128, 128, 0.3);
+  border: thin solid;
+  border-radius: 0.5em 0 0 0.5em;
+  box-shadow: 3px 3px 5px rgba(128, 128, 128, 0.5);
+}
+
+.twitter {
+  border-color: var(--twitter-blue);
+}
+
+/* =========================
+   Font Demonstration
+========================= */
+
+#font-import {
+  font-family: "Roboto Slab Variable", serif;
+}
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+  padding: 0.375em;
+  font-size: 1em;
+  background-color: var(--background-color);
+}
+
+footer .container {
+  width: 28.125em;
+  height: 7.5em;
+  margin: auto;
+  overflow: hidden;
+  font-size: 1em;
+}
+
+footer .container p {
+  display: block;
+  padding-bottom: 8px;
+}
+
+footer p {
+  float: left;
+  width: 13.75em;
+  font-size: 1em;
+}

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Selector Cheatsheet</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Julian Burnley">
+    <meta name="description" content="Page to help remember CSS selectors">
+    <meta name="keywords" content="study, reminder, selectors, elements, class, pseudo class">
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>Selector {} Cheatsheet</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="css-cheatsheet.html">CSS Cheatsheet</a>
+      </nav>
+    </header>
+    <main>
+      <h2>Selector Types</h2>
+      
+      <div class="card">
+        <p>Element</p>
+        <code>a {color: red;}</code>
+        <code>h2 {font-size: 16px;}</code>
+      </div>
+      
+      <div class="card">
+        <p>Class</p>
+        <code>.center {text-align: left;}</code>
+        <code>.front {color: black;}</code>
+      </div>
+      
+      <div class="card">
+        <p>Id</p>
+        <code>#name {color: green;}</code>
+        <code>#h1 {color: blue;}</code>
+      </div>
+      
+      <div class="card">
+        <p>Universal</p>
+        <code>* {text-align: left;}</code>
+      </div>
+      
+      <div class="card">
+        <p>Multiple</p>
+        <code>h1, h2, h3 {text-align: center;}</code>
+        <code>p, span {color: purple;}</code>
+      </div>
+      
+      <div class="card">
+        <p>Pseudo class</p>
+        <code>button:hover {color: red;}</code>
+        <code>tr:only-child {text-align: center;}</code>             
+      </div>
+      
+      <div class="card">
+        <p>Pseudo element</p>
+        <code>p::first-line {font-weight: 400;}</code>
+        <code>h1::before {content: "";}</code>
+      </div>
+      
+      <div class="card">
+        <p>Attribute</p>
+        <code>h1[rel="external"] { color: red; }</code>
+        <code>input[type="text"] { padding: 3px; }</code>
+      </div>
+      
+      <div class="card">
+        <p>Combinator</p>
+        <code>div p { color: red; }</code>
+        <code>ul > li {border-top: 5px solid red;}</code>
+      </div>
+      
+      <h3>Pseudo Element Selectors</h3>
+      
+      <div class="card">
+        <p>::first-letter</p>
+        <code>p::first-letter { font-size: 2em; }</code>
+        <code>h1::first-letter { color: red; }</code>
+      </div>
+      
+      <div class="card">
+        <p>::before</p>
+        <code>h1::before { content: ""; }</code>
+        <code>div::before { display: block; }</code>
+      </div>
+      
+      <div class="card">
+        <p>::after</p>
+        <code>p::after { content: "."; }</code>
+        <code>a::after { color: blue; }</code>
+      </div>
+      
+      <div class="card">
+        <p>::marker</p>
+        <code>li::marker { color: red; }</code>
+        <code>summary::marker { font-size: 20px; }</code>
+      </div> 
+      
+      <div class="card">
+        <p>::selection</p>
+        <code>p::selection { background: yellow; }</code>
+        <code>div::selection { color: red; }</code>
+      </div>
+      
+      <div class="card">
+        <p>::first-line</p>
+        <code>p::first-line { color: blue; }</code>
+        <code>div::first-line { font-weight: bold; }</code>
+      </div> 
+      
+      <div class="card">
+        <p>::grammar-error</p>
+        <code>p::grammar-error { color: red; }</code>
+        <code>div::grammar-error { text-decoration: underline; }</code>
+      </div> 
+      
+      <div class="card">
+        <p>::spelling-error</p>
+        <code>p::spelling-error { color: red; }</code>
+        <code>div::spelling-error { text-decoration: underline; }</code>
+      </div> 
+      
+      <h3>Pseudo Class Selectors</h3>
+      
+      <div class="card">
+        <p>:dir</p>
+        <code>:dir(ltr) { color: red; }</code>
+        <code>:dir(rtl) { color: blue; }</code>
+      </div> 
+      
+      <div class="card">
+        <p>:lang</p>
+        <code>:lang(en) { color: red; }</code>
+        <code>:lang(fr) { color: blue; }</code>
+      </div> 
+      
+      <div class="card">
+        <p>:any-link</p>
+        <code>:any-link { color: red; }</code>
+        <code>a:any-link { font-weight: bold; }</code>
+      </div> 
+      
+      <div class="card">
+        <p>:link</p>
+        <code>a:link { color: red; }</code>
+        <code>nav a:link { text-decoration: none; }</code>
+      </div> 
+      
+      <div class="card">
+        <p>:local-link</p>
+        <code>a:local-link { color: red; }</code>
+        <code>nav a:local-link { font-weight: bold; }</code>
+      </div> 
+      
+      <div class="card">
+        <p>:target</p>
+        <code>:target { border: 1px solid red; }</code>
+        <code>div:target { background: yellow; }</code>
+      </div> 
+      
+      <div class="card">
+        <p>:target-within</p>
+        <code>:target-within { background: yellow; }</code>
+        <code>div:target-within { border: 1px solid red; }</code>
+      </div> 
+      
+      <div class="card">
+        <p>:scope</p>
+        <code>:scope { color: red; }</code>
+        <code>div:scope { font-weight: bold; }</code>
+      </div> 
+      
+      <div class="card">
+        <p>:hover</p>
+        <code>a:hover { color: red; }</code>
+        <code>button:hover { background: blue; }</code>
+      </div> 
+      
+      <div class="card">
+        <p>:active</p>
+        <code>a:active { color: red; }</code>
+        <code>button:active { background: blue; }</code>
+      </div> 
+      
+      <div class="card">
+        <p>:focus</p>
+        <code>input:focus { border: 1px solid red; }</code>
+        <code>button:focus { outline: none; }</code>
+      </div> 
+      
+      <div class="card">
+        <p>:focus-visible</p>
+        <code>button:focus-visible { outline: 1px solid red; }</code>
+        <code>input:focus-visible { background: yellow; }</code>
+      </div> 
+      
+      <div class="card">
+        <p>:focus-within</p>
+        <code>form:focus-within { background: yellow; }</code>
+        <code>div:focus-within { border: 1px solid red; }</code>
+      </div> 
+      
+      <div class="card">
+        <p>:current</p>
+        <code>:current(p) { color: red; }</code>
+        <code>:current(div) { font-weight: bold; }</code>
+      </div> 
+      
+      <div class="card">
+        <p>:past</p>
+        <code>:past(p) { color: red; }</code>
+        <code>:past(div) { font-weight: bold; }</code>
+      </div> 
+      
+      <div class="card">
+        <p>:future</p>
+        <code>:future(p) { color: red; }</code>
+        <code>:future(div) { font-weight: bold; }</code>
+      </div> 
+      
+      <div class="card">
+        <p>:playing</p>
+        <code>video:playing { border: 1px solid red; }</code>
+        <code>audio:playing { background: yellow; }</code>
+      </div> 
+      
+      <div class="card">
+        <p>:paused</p>
+        <code>video:paused { border: 1px solid red; }</code>
+        <code>audio:paused { background: yellow; }</code>
+      </div> 
+      
+      <div class="card">
+        <p>:autofill</p>
+        <code>input:autofill { background: yellow; }</code>
+        <code>input:-webkit-autofill { color: red; }</code>
+      </div> 
+      
+      <div class="card">
+        <p>:enabled</p>
+        <code>button:enabled { color: red; }</code>
+        <code>input:enabled { background: yellow; }</code>
+      </div> 
+      
+      <h3>Combinator Selectors</h3>
+      
+      <div class="card">
+        <p>Whitespace</p>
+        <code>div p { color: red; }</code>
+        <code>ul li { font-weight: bold; }</code>
+      </div> 
+      
+      <div class="card">
+        <p>Asterisk</p>
+        <code>* { color: red; }</code>
+        <code>div * { font-weight: bold; }</code>
+      </div> 
+      
+      <div class="card">
+        <p>Greater than</p>
+        <code>div > p { color: red; }</code>
+        <code>ul > li { font-weight: bold; }</code>
+      </div> 
+      
+      <div class="card">
+        <p>Plus</p>
+        <code>div + p { color: red; }</code>
+        <code>h1 + p { font-weight: bold; }</code>
+      </div> 
+      
+      <div class="card">
+        <p>Tilde</p>
+        <code>div ~ p { color: red; }</code>
+        <code>h1 ~ p { font-weight: bold; }</code>
+      </div> 
+      
+      <h3>Attribute Selectors</h3>
+      
+      <div class="card">
+        <p>Attribute Only Match</p>
+        <code>h2[title] { color: red; }</code>
+        <code>a[href] { font-weight: bold; }</code>
+      </div> 
+      
+      <div class="card">
+        <p>[att=val]</p>
+        <code>a[href="index.html"] { color: red; }</code>
+        <code>input[type="text"] { background: yellow; }</code>
+      </div> 
+      
+      <div class="card">
+        <p>[att|=val]</p>
+        <code>p[lang|="en"] { color: red; }</code>
+        <code>div[class|="top"] { font-weight: bold; }</code>
+      </div> 
+      
+      <div class="card">
+        <p>[att^=val]</p>
+        <code>a[href^="https"] { color: red; }</code>
+        <code>div[class^="test"] { font-weight: bold; }</code>
+      </div> 
+      
+      <div class="card">
+        <p>[att$=val]</p>
+        <code>a[href$=".pdf"] { color: red; }</code>
+        <code>img[src$=".png"] { border: 1px solid red; }</code>
+      </div> 
+      
+      <div class="card">
+        <p>[att~=val]</p>
+        <code>div[class~="test"] { color: red; }</code>
+        <code>p[title~="flower"] { font-weight: bold; }</code>
+      </div>
+      
+      <div class="card">
+        <p>[att*=val]</p>
+        <code>a[href*="example"] { color: red; }</code>
+        <code>div[class*="test"] { font-weight: bold; }</code>
+      </div> 
+    </main>
+    <footer>
+    <p><strong>Developed by</strong> Julian Burnley</p>
+    <p><strong>Email:</strong> <a href="mailto:julian@julianburnley.com">julian@julianburnley.com</a></p>
+    <p><strong>Date:</strong> <time datetime="2026-07-26">July 26, 2026</time></p>
+  </footer>
+  </body>
+</html>

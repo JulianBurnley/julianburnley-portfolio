@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Tab Component | Lesson 9 Practice Activities</title>
+
+  <meta
+    name="description"
+    content="An accessible tab component using ARIA attributes and JavaScript."
+  >
+  <meta
+    name="keywords"
+    content="ARIA, tablist, tabpanel, accessibility, JavaScript"
+  >
+  <meta name="author" content="Julian Burnley">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  >
+</head>
+
+<body>
+
+  <!-- Skip Navigation -->
+  <a href="#main-content" id="skip-nav">Skip to Main Content</a>
+
+  <!-- Header -->
+  <header>
+    <h1>Lesson 9 Practice Activities</h1>
+
+    <button
+      type="button"
+      id="toggleTheme"
+      class="gradient"
+      aria-pressed="false"
+    >
+      Dark Mode
+    </button>
+  </header>
+
+  <!-- Navigation -->
+  <nav id="main-nav" aria-label="Primary navigation">
+    <ul>
+      <li>
+        <a href="index.html">
+          <i class="material-icons" aria-hidden="true">home</i>
+          Home
+        </a>
+      </li>
+
+      <li>
+        <a href="tab-component.html" aria-current="page">
+          <i class="material-icons" aria-hidden="true">tab</i>
+          Tab Menu
+        </a>
+      </li>
+      <li>
+        <a href="../12988_lesson-9-project-JUL2216252/index.html">
+          <i class="material-icons" aria-hidden="true">assignment</i>
+          Lesson 9 Project
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main-content" tabindex="-1">
+
+    <h2>
+      <i class="material-icons" aria-hidden="true">view_day</i>
+      Tab Component
+    </h2>
+
+    <p class="introduction">
+      This component utilizes a tab interface to control the display of the
+      content. It includes ARIA roles and attributes. JavaScript is used to
+      change the selected tab and content to display. The code to create the
+      component can be found in the code blocks below.
+    </p>
+
+    <!-- Tab Component -->
+    <section class="tab-component" aria-label="Tab component example">
+
+      <!-- Tab Menu -->
+      <div class="tab-menu">
+        <ul class="tab-list" role="tablist" aria-label="Example content tabs">
+          <li role="presentation">
+            <button
+              type="button"
+              class="tab"
+              id="tab1"
+              role="tab"
+              aria-selected="true"
+              aria-controls="content1"
+              tabindex="0"
+            >
+              Tab 1
+            </button>
+          </li>
+
+          <li role="presentation">
+            <button
+              type="button"
+              class="tab"
+              id="tab2"
+              role="tab"
+              aria-selected="false"
+              aria-controls="content2"
+              tabindex="-1"
+            >
+              Tab 2
+            </button>
+          </li>
+
+          <li role="presentation">
+            <button
+              type="button"
+              class="tab"
+              id="tab3"
+              role="tab"
+              aria-selected="false"
+              aria-controls="content3"
+              tabindex="-1"
+            >
+              Tab 3
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Tab Panels -->
+      <div
+        class="tab-content"
+        id="content1"
+        role="tabpanel"
+        aria-labelledby="tab1"
+        tabindex="0"
+      >
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sit
+          delectus perferendis tempore deserunt perspiciatis veniam doloremque
+          dignissimos enim, quaerat soluta ipsum molestiae et ipsam nihil amet
+          optio minus expedita nostrum fuga ut iste.
+        </p>
+      </div>
+
+      <div
+        class="tab-content"
+        id="content2"
+        role="tabpanel"
+        aria-labelledby="tab2"
+        tabindex="0"
+        hidden
+      >
+        <p>
+          Fugit, similique enim, qui ipsum explicabo tempora saepe dolorem
+          nostrum ex pariatur consequatur corrupti, dolore in?
+        </p>
+      </div>
+
+      <div
+        class="tab-content"
+        id="content3"
+        role="tabpanel"
+        aria-labelledby="tab3"
+        tabindex="0"
+        hidden
+      >
+        <p>
+          Doloremque repellendus quisquam voluptatum quia asperiores doloribus
+          magni. Quis doloremque quisquam repellendus.
+        </p>
+      </div>
+
+    </section>
+
+    <!-- Code Examples -->
+    <section class="code-examples" aria-label="Tab component code examples">
+
+      <!-- HTML Code -->
+      <figure class="code-block" id="html">
+        <figcaption>HTML Code</figcaption>
+
+        <pre><code>&lt;div class="tab-menu"&gt;
+  &lt;ul class="tab-list" role="tablist" aria-label="Example content tabs"&gt;
+    &lt;li role="presentation"&gt;
+      &lt;button
+        class="tab"
+        id="tab1"
+        role="tab"
+        aria-selected="true"
+        aria-controls="content1"
+      &gt;
+        Tab 1
+      &lt;/button&gt;
+    &lt;/li&gt;
+
+    &lt;li role="presentation"&gt;
+      &lt;button
+        class="tab"
+        id="tab2"
+        role="tab"
+        aria-selected="false"
+        aria-controls="content2"
+      &gt;
+        Tab 2
+      &lt;/button&gt;
+    &lt;/li&gt;
+
+    &lt;li role="presentation"&gt;
+      &lt;button
+        class="tab"
+        id="tab3"
+        role="tab"
+        aria-selected="false"
+        aria-controls="content3"
+      &gt;
+        Tab 3
+      &lt;/button&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div
+  class="tab-content"
+  id="content1"
+  role="tabpanel"
+  aria-labelledby="tab1"
+  tabindex="0"
+&gt;
+  &lt;p&gt;Add Tab 1 content here.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div
+  class="tab-content"
+  id="content2"
+  role="tabpanel"
+  aria-labelledby="tab2"
+  tabindex="0"
+  hidden
+&gt;
+  &lt;p&gt;Add Tab 2 content here.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div
+  class="tab-content"
+  id="content3"
+  role="tabpanel"
+  aria-labelledby="tab3"
+  tabindex="0"
+  hidden
+&gt;
+  &lt;p&gt;Add Tab 3 content here.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+      </figure>
+
+      <!-- CSS Code -->
+      <figure class="code-block" id="css">
+        <figcaption>CSS Code</figcaption>
+
+        <pre><code>.tab-component {
+  width: 80%;
+  margin: 1rem auto;
+}
+
+.tab-list {
+  display: flex;
+  list-style: none;
+}
+
+.tab {
+  padding: 1rem;
+  background-color: var(--accent-color-100);
+  border: thin solid var(--main-color-800);
+  border-top-width: thick;
+  border-radius: .5rem .5rem 0 0;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.tab[aria-selected="true"] {
+  border-color: var(--main-color-800);
+  border-bottom-color: var(--accent-color-100);
+}
+
+.tab[aria-selected="false"] {
+  background-color: var(--accent-color-50);
+  border-color: var(--main-color-400);
+  border-bottom-color: var(--main-color-800);
+}
+
+.tab:hover {
+  border-color: var(--accent-color-600);
+  background-image: linear-gradient(
+    to top,
+    var(--accent-color-800),
+    var(--accent-color-600)
+  );
+  color: var(--accent-color-100);
+}
+
+.tab-content {
+  position: relative;
+  top: -1px;
+  border: thin solid var(--main-color-800);
+  background-color: var(--accent-color-100);
+  padding: 1rem;
+  border-radius: 0 .5rem .5rem .5rem;
+}</code></pre>
+      </figure>
+
+      <!-- JavaScript Code -->
+      <figure class="code-block" id="javascript">
+        <figcaption>JavaScript Code</figcaption>
+
+        <pre><code>function activateTab(selectedTab) {
+  const tabs = document.querySelectorAll('[role="tab"]');
+  const panels = document.querySelectorAll('[role="tabpanel"]');
+
+  tabs.forEach(function (tab) {
+    const isSelected = tab === selectedTab;
+
+    tab.setAttribute("aria-selected", isSelected);
+    tab.setAttribute("tabindex", isSelected ? "0" : "-1");
+  });
+
+  panels.forEach(function (panel) {
+    panel.hidden =
+      panel.id !== selectedTab.getAttribute("aria-controls");
+  });
+}</code></pre>
+      </figure>
+
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p><strong>Developed by</strong> Julian Burnley</p>
+    <p><strong>Email:</strong> <a href="mailto:julian@julianburnley.com">julian@julianburnley.com</a></p>
+    <p><strong>Date:</strong> <time datetime="2026-07-26">July 26, 2026</time></p>
+  </footer>
+
+  <script>
+    /*
+      Dark Mode
+    */
+    const themeButton = document.getElementById("toggleTheme");
+    const savedTheme = localStorage.getItem("theme");
+
+    if (savedTheme === "dark") {
+      document.body.classList.add("dark-mode");
+      themeButton.textContent = "Light Mode";
+      themeButton.setAttribute("aria-pressed", "true");
+    }
+
+    themeButton.addEventListener("click", function () {
+      document.body.classList.toggle("dark-mode");
+
+      const darkModeActive =
+        document.body.classList.contains("dark-mode");
+
+      themeButton.textContent = darkModeActive
+        ? "Light Mode"
+        : "Dark Mode";
+
+      themeButton.setAttribute(
+        "aria-pressed",
+        darkModeActive.toString()
+      );
+
+      localStorage.setItem(
+        "theme",
+        darkModeActive ? "dark" : "light"
+      );
+    });
+
+    /*
+      Tab Component
+    */
+    const tabs = Array.from(document.querySelectorAll('[role="tab"]'));
+    const tabPanels = document.querySelectorAll('[role="tabpanel"]');
+
+    function activateTab(selectedTab, moveFocus = false) {
+      tabs.forEach(function (tab) {
+        const isSelected = tab === selectedTab;
+
+        tab.setAttribute(
+          "aria-selected",
+          isSelected.toString()
+        );
+
+        tab.setAttribute(
+          "tabindex",
+          isSelected ? "0" : "-1"
+        );
+      });
+
+      tabPanels.forEach(function (panel) {
+        panel.hidden =
+          panel.id !== selectedTab.getAttribute("aria-controls");
+      });
+
+      if (moveFocus) {
+        selectedTab.focus();
+      }
+    }
+
+    tabs.forEach(function (tab, index) {
+      tab.addEventListener("click", function () {
+        activateTab(tab);
+      });
+
+      tab.addEventListener("keydown", function (event) {
+        let newIndex = index;
+
+        if (event.key === "ArrowRight") {
+          newIndex = (index + 1) % tabs.length;
+        } else if (event.key === "ArrowLeft") {
+          newIndex = (index - 1 + tabs.length) % tabs.length;
+        } else if (event.key === "Home") {
+          newIndex = 0;
+        } else if (event.key === "End") {
+          newIndex = tabs.length - 1;
+        } else {
+          return;
+        }
+
+        event.preventDefault();
+        activateTab(tabs[newIndex], true);
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,326 @@
+/*
+Name : Julian Burnley
+Course: CIS233DA
+Section: 12988 
+Instructor : Brian Thurber
+*/
+
+/* ===========================
+   RESET
+   =========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===========================
+   COLOR VARIABLES
+   =========================== */
+
+:root {
+    --primary: #2b2d42;          /* Deep Indigo */
+    --secondary: #8d99ae;        /* Soft Blue */
+    --accent: #f2c94c;           /* Warm Gold */
+    --background: #edf2f4;       /* Cool Gray */
+    --text-dark: #1a1a1a;        /* High contrast */
+    --text-light: #ffffff;
+}
+
+/* DARK MODE VARIABLES */
+.page.dark {
+    --primary: #0d0f1a;
+    --secondary: #2d3142;
+    --accent: #f2c94c;
+    --background: #1a1d29;
+    --text-dark: #e6e6e6;
+    --text-light: #ffffff;
+}
+
+
+/* ===========================
+   GLOBAL
+   =========================== */
+
+body {
+    background-color: var(--background);
+    color: var(--text-dark);
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 1.6;
+}
+
+.page {
+    background-color: var(--background);
+    color: var(--text-dark);
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 1.6;
+}
+
+/* ===========================
+   HEADER + NAVIGATION
+   =========================== */
+
+header {
+    background-color: var(--primary);
+    color: var(--text-light);
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+nav a {
+    color: var(--text-light);
+    text-decoration: none;
+    padding: 0.6rem 1rem;
+    background-color: var(--secondary);
+    border-radius: 6px;
+    transition: 0.2s ease-in-out;
+}
+
+nav a:hover {
+    background-color: var(--accent);
+    color: var(--primary);
+}
+
+/* THEME TOGGLE SWITCH */
+.theme-toggle {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 52px;
+    height: 28px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    inset: 0;
+    background-color: var(--secondary);
+    border-radius: 34px;
+    transition: 0.3s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 3px;
+    bottom: 3px;
+    background-color: var(--text-light);
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+input:checked + .slider {
+    background-color: var(--accent);
+}
+
+input:checked + .slider:before {
+    transform: translateX(24px);
+}
+
+.toggle-text {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.theme-toggle {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.toggle-text {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    user-select: none;
+    transition: color 0.3s ease;
+}
+
+/* When dark mode is active */
+.page.dark .toggle-text {
+    color: var(--text-light);
+}
+
+/* Headings */
+h2 {
+    margin: 2rem 0 1rem;
+    color: var(--primary);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.page.dark h2 {
+    color: var(--text-light);
+}
+
+.page.dark h2 {
+    color: var(--text-light);
+    text-shadow: 0 0 6px var(--accent);
+}
+
+/* ===========================
+   MAIN CONTENT
+   =========================== */
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+h2 {
+    margin: 2rem 0 1rem;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+/* ===========================
+   TERMINOLOGY GRID
+   =========================== */
+
+.Terminology {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem 2rem;
+    margin-bottom: 3rem;
+}
+
+.Terminology dt,
+.Proplist dt {
+    background-color: var(--secondary);
+    color: var(--text-dark); /* dark text in light mode */
+    padding: 0.75rem;
+    font-weight: bold;
+    border-left: 6px solid var(--accent);
+    border-radius: 6px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.Terminology dd,
+.Proplist dd {
+    background-color: var(--background);
+    color: var(--text-dark); /* dark text in light mode */
+    padding: 0.75rem;
+    border-left: 3px solid var(--accent);
+    border-radius: 6px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* ===========================
+   PROPERTIES GRID
+   =========================== */
+
+.Proplist {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem 2rem;
+}
+
+
+/* ===========================
+   FOOTER
+   =========================== */
+
+footer {
+    background-color: var(--primary);
+    color: var(--text-light);
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+/* ===========================
+   RESPONSIVE DESIGN
+   =========================== */
+
+@media (max-width: 700px) {
+
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .Terminology,
+    .Proplist {
+        grid-template-columns: 1fr;
+    }
+
+    .Terminology dt,
+    .Proplist dt {
+        margin-bottom: 0.5rem;
+    }
+
+    .Terminology dd,
+    .Proplist dd {
+        margin-bottom: 1rem;
+    }
+}
+
+/* ✅ Activate CSS-only dark mode */
+#theme-checkbox:checked ~ .page {
+  --primary: #0d0f1a;
+  --secondary: #2d3142;
+  --accent: #f2c94c;
+  --background: #1a1d29;
+  --text-dark: #e6e6e6;
+  --text-light: #ffffff;
+}
+
+ 
+  
+
+
+  
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

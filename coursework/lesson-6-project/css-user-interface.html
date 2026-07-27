@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Julian Burnley">
+    <meta name="description" content="CSS User Interface – Lesson 6 Project">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Lesson 6 Project – CSS User Interface</title>
+
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body id="user">
+
+<!-- UNIVERSAL HEADER -->
+<header class="site-header">
+    <div class="header-top">
+        <h1>Lesson 6 Project</h1>
+        <button id="darkToggle">Dark Mode</button>
+    </div>
+
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="css-user-interface.html">CSS User Interface</a></li>
+            <li><a href="css-box-model.html">CSS Box Model</a></li>
+            <li><a href="html-cheatsheet.html">HTML Tags & Attributes</a></li>
+            <li><a href="media-query.html">Media Feature Query</a></li>
+            <li><a href="info.html">Info</a></li>
+            <li><a href="../12988_lesson-6-practice-activities-JUL2216252/index.html">Lesson 6 Practice Activities</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <h2>CSS User Interface</h2>
+
+    <div class="group-grid">
+
+        <!-- BOX SHADOW -->
+        <section class="group">
+            <h3>Box Shadow</h3>
+
+            <div class="rule-card">
+                <p><strong>none</strong></p>
+                <p>No shadow applied.</p>
+                <p><code>box-shadow: none;</code></p>
+            </div>
+
+            <div class="rule-card">
+                <p><strong>h-offset / v-offset</strong></p>
+                <p>Horizontal and vertical shadow offset.</p>
+                <p><code>box-shadow: 5px 10px;</code></p>
+            </div>
+
+            <div class="rule-card">
+                <p><strong>blur</strong></p>
+                <p>Shadow blur radius.</p>
+                <p><code>box-shadow: 20px 20px 10px grey;</code></p>
+            </div>
+
+            <div class="rule-card">
+                <p><strong>spread</strong></p>
+                <p>Shadow spread radius.</p>
+                <p><code>box-shadow: 20px 20px 50px 15px grey;</code></p>
+            </div>
+
+            <div class="rule-card">
+                <p><strong>color</strong></p>
+                <p>Shadow color.</p>
+                <p><code>box-shadow: 20px 20px 20px 10px red;</code></p>
+            </div>
+
+            <div class="rule-card">
+                <p><strong>inset</strong></p>
+                <p>Inner shadow instead of outer.</p>
+                <p><code>box-shadow: 20px 20px 50px 10px pink inset;</code></p>
+            </div>
+        </section>
+
+        <!-- RADIUS -->
+        <section class="group">
+            <h3>Radius</h3>
+
+            <div class="rule-card">
+                <p><strong>length</strong></p>
+                <p>Defines corner shape.</p>
+                <p><code>border-radius: 100px;</code></p>
+            </div>
+
+            <div class="rule-card">
+                <p><strong>%</strong></p>
+                <p>Corner radius in percentage.</p>
+                <p><code>border-radius: 10%;</code></p>
+            </div>
+
+            <div class="rule-card">
+                <p><strong>initial</strong></p>
+                <p>Resets to default value.</p>
+                <p><code>border-radius: initial;</code></p>
+            </div>
+
+            <div class="rule-card">
+                <p><strong>inherit</strong></p>
+                <p>Inherits parent radius.</p>
+                <p><code>border-radius: inherit;</code></p>
+            </div>
+        </section>
+
+        <!-- COLORS -->
+        <section class="group">
+            <h3>Colors</h3>
+
+            <div class="rule-card">
+                <p><strong>color</strong></p>
+                <p>Text color.</p>
+                <p><code>color: red;</code></p>
+            </div>
+
+            <div class="rule-card">
+                <p><strong>initial</strong></p>
+                <p>Default color.</p>
+                <p><code>color: initial;</code></p>
+            </div>
+
+            <div class="rule-card">
+                <p><strong>inherit</strong></p>
+                <p>Inherits parent color.</p>
+                <p><code>color: inherit;</code></p>
+            </div>
+        </section>
+
+        <!-- FONTS -->
+        <section class="group">
+            <h3>Fonts</h3>
+
+            <div class="rule-card">
+                <p><strong>font-style</strong></p>
+                <p>Normal / italic / oblique.</p>
+                <p><code>font-style: normal;</code></p>
+            </div>
+
+            <div class="rule-card">
+                <p><strong>font-variant</strong></p>
+                <p>Small-caps, normal.</p>
+                <p><code>font-variant: normal;</code></p>
+            </div>
+
+            <div class="rule-card">
+                <p><strong>font-weight</strong></p>
+                <p>Boldness of text.</p>
+                <p><code>font-weight: bold;</code></p>
+            </div>
+
+            <div class="rule-card">
+                <p><strong>font-size / line-height</strong></p>
+                <p>Font size and spacing.</p>
+                <p><code>font-size: x-small;</code></p>
+            </div>
+
+            <div class="rule-card">
+                <p><strong>font-family</strong></p>
+                <p>Font type.</p>
+                <p><code>font-family: Georgia;</code></p>
+            </div>
+        </section>
+
+        <!-- LISTS -->
+        <section class="group">
+            <h3>Lists</h3>
+
+            <div class="rule-card">
+                <p><strong>list-style</strong></p>
+                <p>Sets all list properties.</p>
+                <p><code>list-style: none;</code></p>
+            </div>
+
+            <div class="rule-card">
+                <p><strong>list-style-image</strong></p>
+                <p>Image marker.</p>
+                <p><code>list-style-image: url('sqpurple.gif');</code></p>
+            </div>
+
+            <div class="rule-card">
+                <p><strong>list-style-position</strong></p>
+                <p>Inside or outside.</p>
+                <p><code>list-style-position: outside;</code></p>
+            </div>
+
+            <div class="rule-card">
+                <p><strong>list-style-type</strong></p>
+                <p>Marker type.</p>
+                <p><code>list-style-type: circle;</code></p>
+            </div>
+        </section>
+
+        <!-- BACKGROUND -->
+        <section class="group">
+            <h3>Background</h3>
+
+            <div class="rule-card">
+                <p><strong>background-color</strong></p>
+                <p>Background color.</p>
+                <p><code>background-color: red;</code></p>
+            </div>
+
+            <div class="rule-card">
+                <p><strong>background-image</strong></p>
+                <p>Background image.</p>
+                <p><code>background-image: url('paper.gif');</code></p>
+            </div>
+
+            <div class="rule-card">
+                <p><strong>background-position</strong></p>
+                <p>Image position.</p>
+                <p><code>background-position: left top;</code></p>
+            </div>
+
+            <div class="rule-card">
+                <p><strong>background-size</strong></p>
+                <p>Image size.</p>
+                <p><code>background-size: auto;</code></p>
+            </div>
+
+            <div class="rule-card">
+                <p><strong>background-repeat</strong></p>
+                <p>Repeat behavior.</p>
+                <p><code>background-repeat: repeat;</code></p>
+            </div>
+
+            <div class="rule-card">
+                <p><strong>background-origin</strong></p>
+                <p>Positioning area.</p>
+                <p><code>background-origin: padding-box;</code></p>
+            </div>
+
+            <div class="rule-card">
+                <p><strong>background-clip</strong></p>
+                <p>Painting area.</p>
+                <p><code>background-clip: border-box;</code></p>
+            </div>
+
+            <div class="rule-card">
+                <p><strong>background-attachment</strong></p>
+                <p>Fixed or scroll.</p>
+                <p><code>background-attachment: fixed;</code></p>
+            </div>
+        </section>
+
+    </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="cssfooter">
+    <p><strong>Developed by</strong> Julian Burnley</p>
+    <p><strong>Email:</strong> <a href="mailto:julian@julianburnley.com">julian@julianburnley.com</a></p>
+    <p><strong>Date:</strong> <time datetime="2026-07-26">July 26, 2026</time></p>
+  </footer>
+
+<!-- RETURN TO TOP BUTTON -->
+<button id="returnTop">↑ Top</button>
+
+<!-- SCRIPTS -->
+<script>
+    document.getElementById("darkToggle").onclick = function () {
+        document.body.classList.toggle("dark-mode");
+    };
+
+    const topBtn = document.getElementById("returnTop");
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 200) {
+            topBtn.classList.add("show");
+        } else {
+            topBtn.classList.remove("show");
+        }
+    });
+
+    topBtn.onclick = () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+</script>
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+/*
+  Name: Julian Burnley
+  Course and Section: CIS233DA 12988
+  Instructor Name: Brian Thurber
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Open+Sans:wght@300&family=Roboto+Slab:wght@100;700&display=swap');
+
+:root {
+  --color-very-light: #f4f4f9;
+  --color-light: #e2edf1;
+  --color-medium: #86c5ff;
+  --color-dark: #10222c;
+  --color-code-text: #86592d;
+  --color-code-comment: #149014;
+  --font-main: 'Open Sans', sans-serif;
+  --font-code: 'Courier Prime', monospace;
+  --font-heading: 'Roboto Slab', serif;
+}
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 1em;
+  font-family: var(--font-main);
+  overflow: hidden;
+  height: 100vh;
+}
+
+.left-column {
+  height: 100vh;
+  flex: 0 0 250px;
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  border-right: thick solid var(--color-medium);
+  box-shadow: 5px 0 5px var(--color-dark);
+  padding: 2em;
+}
+
+.left-column h1 {
+  font-size: 1.3em;
+  font-family: var(--font-heading);
+}
+
+.left-column nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-column nav ul {
+  list-style: none;
+}
+
+.left-column nav a {
+  color: var(--color-medium);
+  text-decoration: none;
+  padding: 0.5em;
+  display: block;
+}
+
+.left-column nav a:hover,
+.left-column nav a:focus {
+  background-color: var(--color-medium);
+  color: var(--color-dark);
+}
+
+.left-column footer {
+  height: 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+  padding-right: 1em;
+  overflow: auto;
+}
+
+main h2, main h3 {
+  font-family: var(--font-heading);
+  padding: 1em 0;
+}
+
+.property-group, .term-group {
+  display: flex;
+  flex-direction: row;
+  border-top: thin solid var(--color-medium);
+  padding: 1em;
+  background-color: var(--color-very-light);
+  box-shadow: 5px 5px 5px var(--color-dark);
+  margin-bottom: 1em;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.container > div {
+  flex: 1 1 auto;
+}
+
+dt {
+  border-right: thin solid var(--color-medium);
+  flex: 0 0 10em;
+  font-weight: 700;
+  padding-right: 5px;
+}
+
+dd {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
+
+dd code {
+  font-family: var(--font-code);
+  color: var(--color-code-text);
+}
+
+dd span {
+  color: var(--color-code-comment);
+}

@@ -1,0 +1,652 @@
+/*
+Name: Julian Burnley
+Course: CIS233DA
+Section: 12988
+Instructor: Brian Thurber
+*/
+
+@import url(
+  "https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,700;1,600&family=Montserrat&family=Share+Tech+Mono&display=swap"
+);
+
+/* ===========================
+   COLOR AND FONT SYSTEM
+   =========================== */
+
+:root {
+  --main-color-100: hsl(218, 50%, 95%);
+  --main-color-400: hsl(218, 60%, 65%);
+  --main-color-600: hsl(218, 60%, 45%);
+  --main-color-800: hsl(218, 60%, 15%);
+
+  --accent-color-50: hsl(38, 55%, 96%);
+  --accent-color-100: hsl(38, 50%, 90%);
+  --accent-color-400: hsl(38, 55%, 65%);
+  --accent-color-600: hsl(38, 40%, 40%);
+  --accent-color-800: hsl(38, 20%, 15%);
+
+  --font-headings: "Crimson Pro", Georgia, serif;
+  --font-main: "Montserrat", Verdana, sans-serif;
+  --font-code: "Share Tech Mono", Consolas, monospace;
+}
+
+/* ===========================
+   GLOBAL RESET
+   =========================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+
+  font-family: var(--font-main);
+  color: var(--main-color-800);
+  background-color: var(--main-color-100);
+  line-height: 1.4;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* ===========================
+   HEADER
+   =========================== */
+
+header {
+  position: relative;
+  min-height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 1rem;
+  background-color: var(--accent-color-100);
+  box-shadow: 0 2px 6px var(--main-color-600);
+}
+
+header h1 {
+  text-align: center;
+  font-family: var(--font-headings);
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 700;
+  color: var(--main-color-800);
+}
+
+button.gradient,
+#toggleTheme {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+
+  padding: 0.55rem 1rem;
+  border: thin solid var(--accent-color-600);
+  border-radius: 0.5rem;
+
+  background-image: linear-gradient(
+    to right,
+    var(--accent-color-400),
+    var(--accent-color-600)
+  );
+
+  color: var(--accent-color-100);
+  font-weight: 700;
+  cursor: pointer;
+
+  transition:
+    background 0.3s ease,
+    transform 0.2s ease;
+}
+
+button.gradient:hover,
+#toggleTheme:hover {
+  background-image: linear-gradient(
+    to right,
+    var(--accent-color-600),
+    var(--accent-color-800)
+  );
+}
+
+button.gradient:focus-visible,
+#toggleTheme:focus-visible {
+  outline: 3px solid var(--main-color-800);
+  outline-offset: 3px;
+}
+
+/* ===========================
+   NAVIGATION
+   =========================== */
+
+nav {
+  background-image: linear-gradient(
+    195deg,
+    var(--main-color-400),
+    var(--main-color-600)
+  );
+
+  box-shadow: 2px 0 3px var(--main-color-800);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav a {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+
+  padding: 1rem;
+  color: var(--accent-color-100);
+  font-weight: 600;
+  text-decoration: none;
+
+  transition: background-image 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus-visible,
+nav a[aria-current="page"] {
+  background-image: linear-gradient(
+    to top,
+    var(--main-color-800),
+    var(--main-color-600)
+  );
+}
+
+nav a:focus-visible {
+  outline: 3px solid var(--accent-color-100);
+  outline-offset: -4px;
+}
+
+nav .material-icons {
+  font-size: 1.2rem;
+}
+
+/* ===========================
+   MAIN CONTENT
+   =========================== */
+
+main {
+  width: 100%;
+  padding: 1rem;
+  align-self: start;
+}
+
+main h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+
+  font-family: var(--font-headings);
+  font-size: 1.7rem;
+  line-height: 1.1;
+}
+
+.introduction {
+  max-width: 75rem;
+  margin-top: 0.25rem;
+}
+
+/* ===========================
+   TAB COMPONENT
+   =========================== */
+
+.tab-component {
+  width: min(80%, 70rem);
+  margin: 1rem auto;
+}
+
+.tab-menu {
+  position: relative;
+  z-index: 2;
+}
+
+.tab-list {
+  display: flex;
+  align-items: flex-end;
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tab-list li {
+  display: flex;
+}
+
+/* Tab buttons */
+
+.tab {
+  min-height: 3.25rem;
+  padding: 0.85rem 1rem;
+
+  border: thin solid var(--main-color-800);
+  border-top-width: thick;
+  border-radius: 0.5rem 0.5rem 0 0;
+
+  background-color: var(--accent-color-100);
+  color: var(--main-color-800);
+
+  text-transform: uppercase;
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+/* Remove overlapping side borders */
+
+.tab-list li + li .tab {
+  margin-left: -1px;
+}
+
+/* Selected tab */
+
+.tab[aria-selected="true"] {
+  position: relative;
+  z-index: 3;
+
+  background-color: var(--accent-color-100);
+  border-color: var(--main-color-800);
+  border-bottom-color: var(--accent-color-100);
+}
+
+/* Inactive tabs */
+
+.tab[aria-selected="false"] {
+  background-color: var(--accent-color-50);
+  border-color: var(--main-color-400);
+  border-bottom-color: var(--main-color-800);
+}
+
+/* Hover and focus states */
+
+.tab:hover {
+  border-color: var(--accent-color-600);
+
+  background-image: linear-gradient(
+    to top,
+    var(--accent-color-800),
+    var(--accent-color-600)
+  );
+
+  color: var(--accent-color-100);
+}
+
+.tab:focus-visible {
+  position: relative;
+  z-index: 4;
+
+  outline: 3px solid var(--main-color-600);
+  outline-offset: 2px;
+}
+
+/* ===========================
+   TAB CONTENT
+   =========================== */
+
+.tab-content {
+  position: relative;
+  top: -1px;
+  z-index: 1;
+
+  min-height: 6rem;
+  padding: 1rem;
+
+  border: thin solid var(--main-color-800);
+  border-radius: 0 0.5rem 0.5rem 0.5rem;
+
+  background-color: var(--accent-color-100);
+  color: var(--main-color-800);
+
+  box-shadow: 0 2px 6px rgb(0 0 0 / 15%);
+}
+
+.tab-content[hidden] {
+  display: none;
+}
+
+.tab-content:focus {
+  outline: none;
+}
+
+.tab-content:focus-visible {
+  outline: 3px solid var(--main-color-600);
+  outline-offset: 3px;
+}
+
+/* ===========================
+   CODE EXAMPLES
+   =========================== */
+
+.code-examples {
+  width: min(90%, 80rem);
+  margin: 0 auto 1.5rem;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+
+.code-block {
+  min-width: 0;
+  padding: 1rem;
+
+  display: grid;
+  grid-template-rows: auto 1fr;
+
+  border: thin solid var(--accent-color-600);
+  border-radius: 0.5rem;
+
+  background-color: white;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 15%);
+}
+
+.code-block figcaption {
+  padding-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.code-block pre {
+  max-width: 100%;
+  min-height: 100%;
+  overflow: auto;
+
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+
+  background-color: var(--main-color-800);
+  color: var(--main-color-100);
+
+  font-family: var(--font-code);
+  font-size: 0.85rem;
+  line-height: 1.35;
+
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  tab-size: 2;
+}
+
+.code-block code {
+  font-family: inherit;
+}
+
+/* HTML code spans both columns */
+
+#html {
+  grid-column: 1 / -1;
+}
+
+#css {
+  grid-column: 1;
+}
+
+#javascript {
+  grid-column: 2;
+}
+
+/* ===========================
+   COLLAPSIBLE COMPONENT
+   =========================== */
+
+.collapsible {
+  margin: 1.5rem 0;
+  overflow: hidden;
+
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 10px -4px var(--main-color-600);
+}
+
+.collapse-toggle {
+  width: 100%;
+  padding: 1rem;
+
+  border: none;
+  background-color: var(--main-color-400);
+  color: var(--accent-color-100);
+
+  font-weight: 700;
+  text-align: left;
+  cursor: pointer;
+
+  transition: background-color 0.3s ease;
+}
+
+.collapse-toggle:hover {
+  background-color: var(--main-color-600);
+}
+
+.collapse-content {
+  display: none;
+  padding: 1rem;
+  background-color: var(--accent-color-100);
+}
+
+.collapsible.open .collapse-content {
+  display: block;
+}
+
+/* ===========================
+   DEFINITION LISTS
+   =========================== */
+
+dt {
+  padding: 1rem 0;
+  font-weight: 700;
+}
+
+dd {
+  padding: 0 1rem;
+}
+
+/* ===========================
+   FOOTER
+   =========================== */
+
+footer {
+  min-height: 3rem;
+  padding: 0.75rem 1rem;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1rem;
+
+  background-color: var(--accent-color-100);
+  color: var(--main-color-800);
+
+  font-size: 0.85rem;
+}
+
+footer p span {
+  font-weight: 700;
+}
+
+/* ===========================
+   SKIP NAVIGATION
+   =========================== */
+
+#skip-nav {
+  position: absolute;
+  top: 0;
+  left: 0.5rem;
+  z-index: 1000;
+
+  padding: 0.5rem 1rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+
+  background-color: var(--main-color-800);
+  color: var(--accent-color-100);
+
+  text-decoration: none;
+
+  transform: translateY(-120%);
+  transition: transform 200ms ease;
+}
+
+#skip-nav:focus {
+  transform: translateY(0);
+  outline: 3px solid var(--main-color-400);
+  outline-offset: 2px;
+}
+
+/* ===========================
+   DARK MODE
+   =========================== */
+
+body.dark-mode {
+  --main-color-100: hsl(218, 20%, 10%);
+  --main-color-400: hsl(218, 35%, 40%);
+  --main-color-600: hsl(218, 45%, 55%);
+  --main-color-800: hsl(218, 40%, 92%);
+
+  --accent-color-50: hsl(218, 22%, 22%);
+  --accent-color-100: hsl(218, 25%, 18%);
+  --accent-color-400: hsl(38, 45%, 60%);
+  --accent-color-600: hsl(38, 50%, 42%);
+  --accent-color-800: hsl(38, 60%, 25%);
+
+  background-color: var(--main-color-100);
+  color: var(--main-color-800);
+}
+
+body.dark-mode header {
+  background-color: hsl(38, 25%, 18%);
+}
+
+body.dark-mode nav {
+  background-image: linear-gradient(
+    195deg,
+    hsl(218, 35%, 25%),
+    hsl(218, 35%, 35%)
+  );
+}
+
+body.dark-mode main {
+  background-color: hsl(218, 25%, 14%);
+}
+
+body.dark-mode .tab-content,
+body.dark-mode .collapse-content {
+  background-color: hsl(218, 25%, 20%);
+  color: hsl(218, 40%, 92%);
+}
+
+body.dark-mode .tab[aria-selected="true"] {
+  background-color: hsl(218, 25%, 20%);
+  border-bottom-color: hsl(218, 25%, 20%);
+}
+
+body.dark-mode .tab[aria-selected="false"] {
+  background-color: hsl(218, 22%, 26%);
+}
+
+body.dark-mode .code-block {
+  background-color: hsl(218, 18%, 18%);
+  color: hsl(218, 40%, 92%);
+}
+
+body.dark-mode .code-block pre {
+  background-color: hsl(218, 45%, 8%);
+  color: hsl(218, 40%, 92%);
+}
+
+body.dark-mode footer {
+  background-color: hsl(38, 25%, 18%);
+  color: hsl(218, 40%, 92%);
+}
+
+/* ===========================
+   RESPONSIVE LAYOUT
+   =========================== */
+
+@media (max-width: 800px) {
+  header {
+    padding-right: 1rem;
+    padding-bottom: 4.5rem;
+  }
+
+  #toggleTheme {
+    top: auto;
+    right: 50%;
+    bottom: 0.75rem;
+    transform: translateX(50%);
+  }
+
+  .tab-component,
+  .code-examples {
+    width: 100%;
+  }
+
+  .code-examples {
+    grid-template-columns: 1fr;
+  }
+
+  #html,
+  #css,
+  #javascript {
+    grid-column: 1;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 0.75rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav a {
+    justify-content: center;
+  }
+
+  .tab {
+    padding: 0.75rem;
+    font-size: 0.8rem;
+  }
+
+  .tab-content {
+    border-radius: 0 0.5rem 0.5rem 0.5rem;
+  }
+
+  .code-block {
+    padding: 0.65rem;
+  }
+
+  .code-block pre {
+    font-size: 0.76rem;
+  }
+}

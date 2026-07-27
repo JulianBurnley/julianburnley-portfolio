@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Lesson 9 Practice Activities</title>
+  <meta name="description" content="Lesson 9 accessibility practice activities including skip navigation and ARIA tab components.">
+  <meta name="keywords" content="ARIA, accessibility, skip navigation, tab component, managed widgets">
+  <meta name="author" content="Julian Burnley">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+
+  <!-- Skip Navigation -->
+  <a href="#main-content" id="skip-nav">Skip to Main Content</a>
+
+  <!-- Header -->
+  <header>
+    <h1>Lesson 9 Practice Activities</h1>
+    <button id="toggleTheme" class="gradient">Dark Mode</button>
+  </header>
+
+  <!-- Navigation -->
+  <nav id="main-nav" aria-label="Primary navigation">
+    <ul>
+      <li><a href="index.html"><i class="material-icons">home</i> Home</a></li>
+      <li><a href="tab-component.html"><i class="material-icons">tab</i> Tab Menu</a></li>
+      <li><a href="../12988_lesson-9-project-JUL2216252/index.html"><i class="material-icons">assignment</i> Lesson 9 Project</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main-content" tabindex="-1">
+    <h2><i class="material-icons">list</i> Activity List</h2>
+
+    <!-- Collapsible Section 1 -->
+    <section class="collapsible">
+      <button class="collapse-toggle" type="button" aria-expanded="false">
+        <i class="material-icons">keyboard_tab</i> Skip Navigation Link
+      </button>
+
+      <div class="collapse-content">
+        <p>
+          In this activity, you will add a skip navigation link to the web page to allow screen reader
+          users to jump over any other content that may exist on the page and go directly to the site's
+          navigational controls.
+        </p>
+      </div>
+    </section>
+
+    <!-- Collapsible Section 2 -->
+    <section class="collapsible">
+      <button class="collapse-toggle" type="button" aria-expanded="false">
+        <i class="material-icons">view_day</i> Tab Component
+      </button>
+
+      <div class="collapse-content">
+        <p>
+          In this activity, you will create a tabbed component where content will only display when a
+          tab is clicked on. You will then apply ARIA roles and attributes to improve the accessibility
+          of the component.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p><strong>Developed by</strong> Julian Burnley</p>
+    <p><strong>Email:</strong> <a href="mailto:julian@julianburnley.com">julian@julianburnley.com</a></p>
+    <p><strong>Date:</strong> <time datetime="2026-07-26">July 26, 2026</time></p>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Dark Mode Toggle
+    const toggle = document.getElementById("toggleTheme");
+
+    toggle.onclick = () => {
+      document.body.classList.toggle("dark-mode");
+      const mode = document.body.classList.contains("dark-mode") ? "dark" : "light";
+      toggle.textContent = mode === "dark" ? "Light Mode" : "Dark Mode";
+      localStorage.setItem("theme", mode);
+    };
+
+    if (localStorage.getItem("theme") === "dark") {
+      document.body.classList.add("dark-mode");
+      toggle.textContent = "Light Mode";
+    }
+
+    // Collapsible Sections
+    document.querySelectorAll(".collapse-toggle").forEach(btn => {
+      btn.onclick = () => {
+        const section = btn.parentElement;
+        section.classList.toggle("open");
+        btn.setAttribute("aria-expanded", section.classList.contains("open"));
+      };
+    });
+  </script>
+
+</body>
+</html>

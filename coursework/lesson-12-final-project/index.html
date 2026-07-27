@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Design Reference Library | Julian Burnley</title>
+  <meta name="author" content="Julian Burnley">
+  <meta name="description" content="A portfolio reference library covering HTML, CSS, accessibility, media, and reusable web components.">
+  <meta name="keywords" content="HTML, CSS, ARIA, accessibility, web components, portfolio">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Julian Burnley's Web Design Reference Library">
+  <meta property="og:description" content="A practical library of front-end concepts, patterns, and reusable components.">
+  <meta property="og:url" content="https://github.com/jlnburn/12988_lesson-12-final-exam-project-part-ii-JUL2216252">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header>
+    <p class="eyebrow">Julian Burnley · Front-End Portfolio</p>
+    <h1>Web Design Reference Library</h1>
+    <p class="site-summary">A practical collection of front-end concepts, accessible patterns, and reusable components.</p>
+    <nav aria-label="Primary navigation">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="html.html">Cheatsheets</a>
+          <ul class="dropdown">
+            <li><a href="html.html">HTML</a></li>
+            <li><a href="selectors.html">Selectors</a></li>
+            <li><a href="layout.html">Layout</a></li>
+            <li><a href="ui.html">UI</a></li>
+            <li><a href="at-rules.html">At Rules</a></li>
+            <li><a href="effects.html">Effects</a></li>
+            <li><a href="aria.html">ARIA</a></li>
+          </ul>
+        </li>
+        <li><a href="menus.html">Patterns &amp; Components</a>
+          <ul class="dropdown">
+            <li><a href="menus.html">Menus</a></li>
+            <li><a href="widgets.html">Widgets</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="cards.html">Cards</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content" class="library-home" tabindex="-1">
+    <section class="hero-panel">
+      <p class="eyebrow">Final portfolio project</p>
+      <h2>Learn, reference, and build</h2>
+      <p>This library brings together the techniques developed throughout the course in one organized resource. Use it to review syntax, compare layout methods, understand accessible interfaces, and find reusable component examples.</p>
+      <div class="hero-actions">
+        <a class="primary-action" href="html.html">Browse cheatsheets</a>
+        <a class="secondary-action" href="menus.html">Explore components</a>
+      </div>
+    </section>
+
+    <section aria-labelledby="library-sections">
+      <h2 id="library-sections">Library sections</h2>
+      <div class="library-grid">
+        <article>
+          <p class="card-number">01</p>
+          <h3>HTML Foundations</h3>
+          <p>Semantic elements, document structure, forms, tables, and international content.</p>
+          <a href="html.html">Open HTML cheatsheet</a>
+        </article>
+        <article>
+          <p class="card-number">02</p>
+          <h3>CSS Systems</h3>
+          <p>Selectors, layouts, interface styling, at-rules, transitions, transforms, and animation.</p>
+          <a href="selectors.html">Explore CSS references</a>
+        </article>
+        <article>
+          <p class="card-number">03</p>
+          <h3>Accessible Interfaces</h3>
+          <p>ARIA roles, properties, states, keyboard behavior, and inclusive component patterns.</p>
+          <a href="aria.html">Review accessibility</a>
+        </article>
+        <article>
+          <p class="card-number">04</p>
+          <h3>Reusable Components</h3>
+          <p>Menus, widgets, digital media, and card patterns ready to adapt for future projects.</p>
+          <a href="cards.html">View component examples</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>Developed by</strong><span>Julian Burnley</span></p>
+    <p><strong>Email:</strong><a href="mailto:julian@julianburnley.com">julian@julianburnley.com</a></p>
+    <p><strong>Date:</strong><time datetime="2026-07-26">July 26, 2026</time></p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

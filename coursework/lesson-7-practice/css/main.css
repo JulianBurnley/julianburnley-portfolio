@@ -1,0 +1,450 @@
+/*
+  Name: Julian Burnley
+*/
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;300;400;700&family=Lato:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+/* Color & Font Variables */
+:root {
+  --main-color-100: hsl(10, 25%, 90%);
+  --main-color-200: hsl(10, 45%, 85%);
+  --main-color-400: hsl(10, 35%, 50%);
+  --main-color-600: hsl(10, 35%, 75%);
+  --main-color-800: hsl(10, 25%, 15%);
+
+  --accent-color-200: hsl(190, 35%, 90%);
+  --accent-color-400: hsl(190, 40%, 50%);
+  --accent-color-600: hsl(190, 40%, 30%);
+  --accent-color-800: hsl(190, 25%, 15%);
+
+  --font-body: "Lato", sans-serif;
+  --font-headings: "Roboto", sans-serif;
+  --font-code: "IBM Plex Mono", monospace;
+}
+
+/* Dark Mode Theme */
+:root.dark {
+  --main-color-100: hsl(10, 15%, 12%);
+  --main-color-200: hsl(10, 20%, 18%);
+  --main-color-400: hsl(10, 25%, 30%);
+  --main-color-600: hsl(10, 30%, 40%);
+  --main-color-800: hsl(10, 35%, 85%);
+
+  --accent-color-200: hsl(190, 20%, 20%);
+  --accent-color-400: hsl(190, 30%, 40%);
+  --accent-color-600: hsl(190, 40%, 70%);
+  --accent-color-800: hsl(190, 45%, 90%);
+}
+
+
+/* Reset */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Layout */
+body {
+  display: grid;
+  grid-template-columns: minmax(16rem, 22rem) 1fr;
+  height: 100vh;
+  background-color: var(--main-color-100);
+  color: var(--main-color-800);
+  font-family: var(--font-body);
+  overflow: hidden;
+  gap: .5rem;
+}
+
+body {
+  animation: fadeIn .6s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Sidebar */
+#left-side {
+  background: linear-gradient(to bottom, var(--main-color-600), var(--main-color-400));
+  padding: 1.5rem;
+  box-shadow: 0 3px 6px var(--accent-color-800);
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  gap: 2rem;
+  border-right: 6px solid var(--accent-color-800);
+}
+
+/* Sidebar Heading */
+#left-side h1 {
+  font-size: 1.75rem;
+  letter-spacing: 1px;
+  font-family: var(--font-headings);
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  display: block;
+  width: 100%; /* ensures tabs fill the sidebar width */
+  padding: .75rem 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--accent-color-800);
+  background-color: var(--accent-color-200);
+  border-radius: .35rem;
+  letter-spacing: .5px;
+  transition: background-color .25s ease, color .25s ease;
+  box-sizing: border-box;
+}
+
+nav a:hover {
+  background-color: var(--accent-color-400);
+  color: var(--accent-color-200);
+}
+
+nav a.active {
+  background-color: var(--accent-color-600);
+  color: var(--accent-color-200);
+}
+
+nav a {
+  position: relative;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 1rem;
+  right: 1rem;
+  bottom: .4rem;
+  height: 2px;
+  background-color: var(--accent-color-800);
+  transform: scaleX(0);
+  transition: transform .25s ease;
+}
+
+nav a:hover::after {
+  transform: scaleX(1);
+}
+
+
+
+/* Student Info Card */
+#student-info {
+  background-color: var(--main-color-200);
+  padding: 1rem;
+  border-radius: .5rem;
+  box-shadow: inset 0 0 4px var(--accent-color-800);
+  align-self: end;
+}
+
+#student-info p {
+  padding: .35rem 0;
+  font-size: .95rem;
+}
+
+#student-info span {
+  font-weight: 700;
+  color: var(--accent-color-800);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-headings);
+}
+
+p {
+  padding-bottom: 1rem;
+}
+
+dt {
+  padding: .75rem 0;
+  font-weight: 700;
+}
+
+dd {
+  margin-left: 2rem;
+}
+
+/* Main Content */
+main {
+  padding: 1rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Transform Example Layout */
+.example {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  gap: 1rem;
+}
+
+.rotate-left {
+  grid-column: 1;
+  font-size: 2.5rem;
+  width: max-content;
+  text-align: right;
+  writing-mode: vertical-rl;
+  transform-origin: top left;
+  transform: rotateZ(180deg) translate(-3rem, -100%);
+  border-left: 4px solid var(--accent-color-600);
+}
+
+.content {
+  grid-column: 2;
+  text-align: left;
+}
+
+/* Code Panels */
+.example-code {
+  display: flex;
+  gap: .5rem;
+  width: 90%;
+  margin: auto;
+}
+
+.html-code,
+.css-code {
+  border: 1px solid var(--accent-color-600);
+  border-left-width: 6px;
+  background-color: var(--accent-color-200);
+  height: 35vh;
+  overflow-y: auto;
+}
+
+.html-code {
+  width: 50%;
+}
+
+.css-code {
+  width: 50%;
+}
+
+pre {
+  margin: .5rem;
+  font-size: .85rem;
+  font-family: var(--font-code);
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+/* Polaroid Image */
+.img-polaroid {
+  width: 300px;
+  height: 350px;
+  padding: 1rem;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  margin: 2rem;
+  float: right;
+  box-shadow: -3px 3px 6px var(--accent-color-800);
+  transform-origin: top;
+  transform: rotate(10deg);
+}
+
+.img-polaroid img {
+  width: 100%;
+  height: auto;
+  border: 1px solid lightgray;
+}
+
+.img-title {
+  text-transform: uppercase;
+  padding: .25rem 0;
+}
+
+.img-attribution {
+  font-size: smaller;
+  text-align: right;
+}
+
+/* Transition Styles below this comment */
+
+/* Dropdown positioning */
+.dropdown {
+  position: relative;
+   z-index: 5;
+}
+
+/* Dropdown title (button) */
+.dropdown-title {
+  background-color: transparent;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Down arrow indicator */
+.dropdown-title::after {
+  content: "";
+  border: .35rem solid transparent;
+  border-top-color: var(--main-color-200);
+  opacity: .7;
+  margin-left: .35rem;
+  transform: translateY(.3rem);
+}
+
+/* Arrow color change on hover/focus */
+.dropdown:hover .dropdown-title::after,
+.dropdown:focus-within .dropdown-title::after {
+  border-top-color: var(--accent-color-800);
+}
+
+/* Dropdown menu hidden state */
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% - .25rem);
+  left: 50%;
+  min-width: 15ch;
+  background-color: var(--main-color-400);
+  box-shadow: 0 3px 6px var(--accent-color-800);
+  padding: .5rem 0;
+  border-radius: .5rem;
+  transform-origin: top center;
+  transform: rotateX(-90deg) translateX(-50%);
+  opacity: .3;
+  visibility: hidden;
+  transition: all 200ms 100ms ease-out;
+   z-index: 10;
+}
+
+/* Dropdown menu visible state */
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: rotateX(0) translateX(-50%);
+}
+
+/* Dropdown menu links */
+.dropdown-menu a {
+  display: block;
+  padding: .5rem;
+  opacity: 0;
+  transition: all 200ms 100ms ease-out;
+}
+
+/* Reveal links when menu opens */
+.dropdown:hover .dropdown-menu a,
+.dropdown:focus-within .dropdown-menu a {
+  opacity: 1;
+}
+
+/* Hover/focus link states */
+.dropdown-menu a:hover,
+.dropdown-menu a:focus {
+  background-color: var(--accent-color-200);
+  color: var(--accent-color-800);
+  outline: none;
+}
+
+
+/* Transition Demo */
+.demo {
+  background-color: white;
+  border: 1px solid var(--accent-color-800);
+  border-radius: .5rem;
+  width: 70%;
+  margin: 1rem auto;
+  padding: 1rem;
+  box-shadow: 10px 10px 5px var(--accent-color-200);
+}
+
+.demo:hover,
+.img-polaroid:hover,
+.example-code:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,.25);
+  transition: all .25s ease;
+}
+
+
+
+/* Horizontal Menu (Transitions page) */
+.horizontal-menu {
+  list-style: none;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  position: relative;
+}
+
+.horizontal-menu > li {
+  padding: 1rem;
+  color: var(--main-color-100);
+  text-align: center;
+}
+
+/* Animation Styles below this comment */
+@keyframes breathe {
+  from {
+    box-shadow: 0 0 10px var(--accent-color-600);
+    border-color: var(--accent-color-200);
+  }
+  50% {
+    box-shadow: 0 0 10px var(--accent-color-200);
+    border-color: var(--accent-color-600);
+  }
+  to {
+    box-shadow: 0 0 10px var(--accent-color-600);
+    border-color: var(--accent-color-200);
+  }
+}
+
+.demo .breathe {
+  margin: .5rem auto;
+  padding: .5rem 1rem;
+  display: block;
+  border: 1px solid var(--accent-color-400);
+  background-color: var(--accent-color-200);
+  color: var(--accent-color-800);
+  border-radius: 1rem;
+}
+
+.demo .breathe:hover,
+.demo .breathe:focus {
+  background-color: var(--accent-color-800);
+  color: var(--accent-color-200);
+  animation-name: breathe;
+  animation-duration: 1500ms;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+}
+
+footer {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: var(--main-color-800);
+  color: var(--main-color-100);
+}
+
+footer a {
+  color: inherit;
+}
+
+@media (max-width: 700px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}

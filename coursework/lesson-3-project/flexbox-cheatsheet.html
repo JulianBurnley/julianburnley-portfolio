@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lesson 3 Project</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Julian Burnley">
+    <meta name="description" content="Cheatsheet for CSS Flexbox properties">
+    <meta name="keywords" content="cheatsheet, flexbox properties, flex containers, flex items">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <section class="left-column">
+        <h1>Flexbox Cheatsheet</h1>
+        <nav>
+            <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="flexbox-cheatsheet.html">Flexbox Cheatsheet</a></li>
+   <li><a href="../12988_lesson-3-practice-activities-JUL2216252/index.html">Lesson 3 Practice Activities</a></li>
+</ul>
+        </nav>
+        <footer>
+    <p><strong>Developed by</strong> Julian Burnley</p>
+    <p><strong>Email:</strong> <a href="mailto:julian@julianburnley.com">julian@julianburnley.com</a></p>
+    <p><strong>Date:</strong> <time datetime="2026-07-26">July 26, 2026</time></p>
+  </footer>
+    </section>
+    <main>
+        <h2>Terminology</h2>
+        <dl>
+            <div class="term-group">
+                <dt>Flex Container</dt>
+                <dd>A flex container is space preserved for use after creating a flexbox.</dd>
+            </div>
+            <div class="term-group">
+                <dt>Flex Items</dt>
+                <dd>Flex items are all the containers created from a flexbox, also known as children.</dd>
+            </div>
+            <div class="term-group">
+                <dt>Flex Directions</dt>
+                <dd>The flex direction determines the orientation of the flex items.</dd>
+            </div>
+            <div class="term-group">
+                <dt>Main axis</dt>
+                <dd>The main axis can be described as the left to right or x axis of the flex container.</dd>
+            </div>
+            <div class="term-group">
+                <dt>Main size properties</dt>
+                <dd>Size could refer to the height, width, or number of characters of elements or inputs.</dd>
+            </div>
+            <div class="term-group">
+                <dt>Cross axis</dt>
+                <dd>The cross axis is similar to the y axis of a grid running down to up of a flex container.</dd>
+            </div>
+            <div class="term-group">
+                <dt>Cross size properties</dt>
+                <dd>The length of the items on the cross axis.</dd>
+            </div>
+        </dl>
+       
+        <h2>Properties</h2>
+        <section class="container">
+            <div>
+                <h3>Flex Container Properties</h3>
+                <dl>
+                    <div class="property-group">
+                        <dt>flex</dt>
+                        <dd>
+                            <code>flex-grow; <span>/* a number that determines how much a flex item grows */</span></code>
+                        </dd>
+                    </div>
+                    <div class="property-group">
+                        <dt>flex-direction</dt>
+                        <dd>
+                            <code>row; <span>/* displays items horizontally */</span></code>
+                            <code>row-reverse; <span>/* opposite of row */</span></code>
+                        </dd>
+                    </div>
+                    <div class="property-group">
+                        <dt>flex-wrap</dt>
+                        <dd>
+                            <code>nowrap; <span>/* flex item will not wrap */</span></code>
+                            <code>wrap; <span>/* flex items wrap if necessary */</span></code>
+                            <code>wrap-reverse; <span>/* items wrap in reverse order */</span></code>
+                        </dd>
+                    </div>  
+                    <div class="property-group">
+                        <dt>display</dt>
+                        <dd>
+                            <code>block; <span>/* flex items are displayed as a block */</span></code>
+                            <code>inline; <span>/* flex items are displayed inline */</span></code>
+                        </dd>
+                    </div>
+                    <div class="property-group">
+                        <dt>justify-content</dt>
+                        <dd>
+                            <code>flex-start; <span>/* items are aligned at the beginning of the container */</span></code>
+                            <code>flex-end; <span>/* items are aligned at the end of the container */</span></code>
+                        </dd>
+                    </div>
+                    <div class="property-group">
+                        <dt>row-gap</dt>
+                        <dd>
+                            <code>length; <span>/* row gap with any length value or percentage */</span></code>
+                            <code>normal; <span>/* the default row gap of 1em */</span></code> 
+                        </dd>
+                    </div>
+                    <div class="property-group">
+                        <dt>column-gap</dt>
+                        <dd>
+                            <code>length; <span>/* column gap with any length value or percentage */</span></code> 
+                            <code>normal; <span>/* the default column gap of 1em */</span></code> 
+                        </dd>    
+                    </div>
+                </dl>
+            </div>
+            
+            <div>
+                <h3>Flex Item Properties</h3>
+                <dl>
+                    <div class="property-group">
+                        <dt>order</dt>
+                        <dd>
+                            <code>number; <span>/* specifies the order with a default value of 0 */</span></code>
+                            <code>initial; <span>/* sets the order to 0 */</span></code>
+                            <code>inherit; <span>/* the same order value as the parent item */</span></code>
+                        </dd>
+                    </div>
+                    <div class="property-group">
+                        <dt>flex-grow</dt>
+                        <dd>
+                            <code>number; <span>/* specifies how much the item will grow */</span></code>
+                            <code>initial; <span>/* the default value */</span></code>
+                        </dd>
+                    </div>
+                    <div class="property-group">
+                        <dt>flex-shrink</dt>
+                        <dd>
+                            <code>number; <span>/* specifies how much the item will shrink */</span></code>
+                            <code>initial; <span>/* the default value */</span></code>
+                        </dd>
+                    </div>
+                    <div class="property-group">
+                        <dt>flex-basis</dt>
+                        <dd>
+                            <code>number; <span>/* specifies the initial length of a flex item */</span></code>
+                            <code>initial; <span>/* the default value */</span></code>
+                        </dd>
+                    </div>
+                    <div class="property-group">
+                        <dt>align-self</dt>
+                        <dd>
+                            <code>center; <span>/* Put the item around the center */</span></code>
+                            <code>flex-start; <span>/* Put the item at the start */</span></code>
+                        </dd>
+                    </div>
+                    <div class="property-group">
+                        <dt>flex</dt>
+                        <dd>
+                            <code>flex-grow; <span>/* a number that determines how much a flex item grows */</span></code>
+                            <code>flex-shrink; <span>/* a number that determines how much the flex item shrinks */</span></code>
+                        </dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+    </main>
+  </body>
+</html>

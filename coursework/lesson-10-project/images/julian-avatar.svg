@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-labelledby="title description">
+  <title id="title">Julian Burnley monogram</title>
+  <desc id="description">The initials JB on a dark circular background with a gold accent ring.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#172033"/>
+      <stop offset="1" stop-color="#080d18"/>
+    </linearGradient>
+  </defs>
+  <circle cx="200" cy="200" r="190" fill="url(#background)"/>
+  <circle cx="200" cy="200" r="166" fill="none" stroke="#d5a94e" stroke-width="8"/>
+  <text x="200" y="235" fill="#f7f3e8" font-family="Georgia, serif" font-size="128" font-weight="700" text-anchor="middle">JB</text>
+</svg>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Julian Burnley">
+    <meta name="description" content="HTML Tags and Attributes – Lesson 6 Project">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Lesson 6 Project – HTML Tags & Attributes</title>
+
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body id="cheat">
+<!-- UNIVERSAL HEADER -->
+<header class="site-header">
+    <div class="header-top">
+        <h1>Lesson 6 Project</h1>
+        <button id="darkToggle">Dark Mode</button>
+    </div>
+
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="css-user-interface.html">CSS User Interface</a></li>
+            <li><a href="css-box-model.html">CSS Box Model</a></li>
+            <li><a href="html-cheatsheet.html">HTML Tags and Attributes</a></li>
+            <li><a href="media-query.html">Media Feature Query</a></li>
+            <li><a href="info.html">Info</a></li>
+             <li><a href="../12988_lesson-6-practice-activities-JUL2216252/index.html">Lesson 6 Practice Activities</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+    <!-- MAIN CONTENT -->
+<main>
+
+    <h2>HTML Tags and Attributes</h2>
+
+    <div class="group-grid">
+
+        <!-- LEFT COLUMN -->
+        <section class="group">
+            <h3>Head Group</h3>
+            <div class="card-row">
+                <div class="card"><p><strong>&lt;head&gt;</strong></p><p>Document metadata.</p></div>
+                <div class="card"><p><strong>&lt;title&gt;</strong></p><p>Document title.</p></div>
+                <div class="card"><p><strong>&lt;link&gt;</strong></p><p>External resources.</p></div>
+                <div class="card"><p><strong>&lt;meta&gt;</strong></p><p>Metadata.</p></div>
+                <div class="card"><p><strong>&lt;style&gt;</strong></p><p>Internal CSS.</p></div>
+            </div>
+        </section>
+
+        <section class="group">
+            <h3>Grouping Group</h3>
+            <div class="card-row">
+                <div class="card"><p><strong>&lt;p&gt;</strong></p><p>Paragraph text.</p></div>
+                <div class="card"><p><strong>&lt;ol&gt;</strong></p><p>Ordered list.</p></div>
+                <div class="card"><p><strong>&lt;ul&gt;</strong></p><p>Unordered list.</p></div>
+                <div class="card"><p><strong>&lt;dl&gt;</strong></p><p>Description list.</p></div>
+            </div>
+        </section>
+
+        <section class="group">
+            <h3>Table Group</h3>
+            <div class="card-row">
+                <div class="card"><p><strong>&lt;table&gt;</strong></p><p>Creates a table.</p></div>
+                <div class="card"><p><strong>&lt;tr&gt;</strong></p><p>Table row.</p></div>
+                <div class="card"><p><strong>&lt;td&gt;</strong></p><p>Table cell.</p></div>
+                <div class="card"><p><strong>&lt;th&gt;</strong></p><p>Header cell.</p></div>
+            </div>
+        </section>
+
+        <!-- RIGHT COLUMN -->
+        <section class="group">
+            <h3>Sectioning Group</h3>
+            <div class="card-row">
+                <div class="card"><p><strong>&lt;article&gt;</strong></p><p>Independent content.</p></div>
+                <div class="card"><p><strong>&lt;aside&gt;</strong></p><p>Side content.</p></div>
+                <div class="card"><p><strong>&lt;main&gt;</strong></p><p>Main content.</p></div>
+                <div class="card"><p><strong>&lt;div&gt;</strong></p><p>Generic container.</p></div>
+                <div class="card"><p><strong>&lt;fieldset&gt;</strong></p><p>Group form controls.</p></div>
+            </div>
+        </section>
+
+        <section class="group">
+            <h3>Text Group</h3>
+            <div class="card-row">
+                <div class="card"><p><strong>&lt;span&gt;</strong></p><p>Inline container.</p></div>
+                <div class="card"><p><strong>&lt;br&gt;</strong></p><p>Line break.</p></div>
+                <div class="card"><p><strong>&lt;h1&gt;–&lt;h6&gt;</strong></p><p>Headings.</p></div>
+                <div class="card"><p><strong>&lt;strong&gt;</strong></p><p>Strong importance.</p></div>
+            </div>
+        </section>
+
+        <section class="group">
+            <h3>Form Group</h3>
+            <div class="card-row">
+                <div class="card"><p><strong>&lt;form&gt;</strong></p><p>Defines a form.</p></div>
+                <div class="card"><p><strong>action</strong></p><p>Submission URL.</p></div>
+                <div class="card"><p><strong>target</strong></p><p>Response location.</p></div>
+                <div class="card"><p><strong>method</strong></p><p>GET or POST.</p></div>
+                <div class="card"><p><strong>autocomplete</strong></p><p>Enable/disable.</p></div>
+                <div class="card"><p><strong>novalidate</strong></p><p>No validation.</p></div>
+            </div>
+        </section>
+
+    </div>
+
+</main>
+
+
+    <!-- FOOTER -->
+    <footer>
+    <p><strong>Developed by</strong> Julian Burnley</p>
+    <p><strong>Email:</strong> <a href="mailto:julian@julianburnley.com">julian@julianburnley.com</a></p>
+    <p><strong>Date:</strong> <time datetime="2026-07-26">July 26, 2026</time></p>
+  </footer>
+
+
+<!-- RETURN TO TOP BUTTON (must be BEFORE scripts) -->
+<button id="returnTop">↑ Top</button>
+
+<!-- SCRIPTS -->
+<script>
+    // Dark mode toggle
+    document.getElementById("darkToggle").onclick = function () {
+        document.body.classList.toggle("dark-mode");
+    };
+
+    // Return to Top button logic
+    const topBtn = document.getElementById("returnTop");
+
+    // Show button when scrolling down
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 200) {
+            topBtn.classList.add("show");
+        } else {
+            topBtn.classList.remove("show");
+        }
+    });
+
+    // Smooth scroll to top
+    topBtn.onclick = function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+</script>
+
+</body>
+</html>

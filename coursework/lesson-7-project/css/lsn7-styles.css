@@ -1,0 +1,453 @@
+/*
+ Name : Julian Burnley
+ Course: CIS233DA
+ Section: 12988 
+ Instructor : Brian Thurber
+*/
+
+/* -------------------------------------------------------
+   FONT IMPORTS & ROOT VARIABLES
+-------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;300;400;700&family=Lato:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap');
+
+:root {
+  --main-color-100: hsl(70, 71%, 64%);
+  --main-color-200: hsl(321, 20%, 58%);
+  --main-color-400: hsl(92, 56%, 56%);
+  --main-color-600: hsl(52, 31%, 49%);
+  --main-color-800: hsl(11, 22%, 10%);
+
+  --accent-color-200: hsl(191, 65%, 88%);
+  --accent-color-400: hsl(190, 40%, 50%);
+  --accent-color-600: hsl(141, 100%, 17%);
+  --accent-color-800: hsl(191, 33%, 10%);
+
+  --glass-bg: rgba(255, 255, 255, 0.18);
+  --glass-border: rgba(255, 255, 255, 0.35);
+  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+
+  --font-body: "Lato", sans-serif;
+  --font-headings: "Roboto", sans-serif;
+  --font-code: "IBM Plex Mono", monospace;
+}
+
+/* -------------------------------------------------------
+   DARK MODE VARIABLES
+-------------------------------------------------------- */
+body.dark-mode {
+  --main-color-100: hsl(210, 15%, 12%);
+  --main-color-200: hsl(210, 15%, 18%);
+  --main-color-400: hsl(210, 15%, 22%);
+  --main-color-600: hsl(210, 15%, 28%);
+  --main-color-800: hsl(210, 15%, 92%);
+
+  --accent-color-200: hsl(141, 25%, 25%);
+  --accent-color-400: hsl(141, 35%, 35%);
+  --accent-color-600: hsl(141, 45%, 45%);
+  --accent-color-800: hsl(141, 55%, 85%);
+
+  --glass-bg: rgba(20, 20, 30, 0.55);
+  --glass-border: rgba(255, 255, 255, 0.25);
+  --glass-shadow: 0 12px 40px rgba(0, 0, 0, 0.7);
+}
+
+/* -------------------------------------------------------
+   ACCESSIBILITY: REDUCE MOTION
+-------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* -------------------------------------------------------
+   RESET
+-------------------------------------------------------- */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* -------------------------------------------------------
+   GLOBAL LAYOUT & SCROLL
+-------------------------------------------------------- */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+body {
+  height: 95vh;
+  overflow-x: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  font-family: var(--font-body);
+  background: radial-gradient(circle at top left, var(--main-color-100), var(--accent-color-200));
+  color: var(--main-color-800);
+}
+
+/* -------------------------------------------------------
+   GLASSMORPHISM BASE
+-------------------------------------------------------- */
+.glass {
+  background: var(--glass-bg);
+  border-radius: 1rem;
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+  backdrop-filter: blur(16px);
+}
+
+/* -------------------------------------------------------
+   LEFT SIDEBAR (Sticky + Glass)
+-------------------------------------------------------- */
+.left-side {
+  position: sticky;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 24rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-right: 4px solid var(--accent-color-600);
+}
+
+.left-side.glass {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 1rem;
+}
+
+#student-info p {
+  padding: .5rem 0;
+}
+
+#student-info span {
+  font-weight: 700;
+}
+
+/* -------------------------------------------------------
+   NAVIGATION (Animated Tabs)
+-------------------------------------------------------- */
+#navbar {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}
+
+#navbar > li {
+  list-style: none;
+  margin-bottom: 0.75rem; 
+  gap: 1rem; 
+}
+
+.child-links {
+  display: none;
+  flex-direction: column;
+  margin-left: 1rem;
+  gap: .35rem;
+  list-style-type: none;
+}
+
+li.active > .child-links {
+  display: flex;
+}
+
+nav a {
+  position: relative;
+  color: var(--accent-color-800);
+  text-decoration: none;
+  padding: .6rem .75rem;
+  display: block;
+  font-weight: 700;
+  border-radius: .75rem;
+  background-color: var(--accent-color-200);
+  transition: background-color .25s ease, color .25s ease, transform .2s ease;
+  overflow: hidden;
+}
+
+/* animated tab underline */
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 3px;
+  background: var(--accent-color-600);
+  transition: width .25s ease;
+}
+
+nav a:hover::after,
+nav a.active::after {
+  width: 100%;
+}
+
+nav a:hover {
+  background-color: var(--accent-color-400);
+  color: white;
+  transform: translateY(-1px);
+}
+
+nav a.active {
+  background-color: var(--accent-color-600);
+  color: white;
+}
+
+.child-links a {
+  font-size: .95rem;
+  padding-left: 1.5rem;
+}
+
+/* -------------------------------------------------------
+   FLOATING NAV BUTTON
+-------------------------------------------------------- */
+#floating-nav {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  z-index: 999;
+  padding: .75rem 1rem;
+  border-radius: 999px;
+  background: var(--accent-color-600);
+  color: white;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0,0,0,.4);
+  transition: transform .2s ease, box-shadow .2s ease, background-color .2s ease;
+}
+
+#floating-nav:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 12px var(--accent-color-600);
+  background: var(--accent-color-800);
+}
+
+/* -------------------------------------------------------
+   HEADINGS
+-------------------------------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-headings);
+}
+
+/* Rotated section headings */
+.hor > h2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: rotate(-90deg) translate(-100%, 0);
+  transform-origin: top left;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: var(--accent-color-600);
+  letter-spacing: .1rem;
+  opacity: .9;
+  text-shadow: 2px 2px 4px rgba(0,0,0,.25);
+}
+
+/* -------------------------------------------------------
+   MAIN CONTENT (Horizontal Panels + Fade-in)
+-------------------------------------------------------- */
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+/* fade-in animation */
+@keyframes sectionFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+main > section {
+  min-width: 100vw;
+  padding: 3rem;
+  border-left: 6px solid var(--accent-color-600);
+  position: relative;
+  border-radius: 1rem;
+  margin-right: 2rem;
+  animation: sectionFadeIn .6s ease-out;
+}
+
+/* Section backgrounds with glass overlay */
+#sect1 {
+  background: linear-gradient(to bottom right, var(--main-color-400), var(--accent-color-200));
+}
+#sect2 {
+  background: linear-gradient(to bottom right, var(--accent-color-400), var(--main-color-100));
+}
+#sect3 {
+  background: linear-gradient(to bottom right, var(--main-color-100), var(--main-color-200));
+}
+#sect4 {
+  background: linear-gradient(to bottom right, var(--main-color-200), var(--accent-color-400));
+}
+
+/* Content inside each horizontal section (grid for cheatsheet) */
+.hor {
+  padding-left: 5rem; /* space for rotated heading */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+  gap: 2rem;
+}
+
+/* -------------------------------------------------------
+   TERMINOLOGY LIST
+-------------------------------------------------------- */
+dt {
+  padding: .75rem 0;
+  font-weight: 700;
+}
+
+dd {
+  margin-left: 2rem;
+}
+
+dl {
+  margin-top: 2rem;
+}
+
+/* -------------------------------------------------------
+   CODE CARDS (Glass + Animated Tabs)
+-------------------------------------------------------- */
+.example-code-card {
+  position: relative;
+  min-width: 22rem;
+  padding: 2rem 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+  backdrop-filter: blur(18px);
+  background: var(--glass-bg);
+  overflow: hidden;
+}
+
+/* tab heading */
+.example-code-card h3 {
+  background: var(--accent-color-600);
+  color: white;
+  padding: .5rem 1rem;
+  border-radius: .75rem .75rem 0 0;
+  position: absolute;
+  top: -2rem;
+  left: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,.3);
+  text-transform: uppercase;
+  font-size: .9rem;
+  letter-spacing: .08rem;
+}
+
+/* animated tab glow */
+.example-code-card h3::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: 0 0 12px rgba(255,255,255,.4);
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+
+.example-code-card:hover h3::after {
+  opacity: 1;
+}
+
+/* code block */
+pre {
+  background-color: var(--accent-color-200);
+  padding: 1rem;
+  border-radius: .75rem;
+  border: 1px solid var(--accent-color-800);
+  overflow-x: auto;
+  margin-top: 1.5rem;
+}
+
+code {
+  font-family: var(--font-code);
+}
+
+/* -------------------------------------------------------
+   PREVIEW BOXES (Transform, Transition, Animation)
+-------------------------------------------------------- */
+.preview {
+  margin-top: 1rem;
+  padding: .5rem;
+  text-align: center;
+  font-weight: 700;
+  background-color: var(--main-color-600);
+  border: 1px solid var(--main-color-800);
+  transition: transform .3s ease, box-shadow .3s ease, background-color .3s ease;
+  border-radius: .5rem;
+}
+
+.preview:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 14px var(--accent-color-600);
+  background-color: var(--main-color-400);
+}
+
+/* -------------------------------------------------------
+   TRANSFORM EXAMPLES
+-------------------------------------------------------- */
+.rotate { transform: rotate(20deg); }
+.skew { transform: skewY(20deg); }
+.scale { transform: scaleY(1.5); }
+.translate { transform: translate(50px, 100px); }
+
+/* -------------------------------------------------------
+   TRANSITION EXAMPLES
+-------------------------------------------------------- */
+.delay {
+  width: 60px;
+  height: 60px;
+  transition: width 3s;
+  transition-delay: 1s;
+}
+.delay:hover { width: 300px; }
+
+.duration {
+  width: 100px;
+  height: 100px;
+  transition-property: width;
+  transition-duration: 5s;
+}
+.duration:hover { width: 300px; }
+
+.timing {
+  width: 100px;
+  height: 100px;
+  transition: width 2s;
+  transition-timing-function: linear;
+}
+.timing:hover { width: 300px; }
+
+/* -------------------------------------------------------
+   ANIMATION EXAMPLES
+-------------------------------------------------------- */
+.anim {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation: move 5s infinite;
+}
+
+@keyframes move {
+  from { left: 0px; }
+  to { left: 200px; }
+}

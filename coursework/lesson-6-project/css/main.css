@@ -1,0 +1,329 @@
+/* ============================================================
+   RESET
+============================================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ============================================================
+   COLOR SCHEME (Light Mode)
+============================================================ */
+:root {
+    /* Header & Footer */
+    --background-header: #8b1e1e;
+
+    /* Body Backgrounds (Complement Red Header/Footer) */
+    --background-body: linear-gradient(180deg, #fff4f4, #ffe3e3, #fffafa);
+
+    /* Cards / Boxes */
+    --box-bg: #ffffff;
+    --box-border: #7a0a0f;
+    --box-shadow: rgba(179, 0, 0, 0.25);
+
+    /* Text */
+    --text-heading: #ffffff;
+    --text-body: #333333;
+
+    /* Shadows */
+    --shadow-light: rgba(0, 0, 0, 0.15);
+}
+
+/* ============================================================
+   DARK MODE OVERRIDES
+============================================================ */
+.dark-mode {
+    --background-header: #222;
+    --background-body: linear-gradient(180deg, #1a1a1a, #222, #1a1a1a);
+
+    --box-bg: #2a2a2a;
+    --box-border: #ff4d4d;
+    --box-shadow: rgba(255, 77, 77, 0.25);
+
+    --text-heading: #ffffff;
+    --text-body: #eaeaea;
+}
+
+/* ============================================================
+   PAGE BACKGROUND
+============================================================ */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: var(--background-body);
+    color: var(--text-body);
+    min-height: 100vh;
+}
+
+
+/* ============================================================
+   UNIVERSAL HEADER
+============================================================ */
+.site-header {
+    background-color: var(--background-header);
+    color: var(--text-heading);
+    padding: 1.5em 1em;
+    box-shadow: var(--shadow-light) 0 4px 10px;
+    position: relative;
+    z-index: 1000;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#darkToggle {
+    padding: 0.5em 1em;
+    background-color: var(--text-heading);
+    color: var(--background-header);
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+#darkToggle:hover {
+    background-color: var(--background-header);
+    color: var(--text-heading);
+}
+
+.dark-mode {
+    background: var(--background-body);
+    color: var(--text-body);
+}
+
+.dark-mode .group,
+.dark-mode .card {
+    background: #2a2a2a;
+    border-color: #ff4d4d;
+    box-shadow: rgba(255, 77, 77, 0.25) 0 4px 12px;
+}
+
+/* ============================================================
+   NAVIGATION
+============================================================ */
+.navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.navigation a {
+    color: var(--text-heading);
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 4px;
+    transition: 0.25s;
+}
+
+.navigation a:hover {
+    background-color: var(--text-heading);
+    color: var(--background-header);
+}
+
+/* ============================================================
+   HEADINGS
+============================================================ */
+h2 {
+    text-align: center;
+    margin: 20px 0;
+    color: var(--box-border);
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 1em;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    color: var(--box-border);
+}
+
+/* ============================================================
+   GROUP GRID LAYOUT
+============================================================ */
+.group-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.group {
+    text-align: center;
+    padding: 1em;
+}
+
+/* ============================================================
+   DECORATED BOXES (Rule Cards)
+============================================================ */
+.rule-card {
+    background: var(--box-bg);
+    padding: 1.5em;
+    border-radius: 24px 8px 24px 8px;
+    border: 2px solid var(--box-border);
+    box-shadow: var(--box-shadow) 0px 4px 12px;
+    transition: 0.25s;
+    margin-bottom: 1em;
+}
+
+.rule-card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: var(--box-shadow) 0px 10px 20px;
+}
+
+.group {
+    background: rgba(255, 255, 255, 0.6);
+    border: 2px solid var(--box-border);
+    border-radius: 16px;
+    box-shadow: var(--box-shadow) 0 4px 12px;
+    padding: 1.5em;
+    margin: 1em;
+    transition: 0.25s;
+}
+
+.group:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--box-shadow) 0 8px 18px;
+}
+
+.card {
+    background: var(--box-bg);
+    border: 2px solid var(--box-border);
+    border-radius: 20px 6px 20px 6px;
+    box-shadow: var(--box-shadow) 0 4px 10px;
+    padding: 1em;
+    margin: 0.75em auto;
+    width: 80%;
+    transition: 0.25s;
+}
+
+.card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: var(--box-shadow) 0 10px 20px;
+}
+.group {
+    background: rgba(255, 255, 255, 0.6);
+    border: 2px solid var(--box-border);
+    border-radius: 16px;
+    box-shadow: var(--box-shadow) 0 4px 12px;
+    padding: 1.5em;
+    margin: 1em;
+    transition: 0.25s;
+}
+
+.group:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--box-shadow) 0 8px 18px;
+}
+
+.card {
+    background: var(--box-bg);
+    border: 2px solid var(--box-border);
+    border-radius: 20px 6px 20px 6px;
+    box-shadow: var(--box-shadow) 0 4px 10px;
+    padding: 1em;
+    margin: 0.75em auto;
+    width: 80%;
+    transition: 0.25s;
+}
+
+.card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: var(--box-shadow) 0 10px 20px;
+}
+
+.card, .group {
+    animation: fadeIn 0.6s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ============================================================
+   RETURN TO TOP BUTTON
+============================================================ */
+#returnTop {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    padding: 12px 18px;
+    background-color: var(--background-header);
+    color: var(--text-heading);
+    border: none;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: var(--shadow-light) 0 4px 10px;
+    transition: 0.25s;
+    z-index: 999999;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#returnTop.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#returnTop:hover {
+    transform: translateY(-4px) scale(1.1);
+    background-color: var(--text-heading);
+    color: var(--background-header);
+}
+
+/* ============================================================
+   FOOTER
+============================================================ */
+footer {
+    background-color: var(--background-header);
+    color: var(--text-heading);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2em;
+    width: 100%;
+}
+
+footer a {
+    color: inherit;
+}
+
+footer a:hover,
+footer a:focus {
+    text-decoration-thickness: 2px;
+}
+
+/* ============================================================
+   RESPONSIVE
+============================================================ */
+@media (max-width: 900px) {
+    .group-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.4rem;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 1em;
+    }
+}

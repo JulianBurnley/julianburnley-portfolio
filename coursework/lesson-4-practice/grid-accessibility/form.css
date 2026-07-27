@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Open+Sans:wght@400;600&display=swap');
+
+/* -------------------------------------------------------
+   FORM GRID LAYOUT (Lesson 4 Accessibility)
+-------------------------------------------------------- */
+
+/* Update this block in form.css to improve alignment */
+form {
+  display: grid;
+  grid-template-columns: auto 1fr; /* Label column auto-sized, input takes remaining */
+  gap: 1rem;
+  padding: 2rem;
+  background-color: #d9eef2;
+  border-radius: 0.5rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Ensure fieldsets span across the two columns */
+fieldset {
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.5rem 1rem;
+  padding: 1rem 1.5rem;
+}
+
+legend {
+  font-weight: bold;
+  color: #0b3c47;
+  font-family: 'Arvo', serif;
+  padding: 0 0.5rem;
+}
+
+/* Labels and inputs */
+label {
+  display: inline-block;
+  width: 8rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #0b3c47;
+}
+
+input,
+select {
+  width: calc(100% - 9rem);
+  padding: 0.4rem;
+  border: 1px solid #0b3c47;
+  border-radius: 0.25rem;
+  background-color: #fff;
+  font-size: 0.95rem;
+}
+
+/* Focus visibility */
+input:focus,
+select:focus,
+button:focus {
+  outline: 3px solid #007b8a;
+  outline-offset: 2px;
+}
+
+/* Buttons */
+button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  background-color: #0b3c47;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover,
+button:focus {
+  background-color: #007b8a;
+}
+
+/* Button alignment */
+button[type="reset"],
+button[type="submit"] {
+  grid-column: span 1;
+  justify-self: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  form {
+    grid-template-columns: 1fr;
+  }
+
+  fieldset {
+    grid-column: 1;
+  }
+
+  button[type="reset"],
+  button[type="submit"] {
+    grid-column: 1;
+  }
+}

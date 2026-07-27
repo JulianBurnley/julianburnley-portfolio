@@ -1,0 +1,14 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "pwa-msedge",
+            "request": "launch",
+            "name": "Open web-component.html",
+            "file": "c:\\Users\\Julian\\github-classroom\\rsc-cis233da-in-v8\\12988_lesson-6-practice-activities-JUL2216252\\html-templates\\web-component.html"
+        }
+    ]
+}

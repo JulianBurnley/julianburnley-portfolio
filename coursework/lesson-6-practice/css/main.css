@@ -1,0 +1,198 @@
+/*
+  Name: Julian Burnley
+  MEID: JUL2216252
+*/
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,700;1,600&family=Montserrat&family=Share+Tech+Mono&display=swap');
+
+:root {
+  --main-color-800: hsl(120, 30%, 15%);
+  --main-color-200: hsl(120, 40%, 95%);
+  --main-color-300: hsl(120, 40%, 88%);
+  --main-color-500: hsl(120, 30%, 50%);
+  --accent-color-500: hsl(344, 50%, 50%);
+  --font-headings: 'Crimson Pro', serif;
+  --font-main: 'Montserrat', Verdana, sans-serif;
+  --font-code: 'Share Tech Mono', Consolas, monospace;
+}
+
+/* Reset */
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base layout */
+body {
+  font-family: var(--font-main);
+  color: var(--main-color-800);
+  background-color: var(--main-color-200);
+  line-height: 1.5;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--main-color-800);
+  color: var(--main-color-200);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 0.5rem;
+}
+
+nav li {
+  padding: .25em;
+}
+
+nav a {
+  color: var(--main-color-200);
+  text-decoration: none;
+  padding: .25rem 1rem;
+  border-radius: .25rem;
+}
+
+nav a:hover {
+  background-color: var(--accent-color-500);
+}
+
+header div {
+  font-size: .85rem;
+  text-align: right;
+}
+
+header div span {
+  font-weight: bolder;
+}
+
+main {
+  padding: 1.5rem;
+}
+
+h1, h2 {
+  font-family: var(--font-headings);
+}
+
+h2 {
+  padding-bottom: 1rem;
+}
+
+/* Definition list (index page) */
+dt {
+  font-weight: 700;
+}
+
+dd {
+  margin: .5rem 1rem;
+}
+
+/* ---------- TABLE TEMPLATE STYLES ---------- */
+table {
+  border: 2px solid var(--main-color-800);
+  border-collapse: collapse;
+  width: 75%;
+  margin: 2rem auto;
+  box-shadow: 2px 2px 6px var(--accent-color-500);
+}
+
+th, td {
+  padding: .5rem;
+  text-align: center;
+}
+
+th {
+  background-color: var(--main-color-800);
+  color: var(--main-color-300);
+}
+
+tbody tr:nth-of-type(even) {
+  background-color: var(--main-color-300);
+  border-top: 2px solid var(--main-color-800);
+  border-bottom: 2px solid var(--main-color-800);
+}
+
+/* ---------- WEB COMPONENT STYLES ---------- */
+.article-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.article-card {
+  border: thin solid var(--main-color-800);
+  border-radius: .25rem;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  background-color: var(--main-color-300);
+  box-shadow: 2px 2px 4px var(--accent-color-500);
+}
+
+.article-title {
+  font-size: 1.85rem;
+  color: var(--main-color-200);
+  height: 150px;
+  width: 100%;
+  padding: 1rem;
+  background-size: cover;
+  background-position: center;
+  border-radius: .25rem .25rem 0 0;
+  text-shadow: 1px 1px 2px var(--main-color-800);
+}
+
+.article-author {
+  margin: .5rem;
+  font-style: italic;
+}
+
+.article-snippet {
+  margin: .5rem;
+}
+
+.read-more {
+  width: 10rem;
+  align-self: center;
+  background-color: var(--main-color-800);
+  color: var(--main-color-200);
+  border: none;
+  padding: .5rem;
+  border-radius: .25rem;
+  transition: background-color .2s ease;
+}
+
+.read-more:hover {
+  background-color: var(--accent-color-500);
+}
+
+.read-more:focus {
+  outline: 3px dashed var(--accent-color-500);
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+@media (max-width: 768px) {
+  .article-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .article-card {
+    width: 90%;
+    height: auto;
+  }
+
+  table {
+    width: 95%;
+  }
+}

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Julian Burnley">
+    <meta name="description" content="Lesson 7 Transformation Cheatsheet">
+    <meta name="keywords" content="Transforms, Transitions, Animations, Keyframes, CSS, Cheatsheet">
+    <link rel="stylesheet" href="css/lsn7-styles.css">
+    <title>Transformation Cheatsheet</title>
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+<section id="top" class="left-side glass">
+    <h1>Lesson 7 Project</h1>
+
+    <nav>
+        <ul id="navbar">
+
+            <!-- HOME -->
+            <li>
+                <a href="index.html">Home</a>
+                <ul class="child-links">
+                    <li><a href="index.html#bookmark1">My Reflections</a></li>
+                    <li><a href="index.html#bookmark2">My Next Steps</a></li>
+                </ul>
+            </li>
+
+            <!-- CHEATSHEET -->
+            <li class="active">
+                <a href="transformation-cheatsheet.html" class="active">Cheatsheet</a>
+                <ul class="child-links">
+                    <li><a href="#terminology">Terminology</a></li>
+                    <li><a href="#transforms">Transform Properties</a></li>
+                    <li><a href="#transitions">Transition Properties</a></li>
+                    <li><a href="#animations">Animation Properties</a></li>
+                </ul>
+            </li>
+
+            <!-- PRACTICE ACTIVITIES -->
+            <li>
+                <a href="../12988_lesson-7-practice-activities-JUL2216252/index.html">
+                    Lesson 7 Practice Activities
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+
+         <!-- DARK MODE BUTTON -->
+    <button id="darkToggle">Toggle Dark Mode</button>
+    
+</section>
+
+<!-- MAIN CONTENT -->
+<main>
+
+    <!-- SECTION 1: TERMINOLOGY -->
+    <section id="terminology" class="hor glass">
+        <a href="#top" class="back-link">Back to Menu</a>
+        <h2>Terminology</h2>
+
+        <dl>
+            <dt>Animations</dt>
+            <dd>Animations define how an element changes over time using keyframes.</dd>
+
+            <dt>Keyframes</dt>
+            <dd>Keyframes specify the intermediate steps of an animation sequence.</dd>
+
+            <dt>Transforms</dt>
+            <dd>Transforms rotate, scale, skew, or move elements in 2D or 3D space.</dd>
+
+            <dt>Transitions</dt>
+            <dd>Transitions animate changes between two property values.</dd>
+
+            <dt>Easing</dt>
+            <dd>Easing controls the acceleration pattern of an animation or transition.</dd>
+
+            <dt>Rotation</dt>
+            <dd>Rotation turns an element around a fixed point.</dd>
+
+            <dt>Scale</dt>
+            <dd>Scale resizes an element horizontally, vertically, or both.</dd>
+
+            <dt>Skew</dt>
+            <dd>Skew distorts an element by slanting it along the X or Y axis.</dd>
+
+            <dt>Delay</dt>
+            <dd>Delay defines how long to wait before starting a transition or animation.</dd>
+
+            <dt>Transition Timing</dt>
+            <dd>Controls how intermediate values are calculated during a transition.</dd>
+        </dl>
+    </section>
+
+    <!-- SECTION 2: TRANSFORM PROPERTIES -->
+    <section id="transforms" class="hor glass">
+        <a href="#top" class="back-link">Back to Menu</a>
+        <h2>Transform Properties</h2>
+
+        <!-- ROTATE -->
+        <div class="example-code-card glass">
+            <h3>Example Code</h3>
+            <p>Rotates an element around a point.</p>
+
+            <pre><code>&lt;div class="rotate"&gt;Rotate20&lt;/div&gt;</code></pre>
+
+            <pre><code>.rotate {
+    width: 100px;
+    height: 80px;
+    background-color: var(--main-color-600);
+    transform: rotate(20deg);
+}</code></pre>
+
+            <div class="rotate preview">Rotate20</div>
+        </div>
+
+        <!-- SKEW -->
+        <div class="example-code-card glass">
+            <h3>Example Code</h3>
+            <p>Skews an element along the Y-axis.</p>
+
+            <pre><code>&lt;div class="skew"&gt;Skew20&lt;/div&gt;</code></pre>
+
+            <pre><code>.skew {
+    width: 100px;
+    height: 80px;
+    background-color: var(--main-color-600);
+    transform: skewY(20deg);
+}</code></pre>
+
+            <div class="skew preview">Skew20</div>
+        </div>
+
+        <!-- SCALE -->
+        <div class="example-code-card glass">
+            <h3>Example Code</h3>
+            <p>Scales an element vertically.</p>
+
+            <pre><code>&lt;div class="scale"&gt;Scale1.5&lt;/div&gt;</code></pre>
+
+            <pre><code>.scale {
+    width: 100px;
+    height: 80px;
+    background-color: var(--main-color-600);
+    transform: scaleY(1.5);
+}</code></pre>
+
+            <div class="scale preview">Scale1.5</div>
+        </div>
+
+        <!-- TRANSLATE -->
+        <div class="example-code-card glass">
+            <h3>Example Code</h3>
+            <p>Moves an element horizontally and vertically.</p>
+
+            <pre><code>&lt;div class="translate"&gt;Translate&lt;/div&gt;</code></pre>
+
+            <pre><code>.translate {
+    width: 100px;
+    height: 80px;
+    background-color: var(--main-color-600);
+    transform: translate(50px, 100px);
+}</code></pre>
+
+            <div class="translate preview">Translate</div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: TRANSITION PROPERTIES -->
+    <section id="transitions" class="hor glass">
+        <a href="#top" class="back-link">Back to Menu</a>
+        <h2>Transition Properties</h2>
+
+        <!-- Delay -->
+        <div class="example-code-card glass">
+            <h3>Example Code</h3>
+            <p>Demonstrates transition delay.</p>
+
+            <pre><code>&lt;div class="delay"&gt;&lt;/div&gt;</code></pre>
+
+            <pre><code>.delay {
+    width: 60px;
+    height: 60px;
+    background: var(--main-color-600);
+    transition: width 3s;
+    transition-delay: 1s;
+}
+
+.delay:hover {
+    width: 300px;
+}</code></pre>
+
+            <div class="delay preview">Delay</div>
+        </div>
+
+        <!-- Duration -->
+        <div class="example-code-card glass">
+            <h3>Example Code</h3>
+            <p>Demonstrates transition duration.</p>
+
+            <pre><code>&lt;div class="duration"&gt;&lt;/div&gt;</code></pre>
+
+            <pre><code>.duration {
+    width: 100px;
+    height: 100px;
+    background: var(--main-color-600);
+    transition-property: width;
+    transition-duration: 5s;
+}
+
+.duration:hover {
+    width: 300px;
+}</code></pre>
+
+            <div class="duration preview">Duration</div>
+        </div>
+
+        <!-- Timing -->
+        <div class="example-code-card glass">
+            <h3>Example Code</h3>
+            <p>Demonstrates transition timing function.</p>
+
+            <pre><code>&lt;div class="timing"&gt;&lt;/div&gt;</code></pre>
+
+            <pre><code>.timing {
+    width: 100px;
+    height: 100px;
+    background: var(--main-color-600);
+    transition: width 2s;
+    transition-timing-function: linear;
+}
+
+.timing:hover {
+    width: 300px;
+}</code></pre>
+
+            <div class="timing preview">Timing</div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: ANIMATION PROPERTIES -->
+    <section id="animations" class="hor glass">
+        <a href="#top" class="back-link">Back to Menu</a>
+        <h2>Animation Properties</h2>
+
+        <div class="example-code-card glass">
+            <h3>Example Code</h3>
+            <p>Defines an animation using keyframes.</p>
+
+            <pre><code>&lt;div class="anim"&gt;&lt;/div&gt;</code></pre>
+
+            <pre><code>.anim {
+    width: 100px;
+    height: 100px;
+    background: var(--main-color-600);
+    position: relative;
+    animation: move 5s infinite;
+}
+
+@keyframes move {
+    from { left: 0px; }
+    to { left: 200px; }
+}</code></pre>
+
+            <div class="anim preview">Animation</div>
+        </div>
+    </section>
+
+</main>
+
+<!-- FLOATING NAV BUTTON -->
+<button id="floating-nav">Menu</button>
+
+<script>
+function returnToMenu() {
+  window.scrollTo({
+    left: 0,
+    top: 0,
+    behavior: "smooth"
+  });
+}
+
+document.getElementById("floating-nav").onclick = returnToMenu;
+
+document.querySelectorAll(".back-link").forEach((link) => {
+  link.addEventListener("click", (event) => {
+    event.preventDefault();
+    returnToMenu();
+    history.replaceState(null, "", "#top");
+  });
+});
+</script>
+
+
+
+<script>
+document.getElementById("darkToggle").onclick = () => {
+    document.body.classList.toggle("dark-mode");
+};
+</script>
+
+
+  <footer>
+    <p><strong>Developed by</strong> Julian Burnley</p>
+    <p><strong>Email:</strong> <a href="mailto:julian@julianburnley.com">julian@julianburnley.com</a></p>
+    <p><strong>Date:</strong> <time datetime="2026-07-26">July 26, 2026</time></p>
+  </footer>
+</body>
+</html>

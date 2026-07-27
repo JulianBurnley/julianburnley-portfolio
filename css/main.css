@@ -501,6 +501,45 @@ ul {
   gap: 1.25rem;
 }
 
+.coursework-feature {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(18rem, 0.85fr);
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: center;
+  margin-bottom: 1.25rem;
+  padding: clamp(1.5rem, 5vw, 3.5rem);
+  border: 1px solid #45536a;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, #1b2940, #182033);
+}
+
+.coursework-feature h3 {
+  font-size: clamp(2rem, 5vw, 4rem);
+}
+
+.coursework-feature > div > p:not(.project-type) {
+  max-width: 44rem;
+  color: var(--color-dark-muted);
+}
+
+.coursework-map {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.75rem;
+}
+
+.coursework-map span {
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 0.8rem;
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--color-accent);
+  font-family: var(--font-mono);
+  font-weight: 500;
+}
+
 .project-card {
   overflow: hidden;
   border: 1px solid #2a3444;
@@ -670,6 +709,83 @@ ul {
 
 .case-study-body ul {
   padding-left: 1.25rem;
+}
+
+.coursework-page {
+  min-height: 100vh;
+  background: var(--color-bg);
+}
+
+.coursework-hero {
+  padding-block: clamp(4rem, 10vw, 7rem);
+  background: var(--color-dark);
+  color: var(--color-white);
+}
+
+.coursework-hero h1 {
+  max-width: 13ch;
+}
+
+.coursework-hero p:last-child {
+  max-width: 48rem;
+  color: var(--color-dark-muted);
+  font-size: 1.1rem;
+}
+
+.lesson-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.lesson-card {
+  display: grid;
+  grid-template-columns: 6rem minmax(0, 1fr) auto;
+  gap: 1.5rem;
+  align-items: center;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.lesson-number {
+  color: var(--color-primary);
+  font-family: var(--font-mono);
+  font-size: 2rem;
+}
+
+.lesson-card h2 {
+  margin-bottom: 0.5rem;
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+}
+
+.lesson-card p {
+  margin: 0;
+  color: var(--color-text-muted);
+}
+
+.lesson-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.65rem;
+}
+
+.lesson-links a {
+  padding: 0.65rem 0.9rem;
+  border: 1px solid var(--color-primary);
+  border-radius: 999px;
+  color: var(--color-primary);
+  font-size: 0.86rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.lesson-links a:hover,
+.lesson-links a:focus-visible {
+  background: var(--color-primary);
+  color: var(--color-white);
 }
 }
 
@@ -851,8 +967,21 @@ ul {
     display: block;
   }
 
+  .coursework-feature {
+    grid-template-columns: 1fr;
+  }
+
   .case-study-content {
     grid-template-columns: 1fr;
+  }
+
+  .lesson-card {
+    grid-template-columns: 4rem 1fr;
+  }
+
+  .lesson-links {
+    grid-column: 2;
+    justify-content: flex-start;
   }
 }
 
@@ -867,6 +996,18 @@ ul {
   }
 
   .project-featured {
+    grid-column: auto;
+  }
+
+  .coursework-map {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .lesson-card {
+    grid-template-columns: 1fr;
+  }
+
+  .lesson-links {
     grid-column: auto;
   }
 

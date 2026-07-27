@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Julian Burnley">
+    <meta name="description" content="Lesson 10 Project ">
+    <meta name="keywords" content="Final Project">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <main>
+   <header>
+    <h1>Final Exam Project Part 2</h1>
+   </header>
+   <div id="main">
+   <article>
+
+    <h2>EFFECTS CHEATSHEET</h2>
+
+    <div class="container">
+      <div class="html">
+        <h2>Graphic Effects</h2>
+      
+        <table>
+           <tr>
+            <th>Property</th>
+            <th>Property Value</th>
+           </tr>
+           <tr>
+            <td>filter: url</td>
+            <td>url("filters.svg#filter-id");</td>
+           </tr>
+           <tr>
+            <td>filter: blur</td>
+            <td>blur(5px)</td>
+           </tr>
+           <tr>
+               <td>filter: contrast</td>
+               <td>contrast(200%)</td>
+              </tr>
+              <tr>
+               <td>filter: grayscale</td>
+               <td>grayscale(100%)</td>
+              </tr>
+              <tr>
+               <td>filter: hue-rotate</td>
+               <td>hue-rotate(90deg)</td>
+              </tr>
+              <tr>
+               <td>filter: drop-shadow</td>
+               <td>drop-shadow(16px 16px 10px black)</td>
+              </tr>
+              <tr>
+               <td>mask: clip</td>
+               <td>content-box; padding-box; border-box; fill-box;</td>
+              </tr>
+              <tr>
+               <td>mask: composite</td>
+               <td>add; subtract; intersect; exclude;</td>
+              </tr>
+              <tr>
+               <td>mask: image</td>
+               <td>url(masks.svg#mask1); linear-gradient(rgba(0, 0, 0, 1.0), transparent)</td>
+              </tr>
+              <tr>
+               <td>mask: mode</td>
+               <td>alpha; luminance; match-source;</td>
+              </tr>
+              <tr>
+               <td>mask: origin</td>
+               <td>content-box; padding-box; border-box; margin-box; view-box, fill-box, border-box;</td>
+              </tr>
+              <tr>
+               <td>mask: position</td>
+               <td>top; bottom; left; right; center;</td>
+              </tr>
+              <tr>
+               <td>mask: repeat</td>
+               <td>repeat-x; repeat-y, space; round;</td>
+              </tr>
+              <tr>
+               <td>mask: size</td>
+               <td>cover; contain;</td>
+              </tr>
+              <tr>
+               <td>blend: normal</td>
+               <td>mix-blend-mode: normal;</td>
+              </tr>
+              <tr>
+               <td>blend: multiply</td>
+               <td>mix-blend-mode: multiply;</td>
+              </tr>
+              <tr>
+               <td>blend: lighten</td>
+               <td>mix-blend-mode: lighten;</td>
+              </tr>
+              <tr>
+               <td>blend: difference</td>
+               <td>mix-blend-mode: difference;</td>
+              </tr>
+          </table>
+    </section>
+    <h2>Media Elements</h2>
+
+    <table>
+       <tr>
+        <th>Property</th>
+        <th>Property Value</th>
+        <th>Attributes</th>
+       </tr>
+       <tr>
+        <td> Figures</td>
+        <td id="a">figure, figcaption</td>
+        <td>class, id, title</td>
+       </tr>
+       <tr>
+           <td>Pictures</td>
+           <td id="b">picture, source, img</td>
+           <td>class, id, title, src:URL</td>
+          </tr>
+          <tr>
+           <td> Audio</td>
+           <td id="c">audio, source</td>
+           <td>url("filters.svg#filter-id");</td>
+          </tr>
+          <tr>
+           <td>Video</td>
+           <td id="d">video, source, track</td>
+           <td>autoplay, controls,  loop, muted, muted, src:URL</td>
+          </tr>
+          <tr>
+           <td>Canvas</td>
+           <td id="e">canvas, width, height</td>
+           <td>height, width</td>
+          </tr>
+          <tr>
+           <td>Other Digital Media</td>
+           <td id="f">iframe, embed, object</td>
+           <td>src:URL, height, width</td>
+          </tr>
+       </table>
+        
+      </div>
+      <p><a href="https://www.w3.org/standards/webdesign/graphics">W3C GRAPHICS</a></p>
+      <div class="html">
+      <h3>Terminology</h3>
+      <div class="etermcard">
+        <h3>Animations</h3>
+    
+       <p>Animations let us decide if and how an animation repeats, give us granular control over what happens throughout the animation, and more.</p>
+  </div>
+  <div class="etermcard">
+    <h3>Keyframes</h3>
+
+   <p>Keyframes CSS at-rule controls the intermediate steps in a CSS animation sequence by defining styles for waypoints along the animation sequence.</p>
+</div>
+<div class="etermcard">
+  <h3>Transforms</h3>
+
+ <p>Transforms let us rotate, scale, skew, or translate an element. It modifies the coordinate space of the CSS visual formatting model.</p>
+</div>
+<div class="etermcard">
+  <h3>Transitions</h3>
+
+ <p>Transitions allow us to animate CSS properties from an original value to a new value over time when a property value changes. </p>
+</div>
+<div class="etermcard">
+  <h3>Easing</h3>
+
+ <p>Easing accounts for the rate at which a transition occurs.</p>
+</div>
+<div class="etermcard">
+  <h3>Rotation</h3>
+
+ <p>A rotation function causes an element to be rotated around an axis, or around an arbitrary vector in 3D space.</p>
+</div>
+<div class="etermcard">
+  <h3>Scale</h3>
+
+ <p>The scale function defines a transformation that resizes an element on the 2D plane.</p>
+</div>
+<div class="etermcard">
+  <h3>Skew</h3>
+
+ <p>The skew function defines a transformation that skews an element on the 2D plane.</p>
+</div>
+<div class="etermcard">
+  <h3>Delay</h3>
+
+ <p>The transition-delay  property specifies the duration to wait before starting a property's transition effect when its value changes.</p>
+</div>
+<div class="etermcard">
+  <h3>Transition Timing</h3>
+
+ <p>The transition-timing-function property sets how intermediate values are calculated for CSS properties being affected by a transition.</p>
+</div>
+</div>
+             
+<p><a href="https://www.w3.org/TR/css-transforms-1/">CSS Transforms Module Level 1</a></p>
+
+  <div class="html">
+      
+
+    <div class="example-code-card">
+      <h2 class="transk">Transform properties</h2>
+      <h5>Rotates an element around a fixed point on the 2D plane.</h5>
+      <h5 class="h4">Example Code</h5>
+      <div class="html-code">
+          <h5>HTML Code</h5>
+         <pre>
+         <code>
+&lt;ha&gt;transform: rotate(20deg):&lt;/h2&gt;
+&lt;div class=&quot;a&quot;&gt;Rotate20&lt;/div&gt;
+         </code>
+         </pre>
+         </div>
+         <div class="css-code">
+         <h5>CSS Code</h5>
+         <pre>
+         <code>
+ .a {
+width: 100px;
+height: 80px;
+background-color:var(--main-color-600);
+ -ms-transform: rotate(20deg);
+transform: rotate(20deg);
+}
+          </code>
+         </pre>
+         <div class="a">Rotate20</div>
+       </div>
+      </div>
+      <div class="example-code-card">
+        <h2 class="transk">Transform Skew</h2>
+<h5>Defines a 2D skew transformation along the Y-axis.</h5>
+         <h5>Example Code</h5>
+         <div class="html-code">
+             <h5>HTML Code</h5>
+            <pre>
+            <code>
+&lt;h2&gt;transform: skewY(20deg):&lt;/h2&gt;
+&lt;div class=&quot;b&quot;&gt;skew20&lt;/div&gt;
+            </code>
+            </pre>
+        </div>
+           
+            <div class="css-code">
+            <h5>CSS Code</h5>
+            <pre>
+            <code>
+.b {
+width: 100px;
+height: 80px;
+background-color:var(--main-color-600);
+-ms-transform: skewY(20deg); 
+transform: skewY(20deg);
+}
+                    
+</code>
+</pre>
+<div class="b">skew20</div>
+</div>
+</div>
+</div>
+<a href="https://www.w3.org/TR/css-transforms-1/">CSS Transforms Module Level 1</a></p>
+<div class="html">
+      
+            <div class="example-code-card">
+              <h2 class="transk">Transform Scale</h2>
+      <h5>Defines a scale transformation by giving a value for the Y-axis.</h5>
+               <h5>Example Code</h5>
+               <div class="html-code">
+                   <h5>HTML Code</h5>
+                  <pre>
+                  <code>
+&lt;h2&gt;transform: scaleY(1.5):&lt;/h2&gt;
+&lt;div class=&quot;c&quot;&gt;scale1.5&lt;/div&gt;
+                  </code>
+                  </pre>
+              </div>
+                 
+                  <div class="css-code">
+                  <h5>CSS Code</h5>
+                  <pre>
+                  <code>
+ .c {
+width: 100px;
+height: 80px;
+background-color:var(--main-color-600);
+ -ms-transform: scaleY(1.5); 
+transform: scaleY(1.5);
+}
+                   </code>
+                  </pre>
+                  <div class="c">scale1.5</div>
+                </div>
+              </div>
+              <div class="example-code-card">
+                <h2 class="transk">Transform Matrix</h2>
+                <h5>Defines a scale transformation by giving a value for the Y-axis.</h5>
+                <h5 class="h4">Example Code</h5>
+                <div class="html-code">
+                <h5>HTML Code</h5>
+                  <pre>
+                  <code>
+&lt;div id=&quot;d&quot;&gt;
+Using the matrix() method.
+&lt;/div&gt;
+                  </code>
+                  </pre>
+                  </div>
+                  <div class="css-code">
+                  <h5>CSS Code</h5>
+                  <pre>
+                  <code>
+.d {
+width: 120px;
+height: 80px;
+background-color: var(--main-color-600);
+border: 1px solid var(--main-color-800);
+}
+              </code>
+                             </pre>
+                             <div class="d">Matrix</div>
+                           </div>
+                          </div>
+              </div>
+              <a href="https://www.w3.org/TR/css-transforms-1/">CSS Transforms Module Level 1</a></p>
+              <div class="html">
+      
+
+                <div class="example-code-card">
+                  <h2 class="transk">Transform Scale</h2>
+                  <h5>The scale() method increases 
+                    or decreases
+                     the size of an element.</h5>
+                  <h5 class="h4">Example Code</h5>
+                  <div class="html-code">
+                      <h5>HTML Code</h5>
+                     <pre>
+                     <code>
+ &lt;div=&quot;e&quot;&gt;
+This div element is two times of its 
+original width,
+and three times of its original height.
+&lt;/div&gt;
+                     </code>
+                     </pre>
+                     </div>
+                     <div class="css-code">
+                     <h5>CSS Code</h5>
+                     <pre>
+                     <code>
+ .e {
+margin: 80px;
+width: 90px;
+height: 80px;
+background-color:var(--main-color-600);
+border: 1px solid var(--main-color-800);
+transform: scale(1,2);
+}
+                      </code>
+                     </pre>
+                     <div class="e">Scale</div>
+                   </div>
+                  </div>
+                  <div class="example-code-card">
+                    <h2 class="transk">Transform Translate</h2>
+                    <h5>Repositions an element in the horizontal and/or vertical directions.</h5>
+                        <h5>Example Code</h5>
+                        <div class="html-code">
+                            <h5>HTML Code</h5>
+                           <pre>
+                           <code>
+&lt;div=&quot;f&quot;&gt;
+This div element is two times 
+of its original width, and three 
+  times of its original height.
+&lt;/div&gt;
+                          </code>
+                           </pre>
+                        </div>
+                           <div class="css-code">
+                           <h5>CSS Code</h5>
+                           <pre>
+                           <code>
+ .f {
+width: 100px;
+height: 80px;
+background-color:var(--main-color-600);
+border: 1px solid var(--main-color-800);
+transform: translate(50px,100px);
+}
+                          
+                            </code>
+                           </pre>
+                           <div class="f">Translate</div>
+                         </div>
+                        </div>
+    
+                    </div>
+                    <a href=" https://www.w3.org/TR/css-transitions-1/">CSS Transforms Module Level 1</a></p>
+                   
+<div class="html">
+  <div class="example-code-card">
+    <h2 class="transk">Transition Properties</h2>
+    <h5>The transition-delay property specifies a delay <br>(in seconds) for the transition effect.</h5>
+    <div class="html-code">
+    <h5>HTML Code</h5>
+    <pre>
+    <code>
+&lt;div class=&quot;g&quot;&gt;&lt;/div&gt;
+    </code>
+    </pre>
+</div>
+    <div class="css-code">
+    <h5>CSS Code</h5>
+    <pre>
+    <code>
+.g {
+width: 60px;
+height: 60px;
+background: var(--main-color-600);
+transition: width 3s;
+transition-delay: 1s;
+}
+                      
+.g:hover {
+width: 300px;
+}
+     </code>
+    </pre>
+    <div class="g">Delay</div>
+  </div>
+</div>
+
+<div class="example-code-card">
+  <h2 class="transk">Transition Duration</h2>
+  <h5>Specifies how many seconds or milliseconds<br> a transition effect takes to complete.</h5>
+  <div class="html-code">
+  <h5>HTML Code</h5>
+  <pre>
+  <code>
+&lt;div class=&quot;h&gt;&lt;/div&gt;
+  </code>
+  </pre>
+</div>
+  <div class="css-code">
+  <h5>CSS Code</h5>
+  <pre>
+  <code>
+ .h {
+width: 100px;
+height: 100px;
+background: var(--main-color-600);
+transition-property: width;
+transition-duration: 5s;
+}
+                            
+.h:hover {
+width: 300px;
+}
+      
+   </code>
+  </pre>
+  <div class="h">Duration</div>
+</div>
+</div>
+
+
+</div>
+CSS Transforms Module Level 1https://www.w3.org/TR/css-transitions-1/
+<div class="html">
+  <div class="example-code-card">
+    <h2 class="transk">Transition Properties</h2>
+    <h5>Specifies the name of the CSS property the transition effect is for.</h5>
+    <div class="html-code">
+    <h5>HTML Code</h5>
+    <pre>
+    <code>
+&lt;div class=&quot;i&gt;&lt;/div&gt;
+    </code>
+    </pre>
+</div>
+    <div class="css-code">
+    <h5>CSS Code</h5>
+    <pre>
+    <code>
+ .i {
+width: 100px;
+height: 100px;
+background: var(--main-color-600);
+transition-property: width;
+transition-duration: 2s;
+}
+                                      
+.i:hover {
+width: 300px;
+}
+     </code>
+    </pre>
+    <div class="i">Timing Function</div>
+  </div>
+</div>
+
+<div class="example-code-card">
+  <h2 class="transk">Transition Timing</h2>
+  <h5>Specifies the speed curve of the transition effect.</h5>
+  <div class="html-code">
+  <h5>HTML Code</h5>
+  <pre>
+  <code>
+&lt;div class=&quot;j&quot;&gt;&lt;/div&gt;
+  </code>
+  </pre>
+</div>
+  <div class="css-code">
+  <h5>CSS Code</h5>
+  <pre>
+  <code>
+.j {
+width: 100px;
+height: 100px;
+background: var(--main-color-600);
+transition: width 2s;
+transition-timing-function: linear;
+}
+                                    
+.j:hover {
+width: 300px;
+}
+         
+      
+   </code>
+  </pre>
+  <div class="j">Timing Function</div>
+</div>
+</div>
+
+
+</div>
+<a href=" https://www.w3.org/TR/css-transitions-1/">CSS Transforms Module Level 1</a></p>
+<div class="html">
+  <div class="example-code-card">
+    <h2 class="transk">Animation Properties</h2>
+    <h5>It is the required value that defines the name of the animation.</h5>
+    <div class="html-code">
+    <h5>HTML Code</h5>
+    <pre>
+    <code>
+&lt;div class=&quot;k&quot;&gt;&lt;/div&gt;
+    </code>
+    </pre>
+</div>
+    <div class="css-code">
+    <h5>CSS Code</h5>
+    <pre>
+    <code>
+ .k {
+width: 100px;
+height: 100px;
+background: var(--main-color-600);
+position: relative;
+animation: mymove 5s infinite;
+}
+                                              
+@keyframes mymove {
+from {left: 0px;}
+to {left: 200px;}
+}
+          
+     </code>
+    </pre>
+    <div class="k">Animation-Name</div>
+  </div>
+</div>
+
+<div class="example-code-card">
+  <h2 class="transk">Keyframes-Selector</h2>
+  <h5> It is the required value that defines the name of the animation.</h5>
+  <div class="html-code">
+  <h5>HTML Code</h5>
+  <pre>
+  <code>
+&lt;div class=&quot;L&quot;&gt;&lt;/div&gt;
+  </code>
+  </pre>
+</div>
+  <div class="css-code">
+  <h5>CSS Code</h5>
+  <pre>
+  <code>
+.L {
+width: 100px;
+height: 100px;
+background: var(--main-color-600);
+position: relative;
+animation: mymove 5s infinite;
+}
+                                            
+@keyframes mymove {
+from {left: 0px;}
+to {left: 100px;}
+}
+         
+      
+   </code>
+  </pre>
+  <div class="L">Selector</div>
+</div>
+</div>
+</div>
+<a href="https://www.w3.org/TR/css-animations-1/">CSS Animations Level 1</a></p>
+<div class="html">
+
+<div class="example-code-card">
+  <h2 class="transk">Keyframes-Css-Styles</h2>
+  <h5>It defines one or more than one CSS style properties.</h5>
+  <div class="html-code">
+  <h5>HTML Code</h5>
+  <pre>
+  <code>
+&lt;div class=&quot;M&quot;&gt;&lt;/div&gt;
+  </code>
+  </pre>
+</div>
+  <div class="css-code">
+  <h5>CSS Code</h5>
+  <pre>
+  <code>
+    .M {
+      width: 100px;
+      height: 100px;
+      background: var(--main-color-600);
+      position: relative;
+      animation: mymove 5s infinite;
+      }
+                                                
+      @keyframes mymove {
+      from {left: 0px;}
+      to {left: 200px;}
+      }
+         
+         
+      
+   </code>
+  </pre>
+  <div class="M">Css-Styles</div>
+</div>
+</div>
+
+
+</div>
+
+<a href="https://www.w3.org/TR/css-animations-1/">CSS Animations Level 1</a></p>
+
+        
+ 
+  
+ 
+             
+ 
+  </div>
+   </article>
+   <nav role="navigation">
+     <ul>
+       <li><a href="index.html">Home</a></li>
+       <li><a href="html.html">Cheatsheets</a>
+         <ul class="dropdown">
+           <li><a href="html.html">HTML</a></li>
+           <li><a href="selectors.html">Selectors</a></li>
+           <li><a href="layout.html">Layout</a></li>
+           <li><a href="ui.html">UI</a></li>
+           <li><a href="at-rules.html">At Rules</a></li>
+           <li><a href="effects.html">Effects</a></li>
+           <li><a href="aria.html">ARIA</a></li>
+         </ul>
+       </li>
+       <li><a href="menus.html">Web Patterns & Components</a>
+         <ul class="dropdown">
+           <li><a href="menus.html">Menus</a></li>
+           <li><a href="widgets.html">Widgets</a></li>
+           <li><a href="media.html">Media</a></li>
+           <li><a href="cards.html">Cards</a></li>
+         </ul>
+       </li>
+       <li><a href="about.html">About</a></li>
+     </ul>
+   </nav>
+   <aside>
+
+   </aside>
+   </div>
+   </main>
+   <footer>
+    <p><strong>Developed by</strong> Julian Burnley</p>
+    <p><strong>Email:</strong> <a href="mailto:julian@julianburnley.com">julian@julianburnley.com</a></p>
+    <p><strong>Date:</strong> <time datetime="2026-07-26">July 26, 2026</time></p>
+  </footer>
+       
+         <script src="js/main.js"></script>
+     </body>
+   </html>

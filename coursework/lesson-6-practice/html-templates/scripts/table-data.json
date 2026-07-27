@@ -1,0 +1,14 @@
+{
+  "planetdata": [
+    { "planet": "Mercury", "type": "Terrestrial", "diameter": 4879, "day": 1407.5, "orbit": 88 },
+    { "planet": "Venus", "type": "Terrestrial", "diameter": 12104, "day": -5832.5, "orbit": 225 },
+    { "planet": "Earth", "type": "Terrestrial", "diameter": 12742, "day": 24, "orbit": 365 },
+    { "planet": "Mars", "type": "Terrestrial", "diameter": 6779, "day": 24.6, "orbit": 687 },
+    { "planet": "Jupiter", "type": "Gas Giant", "diameter": 139820, "day": 9.9, "orbit": 4333 },
+    { "planet": "Saturn", "type": "Gas Giant", "diameter": 116460, "day": 10.7, "orbit": 10759 },
+    { "planet": "Uranus", "type": "Ice Giant", "diameter": 50724, "day": 17.2, "orbit": 30687 },
+    { "planet": "Neptune", "type": "Ice Giant", "diameter": 49244, "day": 16.1, "orbit": 60190 }
+  ]
+}
+
+

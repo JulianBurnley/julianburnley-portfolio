@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Lesson 8 Cheatsheet</title>
+  <meta name="description" content="Graphic effects and media element cheatsheet for Lesson 8.">
+  <meta name="author" content="Julian Burnley">
+  <meta name="keywords" content="Lesson 8, Cheatsheet, Graphic Effects, Media Elements">
+<link rel="stylesheet" href="css/styles.css">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <section id="site-navigation">
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">
+            <i class="material-icons">home</i> Home
+          </a>
+        </li>
+        <li>
+          <a href="graphical-cheatsheet.html">
+            <i class="material-icons">assignment</i> Cheatsheet
+          </a>
+        </li>
+        <li>
+          <a href="../12988_lesson-8-practice-activities-JUL2216252/index.html">
+            <i class="material-icons">code</i> Practice Activities
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </section>
+
+  <!-- Header -->
+  <header>
+    <h1>Lesson 8 Cheatsheet</h1>
+
+    <button id="toggleTheme" class="gradient">Dark Mode</button>
+  </header>
+
+  <main>
+
+    <!-- Graphic Effects (Collapsible) -->
+    <section class="collapsible">
+      <button class="collapse-toggle" type="button" aria-expanded="false">
+        <i class="material-icons">expand_more</i> Graphic Effects
+      </button>
+
+      <div class="collapse-content">
+        <table>
+          <thead>
+            <tr>
+              <th><i class="material-icons">tune</i> Property</th>
+              <th><i class="material-icons">list</i> Values</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>filter</td><td>blur(), brightness(), contrast(), drop-shadow(), grayscale(), hue-rotate(), invert(), opacity(), saturate(), sepia()</td></tr>
+            <tr><td>mix-blend-mode</td><td>normal, multiply, screen, overlay, darken, lighten, color-dodge, color-burn, difference, exclusion, hue, saturation, color, luminosity</td></tr>
+            <tr><td>background-blend-mode</td><td>same values as mix-blend-mode</td></tr>
+            <tr><td>clip-path</td><td>circle(), ellipse(), inset(), polygon(), path(), url()</td></tr>
+            <tr><td>mask</td><td>url(), none</td></tr>
+            <tr><td>mask-image</td><td>url(), linear-gradient(), radial-gradient(), none</td></tr>
+            <tr><td>mask-mode</td><td>alpha, luminance, match-source</td></tr>
+            <tr><td>mask-repeat</td><td>repeat, no-repeat, space, round</td></tr>
+            <tr><td>mask-position</td><td>top, bottom, left, right, center, x/y values</td></tr>
+            <tr><td>mask-size</td><td>auto, contain, cover, length values</td></tr>
+            <tr><td>mask-origin</td><td>border-box, padding-box, content-box</td></tr>
+            <tr><td>mask-clip</td><td>border-box, padding-box, content-box</td></tr>
+            <tr><td>mask-composite</td><td>add, subtract, intersect, exclude</td></tr>
+            <tr><td>mask-type</td><td>alpha, luminance</td></tr>
+            <tr><td>backdrop-filter</td><td>same values as filter()</td></tr>
+            <tr><td>object-fit</td><td>fill, contain, cover, none, scale-down</td></tr>
+            <tr><td>object-position</td><td>top, bottom, left, right, center, x/y values</td></tr>
+            <tr><td>shape-outside</td><td>circle(), ellipse(), inset(), polygon(), url()</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Media Elements (Collapsible) -->
+    <section class="collapsible">
+      <button class="collapse-toggle" type="button" aria-expanded="false">
+        <i class="material-icons">expand_more</i> Media Elements
+      </button>
+
+      <div class="collapse-content">
+        <table>
+          <thead>
+            <tr>
+              <th><i class="material-icons">collections</i> Category</th>
+              <th><i class="material-icons">code</i> Elements</th>
+              <th><i class="material-icons">label</i> Attributes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Figures</td>
+              <td>&lt;figure&gt;, &lt;img&gt;, &lt;figcaption&gt;</td>
+              <td>src, alt, title, width, height</td>
+            </tr>
+            <tr>
+              <td>Pictures</td>
+              <td>&lt;picture&gt;, &lt;source&gt;, &lt;img&gt;</td>
+              <td>srcset, media, type, src, alt</td>
+            </tr>
+            <tr>
+              <td>Audio</td>
+              <td>&lt;audio&gt;, &lt;source&gt;</td>
+              <td>src, type, controls, autoplay, loop</td>
+            </tr>
+            <tr>
+              <td>Video</td>
+              <td>&lt;video&gt;, &lt;source&gt;, &lt;track&gt;</td>
+              <td>src, type, controls, autoplay, loop, poster, width, height</td>
+            </tr>
+            <tr>
+              <td>Canvas</td>
+              <td>&lt;canvas&gt;</td>
+              <td>width, height</td>
+            </tr>
+            <tr>
+              <td>Other Digital Media</td>
+              <td>&lt;embed&gt;, &lt;iframe&gt;, &lt;object&gt;</td>
+              <td>src, type, width, height, allow, title</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    // Dark mode toggle
+    const toggle = document.getElementById("toggleTheme");
+
+    if (localStorage.getItem("theme") === "dark") {
+      document.body.classList.add("dark-mode");
+      toggle.textContent = "Light Mode";
+    }
+
+    toggle.onclick = () => {
+      document.body.classList.toggle("dark-mode");
+      const mode = document.body.classList.contains("dark-mode") ? "dark" : "light";
+      toggle.textContent = mode === "dark" ? "Light Mode" : "Dark Mode";
+      localStorage.setItem("theme", mode);
+    };
+
+    // Collapsible sections
+    document.querySelectorAll(".collapse-toggle").forEach(btn => {
+      btn.onclick = () => {
+        const section = btn.parentElement;
+        section.classList.toggle("open");
+        btn.setAttribute("aria-expanded", section.classList.contains("open"));
+      };
+    });
+  </script>
+
+
+  <footer>
+    <p><strong>Developed by</strong> Julian Burnley</p>
+    <p><strong>Email:</strong> <a href="mailto:julian@julianburnley.com">julian@julianburnley.com</a></p>
+    <p><strong>Date:</strong> <time datetime="2026-07-26">July 26, 2026</time></p>
+  </footer>
+</body>
+</html>

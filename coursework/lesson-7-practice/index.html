@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Julian Burnley">
+  <meta name="keywords" content="CSS transforms, transitions, animations, web design">
+  <meta name="description" content="Lesson 7 practice activities for CIS233DA">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CIS233DA | Lesson 7 Practice Activities</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <section id="left-side">
+    <h1>Lesson 7 Practice Activities</h1>
+
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="transforms.html">Transforms</a></li>
+        <li><a href="animations.html">Animations</a></li>
+        <li><a href="transitions.html">Transitions</a></li>
+        <li><a href="../12988_lesson-7-project-JUL2216252/index.html">Lesson 7 Project</a></li>
+      </ul>
+    </nav>
+
+<button id="theme-toggle">Dark Mode</button>
+
+  </section>
+
+  <main>
+    <h2>Activity List</h2>
+
+    <dl>
+      <dt>Image Transformations</dt>
+      <dd>Create a polaroid-style image rotated for a 3D effect.</dd>
+
+      <dt>Text Transformations</dt>
+      <dd>Apply rotation, scaling, and translation to text elements.</dd>
+
+      <dt>Link States</dt>
+      <dd>Add a transition effect to button hover states.</dd>
+
+      <dt>Breathing Effect</dt>
+      <dd>Create a pulsing animation for interactive elements.</dd>
+
+      <dt>Menu Slide</dt>
+      <dd>Build a dropdown menu that animates into view.</dd>
+
+      <dt>Accessibility</dt>
+      <dd>Improve previous activities for accessibility compliance.</dd>
+    </dl>
+  </main>
+
+  <footer>
+    <p><strong>Developed by</strong> Julian Burnley</p>
+    <p><strong>Email:</strong> <a href="mailto:julian@julianburnley.com">julian@julianburnley.com</a></p>
+    <p><strong>Date:</strong> <time datetime="2026-07-26">July 26, 2026</time></p>
+  </footer>
+
+  <script>
+  const toggle = document.getElementById('theme-toggle');
+  toggle.addEventListener('click', () => {
+    document.documentElement.classList.toggle('dark');
+    toggle.textContent =
+      document.documentElement.classList.contains('dark')
+        ? 'Light Mode'
+        : 'Dark Mode';
+  });
+</script>
+
+</body>
+</html>

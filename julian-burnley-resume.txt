@@ -1,0 +1,32 @@
+JULIAN BURNLEY
+Front-End Developer | AI Practitioner | IT Professional
+Phoenix, Arizona
+Email: julian@julianburnley.com
+GitHub: https://github.com/JulianBurnley
+
+PROFESSIONAL PROFILE
+Front-end developer and information technology professional combining
+responsive development, accessibility, visual design, practical AI use,
+technical troubleshooting, and clear communication.
+
+CORE CAPABILITIES
+- Semantic HTML, modern CSS, and JavaScript
+- Responsive and mobile-first interface development
+- Web accessibility, keyboard navigation, and WAI-ARIA
+- Git and GitHub workflows
+- WordPress and WooCommerce
+- AI-assisted research, prototyping, debugging, and documentation
+- Technical troubleshooting and customer support
+- Adobe Creative Cloud and visual design
+
+SELECTED PROJECT WORK
+- Web Design Reference Library
+- Accessible ARIA Interface
+- Professional Web Resume
+- Interactive Media Lab
+
+PROFESSIONAL DIRECTION
+Deepening JavaScript, component development, API integration, accessibility,
+and responsible AI-supported development workflows.
+
+Updated July 27, 2026

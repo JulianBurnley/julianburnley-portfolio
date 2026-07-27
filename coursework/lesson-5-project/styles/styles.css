@@ -1,0 +1,222 @@
+header {
+    
+    background-color: rgb(159, 231, 159);
+    padding: 2px;
+    border-bottom: solid 3px red;
+}
+
+
+  nav {
+    float: right;
+    margin-top: 100px;
+    
+  }
+
+  a {
+    color: black;
+    padding: 20px;
+    font-weight: 900;
+  }
+
+  header a {
+    font-size: larger;
+   
+  }
+
+  nav a:hover {
+    color: red;
+  }
+   h1 {
+    color: black;
+    padding-left: 10px;
+    font-weight: 900;
+   }
+
+   p {
+    padding-left: 10px;
+   }
+
+   article {
+    padding: 5px;
+   }
+
+   aside {
+    background-color: beige;
+    float: right;
+    border: solid rgb(116, 116, 2);
+    margin-top: 25px;
+   }
+
+   footer address {
+    padding-left: 5px;
+    font-size: 15px;
+    margin-top: 17px;
+   }
+
+   footer a {
+    color: white;
+    font-style: italic;
+   }
+
+   footer {
+    width: 100%;
+    min-height: 100px;
+    background-image: linear-gradient(to right, rgb(31, 199, 157), rgb(159, 231, 159) );
+    color: black;
+    font-weight: 900;
+    font-size: small;
+    text-align: left;border-top: solid 3px red;
+   }
+
+  .logo {
+    height: 120px;
+    width: 150px;
+    padding-left: 15px;
+   
+  }
+
+  .cars {
+    padding: 3px;
+    height: 150px;
+    width: 150px;
+
+  }
+  .adpic{
+    height: 275px;
+    width: 175px;
+    padding-left: 18px;
+
+  }
+   
+  aside {
+    height: 400px;
+    width: 210px;
+    background-image: linear-gradient(to bottom, black, white );
+    border: solid black;
+    margin-top: 5px;
+  }
+
+  aside h2 {
+    font-weight: 900;
+    color: white;
+    padding-left: 15px;
+  }
+  aside h3 {
+    color: black;
+    padding-left: 80px;
+    font-weight: 900;
+  }
+
+  figure {
+    background-color:black;
+    width: 320px;
+    height: 160px;
+    margin-left: 5px;
+  }
+
+  .Banner {
+    height: 330px;
+    background-image: url(SplashBanner1.jpg);
+    border-top: solid 3px red;
+    background-size:contain;
+    padding-bottom: 100px;
+
+  }
+
+  .Banner h2 {
+    font-weight: bold;
+    font-size: 50px;
+    color: rgb(238, 0, 17);
+  }
+
+  .Banner p {
+    color: rgb(238, 0, 17);
+    font-size: 25px;
+    font-weight:900;
+
+  }
+
+  .bannercar, .bannercar1 {
+    height: 125px;
+    width: 175px;
+    float: right;
+    padding-bottom: 30px;
+    background-image: linear-gradient(to right, black, white);
+    border: solid 3px black;
+    
+    
+  }
+
+
+.Article1 {
+  padding-bottom: 20px;
+}
+
+article {
+  height: 20%;
+}
+
+.diecast {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 30px 20px 120px;
+}
+
+.diecast img {
+  width: 260px;
+  height: 190px;
+  object-fit: cover;
+  margin: 0;
+}
+
+.diecast section {
+  display: grid;
+  grid-template-columns: 280px minmax(0, 1fr);
+  grid-template-rows: auto auto 1fr;
+  column-gap: 30px;
+  align-items: start;
+  min-height: 230px;
+  margin-bottom: 40px;
+}
+
+.diecast section > a {
+  grid-column: 1;
+  grid-row: 1 / 4;
+  padding: 0;
+}
+
+.diecast section > h2,
+.diecast section > p,
+.diecast section > details {
+  grid-column: 2;
+  margin-top: 0;
+}
+
+@media (max-width: 700px) {
+  nav {
+    float: none;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    padding: 10px;
+  }
+
+  .diecast section {
+    grid-template-columns: 1fr;
+  }
+
+  .diecast section > a,
+  .diecast section > h2,
+  .diecast section > p,
+  .diecast section > details {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .diecast section > a {
+    margin-bottom: 20px;
+  }
+}

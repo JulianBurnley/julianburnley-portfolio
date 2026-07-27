@@ -3,6 +3,7 @@ import { join, relative, resolve, sep } from "node:path";
 
 const root = resolve("coursework");
 const stylesheet = '<link rel="stylesheet" href="/css/coursework-nav.css">';
+const themeScript = '<script src="/js/coursework-theme.js" defer></script>';
 const marker = 'class="portfolio-course-nav"';
 
 function htmlFiles(directory) {
@@ -40,6 +41,7 @@ for (const file of htmlFiles(root)) {
       ? `<a href="${practicePath}"${section === "practice" ? ' aria-current="page"' : ""}>Practice activities</a>`
       : "",
     '<a class="portfolio-return-link" href="/">Return to portfolio</a>',
+    '<button class="course-theme-toggle" type="button" aria-pressed="false">Dark mode</button>',
   ].filter(Boolean);
 
   const navigation = `<nav class="portfolio-course-nav" aria-label="Portfolio and coursework navigation"><details><summary>Coursework menu</summary><div class="portfolio-course-nav-links">${links.join("")}</div></details></nav>`;
@@ -47,6 +49,9 @@ for (const file of htmlFiles(root)) {
 
   if (!content.includes(stylesheet)) {
     content = content.replace(/<\/head>/i, `  ${stylesheet}\n</head>`);
+  }
+  if (!content.includes(themeScript)) {
+    content = content.replace(/<\/head>/i, `  ${themeScript}\n</head>`);
   }
 
   if (content.includes(marker)) {

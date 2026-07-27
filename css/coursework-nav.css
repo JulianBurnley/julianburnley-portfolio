@@ -1,9 +1,9 @@
 .portfolio-course-nav {
   position: fixed !important;
-  top: 1rem !important;
-  right: 1rem !important;
-  bottom: auto !important;
-  left: auto !important;
+  top: auto !important;
+  right: auto !important;
+  bottom: 1rem !important;
+  left: 1rem !important;
   z-index: 9999;
   display: block !important;
   width: min(15rem, calc(100vw - 2rem)) !important;
@@ -62,6 +62,73 @@
   white-space: normal;
 }
 
+.portfolio-course-nav .course-theme-toggle {
+  display: inline-flex;
+  min-height: 2.35rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.45rem 0.75rem;
+  border: 1px solid #f6c453;
+  border-radius: 999px;
+  background: #f6c453;
+  color: #111827;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 800;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+.portfolio-course-nav .course-theme-toggle:hover,
+.portfolio-course-nav .course-theme-toggle:focus-visible {
+  background: #fde68a;
+}
+
+html[data-coursework-theme="dark"] {
+  color-scheme: dark;
+}
+
+html[data-coursework-theme="dark"] body {
+  background: #0f172a !important;
+  color: #f8fafc !important;
+}
+
+html[data-coursework-theme="dark"] body > header,
+html[data-coursework-theme="dark"] body > main,
+html[data-coursework-theme="dark"] body > footer,
+html[data-coursework-theme="dark"] main > section,
+html[data-coursework-theme="dark"] .page {
+  background-color: #111827 !important;
+  color: #f8fafc !important;
+}
+
+html[data-coursework-theme="dark"] article,
+html[data-coursework-theme="dark"] table,
+html[data-coursework-theme="dark"] pre,
+html[data-coursework-theme="dark"] code,
+html[data-coursework-theme="dark"] [class*="card"] {
+  border-color: #475569 !important;
+  background-color: #1e293b !important;
+  color: #f8fafc !important;
+}
+
+html[data-coursework-theme="dark"] h1,
+html[data-coursework-theme="dark"] h2,
+html[data-coursework-theme="dark"] h3,
+html[data-coursework-theme="dark"] h4,
+html[data-coursework-theme="dark"] p,
+html[data-coursework-theme="dark"] li,
+html[data-coursework-theme="dark"] dt,
+html[data-coursework-theme="dark"] dd,
+html[data-coursework-theme="dark"] th,
+html[data-coursework-theme="dark"] td {
+  color: #f8fafc !important;
+}
+
+html[data-coursework-theme="dark"] a:not(.portfolio-course-nav a) {
+  color: #93c5fd !important;
+}
+
 .portfolio-course-nav a:hover,
 .portfolio-course-nav a:focus-visible {
   border-color: #5eead4;
@@ -77,8 +144,8 @@
 
 @media (max-width: 42rem) {
   .portfolio-course-nav {
-    top: 0.5rem !important;
-    right: 0.5rem !important;
+    bottom: 0.5rem !important;
+    left: 0.5rem !important;
     width: min(13rem, calc(100vw - 1rem)) !important;
   }
 }

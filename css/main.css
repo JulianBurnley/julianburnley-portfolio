@@ -569,11 +569,108 @@ ul {
   text-underline-offset: 0.3rem;
 }
 
-.project-note {
-  margin: 1.5rem 0 0;
-  color: var(--color-accent) !important;
+.case-study-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  margin-top: 1.5rem;
+  padding: 0.7rem 1rem;
+  border: 1px solid var(--color-accent);
+  border-radius: 999px;
+  color: var(--color-white);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.case-study-link:hover,
+.case-study-link:focus-visible {
+  background: var(--color-accent);
+  color: var(--color-dark);
+}
+
+.case-study-page {
+  min-height: 100vh;
+}
+
+.case-study-header {
+  padding-block: 1.25rem;
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+.case-study-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.back-link {
+  color: var(--color-primary);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.case-study-hero {
+  padding-block: clamp(4rem, 10vw, 8rem);
+  background: var(--color-dark);
+  color: var(--color-white);
+}
+
+.case-study-hero h1 {
+  max-width: 14ch;
+}
+
+.case-study-hero > .container > p:last-child {
+  max-width: 48rem;
+  color: var(--color-dark-muted);
+  font-size: 1.15rem;
+}
+
+.case-study-content {
+  display: grid;
+  grid-template-columns: minmax(14rem, 0.55fr) minmax(0, 1.45fr);
+  gap: clamp(2rem, 8vw, 7rem);
+}
+
+.case-study-facts {
+  align-self: start;
+  padding: 1.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+}
+
+.case-study-facts dt {
+  color: var(--color-primary);
   font-family: var(--font-mono);
-  font-size: 0.78rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.case-study-facts dd {
+  margin: 0.25rem 0 1.25rem;
+  color: var(--color-text-muted);
+}
+
+.case-study-body {
+  max-width: 48rem;
+}
+
+.case-study-body h2 {
+  margin-top: 3rem;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+}
+
+.case-study-body p,
+.case-study-body li {
+  color: var(--color-text-muted);
+}
+
+.case-study-body ul {
+  padding-left: 1.25rem;
+}
 }
 
 /* AI */
@@ -752,6 +849,10 @@ ul {
 
   .project-featured {
     display: block;
+  }
+
+  .case-study-content {
+    grid-template-columns: 1fr;
   }
 }
 

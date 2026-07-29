@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Julian Burnley">
+  <meta name="description" content="A curated collection of Julian Burnley's CIS166AA JavaScript coursework, modernized as interactive browser exercises.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://www.julianburnley.com/javascript-lab/">
+  <meta property="og:title" content="JavaScript Coursework Lab | Julian Burnley">
+  <meta property="og:description" content="Interactive exercises covering functions, objects, arrays, DOM APIs, events, validation, and browser APIs.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.julianburnley.com/javascript-lab/">
+  <meta property="og:image" content="https://www.julianburnley.com/javascript-lab/assets/javascript-lab-social.png">
+  <meta property="og:image:alt" content="JavaScript Coursework Lab: Functions, Objects, DOM, Events, Validation">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://www.julianburnley.com/javascript-lab/assets/javascript-lab-social.png">
+  <title>JavaScript Coursework Lab | Julian Burnley</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="lab.css">
+  <script src="lab.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#labs">Skip to interactive labs</a>
+  <header class="site-header">
+    <a class="brand" href="../index.html"><span>JB</span> Julian Burnley</a>
+    <nav aria-label="JavaScript lab">
+      <a href="#progression">Progression</a>
+      <a href="#labs">Live labs</a>
+      <a href="#reflection">Reflection</a>
+      <a class="return-link" href="../index.html#projects">Portfolio</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">CIS166AA · JavaScript Programming · 2022</p>
+        <h1>Learning JavaScript by making the browser respond.</h1>
+        <p>This curated lab modernizes my original coursework into eight focused demonstrations—from functions and objects to DOM events, validation, and browser APIs.</p>
+        <a class="button" href="#labs">Run the exercises</a>
+      </div>
+      <div class="code-window" aria-label="JavaScript code example">
+        <div class="window-bar"><span></span><span></span><span></span><strong>progression.js</strong></div>
+        <pre><code><span class="comment">// Start with a value</span>
+<span class="keyword">const</span> curiosity = <span class="string">"How does this work?"</span>;
+
+<span class="comment">// Turn it into behavior</span>
+<span class="keyword">function</span> <span class="function">practice</span>(idea) {
+  <span class="keyword">return</span> test(idea)
+    .debug()
+    .improve();
+}
+
+<span class="function">practice</span>(curiosity);</code></pre>
+      </div>
+    </section>
+
+    <section class="progression" id="progression">
+      <header>
+        <p class="eyebrow">Course progression</p>
+        <h2>From expressions to interaction.</h2>
+      </header>
+      <ol>
+        <li><span>01</span><strong>Functions</strong><small>Reusable calculations and return values</small></li>
+        <li><span>02</span><strong>Objects</strong><small>Properties, methods, and computed results</small></li>
+        <li><span>03</span><strong>Conditionals</strong><small>Decision-making and random outcomes</small></li>
+        <li><span>04</span><strong>Arrays &amp; loops</strong><small>Structured data and repeated operations</small></li>
+        <li><span>05</span><strong>The DOM</strong><small>Reading and changing page content</small></li>
+        <li><span>06</span><strong>Events</strong><small>Responding to user behavior</small></li>
+        <li><span>07</span><strong>Validation</strong><small>Checking input and communicating errors</small></li>
+        <li><span>08</span><strong>Browser APIs</strong><small>Using capabilities with user permission</small></li>
+      </ol>
+    </section>
+
+    <section class="labs" id="labs">
+      <header class="section-heading">
+        <p class="eyebrow">Interactive coursework</p>
+        <h2>Eight small ideas you can run.</h2>
+        <p>Each exercise preserves the concept of the original assignment while improving its accessibility, feedback, and code structure.</p>
+      </header>
+
+      <div class="lab-grid">
+        <article class="lab-card" id="functions-lab">
+          <div class="lab-meta"><span>Lesson 4</span><code>functions</code></div>
+          <h3>Everyday Calculator</h3>
+          <p>Use a reusable function to calculate the capacity of a Ferris wheel.</p>
+          <div class="controls two">
+            <label>Seats<input id="seats" type="number" min="1" value="14"></label>
+            <label>People per seat<input id="people" type="number" min="1" value="6"></label>
+          </div>
+          <button data-action="capacity">Calculate capacity</button>
+          <output id="capacity-output" aria-live="polite">Ready to calculate.</output>
+        </article>
+
+        <article class="lab-card" id="objects-lab">
+          <div class="lab-meta"><span>Lesson 5</span><code>objects</code></div>
+          <h3>Homework Snapshot</h3>
+          <p>Create a classroom object and calculate its submission rate.</p>
+          <div class="controls two">
+            <label>Students<input id="students" type="number" min="1" value="24"></label>
+            <label>Submitted<input id="submitted" type="number" min="0" value="20"></label>
+          </div>
+          <button data-action="homework">Create snapshot</button>
+          <output id="homework-output" aria-live="polite">Enter classroom totals.</output>
+        </article>
+
+        <article class="lab-card" id="conditionals-lab">
+          <div class="lab-meta"><span>Lesson 6</span><code>if / else</code></div>
+          <h3>Number Window</h3>
+          <p>Generate a value from 1–100. Values between 50 and 75 win.</p>
+          <button data-action="random">Generate a number</button>
+          <output id="random-output" aria-live="polite">Try your luck.</output>
+        </article>
+
+        <article class="lab-card" id="arrays-lab">
+          <div class="lab-meta"><span>Lesson 7</span><code>arrays + loops</code></div>
+          <h3>Grade Translator</h3>
+          <p>Loop through structured student data and convert numeric grades.</p>
+          <button data-action="grades">Build grade report</button>
+          <output id="grades-output" aria-live="polite">The report will appear here.</output>
+        </article>
+
+        <article class="lab-card" id="dom-lab">
+          <div class="lab-meta"><span>Lesson 8</span><code>DOM APIs</code></div>
+          <h3>Page Auditor</h3>
+          <p>Query this document to count headings, paragraphs, links, and controls.</p>
+          <button data-action="audit">Audit this page</button>
+          <output id="audit-output" aria-live="polite">No audit has run yet.</output>
+        </article>
+
+        <article class="lab-card event-card" id="events-lab">
+          <div class="lab-meta"><span>Lesson 9</span><code>events</code></div>
+          <h3>Event Monitor</h3>
+          <p>Interact with the field and watch focus, input, copy, and keyboard events.</p>
+          <label>Try an interaction<input id="event-input" value="Edit or copy this text"></label>
+          <output id="event-output" aria-live="polite">Waiting for an event…</output>
+        </article>
+
+        <article class="lab-card" id="validation-lab">
+          <div class="lab-meta"><span>Lessons 10 &amp; 13</span><code>validation</code></div>
+          <h3>Range Validator</h3>
+          <p>Validate a number from 5–15 and return a useful inline message.</p>
+          <label>Number<input id="range-input" type="text" inputmode="numeric"></label>
+          <button data-action="validate">Validate input</button>
+          <output id="validation-output" aria-live="polite">Enter a number from 5 to 15.</output>
+        </article>
+
+        <article class="lab-card" id="api-lab">
+          <div class="lab-meta"><span>Lesson 12</span><code>browser API</code></div>
+          <h3>Permission-Aware Location</h3>
+          <p>Request approximate browser coordinates only after the visitor chooses.</p>
+          <button data-action="location">Request my location</button>
+          <output id="location-output" aria-live="polite">Your location has not been requested.</output>
+        </article>
+      </div>
+    </section>
+
+    <section class="reflection" id="reflection">
+      <div>
+        <p class="eyebrow">Looking back</p>
+        <h2>The assignments were small. The habits became foundational.</h2>
+      </div>
+      <div>
+        <p>This course taught me to break a problem into values, decisions, and visible outcomes. The original work also shows how much my approach has changed: I now favor semantic elements, modern JavaScript, inline feedback, permission-aware APIs, and interfaces that work without disruptive alerts.</p>
+        <p>The lab is not presented as advanced application architecture. It is an honest record of the fundamentals that support my next step into React and TypeScript.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div><strong>Developed by Julian Burnley</strong><p>JavaScript Coursework Lab · Originally completed in 2022</p></div>
+    <div><a href="mailto:julian@julianburnley.com">julian@julianburnley.com</a><a href="../index.html#projects">Return to portfolio</a></div>
+  </footer>
+</body>
+</html>

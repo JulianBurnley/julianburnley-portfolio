@@ -146,27 +146,38 @@ story.append(
 )
 
 left = []
-left.append(Paragraph("CORE CAPABILITIES", styles["section"]))
-capabilities = [
-    "Semantic HTML, modern CSS, and JavaScript",
-    "Responsive and mobile-first interface development",
-    "Web accessibility, keyboard navigation, and WAI-ARIA",
-    "Git and GitHub workflows",
-    "WordPress and WooCommerce",
-    "AI-assisted research, prototyping, debugging, and documentation",
-    "Technical troubleshooting and customer support",
-    "Adobe Creative Cloud and visual design",
-]
-for item in capabilities:
-    left.append(Paragraph(f"• {item}", styles["item"]))
-
 left.append(Paragraph("EDUCATION", styles["section"]))
 left.append(Paragraph("Bachelor of Applied Science in Information Technology", styles["project"]))
-left.append(Paragraph("Phoenix College", styles["small"]))
-left.append(Paragraph("Application Development and Web Design/Development", styles["project"]))
-left.append(Paragraph("Associate-level academic preparation and project work", styles["small"]))
+left.append(Paragraph("Phoenix College | 2026", styles["small"]))
+left.append(Paragraph("Associate of Applied Science - Web Development / Design", styles["project"]))
+left.append(Paragraph("Rio Salado College | 2024", styles["small"]))
+left.append(Paragraph("Associate of Applied Science - Programming and System Analysis", styles["project"]))
+left.append(Paragraph("Rio Salado College | 2022", styles["small"]))
+
+left.append(Paragraph("CERTIFICATES", styles["section"]))
+certificates = [
+    "Computer System Configuration and Support - Network | Phoenix College (2026)",
+    "Computer System Configuration and Support - Security | Phoenix College (2026)",
+    "Computer System Configuration and Support - Linux | Phoenix College (2026)",
+    "Computer System Configuration and Support | Phoenix College (2026)",
+    "Microsoft Desktop Associate | Phoenix College (2026)",
+    "Web App Development | Rio Salado College (2022)",
+]
+for item in certificates:
+    left.append(Paragraph(f"- {item}", styles["item"]))
 
 right = []
+right.append(Paragraph("CORE CAPABILITIES", styles["section"]))
+capabilities = [
+    "Semantic HTML, modern CSS, JavaScript, and responsive design",
+    "Accessibility, keyboard navigation, and WAI-ARIA",
+    "Git, GitHub, WordPress, and WooCommerce",
+    "AI-assisted research, prototyping, debugging, and documentation",
+    "Technical troubleshooting, support, and visual design",
+]
+for item in capabilities:
+    right.append(Paragraph(f"- {item}", styles["item"]))
+
 right.append(Paragraph("SELECTED PROJECTS", styles["section"]))
 projects = [
     (
@@ -180,10 +191,6 @@ projects = [
     (
         "JR's Toy Store",
         "Responsive storefront redesign with category browsing, product cards, dark mode, and interactive cart feedback.",
-    ),
-    (
-        "Professional Web Resume",
-        "Responsive professional profile using CSS Grid, Flexbox, accessible hierarchy, metadata, and portfolio branding.",
     ),
 ]
 for title, description in projects:

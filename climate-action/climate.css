@@ -151,6 +151,20 @@ h3 { line-height: 1.2; }
 .reflection { padding: 10rem 8vw; background: var(--amber); color: var(--ink); text-align: center; }
 .reflection p { font-size: .8rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
 .reflection h2 { max-width: 1000px; margin: 1.5rem auto 0; }
+.briefing { background: #f5f2ea; }
+.briefing-status { display: flex; justify-content: space-between; gap: 2rem; align-items: center; margin-bottom: 2rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--line); }
+.briefing-status > p { margin: 0; color: #68736f; font-size: .82rem; }
+.briefing-filters { display: flex; flex-wrap: wrap; gap: .5rem; }
+.briefing-filters button { border: 1px solid var(--line); border-radius: 999px; padding: .55rem .8rem; background: transparent; color: var(--ink); font: 700 .75rem var(--sans); cursor: pointer; }
+.briefing-filters button.active { border-color: var(--forest); background: var(--forest); color: white; }
+.briefing-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+.briefing-grid article { display: flex; min-height: 340px; flex-direction: column; padding: 1.7rem; background: var(--paper); }
+.article-meta { color: var(--moss); font-size: .7rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.briefing-grid h3 { margin: .8rem 0; font-family: var(--serif); font-size: 1.65rem; font-weight: 500; }
+.briefing-grid article > p:not(.article-meta) { color: #65706c; font-size: .92rem; }
+.briefing-grid a { margin-top: auto; color: var(--moss); font-size: .82rem; font-weight: 700; }
+.briefing-loading { grid-column: 1/-1; margin: 0; padding: 3rem; background: var(--paper); color: #65706c; text-align: center; }
+.briefing-policy { max-width: 80ch; margin: 2rem 0 0; color: #65706c; font-size: .8rem; }
 .action { background: #e6eadf; }
 .action-layout { display: grid; grid-template-columns: 1.4fr .6fr; gap: 5vw; align-items: start; }
 .action-list { border-top: 1px solid var(--line); }
@@ -192,6 +206,8 @@ footer p { margin: .35rem 0 0; color: rgba(255,255,255,.6); }
   .impact-grid { grid-template-columns: 1fr; }
   .impact-grid article, .impact-grid article:nth-child(even) { padding: 2.5rem 0; border-left: 0; }
   .commitment { position: static; }
+  .briefing-status { align-items: flex-start; flex-direction: column; }
+  .briefing-grid { grid-template-columns: 1fr; }
   footer { flex-direction: column; }
   .footer-links { text-align: left; }
 }

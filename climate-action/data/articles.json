@@ -1,0 +1,51 @@
+{
+  "updatedAt": "2026-07-29T01:40:05.753Z",
+  "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
+  "articles": [
+    {
+      "id": "3c8d41ebd8c88e3b",
+      "title": "Smoke Blankets Oregon",
+      "link": "https://science.nasa.gov/earth/natural-disasters/wildfires/smoke-blankets-oregon/",
+      "description": "Lightning storms have ignited dozens of fires in central and eastern Oregon.",
+      "published": "2026-07-28T04:01:00.000Z",
+      "source": "NASA",
+      "category": "Climate science"
+    },
+    {
+      "id": "a09d7524bcb78f4c",
+      "title": "Pink Penguin Guano Provides Diet Clues",
+      "link": "https://science.nasa.gov/earth/earth-observatory/pink-penguin-guano-provides-diet-clues/",
+      "description": "The color of Adélie penguin droppings reveals what the birds are eating, offering scientists a way to track how sea ice conditions influence their diet.",
+      "published": "2026-07-27T04:00:00.000Z",
+      "source": "NASA Earth Observatory",
+      "category": "Earth observation"
+    },
+    {
+      "id": "eb813b05760e81ec",
+      "title": "A Week of Smoky Skies Across North America",
+      "link": "https://science.nasa.gov/earth/earth-observatory/a-week-of-smoky-skies-across-north-america/",
+      "description": "Brown carbon, emitted by wildland fires and tracked over the span of a week in July 2026, worsened air quality in parts of the U.S. and Canada.",
+      "published": "2026-07-22T04:00:00.000Z",
+      "source": "NASA Earth Observatory",
+      "category": "Earth observation"
+    },
+    {
+      "id": "3de14c4773013053",
+      "title": "NISAR’s L-Band Radar Reveals ‘Hummingbird’ in Antarctica",
+      "link": "https://science.nasa.gov/photojournal/nisars-l-band-radar-reveals-hummingbird-in-antarctica/",
+      "description": "Description Data from the Earth-orbiting U.S.-India NISAR (NASA-ISRO Synthetic Aperture Radar) satellite’s L-band radar was used to produce an image of Nunatak Zaterjavshijsja — a mountaintop in East Antarctica — poking out amid a stream of",
+      "published": "2026-07-22T00:33:08.000Z",
+      "source": "NASA Earth Observatory",
+      "category": "Earth observation"
+    },
+    {
+      "id": "827ed5a9502a067c",
+      "title": "Ontario Wildfire Smoke Moves East",
+      "link": "https://science.nasa.gov/earth/earth-observatory/ontario-wildfire-smoke-moves-east/",
+      "description": "Canadian wildfires sent plumes of smoke streaming over Ontario, Quebec, and parts of the U.S. Midwest and Northeast.",
+      "published": "2026-07-16T04:00:00.000Z",
+      "source": "NASA Earth Observatory",
+      "category": "Earth observation"
+    }
+  ]
+}

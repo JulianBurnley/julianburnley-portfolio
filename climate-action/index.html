@@ -32,6 +32,7 @@
     <nav id="site-nav" aria-label="Climate story">
       <a href="#evidence">Evidence</a>
       <a href="#impacts">Impacts</a>
+      <a href="#briefing">Briefing</a>
       <a href="#action">Action</a>
       <a href="#sources">Sources</a>
       <a class="portfolio-link" href="../index.html#projects">Portfolio</a>
@@ -136,6 +137,26 @@
       <p>Climate concern is not a test of purity.</p>
       <h2>It is an invitation to pay attention—and to participate.</h2>
     </aside>
+
+    <section class="briefing section" id="briefing">
+      <header class="section-heading">
+        <p class="eyebrow">Climate briefing</p>
+        <h2>Recent signals from trusted sources.</h2>
+        <p>Automatically collected twice daily from approved official feeds. This page displays only article metadata and short source-provided descriptions; complete reporting remains with the original publisher.</p>
+      </header>
+      <div class="briefing-status">
+        <p id="briefing-updated">Loading the latest briefing…</p>
+        <div class="briefing-filters" aria-label="Filter climate articles">
+          <button class="active" type="button" data-briefing-filter="all" aria-pressed="true">All</button>
+          <button type="button" data-briefing-filter="Earth observation" aria-pressed="false">Earth observation</button>
+          <button type="button" data-briefing-filter="Climate science" aria-pressed="false">Climate science</button>
+        </div>
+      </div>
+      <div class="briefing-grid" id="briefing-grid" aria-live="polite">
+        <p class="briefing-loading">Gathering recent articles from approved feeds…</p>
+      </div>
+      <p class="briefing-policy"><strong>Editorial policy:</strong> Sources are allow-listed for authority and relevance. Articles are deduplicated automatically. Inclusion does not imply endorsement, and no complete article or publisher photograph is republished here.</p>
+    </section>
 
     <section class="action section" id="action">
       <header class="section-heading">

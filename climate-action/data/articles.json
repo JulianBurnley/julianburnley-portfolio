@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-07-29T20:33:20.668Z",
+  "updatedAt": "2026-07-30T12:05:05.958Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
+    {
+      "id": "1a5f9ea1f61802d5",
+      "title": "APOD: July 30 – Red Sun trough Wildfire Smoke",
+      "link": "https://science.nasa.gov/image-article/apod-july-30-red-sun-trough-wildfire-smoke/",
+      "description": "APOD Science APOD APOD: July 30 – Red Sun… Today’s APOD Archive Submissions Index Search Calendar RSS Education About Discuss APOD Astronomy Picture of the Day Discover the cosmos! Each day a different image or photograph of our fascinating",
+      "published": "2026-07-30T04:05:00.000Z",
+      "source": "NASA",
+      "category": "Climate science"
+    },
     {
       "id": "3c8d41ebd8c88e3b",
       "title": "Smoke Blankets Oregon",

@@ -1,32 +1,43 @@
 JULIAN BURNLEY
-Front-End Developer | AI Practitioner | IT Professional
-Phoenix, Arizona
+Front-End Developer | IT Professional | AI Practitioner
+Casa Grande, Arizona | 623-703-6628
 Email: julian@julianburnley.com
+Portfolio: https://www.julianburnley.com
 GitHub: https://github.com/JulianBurnley
 
 PROFESSIONAL PROFILE
-Front-end developer and information technology professional combining
-responsive development, accessibility, visual design, practical AI use,
-technical troubleshooting, and clear communication.
+Front-end developer and IT support professional with experience in Tier 2
+network operations, desktop and connectivity troubleshooting, responsive
+development, accessibility, and practical AI use. Known for clear
+documentation, reliable problem-solving, and a 95% first-contact resolution rate.
+
+PROFESSIONAL EXPERIENCE
+IT Professional and Web Developer | Self-employed | 2012-Present
+- Provide web development and technical support across Windows and Linux devices.
+- Diagnose operating system, software, networking, and peripheral issues.
+- Maintain home-lab services and document durable solutions.
+
+Tier 2 Support, Network Operations Center | AT&T | 2008-2011
+- Handled 20+ daily support calls for VoIP, IPTV, and Internet services.
+- Maintained a 95% first-contact resolution rate and detailed escalation records.
+
+DSL Support Technician, Levels 1 and 2 | 2Wire | 2003-2008
+- Configured residential gateways and resolved wireless and broadband issues.
+- Performed signal analysis and supported hardware and email setup.
 
 CORE CAPABILITIES
-- Semantic HTML, modern CSS, and JavaScript
-- Responsive and mobile-first interface development
-- Web accessibility, keyboard navigation, and WAI-ARIA
-- Git and GitHub workflows
-- WordPress and WooCommerce
+- Semantic HTML, modern CSS, JavaScript, and responsive design
+- Accessibility, keyboard navigation, and WAI-ARIA
+- Git, GitHub, WordPress, WooCommerce, Windows, and Linux
 - AI-assisted research, prototyping, debugging, and documentation
-- Technical troubleshooting and customer support
-- Adobe Creative Cloud and visual design
 
-SELECTED PROJECT WORK
-- Web Design Reference Library
-- Accessible ARIA Interface
-- Professional Web Resume
-- Interactive Media Lab
+SELECTED INDEPENDENT PROJECTS
+- Casa Grande Local: directory-first community guide and accessible prototype
+- Climate, Close to Home: research-led climate story and automated briefing
 
-PROFESSIONAL DIRECTION
-Deepening JavaScript, component development, API integration, accessibility,
-and responsible AI-supported development workflows.
+EDUCATION
+- Bachelor of Applied Science in Information Technology, Phoenix College, 2026
+- Associate of Applied Science - Web Development / Design, Rio Salado College, 2024
+- Associate of Applied Science - Programming and System Analysis, Rio Salado College, 2022
 
-Updated July 27, 2026
+Updated July 29, 2026

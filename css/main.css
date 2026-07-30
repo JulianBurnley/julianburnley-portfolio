@@ -501,6 +501,104 @@ ul {
   gap: 1.25rem;
 }
 
+.independent-feature {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(20rem, .95fr);
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: center;
+  margin-bottom: 1.25rem;
+  padding: clamp(1.5rem, 5vw, 3.5rem);
+  border: 1px solid #66744a;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, #142d26, #1d493a);
+}
+
+.independent-feature h3,
+.climate-feature h3 {
+  font-size: clamp(2.2rem, 5vw, 4.4rem);
+}
+
+.independent-feature-copy > p:not(.project-type),
+.climate-feature > div > p:not(.project-type) {
+  max-width: 46rem;
+  color: var(--color-dark-muted);
+}
+
+.local-preview {
+  min-height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  border-radius: 1.2rem;
+  background:
+    radial-gradient(circle at 75% 65%, #f6d68a 0 10%, transparent 10.5%),
+    linear-gradient(165deg, #86b9b4 0 47%, #ce7142 48% 65%, #4d5137 66%);
+  box-shadow: 0 24px 60px rgba(0,0,0,.28);
+}
+
+.local-preview-brand {
+  color: #13251f;
+  font-family: var(--font-mono);
+  font-size: .8rem;
+  font-weight: 800;
+  letter-spacing: .12em;
+}
+
+.local-preview strong {
+  max-width: 11ch;
+  color: #fff;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: .98;
+}
+
+.local-preview div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+}
+
+.local-preview div span {
+  padding: .35rem .55rem;
+  border-radius: 999px;
+  background: rgba(255,255,255,.88);
+  color: #17372c;
+  font-size: .72rem;
+  font-weight: 800;
+}
+
+.climate-feature {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(17rem, .75fr);
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: end;
+  margin-bottom: 1.25rem;
+  padding: clamp(1.5rem, 5vw, 3.5rem);
+  border: 1px solid #45536a;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, #1a3145, #244f48);
+}
+
+.climate-outcome {
+  padding: 1.5rem;
+  border-left: 3px solid var(--color-accent);
+  color: var(--color-dark-muted);
+}
+
+.climate-outcome strong,
+.climate-outcome span {
+  display: block;
+}
+
+.climate-outcome strong {
+  margin-bottom: .5rem;
+  color: var(--color-accent);
+  font-family: var(--font-mono);
+  font-size: .75rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
 .coursework-feature {
   display: grid;
   grid-template-columns: minmax(0, 1.15fr) minmax(18rem, 0.85fr);
@@ -1046,6 +1144,11 @@ ul {
   }
 
   .coursework-feature {
+    grid-template-columns: 1fr;
+  }
+
+  .independent-feature,
+  .climate-feature {
     grid-template-columns: 1fr;
   }
 

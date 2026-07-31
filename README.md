@@ -1,19 +1,21 @@
 # Julian Burnley Portfolio
 
-A modern, responsive portfolio rebuild using semantic HTML, CSS Grid, Flexbox, CSS custom properties, and a small amount of JavaScript.
+A responsive front-end portfolio centered on independent products, accessible interaction, professional IT experience, and selected coursework.
 
-## Files
+## Main areas
 
-- `index.html` — portfolio page
-- `css/main.css` — complete responsive styling and light/dark themes
-- `js/main.js` — navigation, theme preference, and automatic footer year
-- `julian-burnley-resume.txt` — downloadable résumé
+- `index.html` - portfolio homepage
+- `casagrande-local/` - interactive community-directory concept
+- `climate-action/` - climate communication and automated briefing project
+- `case-studies/` - project decisions, audiences, features, and outcomes
+- `coursework/` - supporting academic work
+- `assets/documents/` - current portfolio resume
 
 ## Included
 
-- Current professional profile and contact information
-- Four private-source project case studies
-- Downloadable résumé
+- Professional experience from self-employed work, AT&T, and 2Wire
+- Independent product and public-interest projects
+- Downloadable resume
 - Responsive mobile navigation
 - Persistent light and dark modes
 - Accessible semantic structure and keyboard focus treatment

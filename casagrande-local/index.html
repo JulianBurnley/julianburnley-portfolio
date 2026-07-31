@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Casa Grande Local is a directory-first community guide for discovering independent businesses, useful services, events, and places in Casa Grande, Arizona.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://www.julianburnley.com/casagrande-local/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Casa Grande Local">
+  <meta property="og:description" content="Find what makes the city feel like home.">
+  <meta property="og:url" content="https://www.julianburnley.com/casagrande-local/">
+  <meta property="og:image" content="https://www.julianburnley.com/casagrande-local/assets/casa-grande-local-social.png">
+  <meta property="og:image:alt" content="Casa Grande Local over a warm illustrated desert city and cotton field">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Casa Grande Local">
+  <meta name="twitter:description" content="Find what makes the city feel like home.">
+  <meta name="twitter:image" content="https://www.julianburnley.com/casagrande-local/assets/casa-grande-local-social.png">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="local.css">
+  <title>Casa Grande Local | Community Directory Concept</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="Casa Grande Local home">
+      <span class="brand-mark" aria-hidden="true">CG</span>
+      <span>Casa Grande <strong>Local</strong></span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="#discover">Discover</a>
+      <a href="#categories">Categories</a>
+      <a href="#about">About</a>
+    </nav>
+    <a class="header-action" href="#launch-plan">For local businesses</a>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">A clearer way to explore Casa Grande</p>
+        <h1>Find the local places that make the city feel like home.</h1>
+        <p class="hero-intro">A directory-first community guide for independent businesses, everyday services, events, and useful local resources.</p>
+        <form class="search-panel" id="directory-search" role="search">
+          <label>
+            <span>What are you looking for?</span>
+            <input id="search-query" type="search" placeholder="Coffee, auto repair, family activities…" autocomplete="off">
+          </label>
+          <label>
+            <span>Category</span>
+            <select id="category-filter">
+              <option value="all">All categories</option>
+              <option value="food">Food & drink</option>
+              <option value="services">Home & auto</option>
+              <option value="shopping">Shopping</option>
+              <option value="community">Community</option>
+            </select>
+          </label>
+          <button type="submit">Search local</button>
+        </form>
+        <p class="search-status" id="search-status" aria-live="polite">Showing a small demonstration directory for the first-version concept.</p>
+      </div>
+      <aside class="hero-card" aria-label="Project principles">
+        <p class="card-kicker">Built around local trust</p>
+        <dl>
+          <div><dt>Useful</dt><dd>Practical details before promotional clutter.</dd></div>
+          <div><dt>Inclusive</dt><dd>Accessible on phones, keyboards, and slower connections.</dd></div>
+          <div><dt>Transparent</dt><dd>Claimed, sponsored, and editorial content clearly labeled.</dd></div>
+        </dl>
+      </aside>
+    </section>
+
+    <section class="section" id="categories">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Browse by need</p>
+          <h2>Start with the essentials.</h2>
+        </div>
+        <p>The first release stays focused: a manageable set of categories that residents and visitors can understand immediately.</p>
+      </div>
+      <div class="category-grid">
+        <button type="button" data-category="food"><span aria-hidden="true">01</span><strong>Food & drink</strong><small>Cafés, restaurants, bakeries</small></button>
+        <button type="button" data-category="services"><span aria-hidden="true">02</span><strong>Home & auto</strong><small>Repair, maintenance, local pros</small></button>
+        <button type="button" data-category="shopping"><span aria-hidden="true">03</span><strong>Shopping</strong><small>Independent stores and makers</small></button>
+        <button type="button" data-category="community"><span aria-hidden="true">04</span><strong>Community</strong><small>Events, nonprofits, resources</small></button>
+      </div>
+    </section>
+
+    <section class="section heritage-feature" aria-labelledby="heritage-title">
+      <figure>
+        <img src="assets/casa-grande-ruins-illustration.webp" alt="Editorial illustration of the Great House beneath its protective canopy at Casa Grande Ruins National Monument" width="1680" height="945" loading="lazy" decoding="async">
+        <figcaption>Original illustration informed by public-domain National Park Service imagery.</figcaption>
+      </figure>
+      <div>
+        <p class="eyebrow">Nearby heritage</p>
+        <h2 id="heritage-title">The Great House in the Sonoran Desert.</h2>
+        <p>Casa Grande Ruins National Monument is in nearby Coolidge. The protected Great House preserves the work and knowledge of Ancestral Sonoran Desert people and connects today’s communities with a much longer regional story.</p>
+        <a class="text-link" href="https://www.nps.gov/cagr/" rel="external">Visit the official National Park Service guide <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <section class="section directory-section" id="discover">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Directory preview</p>
+          <h2>Discover something nearby.</h2>
+        </div>
+        <p>These sample entries demonstrate the planned information structure; they are not published business claims or endorsements.</p>
+      </div>
+      <div class="listing-grid" id="listing-grid">
+        <article class="listing-card" data-category="food" data-search="desert morning coffee cafe breakfast">
+          <div class="listing-art art-sunrise" aria-hidden="true"><span>Food & drink</span></div>
+          <div class="listing-content"><p class="listing-label">Sample listing</p><h3>Desert Morning Coffee</h3><p>Neighborhood coffee, quick breakfast, and a comfortable place to meet.</p><ul><li>Hours</li><li>Accessibility</li><li>Directions</li></ul></div>
+        </article>
+        <article class="listing-card" data-category="services" data-search="pinal home auto repair service local">
+          <div class="listing-art art-copper" aria-hidden="true"><span>Home & auto</span></div>
+          <div class="listing-content"><p class="listing-label">Sample listing</p><h3>Pinal Home & Auto</h3><p>A model listing showing service areas, response times, and verified contact details.</p><ul><li>Service area</li><li>Claimed status</li><li>Contact</li></ul></div>
+        </article>
+        <article class="listing-card" data-category="shopping" data-search="cotton city market shopping gifts makers">
+          <div class="listing-art art-cotton" aria-hidden="true"><span>Shopping</span></div>
+          <div class="listing-content"><p class="listing-label">Sample listing</p><h3>Cotton City Market</h3><p>A demonstration profile for locally made goods, gifts, and seasonal products.</p><ul><li>Products</li><li>Photos</li><li>Website</li></ul></div>
+        </article>
+        <article class="listing-card" data-category="community" data-search="community calendar events family activities resources">
+          <div class="listing-art art-sky" aria-hidden="true"><span>Community</span></div>
+          <div class="listing-content"><p class="listing-label">Sample resource</p><h3>This Week in Casa Grande</h3><p>A future curated view of public events, family activities, and community resources.</p><ul><li>Date</li><li>Cost</li><li>Location</li></ul></div>
+        </article>
+      </div>
+      <p class="empty-state" id="empty-state" hidden>No sample listings match that search. Try a broader term or another category.</p>
+    </section>
+
+    <section class="section about-grid" id="about">
+      <div>
+        <p class="eyebrow">Who it serves</p>
+        <h2>Residents first. Visitors welcome. Local businesses represented fairly.</h2>
+      </div>
+      <div>
+        <p>Casa Grande Local is designed for people who want dependable local information without digging through social feeds or national directories. The initial audience is residents searching for businesses and services, with visitors and local owners as important secondary users.</p>
+        <div class="audience-list">
+          <article><strong>Residents</strong><span>Find useful, current information quickly.</span></article>
+          <article><strong>Visitors</strong><span>Discover local alternatives with confidence.</span></article>
+          <article><strong>Businesses</strong><span>Claim and improve accurate profiles.</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section launch-plan" id="launch-plan">
+      <p class="eyebrow">First-release plan</p>
+      <h2>Small enough to maintain. Useful enough to return to.</h2>
+      <ol>
+        <li><span>01</span><div><strong>Seed the directory</strong><p>Launch with 20–30 carefully checked listings across four core categories.</p></div></li>
+        <li><span>02</span><div><strong>Invite ownership</strong><p>Let businesses claim listings and correct their public details.</p></div></li>
+        <li><span>03</span><div><strong>Build trust</strong><p>Label sponsored placement, moderate reviews, and publish clear correction policies.</p></div></li>
+        <li><span>04</span><div><strong>Expand from evidence</strong><p>Add events and editorial guides only after directory use reveals demand.</p></div></li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <div><strong>Casa Grande Local</strong><p>Independent community-directory concept by Julian Burnley.</p></div>
+    <a href="../#projects">Return to Julian’s portfolio</a>
+  </footer>
+  <script src="local.js"></script>
+</body>
+</html>

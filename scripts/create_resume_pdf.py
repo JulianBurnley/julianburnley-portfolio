@@ -122,9 +122,9 @@ styles = {
 
 story = []
 story.append(Paragraph("JULIAN BURNLEY", styles["name"]))
-story.append(Paragraph("FRONT-END DEVELOPER | AI PRACTITIONER | IT PROFESSIONAL", styles["role"]))
+story.append(Paragraph("FRONT-END DEVELOPER | IT PROFESSIONAL | AI PRACTITIONER", styles["role"]))
 contact = (
-    "Phoenix, Arizona&nbsp;&nbsp; | &nbsp;&nbsp;"
+    "Casa Grande, Arizona&nbsp;&nbsp; | &nbsp;&nbsp;623-703-6628&nbsp;&nbsp; | &nbsp;&nbsp;"
     '<link href="mailto:julian@julianburnley.com" color="#3157D5">julian@julianburnley.com</link>'
     "&nbsp;&nbsp; | &nbsp;&nbsp;"
     '<link href="https://www.julianburnley.com" color="#3157D5">julianburnley.com</link>'
@@ -138,9 +138,9 @@ story.append(Table([[""]], colWidths=[7.34 * inch], rowHeights=[1.5], style=[("B
 story.append(Paragraph("PROFESSIONAL PROFILE", styles["section"]))
 story.append(
     Paragraph(
-        "Front-end developer and information technology professional combining responsive development, "
-        "accessibility, visual design, practical AI use, technical troubleshooting, and clear communication. "
-        "Builds useful, maintainable digital experiences with careful testing and user-focused problem-solving.",
+        "Front-end developer and IT support professional with experience in Tier 2 network operations, "
+        "desktop and connectivity troubleshooting, responsive development, accessibility, and practical AI use. "
+        "Known for clear documentation, reliable problem-solving, and a 95% first-contact resolution rate.",
         styles["body"],
     )
 )
@@ -178,34 +178,41 @@ capabilities = [
 for item in capabilities:
     right.append(Paragraph(f"- {item}", styles["item"]))
 
-right.append(Paragraph("SELECTED PROJECTS", styles["section"]))
+right.append(Paragraph("PROFESSIONAL EXPERIENCE", styles["section"]))
+experience = [
+    (
+        "IT Professional and Web Developer | Self-employed | 2012-Present",
+        "Provide web development and technical support; diagnose Windows, Linux, software, networking, and peripheral issues; maintain home-lab services; document durable solutions.",
+    ),
+    (
+        "Tier 2 Support, NOC | AT&T | 2008-2011",
+        "Handled 20+ daily VoIP, IPTV, and Internet support calls with a 95% first-contact resolution rate; monitored service issues and maintained detailed escalation records.",
+    ),
+    (
+        "DSL Support Technician, Levels 1-2 | 2Wire | 2003-2008",
+        "Configured residential gateways, analyzed line quality, resolved wireless and broadband issues, and supported hardware and email setup.",
+    ),
+]
+for title, description in experience:
+    right.append(Paragraph(title, styles["project"]))
+    right.append(Paragraph(description, styles["small"]))
+    right.append(Spacer(1, 2))
+
+right.append(Paragraph("SELECTED INDEPENDENT PROJECTS", styles["section"]))
 projects = [
     (
-        "Web Design Reference Library",
-        "Responsive multi-page knowledge system covering semantic HTML, modern CSS, ARIA, media, and reusable interface patterns.",
+        "Casa Grande Local",
+        "Directory-first community guide concept with audience research, information architecture, accessible search, launch planning, and a WordPress/HivePress implementation path.",
     ),
     (
-        "Accessible ARIA Interface",
-        "Keyboard-operable educational interface with managed ARIA states, visible focus, skip navigation, and responsive content.",
-    ),
-    (
-        "JR's Toy Store",
-        "Responsive storefront redesign with category browsing, product cards, dark mode, and interactive cart feedback.",
+        "Climate, Close to Home",
+        "Evidence-based Southwestern climate story and automated briefing combining research, data storytelling, accessible design, and responsible automation.",
     ),
 ]
 for title, description in projects:
     right.append(Paragraph(title, styles["project"]))
     right.append(Paragraph(description, styles["small"]))
     right.append(Spacer(1, 2))
-
-right.append(Paragraph("PROFESSIONAL DIRECTION", styles["section"]))
-right.append(
-    Paragraph(
-        "Deepening JavaScript, React, TypeScript, component development, API integration, automated testing, "
-        "accessibility, and responsible AI-supported development workflows.",
-        styles["body"],
-    )
-)
 
 columns = Table(
     [[left, right]],
@@ -225,7 +232,7 @@ columns = Table(
 story.append(columns)
 story.append(Spacer(1, 8))
 footer = Table(
-    [[Paragraph("Portfolio: julianburnley.com", styles["small"]), Paragraph("Updated July 28, 2026", styles["small"])]],
+    [[Paragraph("Portfolio: julianburnley.com", styles["small"]), Paragraph("Updated July 29, 2026", styles["small"])]],
     colWidths=[3.67 * inch, 3.67 * inch],
     style=TableStyle(
         [

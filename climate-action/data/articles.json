@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-31T20:51:02.863Z",
+  "updatedAt": "2026-08-01T10:53:04.139Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
     {
@@ -8,17 +8,8 @@
       "link": "https://science.nasa.gov/earth/earth-observatory/destructive-fires-char-western-europe/",
       "description": "Raging wildfires disrupted summer in Spain and France amid sweltering heat waves and prolonged drought.",
       "published": "2026-07-31T04:01:00.000Z",
-      "source": "NASA",
-      "category": "Climate science"
-    },
-    {
-      "id": "025c77f8c6d3ee9e",
-      "title": "Students Take on Airborne Field Research with NASA",
-      "link": "https://science.nasa.gov/earth/students-take-on-airborne-field-research-with-nasa/",
-      "description": "The gusty wind didn’t make it easy to hold tight to a balloon so large. The balloon, a scientific instrument called an ozonesonde, was about to be released into the atmosphere above the Texas Gulf Coast by students from NASA’s SARP (Student",
-      "published": "2026-07-30T20:36:56.000Z",
-      "source": "NASA",
-      "category": "Climate science"
+      "source": "NASA Earth Observatory",
+      "category": "Earth observation"
     },
     {
       "id": "3c8d41ebd8c88e3b",

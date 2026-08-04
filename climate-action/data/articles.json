@@ -1,15 +1,24 @@
 {
-  "updatedAt": "2026-08-04T12:27:19.148Z",
+  "updatedAt": "2026-08-04T21:51:48.435Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
+    {
+      "id": "f6d092b3f9ec1e50",
+      "title": "NASA’s PUNCH Sharpens Solar Storm Forecasting in First Test",
+      "link": "https://science.nasa.gov/science-research/heliophysics/nasas-punch-sharpens-solar-storm-forecasting-in-first-test/",
+      "description": "Using continuous imagery from NASA’s PUNCH (Polarimeter to Unify the Corona and Heliosphere) mission, scientists predicted the near-Earth arrival of a solar eruption to within 30 minutes in an initial proof of concept test. The results, pre",
+      "published": "2026-08-04T18:02:55.000Z",
+      "source": "NASA",
+      "category": "Climate science"
+    },
     {
       "id": "82686ab95970d4c9",
       "title": "Smoke Streams Across Eastern Washington",
       "link": "https://science.nasa.gov/earth/earth-observatory/smoke-streams-across-eastern-washington/",
       "description": "Wildland fires in early August 2026 pushed air quality to unhealthy levels, destroyed hundreds of structures, and triggered mandatory evacuations in Spokane.",
       "published": "2026-08-04T04:00:00.000Z",
-      "source": "NASA Earth Observatory",
-      "category": "Earth observation"
+      "source": "NASA",
+      "category": "Climate science"
     },
     {
       "id": "ed24647149f95386",

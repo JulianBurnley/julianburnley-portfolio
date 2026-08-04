@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-08-01T10:53:04.139Z",
+  "updatedAt": "2026-08-04T12:27:19.148Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
+    {
+      "id": "82686ab95970d4c9",
+      "title": "Smoke Streams Across Eastern Washington",
+      "link": "https://science.nasa.gov/earth/earth-observatory/smoke-streams-across-eastern-washington/",
+      "description": "Wildland fires in early August 2026 pushed air quality to unhealthy levels, destroyed hundreds of structures, and triggered mandatory evacuations in Spokane.",
+      "published": "2026-08-04T04:00:00.000Z",
+      "source": "NASA Earth Observatory",
+      "category": "Earth observation"
+    },
     {
       "id": "ed24647149f95386",
       "title": "Destructive Fires Char Western Europe",

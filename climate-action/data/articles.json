@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-04T21:51:48.435Z",
+  "updatedAt": "2026-08-05T20:47:27.266Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
     {
@@ -17,8 +17,8 @@
       "link": "https://science.nasa.gov/earth/earth-observatory/smoke-streams-across-eastern-washington/",
       "description": "Wildland fires in early August 2026 pushed air quality to unhealthy levels, destroyed hundreds of structures, and triggered mandatory evacuations in Spokane.",
       "published": "2026-08-04T04:00:00.000Z",
-      "source": "NASA",
-      "category": "Climate science"
+      "source": "NASA Earth Observatory",
+      "category": "Earth observation"
     },
     {
       "id": "ed24647149f95386",
@@ -35,15 +35,6 @@
       "link": "https://science.nasa.gov/earth/natural-disasters/wildfires/smoke-blankets-oregon/",
       "description": "Lightning storms have ignited dozens of fires in central and eastern Oregon.",
       "published": "2026-07-28T04:01:00.000Z",
-      "source": "NASA Earth Observatory",
-      "category": "Earth observation"
-    },
-    {
-      "id": "a09d7524bcb78f4c",
-      "title": "Pink Penguin Guano Provides Diet Clues",
-      "link": "https://science.nasa.gov/earth/earth-observatory/pink-penguin-guano-provides-diet-clues/",
-      "description": "The color of Adélie penguin droppings reveals what the birds are eating, offering scientists a way to track how sea ice conditions influence their diet.",
-      "published": "2026-07-27T04:00:00.000Z",
       "source": "NASA Earth Observatory",
       "category": "Earth observation"
     },

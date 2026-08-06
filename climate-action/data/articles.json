@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-08-05T20:47:27.266Z",
+  "updatedAt": "2026-08-06T12:28:26.850Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
+    {
+      "id": "d499cd67126ee36d",
+      "title": "How the Tide Turns at the Mouth of the Elbe",
+      "link": "https://science.nasa.gov/earth/earth-observatory/how-the-tide-turns-at-the-mouth-of-the-elbe/",
+      "description": "The ocean’s ebbs and flows reveal dynamic tidal flats and a well-traveled shipping route along the coast of Germany.",
+      "published": "2026-08-06T04:01:00.000Z",
+      "source": "NASA Earth Observatory",
+      "category": "Earth observation"
+    },
     {
       "id": "f6d092b3f9ec1e50",
       "title": "NASA’s PUNCH Sharpens Solar Storm Forecasting in First Test",

@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-08-07T08:38:30.209Z",
+  "updatedAt": "2026-08-07T19:57:33.706Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
     {
       "id": "f92542b8315e2b3d",
       "title": "Sensing the Poles’ Hidden Heat",
       "link": "https://science.nasa.gov/earth/earth-observatory/sensing-the-poles-hidden-heat/",
-      "description": "New animations from NASA's PREFIRE mission reveal two years of seasonal temperature swings at the Arctic and Antarctic.",
+      "description": "New animations from NASA’s PREFIRE mission reveal two years of seasonal temperature swings at the Arctic and Antarctic.",
       "published": "2026-08-07T04:00:00.000Z",
-      "source": "NASA Earth Observatory",
-      "category": "Earth observation"
+      "source": "NASA",
+      "category": "Climate science"
     },
     {
       "id": "d499cd67126ee36d",
@@ -17,8 +17,8 @@
       "link": "https://science.nasa.gov/earth/earth-observatory/how-the-tide-turns-at-the-mouth-of-the-elbe/",
       "description": "The ocean’s ebbs and flows reveal dynamic tidal flats and a well-traveled shipping route along the coast of Germany.",
       "published": "2026-08-06T04:01:00.000Z",
-      "source": "NASA",
-      "category": "Climate science"
+      "source": "NASA Earth Observatory",
+      "category": "Earth observation"
     },
     {
       "id": "82686ab95970d4c9",

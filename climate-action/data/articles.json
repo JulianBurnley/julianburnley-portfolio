@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-06T12:28:26.850Z",
+  "updatedAt": "2026-08-07T01:52:22.496Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
     {
@@ -8,15 +8,6 @@
       "link": "https://science.nasa.gov/earth/earth-observatory/how-the-tide-turns-at-the-mouth-of-the-elbe/",
       "description": "The ocean’s ebbs and flows reveal dynamic tidal flats and a well-traveled shipping route along the coast of Germany.",
       "published": "2026-08-06T04:01:00.000Z",
-      "source": "NASA Earth Observatory",
-      "category": "Earth observation"
-    },
-    {
-      "id": "f6d092b3f9ec1e50",
-      "title": "NASA’s PUNCH Sharpens Solar Storm Forecasting in First Test",
-      "link": "https://science.nasa.gov/science-research/heliophysics/nasas-punch-sharpens-solar-storm-forecasting-in-first-test/",
-      "description": "Using continuous imagery from NASA’s PUNCH (Polarimeter to Unify the Corona and Heliosphere) mission, scientists predicted the near-Earth arrival of a solar eruption to within 30 minutes in an initial proof of concept test. The results, pre",
-      "published": "2026-08-04T18:02:55.000Z",
       "source": "NASA",
       "category": "Climate science"
     },
@@ -44,24 +35,6 @@
       "link": "https://science.nasa.gov/earth/natural-disasters/wildfires/smoke-blankets-oregon/",
       "description": "Lightning storms have ignited dozens of fires in central and eastern Oregon.",
       "published": "2026-07-28T04:01:00.000Z",
-      "source": "NASA Earth Observatory",
-      "category": "Earth observation"
-    },
-    {
-      "id": "eb813b05760e81ec",
-      "title": "A Week of Smoky Skies Across North America",
-      "link": "https://science.nasa.gov/earth/earth-observatory/a-week-of-smoky-skies-across-north-america/",
-      "description": "Brown carbon, emitted by wildland fires and tracked over the span of a week in July 2026, worsened air quality in parts of the U.S. and Canada.",
-      "published": "2026-07-22T04:00:00.000Z",
-      "source": "NASA Earth Observatory",
-      "category": "Earth observation"
-    },
-    {
-      "id": "3de14c4773013053",
-      "title": "NISAR’s L-Band Radar Reveals ‘Hummingbird’ in Antarctica",
-      "link": "https://science.nasa.gov/photojournal/nisars-l-band-radar-reveals-hummingbird-in-antarctica/",
-      "description": "Description Data from the Earth-orbiting U.S.-India NISAR (NASA-ISRO Synthetic Aperture Radar) satellite’s L-band radar was used to produce an image of Nunatak Zaterjavshijsja — a mountaintop in East Antarctica — poking out amid a stream of",
-      "published": "2026-07-22T00:33:08.000Z",
       "source": "NASA Earth Observatory",
       "category": "Earth observation"
     }

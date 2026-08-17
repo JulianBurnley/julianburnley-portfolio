@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-17T07:59:18.577Z",
+  "updatedAt": "2026-08-17T18:04:12.141Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
     {
@@ -8,8 +8,8 @@
       "link": "https://science.nasa.gov/earth/earth-observatory/chasing-fire-clouds-in-utah/",
       "description": "NASA aircraft are sampling smoke lofted high into the atmosphere by one of the most formidable cloud types in the sky—towering, smoke-infused pyrocumulonimbus.",
       "published": "2026-08-17T04:01:00.000Z",
-      "source": "NASA Earth Observatory",
-      "category": "Earth observation"
+      "source": "NASA",
+      "category": "Climate science"
     },
     {
       "id": "e773fea6a5e8c659",

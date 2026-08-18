@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-18T06:00:49.488Z",
+  "updatedAt": "2026-08-18T18:02:11.070Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
     {
@@ -8,8 +8,8 @@
       "link": "https://science.nasa.gov/earth/earth-observatory/lala-batters-hawaii/",
       "description": "The powerful storm delivered extreme rainfall and damaging winds to the state, passing the Island of Hawaiʻi as a category 1 hurricane.",
       "published": "2026-08-18T04:01:00.000Z",
-      "source": "NASA Earth Observatory",
-      "category": "Earth observation"
+      "source": "NASA",
+      "category": "Climate science"
     },
     {
       "id": "374e76bc2ab2ce56",
@@ -26,8 +26,8 @@
       "link": "https://science.nasa.gov/earth/earth-observatory/chasing-fire-clouds-in-utah/",
       "description": "NASA aircraft are sampling smoke lofted high into the atmosphere by one of the most formidable cloud types in the sky—towering, smoke-infused pyrocumulonimbus.",
       "published": "2026-08-17T04:01:00.000Z",
-      "source": "NASA",
-      "category": "Climate science"
+      "source": "NASA Earth Observatory",
+      "category": "Earth observation"
     },
     {
       "id": "e773fea6a5e8c659",

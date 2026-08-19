@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-19T06:03:03.189Z",
+  "updatedAt": "2026-08-19T17:57:23.740Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
     {
@@ -17,8 +17,8 @@
       "link": "https://science.nasa.gov/earth/earth-observatory/lala-batters-hawaii/",
       "description": "The powerful storm delivered extreme rainfall and damaging winds to the state, passing the Island of Hawaiʻi as a category 1 hurricane.",
       "published": "2026-08-18T04:01:00.000Z",
-      "source": "NASA",
-      "category": "Climate science"
+      "source": "NASA Earth Observatory",
+      "category": "Earth observation"
     },
     {
       "id": "076fa62b6e1d40b6",

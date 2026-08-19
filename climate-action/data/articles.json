@@ -1,22 +1,22 @@
 {
-  "updatedAt": "2026-08-18T18:02:11.070Z",
+  "updatedAt": "2026-08-19T06:03:03.189Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
+    {
+      "id": "dbb502b92c8e318d",
+      "title": "Elephant Butte Reservoir Runs Low",
+      "link": "https://science.nasa.gov/earth/earth-observatory/elephant-butte-reservoir-runs-low/",
+      "description": "Drought in the Rio Grande basin contributed to New Mexico’s largest reservoir dwindling to its lowest level in decades.",
+      "published": "2026-08-19T04:01:00.000Z",
+      "source": "NASA Earth Observatory",
+      "category": "Earth observation"
+    },
     {
       "id": "aa4a58e7da9ff57e",
       "title": "Lala Batters Hawaii",
       "link": "https://science.nasa.gov/earth/earth-observatory/lala-batters-hawaii/",
       "description": "The powerful storm delivered extreme rainfall and damaging winds to the state, passing the Island of Hawaiʻi as a category 1 hurricane.",
       "published": "2026-08-18T04:01:00.000Z",
-      "source": "NASA",
-      "category": "Climate science"
-    },
-    {
-      "id": "374e76bc2ab2ce56",
-      "title": "NASA Mission Studies Air Pollution Over Ethiopia",
-      "link": "https://www.nasa.gov/missions/maia/nasa-mission-studies-air-pollution-over-ethiopia/",
-      "description": "A NASA-funded air pollution monitoring network has provided one of the most detailed long-term views yet of the role of black carbon, or soot produced by fires, diesel vehicles, and other combustion sources, in Ethiopia’s capital, Addis Aba",
-      "published": "2026-08-17T19:24:34.000Z",
       "source": "NASA",
       "category": "Climate science"
     },

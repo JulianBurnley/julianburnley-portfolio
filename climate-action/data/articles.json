@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-08-19T17:57:23.740Z",
+  "updatedAt": "2026-08-20T18:02:51.023Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
+    {
+      "id": "2906682a30fbca70",
+      "title": "NASA Data Feeds River Forecasts as Snow Drought Effects Linger",
+      "link": "https://science.nasa.gov/centers-and-facilities/goddard/nasa-river-forecasts-snow-drought/",
+      "description": "NASA Earth science data is supporting machine-learning forecasts that inform decisions about water, power, and public safety in Washington state.",
+      "published": "2026-08-20T14:12:09.000Z",
+      "source": "NASA",
+      "category": "Climate science"
+    },
     {
       "id": "dbb502b92c8e318d",
       "title": "Elephant Butte Reservoir Runs Low",

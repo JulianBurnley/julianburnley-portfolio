@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T18:02:51.023Z",
+  "updatedAt": "2026-08-21T07:31:15.624Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
     {
@@ -44,15 +44,6 @@
       "link": "https://science.nasa.gov/earth/earth-observatory/el-nino-alters-marine-life-in-the-pacific/",
       "description": "Satellite measurements of chlorophyll at the sea surface signal shifts in the ocean’s nutrient supplies in mid-2026.",
       "published": "2026-08-10T04:01:00.000Z",
-      "source": "NASA Earth Observatory",
-      "category": "Earth observation"
-    },
-    {
-      "id": "f92542b8315e2b3d",
-      "title": "Sensing the Poles’ Hidden Heat",
-      "link": "https://science.nasa.gov/earth/earth-observatory/sensing-the-poles-hidden-heat/",
-      "description": "New animations from NASA's PREFIRE mission reveal two years of seasonal temperature swings at the Arctic and Antarctic.",
-      "published": "2026-08-07T04:00:00.000Z",
       "source": "NASA Earth Observatory",
       "category": "Earth observation"
     },

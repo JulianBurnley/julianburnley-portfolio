@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-08-24T08:05:12.623Z",
+  "updatedAt": "2026-08-24T19:16:00.258Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
+    {
+      "id": "7c62dd24b138d061",
+      "title": "Starstruck: NASA Research Shows How Sun’s Ancient History Shaped Earth",
+      "link": "https://science.nasa.gov/solar-system/starstruck-nasa-research-shows-how-suns-ancient-history-shaped-earth/",
+      "description": "At the center of our solar system, the Sun influences every planet that orbits it. In two recent NASA-funded studies, scientists uncovered how ancient events in the Sun’s history may have helped create Earth’s unique climate and driven prev",
+      "published": "2026-08-24T17:53:57.000Z",
+      "source": "NASA",
+      "category": "Climate science"
+    },
     {
       "id": "dbb502b92c8e318d",
       "title": "Elephant Butte Reservoir Runs Low",
@@ -26,24 +35,6 @@
       "link": "https://science.nasa.gov/earth/earth-observatory/chasing-fire-clouds-in-utah/",
       "description": "NASA aircraft are sampling smoke lofted high into the atmosphere by one of the most formidable cloud types in the sky—towering, smoke-infused pyrocumulonimbus.",
       "published": "2026-08-17T04:01:00.000Z",
-      "source": "NASA Earth Observatory",
-      "category": "Earth observation"
-    },
-    {
-      "id": "82686ab95970d4c9",
-      "title": "Smoke Streams Across Eastern Washington",
-      "link": "https://science.nasa.gov/earth/earth-observatory/smoke-streams-across-eastern-washington/",
-      "description": "Wildland fires in early August 2026 pushed air quality to unhealthy levels, destroyed hundreds of structures, and triggered mandatory evacuations in Spokane.",
-      "published": "2026-08-04T04:00:00.000Z",
-      "source": "NASA Earth Observatory",
-      "category": "Earth observation"
-    },
-    {
-      "id": "ed24647149f95386",
-      "title": "Destructive Fires Char Western Europe",
-      "link": "https://science.nasa.gov/earth/earth-observatory/destructive-fires-char-western-europe/",
-      "description": "Raging wildfires disrupted summer in Spain and France amid sweltering heat waves and prolonged drought.",
-      "published": "2026-07-31T04:01:00.000Z",
       "source": "NASA Earth Observatory",
       "category": "Earth observation"
     }

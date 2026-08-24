@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T06:00:26.410Z",
+  "updatedAt": "2026-08-24T08:05:12.623Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
     {
@@ -26,15 +26,6 @@
       "link": "https://science.nasa.gov/earth/earth-observatory/chasing-fire-clouds-in-utah/",
       "description": "NASA aircraft are sampling smoke lofted high into the atmosphere by one of the most formidable cloud types in the sky—towering, smoke-infused pyrocumulonimbus.",
       "published": "2026-08-17T04:01:00.000Z",
-      "source": "NASA Earth Observatory",
-      "category": "Earth observation"
-    },
-    {
-      "id": "e773fea6a5e8c659",
-      "title": "El Niño Alters Marine Life in the Pacific",
-      "link": "https://science.nasa.gov/earth/earth-observatory/el-nino-alters-marine-life-in-the-pacific/",
-      "description": "Satellite measurements of chlorophyll at the sea surface signal shifts in the ocean’s nutrient supplies in mid-2026.",
-      "published": "2026-08-10T04:01:00.000Z",
       "source": "NASA Earth Observatory",
       "category": "Earth observation"
     },

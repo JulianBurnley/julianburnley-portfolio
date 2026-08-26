@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-08-24T19:16:00.258Z",
+  "updatedAt": "2026-08-26T05:47:24.615Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
     {
-      "id": "7c62dd24b138d061",
-      "title": "Starstruck: NASA Research Shows How Sun’s Ancient History Shaped Earth",
-      "link": "https://science.nasa.gov/solar-system/starstruck-nasa-research-shows-how-suns-ancient-history-shaped-earth/",
-      "description": "At the center of our solar system, the Sun influences every planet that orbits it. In two recent NASA-funded studies, scientists uncovered how ancient events in the Sun’s history may have helped create Earth’s unique climate and driven prev",
-      "published": "2026-08-24T17:53:57.000Z",
-      "source": "NASA",
-      "category": "Climate science"
+      "id": "c76b70644d5f7d26",
+      "title": "A Changing World for Emperor Penguins",
+      "link": "https://science.nasa.gov/earth/earth-observatory/a-changing-world-for-emperor-penguins/",
+      "description": "Experts are analyzing decades of images from Landsat satellites for clues about how the iconic birds have responded to sea ice disruptions in the past.",
+      "published": "2026-08-26T04:01:00.000Z",
+      "source": "NASA Earth Observatory",
+      "category": "Earth observation"
     },
     {
       "id": "dbb502b92c8e318d",

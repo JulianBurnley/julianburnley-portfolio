@@ -1,16 +1,7 @@
 {
-  "updatedAt": "2026-08-27T16:28:24.769Z",
+  "updatedAt": "2026-08-29T11:38:24.899Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
-    {
-      "id": "1926fecb1a4aa39c",
-      "title": "Building Foresight for Earth Science, featuring Lindsey Jacobson",
-      "link": "https://www.nasa.gov/earth/earth-visualization-mapping/building-foresight-for-earth-science-featuring-lindsey-jacobson/",
-      "description": "NASA’s Earth-observing satellite missions track dozens of features of a changing planet — aerosols, sea levels, land cover, cloud cover — over years and decades. Sustaining that record for the scientific and operational communities who depe",
-      "published": "2026-08-26T19:14:15.000Z",
-      "source": "NASA",
-      "category": "Climate science"
-    },
     {
       "id": "c76b70644d5f7d26",
       "title": "A Changing World for Emperor Penguins",

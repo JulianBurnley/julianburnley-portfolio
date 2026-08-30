@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-29T11:38:24.899Z",
+  "updatedAt": "2026-08-30T19:48:48.595Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
     {
@@ -17,24 +17,6 @@
       "link": "https://science.nasa.gov/earth/earth-observatory/elephant-butte-reservoir-runs-low/",
       "description": "Drought in the Rio Grande basin contributed to New Mexico’s largest reservoir dwindling to its lowest level in decades.",
       "published": "2026-08-19T04:01:00.000Z",
-      "source": "NASA Earth Observatory",
-      "category": "Earth observation"
-    },
-    {
-      "id": "aa4a58e7da9ff57e",
-      "title": "Lala Batters Hawaii",
-      "link": "https://science.nasa.gov/earth/earth-observatory/lala-batters-hawaii/",
-      "description": "The powerful storm delivered extreme rainfall and damaging winds to the state, passing the Island of Hawaiʻi as a category 1 hurricane.",
-      "published": "2026-08-18T04:01:00.000Z",
-      "source": "NASA Earth Observatory",
-      "category": "Earth observation"
-    },
-    {
-      "id": "076fa62b6e1d40b6",
-      "title": "Chasing Fire Clouds in Utah",
-      "link": "https://science.nasa.gov/earth/earth-observatory/chasing-fire-clouds-in-utah/",
-      "description": "NASA aircraft are sampling smoke lofted high into the atmosphere by one of the most formidable cloud types in the sky—towering, smoke-infused pyrocumulonimbus.",
-      "published": "2026-08-17T04:01:00.000Z",
       "source": "NASA Earth Observatory",
       "category": "Earth observation"
     }

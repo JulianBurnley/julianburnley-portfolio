@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-09-01T10:02:14.015Z",
+  "updatedAt": "2026-09-02T09:33:44.895Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
+    {
+      "id": "3cb6935d766e1fa2",
+      "title": "Drought Intensifies Across Puerto Rico",
+      "link": "https://science.nasa.gov/earth/earth-observatory/drought-intensifies-across-puerto-rico/",
+      "description": "Rainfall deficits and high temperatures have created unusually dry conditions and have spurred water shortages on much of the tropical archipelago.",
+      "published": "2026-09-02T04:01:00.000Z",
+      "source": "NASA Earth Observatory",
+      "category": "Earth observation"
+    },
     {
       "id": "03815fa252dd7bc7",
       "title": "Ice Island Survives Run-In With Joe Island",
@@ -26,15 +35,6 @@
       "link": "https://science.nasa.gov/earth/earth-observatory/a-changing-world-for-emperor-penguins/",
       "description": "Experts are analyzing decades of images from Landsat satellites for clues about how the iconic birds have responded to sea ice disruptions in the past.",
       "published": "2026-08-26T04:01:00.000Z",
-      "source": "NASA Earth Observatory",
-      "category": "Earth observation"
-    },
-    {
-      "id": "dbb502b92c8e318d",
-      "title": "Elephant Butte Reservoir Runs Low",
-      "link": "https://science.nasa.gov/earth/earth-observatory/elephant-butte-reservoir-runs-low/",
-      "description": "Drought in the Rio Grande basin contributed to New Mexico’s largest reservoir dwindling to its lowest level in decades.",
-      "published": "2026-08-19T04:01:00.000Z",
       "source": "NASA Earth Observatory",
       "category": "Earth observation"
     }

@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-09-02T09:33:44.895Z",
+  "updatedAt": "2026-09-03T09:43:12.755Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
+    {
+      "id": "9dad612608bbfa04",
+      "title": "Peatland Fires Darken Skies in Indonesia",
+      "link": "https://science.nasa.gov/missions/aqua/peatland-fires-darken-skies-in-indonesia/",
+      "description": "With Indonesia gripped by drought, fires are smoldering on the surface and underground.",
+      "published": "2026-09-03T04:01:00.000Z",
+      "source": "NASA",
+      "category": "Climate science"
+    },
     {
       "id": "3cb6935d766e1fa2",
       "title": "Drought Intensifies Across Puerto Rico",
@@ -17,8 +26,8 @@
       "link": "https://science.nasa.gov/earth/earth-observatory/iceberg-from-petermann-glacier-speeds-away/",
       "description": "In summer 2026, a substantial iceberg calved from Petermann Glacier in northwest Greenland and swiftly drifted into Nares Strait, colliding with an island along the way.",
       "published": "2026-09-01T04:00:00.000Z",
-      "source": "NASA",
-      "category": "Climate science"
+      "source": "NASA Earth Observatory",
+      "category": "Earth observation"
     },
     {
       "id": "babde80e440811aa",

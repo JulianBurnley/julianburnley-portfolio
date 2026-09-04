@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-03T09:43:12.755Z",
+  "updatedAt": "2026-09-04T09:34:49.161Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
     {
@@ -35,15 +35,6 @@
       "link": "https://science.nasa.gov/earth/earth-observatory/pasterze-hangs-on-as-austrias-largest-glacier/",
       "description": "One narrowing icefall remains the linchpin for the Alpine glacier—and it may not be long for this world.",
       "published": "2026-08-31T04:01:00.000Z",
-      "source": "NASA Earth Observatory",
-      "category": "Earth observation"
-    },
-    {
-      "id": "c76b70644d5f7d26",
-      "title": "A Changing World for Emperor Penguins",
-      "link": "https://science.nasa.gov/earth/earth-observatory/a-changing-world-for-emperor-penguins/",
-      "description": "Experts are analyzing decades of images from Landsat satellites for clues about how the iconic birds have responded to sea ice disruptions in the past.",
-      "published": "2026-08-26T04:01:00.000Z",
       "source": "NASA Earth Observatory",
       "category": "Earth observation"
     }

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04T09:34:49.161Z",
+  "updatedAt": "2026-09-05T09:00:25.842Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
     {
@@ -8,8 +8,8 @@
       "link": "https://science.nasa.gov/missions/aqua/peatland-fires-darken-skies-in-indonesia/",
       "description": "With Indonesia gripped by drought, fires are smoldering on the surface and underground.",
       "published": "2026-09-03T04:01:00.000Z",
-      "source": "NASA",
-      "category": "Climate science"
+      "source": "NASA Earth Observatory",
+      "category": "Earth observation"
     },
     {
       "id": "3cb6935d766e1fa2",

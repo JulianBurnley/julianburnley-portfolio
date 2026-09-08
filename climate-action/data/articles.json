@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-09-05T09:00:25.842Z",
+  "updatedAt": "2026-09-08T19:53:52.467Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
+    {
+      "id": "b432af01814235eb",
+      "title": "1,000 Museum Visitors Dive Into NASA Sea Level Science on World Ocean Day",
+      "link": "https://science.nasa.gov/learning-resources/science-activation/1000-museum-visitors-dive-into-nasa-sea-level-science-on-world-ocean-day/",
+      "description": "More than 1,000 visitors explored NASA sea level science firsthand during World Ocean Day at the University of Georgia Aquarium on Skidaway Island on June 6, 2026.",
+      "published": "2026-09-08T14:06:52.000Z",
+      "source": "NASA",
+      "category": "Climate science"
+    },
     {
       "id": "9dad612608bbfa04",
       "title": "Peatland Fires Darken Skies in Indonesia",

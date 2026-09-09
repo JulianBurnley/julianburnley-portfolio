@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-09-08T19:53:52.467Z",
+  "updatedAt": "2026-09-09T09:40:05.003Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
+    {
+      "id": "101cdf684d5fd564",
+      "title": "Anak Krakatau Rumbles Again",
+      "link": "https://science.nasa.gov/earth/earth-observatory/anak-krakatau-rumbles-again/",
+      "description": "A powerful eruption from the Indonesian volcano lofted ash into the atmosphere, disrupting thousands of flights and degrading air quality.",
+      "published": "2026-09-09T04:01:00.000Z",
+      "source": "NASA",
+      "category": "Climate science"
+    },
     {
       "id": "b432af01814235eb",
       "title": "1,000 Museum Visitors Dive Into NASA Sea Level Science on World Ocean Day",

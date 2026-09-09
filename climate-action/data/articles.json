@@ -1,22 +1,22 @@
 {
-  "updatedAt": "2026-09-09T09:40:05.003Z",
+  "updatedAt": "2026-09-09T19:44:51.585Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
+    {
+      "id": "430b8c54b35508e5",
+      "title": "How 2 US, European Satellites Are Studying Hurricanes During El Niño",
+      "link": "https://www.nasa.gov/missions/jason-cs-sentinel-6/how-2-us-european-satellites-are-studying-hurricanes-during-el-nino/",
+      "description": "Last November, NASA and its European partners launched the Sentinel-6B satellite to improve hurricane forecasts, help protect infrastructure, and benefit commercial industries, including shipping. The satellite now is flying 30 seconds behi",
+      "published": "2026-09-09T16:00:00.000Z",
+      "source": "NASA",
+      "category": "Climate science"
+    },
     {
       "id": "101cdf684d5fd564",
       "title": "Anak Krakatau Rumbles Again",
       "link": "https://science.nasa.gov/earth/earth-observatory/anak-krakatau-rumbles-again/",
       "description": "A powerful eruption from the Indonesian volcano lofted ash into the atmosphere, disrupting thousands of flights and degrading air quality.",
       "published": "2026-09-09T04:01:00.000Z",
-      "source": "NASA",
-      "category": "Climate science"
-    },
-    {
-      "id": "b432af01814235eb",
-      "title": "1,000 Museum Visitors Dive Into NASA Sea Level Science on World Ocean Day",
-      "link": "https://science.nasa.gov/learning-resources/science-activation/1000-museum-visitors-dive-into-nasa-sea-level-science-on-world-ocean-day/",
-      "description": "More than 1,000 visitors explored NASA sea level science firsthand during World Ocean Day at the University of Georgia Aquarium on Skidaway Island on June 6, 2026.",
-      "published": "2026-09-08T14:06:52.000Z",
       "source": "NASA",
       "category": "Climate science"
     },

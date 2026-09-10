@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-09-09T19:44:51.585Z",
+  "updatedAt": "2026-09-10T09:39:19.231Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
     {
-      "id": "430b8c54b35508e5",
-      "title": "How 2 US, European Satellites Are Studying Hurricanes During El Niño",
-      "link": "https://www.nasa.gov/missions/jason-cs-sentinel-6/how-2-us-european-satellites-are-studying-hurricanes-during-el-nino/",
-      "description": "Last November, NASA and its European partners launched the Sentinel-6B satellite to improve hurricane forecasts, help protect infrastructure, and benefit commercial industries, including shipping. The satellite now is flying 30 seconds behi",
-      "published": "2026-09-09T16:00:00.000Z",
-      "source": "NASA",
-      "category": "Climate science"
+      "id": "44476d114f18168e",
+      "title": "Dust Storm Sweeps Over Mali",
+      "link": "https://science.nasa.gov/earth/earth-observatory/dust-storm-sweeps-over-mali/",
+      "description": "At a time of year when dust storm activity winds down, a plume of dust blanketed parts of the West African nation and its neighbors.",
+      "published": "2026-09-10T04:00:00.000Z",
+      "source": "NASA Earth Observatory",
+      "category": "Earth observation"
     },
     {
       "id": "101cdf684d5fd564",
@@ -17,8 +17,8 @@
       "link": "https://science.nasa.gov/earth/earth-observatory/anak-krakatau-rumbles-again/",
       "description": "A powerful eruption from the Indonesian volcano lofted ash into the atmosphere, disrupting thousands of flights and degrading air quality.",
       "published": "2026-09-09T04:01:00.000Z",
-      "source": "NASA",
-      "category": "Climate science"
+      "source": "NASA Earth Observatory",
+      "category": "Earth observation"
     },
     {
       "id": "9dad612608bbfa04",

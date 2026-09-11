@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-10T19:39:02.059Z",
+  "updatedAt": "2026-09-11T09:37:02.059Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
     {
@@ -8,15 +8,6 @@
       "link": "https://science.nasa.gov/earth/earth-observatory/dust-storm-sweeps-over-mali/",
       "description": "At a time of year when dust storm activity winds down, a plume of dust blanketed parts of the West African nation and its neighbors.",
       "published": "2026-09-10T04:00:00.000Z",
-      "source": "NASA",
-      "category": "Climate science"
-    },
-    {
-      "id": "430b8c54b35508e5",
-      "title": "How 2 US, European Satellites Are Studying Hurricanes During El Niño",
-      "link": "https://www.nasa.gov/missions/jason-cs-sentinel-6/how-2-us-european-satellites-are-studying-hurricanes-during-el-nino/",
-      "description": "Last November, NASA and its European partners launched the Sentinel-6B satellite to improve hurricane forecasts, help protect infrastructure, and benefit commercial industries, including shipping. The satellite now is flying 30 seconds behi",
-      "published": "2026-09-09T16:00:00.000Z",
       "source": "NASA",
       "category": "Climate science"
     },

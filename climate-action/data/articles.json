@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-11T09:37:02.059Z",
+  "updatedAt": "2026-09-11T19:39:43.429Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
     {
@@ -8,8 +8,8 @@
       "link": "https://science.nasa.gov/earth/earth-observatory/dust-storm-sweeps-over-mali/",
       "description": "At a time of year when dust storm activity winds down, a plume of dust blanketed parts of the West African nation and its neighbors.",
       "published": "2026-09-10T04:00:00.000Z",
-      "source": "NASA",
-      "category": "Climate science"
+      "source": "NASA Earth Observatory",
+      "category": "Earth observation"
     },
     {
       "id": "101cdf684d5fd564",

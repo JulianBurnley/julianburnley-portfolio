@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-11T19:39:43.429Z",
+  "updatedAt": "2026-09-14T10:34:59.705Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
     {
@@ -44,15 +44,6 @@
       "link": "https://science.nasa.gov/earth/earth-observatory/iceberg-from-petermann-glacier-speeds-away/",
       "description": "In summer 2026, a substantial iceberg calved from Petermann Glacier in northwest Greenland and swiftly drifted into Nares Strait, colliding with an island along the way.",
       "published": "2026-09-01T04:00:00.000Z",
-      "source": "NASA Earth Observatory",
-      "category": "Earth observation"
-    },
-    {
-      "id": "babde80e440811aa",
-      "title": "Pasterze Hangs on as Austria’s Largest Glacier",
-      "link": "https://science.nasa.gov/earth/earth-observatory/pasterze-hangs-on-as-austrias-largest-glacier/",
-      "description": "One narrowing icefall remains the linchpin for the Alpine glacier—and it may not be long for this world.",
-      "published": "2026-08-31T04:01:00.000Z",
       "source": "NASA Earth Observatory",
       "category": "Earth observation"
     }

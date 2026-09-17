@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-09-15T10:03:14.068Z",
+  "updatedAt": "2026-09-17T09:57:36.950Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
+    {
+      "id": "1cbc3dc7d279763a",
+      "title": "Summer Goes Out With a Heat Dome",
+      "link": "https://science.nasa.gov/earth/earth-observatory/summer-goes-out-with-a-heat-dome/",
+      "description": "Temperature records toppled across the central and southern U.S. as the autumnal equinox approached.",
+      "published": "2026-09-17T04:01:00.000Z",
+      "source": "NASA",
+      "category": "Climate science"
+    },
     {
       "id": "44476d114f18168e",
       "title": "Dust Storm Sweeps Over Mali",

@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-09-17T09:57:36.950Z",
+  "updatedAt": "2026-09-18T09:41:33.367Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
+    {
+      "id": "df8af854c11544b6",
+      "title": "Lake Powell Drops to Record-Low Levels",
+      "link": "https://science.nasa.gov/earth/earth-observatory/lake-powell-drops-to-record-low-levels/",
+      "description": "Snow drought and unusually warm temperatures in the Colorado Basin in 2026 helped drive down reservoir water storage in the U.S. West.",
+      "published": "2026-09-18T04:01:00.000Z",
+      "source": "NASA Earth Observatory",
+      "category": "Earth observation"
+    },
     {
       "id": "1cbc3dc7d279763a",
       "title": "Summer Goes Out With a Heat Dome",

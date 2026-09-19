@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-18T09:41:33.367Z",
+  "updatedAt": "2026-09-19T09:27:03.834Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
     {
@@ -17,8 +17,8 @@
       "link": "https://science.nasa.gov/earth/earth-observatory/summer-goes-out-with-a-heat-dome/",
       "description": "Temperature records toppled across the central and southern U.S. as the autumnal equinox approached.",
       "published": "2026-09-17T04:01:00.000Z",
-      "source": "NASA",
-      "category": "Climate science"
+      "source": "NASA Earth Observatory",
+      "category": "Earth observation"
     },
     {
       "id": "44476d114f18168e",

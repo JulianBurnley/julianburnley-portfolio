@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-09-19T09:27:03.834Z",
+  "updatedAt": "2026-09-21T10:38:53.421Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
+    {
+      "id": "e3a5e0cb687ba0be",
+      "title": "Arctic Melt Season Length Levels Off",
+      "link": "https://science.nasa.gov/earth/earth-observatory/arctic-melt-season-length-levels-off/",
+      "description": "While the sea ice melt season has lengthened dramatically in most of the satellite era, the trend unexpectedly stabilized around 2010.",
+      "published": "2026-09-21T04:00:00.000Z",
+      "source": "NASA Earth Observatory",
+      "category": "Earth observation"
+    },
     {
       "id": "df8af854c11544b6",
       "title": "Lake Powell Drops to Record-Low Levels",

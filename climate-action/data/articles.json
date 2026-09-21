@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-21T10:38:53.421Z",
+  "updatedAt": "2026-09-21T21:01:24.716Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
     {
@@ -8,8 +8,8 @@
       "link": "https://science.nasa.gov/earth/earth-observatory/arctic-melt-season-length-levels-off/",
       "description": "While the sea ice melt season has lengthened dramatically in most of the satellite era, the trend unexpectedly stabilized around 2010.",
       "published": "2026-09-21T04:00:00.000Z",
-      "source": "NASA Earth Observatory",
-      "category": "Earth observation"
+      "source": "NASA",
+      "category": "Climate science"
     },
     {
       "id": "df8af854c11544b6",

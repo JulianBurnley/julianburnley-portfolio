@@ -1,7 +1,25 @@
 {
-  "updatedAt": "2026-09-23T09:56:05.019Z",
+  "updatedAt": "2026-09-23T20:17:49.815Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
+    {
+      "id": "ae710f9874083e5b",
+      "title": "NASA Aircraft to Make Low-Altitude Research Flights Over Colorado",
+      "link": "https://www.nasa.gov/general/nasa-aircraft-to-make-low-altitude-research-flights-over-colorado/",
+      "description": "Agricultural emissions represent an important and understudied part of Earth’s land and atmosphere systems. The FarmFlux mission will deploy more than a dozen sensors to measure ozone, methane, ammonia, particulates, and other pollutants ri",
+      "published": "2026-09-23T19:03:03.000Z",
+      "source": "NASA",
+      "category": "Climate science"
+    },
+    {
+      "id": "07adcb70e5ace7bd",
+      "title": "Arctic Sea Ice Reaches 2026 Annual Minimum Extent",
+      "link": "https://science.nasa.gov/science-research/earth-science/climate-science/sea-ice/arctic-sea-ice-2026-min/",
+      "description": "Arctic sea ice reached its annual minimum extent on Sept. 12, according to NASA and the National Snow and Ice Data Center (NSIDC) at the University of Colorado Boulder. The ice covered an estimated 1.78 million square miles (4.6 million squ",
+      "published": "2026-09-23T17:15:32.000Z",
+      "source": "NASA",
+      "category": "Climate science"
+    },
     {
       "id": "e3a5e0cb687ba0be",
       "title": "Arctic Melt Season Length Levels Off",

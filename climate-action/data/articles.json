@@ -1,22 +1,13 @@
 {
-  "updatedAt": "2026-09-23T20:17:49.815Z",
+  "updatedAt": "2026-09-24T20:28:27.594Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
     {
-      "id": "ae710f9874083e5b",
-      "title": "NASA Aircraft to Make Low-Altitude Research Flights Over Colorado",
-      "link": "https://www.nasa.gov/general/nasa-aircraft-to-make-low-altitude-research-flights-over-colorado/",
-      "description": "Agricultural emissions represent an important and understudied part of Earth’s land and atmosphere systems. The FarmFlux mission will deploy more than a dozen sensors to measure ozone, methane, ammonia, particulates, and other pollutants ri",
-      "published": "2026-09-23T19:03:03.000Z",
-      "source": "NASA",
-      "category": "Climate science"
-    },
-    {
-      "id": "07adcb70e5ace7bd",
-      "title": "Arctic Sea Ice Reaches 2026 Annual Minimum Extent",
-      "link": "https://science.nasa.gov/science-research/earth-science/climate-science/sea-ice/arctic-sea-ice-2026-min/",
-      "description": "Arctic sea ice reached its annual minimum extent on Sept. 12, according to NASA and the National Snow and Ice Data Center (NSIDC) at the University of Colorado Boulder. The ice covered an estimated 1.78 million square miles (4.6 million squ",
-      "published": "2026-09-23T17:15:32.000Z",
+      "id": "0040b4ad2fba9cc6",
+      "title": "US-India Satellite Captures Time-lapse Video of Volcanic Eruption",
+      "link": "https://www.nasa.gov/missions/nisar/us-india-satellite-captures-time-lapse-video-of-volcanic-eruption/",
+      "description": "Like tendrils on a vine, lava spreads out from the northern crater of Krasheninnikov, a volcano pair on the Pacific coast of Russia’s Kamchatka Peninsula. On July 30, 2025, an 8.8-magnitude earthquake had struck in the nearby ocean, apparen",
+      "published": "2026-09-24T15:47:17.000Z",
       "source": "NASA",
       "category": "Climate science"
     },

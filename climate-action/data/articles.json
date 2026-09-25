@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-09-24T20:28:27.594Z",
+  "updatedAt": "2026-09-25T10:09:39.324Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
+    {
+      "id": "e110b41958fa83e9",
+      "title": "Explosive Intensification for Hurricane Polo",
+      "link": "https://science.nasa.gov/earth/earth-observatory/explosive-intensification-for-hurricane-polo/",
+      "description": "Several ingredients came together off the Pacific coast of Mexico to generate one of the strongest storms the eastern Pacific basin has ever seen.",
+      "published": "2026-09-25T04:01:00.000Z",
+      "source": "NASA",
+      "category": "Climate science"
+    },
     {
       "id": "0040b4ad2fba9cc6",
       "title": "US-India Satellite Captures Time-lapse Video of Volcanic Eruption",
@@ -62,15 +71,6 @@
       "link": "https://science.nasa.gov/missions/aqua/peatland-fires-darken-skies-in-indonesia/",
       "description": "With Indonesia gripped by drought, fires are smoldering on the surface and underground.",
       "published": "2026-09-03T04:01:00.000Z",
-      "source": "NASA Earth Observatory",
-      "category": "Earth observation"
-    },
-    {
-      "id": "3cb6935d766e1fa2",
-      "title": "Drought Intensifies Across Puerto Rico",
-      "link": "https://science.nasa.gov/earth/earth-observatory/drought-intensifies-across-puerto-rico/",
-      "description": "Rainfall deficits and high temperatures have created unusually dry conditions and have spurred water shortages on much of the tropical archipelago.",
-      "published": "2026-09-02T04:01:00.000Z",
       "source": "NASA Earth Observatory",
       "category": "Earth observation"
     }

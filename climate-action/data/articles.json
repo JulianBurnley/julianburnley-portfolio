@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-25T10:09:39.324Z",
+  "updatedAt": "2026-09-25T20:27:29.788Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
     {
@@ -8,15 +8,6 @@
       "link": "https://science.nasa.gov/earth/earth-observatory/explosive-intensification-for-hurricane-polo/",
       "description": "Several ingredients came together off the Pacific coast of Mexico to generate one of the strongest storms the eastern Pacific basin has ever seen.",
       "published": "2026-09-25T04:01:00.000Z",
-      "source": "NASA",
-      "category": "Climate science"
-    },
-    {
-      "id": "0040b4ad2fba9cc6",
-      "title": "US-India Satellite Captures Time-lapse Video of Volcanic Eruption",
-      "link": "https://www.nasa.gov/missions/nisar/us-india-satellite-captures-time-lapse-video-of-volcanic-eruption/",
-      "description": "Like tendrils on a vine, lava spreads out from the northern crater of Krasheninnikov, a volcano pair on the Pacific coast of Russia’s Kamchatka Peninsula. On July 30, 2025, an 8.8-magnitude earthquake had struck in the nearby ocean, apparen",
-      "published": "2026-09-24T15:47:17.000Z",
       "source": "NASA",
       "category": "Climate science"
     },

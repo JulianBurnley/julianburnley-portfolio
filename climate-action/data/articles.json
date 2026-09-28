@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-28T11:38:57.177Z",
+  "updatedAt": "2026-09-28T22:31:13.561Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
     {
@@ -8,8 +8,8 @@
       "link": "https://science.nasa.gov/earth/earth-observatory/uncovering-the-valleys-hidden-below-greenlands-ice/",
       "description": "A new map of the terrain beneath the Greenland Ice Sheet links hundreds of valleys that previous maps missed or left fragmented.",
       "published": "2026-09-28T04:00:00.000Z",
-      "source": "NASA",
-      "category": "Climate science"
+      "source": "NASA Earth Observatory",
+      "category": "Earth observation"
     },
     {
       "id": "e110b41958fa83e9",

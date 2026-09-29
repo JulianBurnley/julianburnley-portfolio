@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-09-28T22:31:13.561Z",
+  "updatedAt": "2026-09-29T11:20:17.688Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
+    {
+      "id": "9af33721059920ad",
+      "title": "Fire Cloud with a Pileus on Top",
+      "link": "https://science.nasa.gov/earth/earth-observatory/fire-cloud-with-a-pileus-on-top/",
+      "description": "Scientists captured rare observations of an ephemeral pileus cloud hovering over a smoke-infused cloud that rose above a wildfire in Montana.",
+      "published": "2026-09-29T04:01:00.000Z",
+      "source": "NASA",
+      "category": "Climate science"
+    },
     {
       "id": "c88ef522a895f600",
       "title": "Uncovering the Valleys Hidden Below Greenland’s Ice",
@@ -62,15 +71,6 @@
       "link": "https://science.nasa.gov/earth/earth-observatory/anak-krakatau-rumbles-again/",
       "description": "A powerful eruption from the Indonesian volcano lofted ash into the atmosphere, disrupting thousands of flights and degrading air quality.",
       "published": "2026-09-09T04:01:00.000Z",
-      "source": "NASA Earth Observatory",
-      "category": "Earth observation"
-    },
-    {
-      "id": "9dad612608bbfa04",
-      "title": "Peatland Fires Darken Skies in Indonesia",
-      "link": "https://science.nasa.gov/missions/aqua/peatland-fires-darken-skies-in-indonesia/",
-      "description": "With Indonesia gripped by drought, fires are smoldering on the surface and underground.",
-      "published": "2026-09-03T04:01:00.000Z",
       "source": "NASA Earth Observatory",
       "category": "Earth observation"
     }

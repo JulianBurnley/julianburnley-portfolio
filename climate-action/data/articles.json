@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-30T21:24:35.881Z",
+  "updatedAt": "2026-10-02T11:04:19.325Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
     {
@@ -26,15 +26,6 @@
       "link": "https://science.nasa.gov/earth/earth-observatory/explosive-intensification-for-hurricane-polo/",
       "description": "Several ingredients came together off the Pacific coast of Mexico to generate one of the strongest storms the eastern Pacific basin has ever seen.",
       "published": "2026-09-25T04:01:00.000Z",
-      "source": "NASA Earth Observatory",
-      "category": "Earth observation"
-    },
-    {
-      "id": "e3a5e0cb687ba0be",
-      "title": "Arctic Melt Season Length Levels Off",
-      "link": "https://science.nasa.gov/earth/earth-observatory/arctic-melt-season-length-levels-off/",
-      "description": "While the sea ice melt season has lengthened dramatically in most of the satellite era, the trend unexpectedly stabilized around 2010.",
-      "published": "2026-09-21T04:00:00.000Z",
       "source": "NASA Earth Observatory",
       "category": "Earth observation"
     },

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-07T11:44:40.373Z",
+  "updatedAt": "2026-10-07T21:57:37.051Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
     {
@@ -17,15 +17,6 @@
       "link": "https://science.nasa.gov/earth/earth-observatory/fire-cloud-with-a-pileus-on-top/",
       "description": "Scientists captured rare observations of an ephemeral pileus cloud hovering over a smoke-infused cloud that rose above a wildfire in Montana.",
       "published": "2026-09-29T04:01:00.000Z",
-      "source": "NASA Earth Observatory",
-      "category": "Earth observation"
-    },
-    {
-      "id": "c88ef522a895f600",
-      "title": "Uncovering the Valleys Hidden Below Greenland’s Ice",
-      "link": "https://science.nasa.gov/earth/earth-observatory/uncovering-the-valleys-hidden-below-greenlands-ice/",
-      "description": "A new map of the terrain beneath the Greenland Ice Sheet links hundreds of valleys that previous maps missed or left fragmented.",
-      "published": "2026-09-28T04:00:00.000Z",
       "source": "NASA Earth Observatory",
       "category": "Earth observation"
     },
@@ -53,24 +44,6 @@
       "link": "https://science.nasa.gov/earth/earth-observatory/summer-goes-out-with-a-heat-dome/",
       "description": "Temperature records toppled across the central and southern U.S. as the autumnal equinox approached.",
       "published": "2026-09-17T04:01:00.000Z",
-      "source": "NASA Earth Observatory",
-      "category": "Earth observation"
-    },
-    {
-      "id": "44476d114f18168e",
-      "title": "Dust Storm Sweeps Over Mali",
-      "link": "https://science.nasa.gov/earth/earth-observatory/dust-storm-sweeps-over-mali/",
-      "description": "At a time of year when dust storm activity winds down, a plume of dust blanketed parts of the West African nation and its neighbors.",
-      "published": "2026-09-10T04:00:00.000Z",
-      "source": "NASA Earth Observatory",
-      "category": "Earth observation"
-    },
-    {
-      "id": "101cdf684d5fd564",
-      "title": "Anak Krakatau Rumbles Again",
-      "link": "https://science.nasa.gov/earth/earth-observatory/anak-krakatau-rumbles-again/",
-      "description": "A powerful eruption from the Indonesian volcano lofted ash into the atmosphere, disrupting thousands of flights and degrading air quality.",
-      "published": "2026-09-09T04:01:00.000Z",
       "source": "NASA Earth Observatory",
       "category": "Earth observation"
     }

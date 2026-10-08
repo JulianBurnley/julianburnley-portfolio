@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-10-07T21:57:37.051Z",
+  "updatedAt": "2026-10-08T11:59:36.024Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
+    {
+      "id": "743f4c63b64476e2",
+      "title": "Fighting Drought in Texas Cotton Country",
+      "link": "https://science.nasa.gov/earth/earth-observatory/fighting-drought-in-texas-cotton-country/",
+      "description": "Drought and an ailing aquifer were major topics of conversation when NASA scientists visited with farmers in the Texas High Plains.",
+      "published": "2026-10-08T04:01:00.000Z",
+      "source": "NASA",
+      "category": "Climate science"
+    },
     {
       "id": "df166618544d78a2",
       "title": "Arctic Sea Ice Shrinks to Its 2026 Minimum",
@@ -35,15 +44,6 @@
       "link": "https://science.nasa.gov/earth/earth-observatory/lake-powell-drops-to-record-low-levels/",
       "description": "Snow drought and unusually warm temperatures in the Colorado Basin in 2026 helped drive down reservoir water storage in the U.S. West.",
       "published": "2026-09-18T04:01:00.000Z",
-      "source": "NASA Earth Observatory",
-      "category": "Earth observation"
-    },
-    {
-      "id": "1cbc3dc7d279763a",
-      "title": "Summer Goes Out With a Heat Dome",
-      "link": "https://science.nasa.gov/earth/earth-observatory/summer-goes-out-with-a-heat-dome/",
-      "description": "Temperature records toppled across the central and southern U.S. as the autumnal equinox approached.",
-      "published": "2026-09-17T04:01:00.000Z",
       "source": "NASA Earth Observatory",
       "category": "Earth observation"
     }

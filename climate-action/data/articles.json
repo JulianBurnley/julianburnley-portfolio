@@ -1,15 +1,33 @@
 {
-  "updatedAt": "2026-10-08T11:59:36.024Z",
+  "updatedAt": "2026-10-08T22:02:12.756Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
+    {
+      "id": "9f4d01aca69009ea",
+      "title": "Crew-12 Returns to Earth",
+      "link": "https://www.nasa.gov/image-article/crew-12-returns-to-earth/",
+      "description": "The SpaceX Crew Dragon Freedom spacecraft is seen moments before splashing down in the Pacific Ocean off the coast of California in this Oct. 8, 2026, photograph. Aboard were NASA’s SpaceX Crew-12 members NASA astronauts Jessica Meir and Ja",
+      "published": "2026-10-08T18:52:27.000Z",
+      "source": "NASA",
+      "category": "Climate science"
+    },
+    {
+      "id": "e650abdb0bba3a07",
+      "title": "Webb Measures Distance to Farthest Fast Radio Burst, Suggesting Origin",
+      "link": "https://science.nasa.gov/missions/webb/webb-measures-distance-to-farthest-fast-radio-burst-suggesting-origin/",
+      "description": "First discovered in 2007, fast radio bursts are enigmatic, millisecond-long flashes of radio emission from the distant universe. Their origin remains uncertain, particularly since most are seen once and never again. Astronomers using NASA’s",
+      "published": "2026-10-08T18:00:00.000Z",
+      "source": "NASA",
+      "category": "Climate science"
+    },
     {
       "id": "743f4c63b64476e2",
       "title": "Fighting Drought in Texas Cotton Country",
       "link": "https://science.nasa.gov/earth/earth-observatory/fighting-drought-in-texas-cotton-country/",
       "description": "Drought and an ailing aquifer were major topics of conversation when NASA scientists visited with farmers in the Texas High Plains.",
       "published": "2026-10-08T04:01:00.000Z",
-      "source": "NASA",
-      "category": "Climate science"
+      "source": "NASA Earth Observatory",
+      "category": "Earth observation"
     },
     {
       "id": "df166618544d78a2",
@@ -17,8 +35,8 @@
       "link": "https://science.nasa.gov/earth/earth-observatory/arctic-sea-ice-shrinks-to-its-2026-minimum/",
       "description": "Satellite records show Arctic sea ice covering less of the ocean in both winter and summer.",
       "published": "2026-10-07T04:00:00.000Z",
-      "source": "NASA",
-      "category": "Climate science"
+      "source": "NASA Earth Observatory",
+      "category": "Earth observation"
     },
     {
       "id": "9af33721059920ad",

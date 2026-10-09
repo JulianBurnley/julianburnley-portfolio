@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-08T22:02:12.756Z",
+  "updatedAt": "2026-10-09T11:51:42.043Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
     {
@@ -53,15 +53,6 @@
       "link": "https://science.nasa.gov/earth/earth-observatory/explosive-intensification-for-hurricane-polo/",
       "description": "Several ingredients came together off the Pacific coast of Mexico to generate one of the strongest storms the eastern Pacific basin has ever seen.",
       "published": "2026-09-25T04:01:00.000Z",
-      "source": "NASA Earth Observatory",
-      "category": "Earth observation"
-    },
-    {
-      "id": "df8af854c11544b6",
-      "title": "Lake Powell Drops to Record-Low Levels",
-      "link": "https://science.nasa.gov/earth/earth-observatory/lake-powell-drops-to-record-low-levels/",
-      "description": "Snow drought and unusually warm temperatures in the Colorado Basin in 2026 helped drive down reservoir water storage in the U.S. West.",
-      "published": "2026-09-18T04:01:00.000Z",
       "source": "NASA Earth Observatory",
       "category": "Earth observation"
     }

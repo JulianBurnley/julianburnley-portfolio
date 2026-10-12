@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-12T13:05:44.636Z",
+  "updatedAt": "2026-10-12T23:36:29.531Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
     {
@@ -10,6 +10,42 @@
       "published": "2026-10-12T04:00:00.000Z",
       "source": "NASA",
       "category": "Climate science"
+    },
+    {
+      "id": "743f4c63b64476e2",
+      "title": "Fighting Drought in Texas Cotton Country",
+      "link": "https://science.nasa.gov/earth/earth-observatory/fighting-drought-in-texas-cotton-country/",
+      "description": "Drought and an ailing aquifer were major topics of conversation when NASA scientists visited with farmers in the Texas High Plains.",
+      "published": "2026-10-08T04:01:00.000Z",
+      "source": "NASA Earth Observatory",
+      "category": "Earth observation"
+    },
+    {
+      "id": "df166618544d78a2",
+      "title": "Arctic Sea Ice Shrinks to Its 2026 Minimum",
+      "link": "https://science.nasa.gov/earth/earth-observatory/arctic-sea-ice-shrinks-to-its-2026-minimum/",
+      "description": "Satellite records show Arctic sea ice covering less of the ocean in both winter and summer.",
+      "published": "2026-10-07T04:00:00.000Z",
+      "source": "NASA Earth Observatory",
+      "category": "Earth observation"
+    },
+    {
+      "id": "9af33721059920ad",
+      "title": "Fire Cloud With a Pileus on Top",
+      "link": "https://science.nasa.gov/earth/earth-observatory/fire-cloud-with-a-pileus-on-top/",
+      "description": "Scientists captured rare observations of an ephemeral pileus cloud hovering over a smoke-infused cloud that rose above a wildfire in Montana.",
+      "published": "2026-09-29T04:01:00.000Z",
+      "source": "NASA Earth Observatory",
+      "category": "Earth observation"
+    },
+    {
+      "id": "e110b41958fa83e9",
+      "title": "Explosive Intensification for Hurricane Polo",
+      "link": "https://science.nasa.gov/earth/earth-observatory/explosive-intensification-for-hurricane-polo/",
+      "description": "Several ingredients came together off the Pacific coast of Mexico to generate one of the strongest storms the eastern Pacific basin has ever seen.",
+      "published": "2026-09-25T04:01:00.000Z",
+      "source": "NASA Earth Observatory",
+      "category": "Earth observation"
     }
   ]
 }

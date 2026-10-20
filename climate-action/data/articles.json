@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-19T21:29:35.638Z",
+  "updatedAt": "2026-10-20T09:59:20.779Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
     {
@@ -17,15 +17,6 @@
       "link": "https://science.nasa.gov/earth/earth-observatory/hurricane-simon-lurks-off-the-mexican-coast/",
       "description": "Though it remained offshore, the storm lashed coastal areas with high winds and flooding—and produced remarkable rippling patterns in the upper atmosphere.",
       "published": "2026-10-14T04:01:00.000Z",
-      "source": "NASA Earth Observatory",
-      "category": "Earth observation"
-    },
-    {
-      "id": "a7867473cdb52eec",
-      "title": "Antarctic Sea Ice Grows to Its 2026 Maximum",
-      "link": "https://science.nasa.gov/earth/earth-observatory/antarctic-sea-ice-grows-to-its-2026-maximum/",
-      "description": "The ice reached its third-lowest maximum extent since satellite observations began.",
-      "published": "2026-10-12T04:00:00.000Z",
       "source": "NASA Earth Observatory",
       "category": "Earth observation"
     },

@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-10-20T09:59:20.779Z",
+  "updatedAt": "2026-10-21T10:04:19.967Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
+    {
+      "id": "d4799de2fda612bb",
+      "title": "Extratropical Cyclone Whips Past Iceland",
+      "link": "https://science.nasa.gov/earth/earth-observatory/extratropical-cyclone-whips-past-iceland/",
+      "description": "The powerful low-pressure system formed over the North Atlantic out of the remnants of Hurricane Isaias.",
+      "published": "2026-10-21T04:01:00.000Z",
+      "source": "NASA",
+      "category": "Climate science"
+    },
     {
       "id": "072d14671b798f80",
       "title": "Isaias Dims the Gulf Coast",

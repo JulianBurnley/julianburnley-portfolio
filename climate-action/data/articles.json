@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-22T10:06:49.726Z",
+  "updatedAt": "2026-10-24T09:28:28.017Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
     {
@@ -8,8 +8,8 @@
       "link": "https://science.nasa.gov/earth/earth-observatory/fires-char-new-guinea/",
       "description": "Emissions on both sides of the island are unusually high as human-set fires spread in a landscape parched by drought.",
       "published": "2026-10-22T04:01:00.000Z",
-      "source": "NASA",
-      "category": "Climate science"
+      "source": "NASA Earth Observatory",
+      "category": "Earth observation"
     },
     {
       "id": "d4799de2fda612bb",

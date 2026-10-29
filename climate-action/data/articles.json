@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-10-28T21:38:09.717Z",
+  "updatedAt": "2026-10-29T11:28:42.003Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
+    {
+      "id": "e9bfba10ec085dbe",
+      "title": "Arnab Strikes India",
+      "link": "https://science.nasa.gov/earth/earth-observatory/arnab-strikes-india/",
+      "description": "The first named storm of the North Indian Ocean’s cyclone season made landfall along the coast of Andhra Pradesh.",
+      "published": "2026-10-29T04:01:00.000Z",
+      "source": "NASA",
+      "category": "Climate science"
+    },
     {
       "id": "64d1caf6b34e6ea8",
       "title": "NASA Selects 19 New Citizen Science Proposals in 2026",

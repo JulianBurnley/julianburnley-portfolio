@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-29T21:45:42.242Z",
+  "updatedAt": "2026-10-30T11:20:55.213Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
     {
@@ -35,15 +35,6 @@
       "link": "https://science.nasa.gov/earth/earth-observatory/isaias-dims-the-gulf-coast/",
       "description": "High-definition images of nighttime lights show where the hurricane knocked out power along the Florida Panhandle and how quickly the lights came back.",
       "published": "2026-10-16T04:00:00.000Z",
-      "source": "NASA Earth Observatory",
-      "category": "Earth observation"
-    },
-    {
-      "id": "9759b7394ace5061",
-      "title": "Hurricane Simon Lurks Off the Mexican Coast",
-      "link": "https://science.nasa.gov/earth/earth-observatory/hurricane-simon-lurks-off-the-mexican-coast/",
-      "description": "Though it remained offshore, the storm lashed coastal areas with high winds and flooding—and produced remarkable rippling patterns in the upper atmosphere.",
-      "published": "2026-10-14T04:01:00.000Z",
       "source": "NASA Earth Observatory",
       "category": "Earth observation"
     }

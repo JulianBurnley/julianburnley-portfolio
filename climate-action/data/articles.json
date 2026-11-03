@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-10-30T11:20:55.213Z",
+  "updatedAt": "2026-11-03T12:44:38.206Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
+    {
+      "id": "647549f4c6fdd7b0",
+      "title": "The Pacific’s Busy Storm Season",
+      "link": "https://science.nasa.gov/earth/earth-observatory/the-pacifics-busy-storm-season/",
+      "description": "Super Typhoon In-fa developed an unusually large eye, and the remnants of Typhoon Champi transitioned into an extratropical storm that targeted Alaska.",
+      "published": "2026-11-03T05:01:00.000Z",
+      "source": "NASA",
+      "category": "Climate science"
+    },
     {
       "id": "e9bfba10ec085dbe",
       "title": "Arnab Strikes India",

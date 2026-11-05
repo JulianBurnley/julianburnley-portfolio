@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-11-04T22:35:18.358Z",
+  "updatedAt": "2026-11-05T13:07:49.878Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
+    {
+      "id": "6b581cc17686d785",
+      "title": "Cyprus: Island of Snakes, Cats, and Ophiolites",
+      "link": "https://science.nasa.gov/earth/earth-observatory/cyprus-island-of-snakes-cats-and-ophiolites/",
+      "description": "The third-largest island in the Mediterranean Sea exposes an ancient piece of the ocean floor and hosts a clowder of cats.",
+      "published": "2026-11-05T05:01:00.000Z",
+      "source": "NASA",
+      "category": "Climate science"
+    },
     {
       "id": "647549f4c6fdd7b0",
       "title": "The Pacific’s Busy Storm Season",

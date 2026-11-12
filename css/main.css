@@ -546,7 +546,7 @@ ul {
     width: 115%;
     max-width: none;
     min-height: 0;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 16 / 16;
 }
 .local-preview.project-screenshot img {
     width: 100%;

@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-11-11T12:40:12.297Z",
+  "updatedAt": "2026-11-12T13:43:33.620Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
+    {
+      "id": "767e3a9da7a4c4b5",
+      "title": "Scotland’s Flow Country",
+      "link": "https://science.nasa.gov/earth/earth-observatory/scotlands-flow-country/",
+      "description": "Blanket bogs in the Scottish Highlands store vast amounts of carbon.",
+      "published": "2026-11-12T05:01:00.000Z",
+      "source": "NASA",
+      "category": "Climate science"
+    },
     {
       "id": "6b581cc17686d785",
       "title": "Cyprus: Island of Snakes, Cats, and Ophiolites",

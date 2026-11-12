@@ -543,6 +543,8 @@ ul {
     padding: 0;
     overflow: hidden;
     display: block;
+    width: 115%;
+    max-width: none;
     min-height: 0;
     aspect-ratio: 16 / 9;
 }

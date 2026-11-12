@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-11-12T13:43:33.620Z",
+  "updatedAt": "2026-11-12T22:41:56.714Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
+    {
+      "id": "232bcb44e39c5ca7",
+      "title": "Heart in the Sky at NASA Kennedy",
+      "link": "https://www.nasa.gov/image-article/heart-in-the-sky-at-nasa-kennedy/",
+      "description": "The U.S. Air Force Thunderbirds create a heart-shaped smoke trail during a flight maneuver near NASA’s Vehicle Assembly Building during the agency’s MAX POWER expo and air show on Sunday, Nov. 8, 2026, at NASA’s Kennedy Space Center in Flor",
+      "published": "2026-11-12T19:12:49.000Z",
+      "source": "NASA",
+      "category": "Climate science"
+    },
     {
       "id": "767e3a9da7a4c4b5",
       "title": "Scotland’s Flow Country",

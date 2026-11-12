@@ -537,6 +537,22 @@ ul {
   box-shadow: 0 24px 60px rgba(0,0,0,.28);
 }
 
+/* Display actual website screenshots */
+.local-preview.project-screenshot {
+    background: none;
+    padding: 0;
+    overflow: hidden;
+}
+
+.local-preview.project-screenshot img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: inherit;
+    display: block;
+}
+
 .local-preview-brand {
   color: #13251f;
   font-family: var(--font-mono);

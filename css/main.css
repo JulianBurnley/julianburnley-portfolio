@@ -1884,3 +1884,9 @@ a[href^="mailto:"]:not(.button):focus-visible {
   outline: 3px solid #fbbf24;
   outline-offset: 2px;
 }
+
+/* Show the complete Casa Grande Local screenshot */
+.casa-grande-preview img {
+    object-fit: contain;
+    background: #ffffff;
+}

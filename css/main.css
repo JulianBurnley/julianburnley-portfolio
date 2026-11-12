@@ -1886,7 +1886,8 @@ a[href^="mailto:"]:not(.button):focus-visible {
 }
 
 /* Show the complete Casa Grande Local screenshot */
-.casa-grande-preview img {
+.local-preview.project-screenshot.casa-grande-preview img {
     object-fit: contain;
+    object-position: center;
     background: #ffffff;
 }

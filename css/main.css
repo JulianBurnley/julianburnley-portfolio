@@ -1909,3 +1909,24 @@ a[href^="mailto:"]:not(.button):focus-visible {
     object-position: center;
     background: #ffffff;
 }
+
+
+/* Show complete project screenshots on mobile */
+@media (max-width: 600px) {
+  .local-preview.project-screenshot {
+    min-height: 0;
+    height: auto;
+  }
+
+  .local-preview.project-screenshot .project-image-link {
+    height: auto;
+  }
+
+  .local-preview.project-screenshot img,
+  .local-preview.project-screenshot .project-image-link img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    background: #ffffff;
+  }
+}

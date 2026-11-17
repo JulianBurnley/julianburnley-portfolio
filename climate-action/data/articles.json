@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-17T00:46:03.746Z",
+  "updatedAt": "2026-11-17T14:18:31.177Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
     {
@@ -8,15 +8,6 @@
       "link": "https://science.nasa.gov/earth/earth-observatory/scotlands-flow-country/",
       "description": "Blanket bogs in the Scottish Highlands store vast amounts of carbon.",
       "published": "2026-11-12T05:01:00.000Z",
-      "source": "NASA Earth Observatory",
-      "category": "Earth observation"
-    },
-    {
-      "id": "6b581cc17686d785",
-      "title": "Cyprus: Island of Snakes, Cats, and Ophiolites",
-      "link": "https://science.nasa.gov/earth/earth-observatory/cyprus-island-of-snakes-cats-and-ophiolites/",
-      "description": "The third-largest island in the Mediterranean Sea exposes an ancient piece of the ocean floor and hosts a clowder of cats.",
-      "published": "2026-11-05T05:01:00.000Z",
       "source": "NASA Earth Observatory",
       "category": "Earth observation"
     },

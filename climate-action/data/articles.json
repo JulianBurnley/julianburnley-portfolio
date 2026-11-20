@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-11-17T14:18:31.177Z",
+  "updatedAt": "2026-11-20T13:57:44.385Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
+    {
+      "id": "0b5bf03985b7b835",
+      "title": "The Stormy Southwest Pacific",
+      "link": "https://science.nasa.gov/earth/earth-observatory/the-stormy-southwest-pacific/",
+      "description": "Tropical Cyclone Xavier launched the basin’s storm season with a bang.",
+      "published": "2026-11-20T05:01:00.000Z",
+      "source": "NASA",
+      "category": "Climate science"
+    },
     {
       "id": "767e3a9da7a4c4b5",
       "title": "Scotland’s Flow Country",

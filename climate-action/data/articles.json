@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-20T13:57:44.385Z",
+  "updatedAt": "2026-11-23T15:54:16.874Z",
   "editorialPolicy": "Automated metadata from approved official feeds. Full articles remain with their publishers.",
   "articles": [
     {
@@ -8,15 +8,6 @@
       "link": "https://science.nasa.gov/earth/earth-observatory/the-stormy-southwest-pacific/",
       "description": "Tropical Cyclone Xavier launched the basin’s storm season with a bang.",
       "published": "2026-11-20T05:01:00.000Z",
-      "source": "NASA",
-      "category": "Climate science"
-    },
-    {
-      "id": "767e3a9da7a4c4b5",
-      "title": "Scotland’s Flow Country",
-      "link": "https://science.nasa.gov/earth/earth-observatory/scotlands-flow-country/",
-      "description": "Blanket bogs in the Scottish Highlands store vast amounts of carbon.",
-      "published": "2026-11-12T05:01:00.000Z",
       "source": "NASA Earth Observatory",
       "category": "Earth observation"
     },
